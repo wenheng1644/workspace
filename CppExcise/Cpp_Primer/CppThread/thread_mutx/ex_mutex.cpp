@@ -31,7 +31,7 @@ bool find_val(int val)
     return isFind;
 }
 
-int main(void)
+int main()
 {
     cout << "begining...." << endl;
     thread t1(add_to_vec,5);
