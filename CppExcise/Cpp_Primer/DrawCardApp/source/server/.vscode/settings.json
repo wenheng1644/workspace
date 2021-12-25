@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.json": "cpp",
+        "xstring": "cpp",
+        "atomic": "cpp",
+        "memory": "cpp",
+        "system_error": "cpp",
+        "map": "cpp"
+    }
+}
