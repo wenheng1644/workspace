@@ -138,14 +138,12 @@ bool cardpool::loadConfig(string abs_file)
 map<int,drawcard_data> cardpool::getCardPool(size_t random_num)
 {
     size_t rare = getRareByRandom(random_num);
-    cout << "print the rand_num: " << random_num << "\trare: " << rare << endl;
+//    cout << "print the rand_num: " << random_num << "\trare: " << rare << endl;
 
     assert(rare >= 0 || rare <= 5);
-    cout << "in here?" << endl;
     if(rare == 0)
         return m_cardpool;
 
-    cout << "sure???" << endl;
     return m_quality_cardpool[rare];
 }
 
@@ -162,7 +160,7 @@ int cardpool::getRareByRandom(size_t rand_num)
 
         totalPro += curPro;
 
-        if(rand_num < totalPro)
+        if(rand_num <= totalPro)
             return curRare;
 
         curRare++;
@@ -193,19 +191,20 @@ vector<drawcard_data> cardpool::getRandom_drawcard(int cnt)
             if(!checkData(e.second))
             {
                 cerr << "data error!!!" << endl;
-                cout << "id:\t" << e.second.m_id << "\tname:\t" << e.second.m_name << "\tquality:\t" << e.second.m_quality
+                cerr << "id:\t" << e.second.m_id << "\tname:\t" << e.second.m_name << "\tquality:\t" << e.second.m_quality
                     << "\tpro:\t" << e.second.m_pro << endl;
-                cout << "data count: " << rare_qualityCardPool.size() << endl;
+                cerr << "data count: " << rare_qualityCardPool.size() << endl;
                 print_Card(rare_qualityCardPool);
                 exit(0);
             }
             tempPool.push_back(e.second);
         }
 
+        unsigned int drawcard_count = tempPool.size();
 
-        int drawcard_count = tempPool.size();
+//        if(drawcard_count == 0) continue;
 
-        static uniform_int_distribution<unsigned > u2(0,drawcard_count-1);
+        uniform_int_distribution<unsigned> u2(0,drawcard_count-1);
 
         int randomIndex = u2(e); //随机抽取索引
         drawcard_data data = tempPool[randomIndex];

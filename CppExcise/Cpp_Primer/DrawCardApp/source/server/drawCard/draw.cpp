@@ -20,12 +20,10 @@ drawcard_data draw::singleGet()
 
 vector<drawcard_data> draw::tenGet()
 {
-    vector<drawcard_data> res;
-
     if(!cardPool_ptr->isLoadCardPool())
-        return res;
+        exit(0);
 
-    res = cardPool_ptr->getRandom_drawcard(10);
+    vector<drawcard_data> res = cardPool_ptr->getRandom_drawcard(10);
 
     return res;
 }

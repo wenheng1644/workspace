@@ -10,10 +10,10 @@ using namespace std;
 //卡的数据结构
 struct drawcard_data
 {
-    int     m_id;    //卡id
+    size_t     m_id;    //卡id
     string  m_name;     //卡名
-    int  m_quality;  //卡品质（1-5）
-    int  m_pro;      //卡概率
+    size_t  m_quality;  //卡品质（1-5）
+    size_t  m_pro;      //卡概率
 
     drawcard_data() : m_id(-1),m_name(string()),m_quality(-1),m_pro(-1) {}
 };
@@ -30,5 +30,9 @@ struct rarepro_data
 //配置文件路径
 #define CARDPOOL_CONFIG  "drawCardInfo.csv"
 #define RARE_CONFIG "rare_quality_pro.csv"
+
+//临时使用: 单抽花费和十连抽花费
+#define SINGLE_COAST 75
+#define TEN_COAST 675
 
 #endif
