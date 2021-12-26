@@ -1,5 +1,5 @@
 //
-// Created by 鏂囨亽 on 2021/12/26.
+// Created by 文恒 on 2021/12/26.
 //
 #include <iostream>
 #include <fstream>
@@ -19,37 +19,51 @@ int main(void)
 
     drawObj.showCardPoolInfos(1);
 
-    vector<int> quality_count(6);
+    vector<int> quality_count(6,0);
 
     int total_getCnt = 0;
     int getTimes = 0;
-    while(getTimes < 10)
+    while(getTimes < 50)
     {
-        vector<drawcard_data> res = drawObj.tenGet();
-        getTimes++;
-        cout << endl;
+        try {
+            vector<drawcard_data> res = drawObj.tenGet();
+            getTimes++;
+            flush(cout);
+            cout << endl;
 
-        for(auto& e : res)
-        {
-            cout << "the output: ";
+            for(auto& e : res)
+            {
+                cout << "输出: ";
 
-            cout << "id:\t" << e.m_id << "\t";
-            cout << "name:\t" << e.m_name << "\t";
-            cout << "rare:\t" << e.m_quality << "\t";
-            cout << "pro:\t" << e.m_pro << endl;
-            quality_count[e.m_quality]++;
+                cout << "id:\t" << e.m_id << "\t";
+                cout << "名字:\t" << e.m_name << "\t";
+                cout << "稀有度:\t" << e.m_quality << "\t";
+                cout << "概率:\t" << e.m_pro << endl;
+                quality_count[e.m_quality]++;
 
 
-            total_getCnt++;
+                total_getCnt++;
+            }
+        }
+        catch (exception e){
+            cerr << e.what();
+            system("pause");
         }
     }
 
-    cout << "you getTimes:\t" << getTimes << "\ttotalCnt:\t" << total_getCnt << endl;
+    cout << "十连抽卡次数:\t" << getTimes << "\t总抽卡次数:\t" << total_getCnt << endl;
     for(int i = 1;i < quality_count.size();i++)
     {
-        cout << "rare_quality:\t" << i << "\tcount:\t" << quality_count[i] << "\tprecise:\t" << (float)quality_count[i]/total_getCnt;
+        float precise = (float)quality_count[i]/total_getCnt * 100;
+        cout << "稀有度:\t" << i << "\t次数:\t" << quality_count[i] << "\t抽中概率占比:\t" << precise << "%" ;
         cout << endl;
     }
+
+    size_t game_money = getTimes * TEN_COAST;
+    size_t cost_times = game_money / 12000;
+    size_t total_cost = cost_times * 648;
+
+    cout << "买648礼包次数:\t" << cost_times << "\t花费人民币:\t" << total_cost << endl;
 
 
 
