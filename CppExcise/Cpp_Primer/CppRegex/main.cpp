@@ -39,12 +39,34 @@ void iter_Re()
 
 }
 
+void testExRe()
+{
+    string parretn = "(^[[:digit:]]{5}$|[[:digit:]]{5}-[[:digit:]]*)";
+    regex r(parretn);
+
+    string res;
+
+    while(cin >> res && res != "q")
+    {
+        smatch match;
+        regex_search(res,match,r);
+
+        if(match.size() == 0)
+            cout << "match is failure..." << endl;
+        else
+            cout << "mtach is sccessful: " << match.str() << endl;
+    }
+
+}
+
 int main() {
 //    testRe();
-    cout << "the second: " << endl;
-    string str1 = "I love you {520}";
-    regex r("[[:digit:]]+");
-    cout << "res: " << regex_replace(str1,r,"1314");
+//    cout << "the second: " << endl;
+//    string str1 = "I love you {520}";
+//    regex r("[[:digit:]]+");
+//    cout << "res: " << regex_replace(str1,r,"1314");
 //    iter_Re();
+
+    testExRe();
     return 0;
 }
