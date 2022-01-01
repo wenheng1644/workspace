@@ -1,21 +1,22 @@
 #include "draw.h"
 
-cardpool* cardPool_ptr = cardpool::GetCardPool();
+cardpool* draw::cardPool_ptr = cardpool::GetCardPool();
 
-drawcard_data draw::singleGet()
+vector<drawcard_data> draw::singleGet()
 {
     drawcard_data data;
     if(!cardPool_ptr->isLoadCardPool())
-        return data;
+        return vector<drawcard_data>();
 
     vector<drawcard_data> res = cardPool_ptr->getRandom_drawcard(1);
 
     if(res.size() != 1)
-        return data;
+        return vector<drawcard_data>();
 
     data = res[0];
 
-    return data;
+
+    return vector<drawcard_data>{data};
 }
 
 vector<drawcard_data> draw::tenGet()

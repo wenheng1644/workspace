@@ -5,6 +5,7 @@
         "atomic": "cpp",
         "memory": "cpp",
         "system_error": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "vector": "cpp"
     }
 }
