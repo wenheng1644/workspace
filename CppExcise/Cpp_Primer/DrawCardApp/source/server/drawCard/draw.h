@@ -18,13 +18,21 @@ public:
     ~draw() {}
 
     //单抽
-    drawcard_data singleGet();
+    vector<drawcard_data> singleGet();
 
     //十连抽
     vector<drawcard_data> tenGet();
 
     //显示卡池信息
     void showCardPoolInfos(int choice = 0);
+
+    //返回对应卡的信息
+    string getDrawResultInfo(drawcard_data& src){
+        return string("卡名: ") + src.m_name + "\t稀有度: " + cardPool_ptr->getQualityLangByRareId(src.m_quality);
+    }
+
+private:
+    static cardpool* cardPool_ptr;
 };
 
 

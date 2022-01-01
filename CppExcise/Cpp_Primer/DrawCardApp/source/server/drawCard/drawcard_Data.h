@@ -21,10 +21,11 @@ struct drawcard_data
 //稀有度的数据结构
 struct rarepro_data
 {
-    int m_quality;
-    int    m_pro; 
+    size_t m_quality;
+    string m_Lang;
+    size_t m_pro;
 
-    rarepro_data() : m_quality(0),m_pro(0) {}
+    rarepro_data() : m_quality(0),m_Lang(""),m_pro(0) {}
 };
 
 //配置文件路径

@@ -37,6 +37,13 @@ public:
 
     //抽卡，默认是单抽
     vector<drawcard_data> getRandom_drawcard(int cnt = 1);
+
+    string getQualityLangByRareId(size_t rareId){
+        if(rareId < 1 || rareId > 5)
+            return "";
+        return m_LangId_Pool[rareId];
+    };
+
 private:
     //静态指针
     static cardpool* m_cardpool_ptr;
@@ -49,6 +56,8 @@ private:
 
     //不同稀有度所对应的概率
     vector<int> m_RareProPool;
+
+    map<size_t,string> m_LangId_Pool;
 
     cardpool();
 

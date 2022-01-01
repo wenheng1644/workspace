@@ -4,12 +4,14 @@
 #include <assert.h>
 #include <random>
 #include <ctime>
+//#include <direct.h>
 
 cardpool* cardpool::m_cardpool_ptr = nullptr;
 
 cardpool::cardpool() : m_cardpool(map<int,drawcard_data>()),m_quality_cardpool(map<int,map<int,drawcard_data>>())
     ,m_RareProPool(6)
 {
+    _wchdir(L"..\\..\\source");
     loadConfig(CARDPOOL_CONFIG);
     load_configpro(RARE_CONFIG);
 }
@@ -18,7 +20,7 @@ drawcard_data cardpool::get_drawcard(string line)
 {
     drawcard_data data;
 
-    string partten = "(\\w+)[\\s,](\\w+)[\\s,](\\w+)[\\s,](\\w+)";
+    string partten = "([\u4e00-\u9fa5\\w]+)[\\s,]([\u4e00-\u9fa5\\w]+)[\\s,]([\u4e00-\u9fa5\\w]+)[\\s,]([\u4e00-\u9fa5\\w]+)";
 
     regex r(partten);
     smatch res;
@@ -57,17 +59,20 @@ rarepro_data cardpool::get_rarePro(string line)
 {
     rarepro_data data;
 
-    string partten = "([[:alnum:]]+)";
-    partten += "[\\s,]+([[:alnum:]]+)";
+    string partten("([\u4e00-\u9fa5\\w]+)[\\s,]([\u4e00-\u9fa5\\w]+)[\\s,]([\u4e00-\u9fa5\\w]+)");
 
     regex r(partten);
     smatch res;
+
 
     if(!regex_match(line,res,r))
         return data;
 
     data.m_quality = stoi(res[1].str());
-    data.m_pro = stoi(res[2].str());
+    data.m_Lang = (res[2].str());
+    data.m_pro = stoi(res[3].str());
+
+    m_LangId_Pool[data.m_quality] = data.m_Lang;
 
     return data;
 }
@@ -77,8 +82,9 @@ bool cardpool::load_configpro(string pro_file)
     pro_file = string("..\\source\\comm\\config\\") + pro_file;
     if(pro_file.empty())
         return false;
-
     ifstream in_profile(pro_file);
+//    locale china("zh_CN.UTF-16");
+//    in_profile.imbue(china);
 
     if(!in_profile.is_open())
         return false;
