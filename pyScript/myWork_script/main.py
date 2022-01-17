@@ -7,7 +7,7 @@ import database
 import excelOper
 import config
 
-if __name__ == "__name__":
+if __name__ == '__main__':
     Conf = config.configs
     
     dataBaseInfoConf    = "dataBaseInfo"
@@ -18,7 +18,7 @@ if __name__ == "__name__":
     
     filename            = Conf["fileInfo"]["fileName"]
     
-    datas = database.loadDataBaseInfo(host,user,password,db,"")
+    datas = database.loadDataBaseInfo(host,user,password,db,"phone")
     
     excelOper.writeExcel(datas,filename)
     
