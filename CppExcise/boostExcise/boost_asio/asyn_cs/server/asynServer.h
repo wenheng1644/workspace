@@ -5,10 +5,10 @@
 #include <iostream>
 
 #include "boost/asio.hpp"
-#include "boost/bind.hpp"
+#include "boost/bind/bind.hpp"
 #include "boost/smart_ptr.hpp"
 using namespace boost::asio;
-
+using namespace boost::placeholders;
 class asynServer
 {
 public:

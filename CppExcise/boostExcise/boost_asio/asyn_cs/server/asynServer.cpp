@@ -5,7 +5,7 @@ void asynServer::start()
     boost::shared_ptr<ip::tcp::socket> psocket(new ip::tcp::socket(m_ioserver));
     
 
-    m_acceptor.async_accept(*psocket ,boost::bind(&asynServer::connect_callback, this, psocket, boost::placeholders::_1));
+    m_acceptor.async_accept(*psocket ,boost::bind(&asynServer::connect_callback, this, psocket, _1));
 
 }
 
@@ -19,7 +19,7 @@ void asynServer::connect_callback(boost::shared_ptr<ip::tcp::socket> psocket, bo
 
     boost::shared_ptr<std::string> pstr(new std::string("connect server successful"));
 
-    psocket->async_write_some(buffer(*pstr), boost::bind(&asynServer::sendMsg_callback, this, boost::placeholders::_1, boost::placeholders::_2));
+    psocket->async_write_some(buffer(*pstr), boost::bind(&asynServer::sendMsg_callback, this, _1, _2));
     std::cout << "async_write_some() done..." << std::endl;
 
 }
