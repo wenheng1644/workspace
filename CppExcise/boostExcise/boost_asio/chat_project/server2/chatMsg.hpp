@@ -24,9 +24,9 @@ public:
         //先把内存初始化为0
         memset(m_data, 0, LEN_IP + LEN_NAME + LEN_MAXBODY);
 
-        memcpy_s(m_data, LEN_IP, ip, strlen(ip));
-        memcpy_s(m_data + LEN_IP, LEN_NAME, name, strlen(name));
-        memcpy_s(m_data + LEN_IP + LEN_NAME, LEN_MAXBODY, body, strlen(body));
+        memcpy(m_data, ip, strlen(ip));
+        memcpy(m_data + LEN_IP, name, strlen(name));
+        memcpy(m_data + LEN_IP + LEN_NAME, body, strlen(body));
 
         m_Lenbody = strlen(body);
     }
