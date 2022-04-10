@@ -28,7 +28,7 @@ private:
 
     void handler_connect(const error_code_type& ec, socket_ptr& p_socket);
     void handler_write(error_code_type ec, socket_ptr& p_socket);
-    void handler_read(error_code_type ec, size_t bytes);
+    void handler_read(error_code_type ec, size_t bytes, socket_ptr& p);
 };
 
 
