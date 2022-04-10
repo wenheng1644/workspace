@@ -5,6 +5,7 @@
 #include "server.h"
 
 #include <iostream>
+#include <thread>
 void server::run()
 {
     socket_ptr p_socket(new ip::tcp::socket(m_ioserver));
@@ -43,13 +44,20 @@ void server::handler_write(error_code_type ec, socket_ptr& p_socket)
          return;
     }
 
-    string send_buf;
-    while(getline(cin, send_buf) && send_buf != "q")
-    {
-        cout << "server msg: " << send_buf << endl;
+    auto p = [p_socket](){
+        string send_buf;
+        while(getline(cin, send_buf) && send_buf != "q")
+        {
+            cout << "server msg: " << send_buf << endl;
 
-        p_socket->send(buffer(send_buf));
-    }
+            p_socket->send(buffer(send_buf));
+        }
+    };
+
+    thread t1(p);
+
+    t1.detach();
+
 
 }
 
