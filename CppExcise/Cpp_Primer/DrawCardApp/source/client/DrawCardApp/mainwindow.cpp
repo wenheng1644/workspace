@@ -3,10 +3,12 @@
 #include <QString>
 #include <QIcon>
 #include <QDir>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow),m_titleName("抽卡模拟器"),m_signlePushName("单抽"),m_tenPushName("十连抽"),m_helpIcon("帮助"),m_draw()
+    , m_isLog(false)
 {
     ui->setupUi(this);
     ui->u_title->setText(QString(m_titleName.data()));
@@ -23,6 +25,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->menubar->adjustSize();
     ui->menu->addAction(ui->action_clear);
+    ui->menu->addAction(ui->action_log);
+
     ui->menubar->addSeparator();
     ui->menubar->addAction(ui->action_help);
 }
@@ -35,13 +39,13 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_u_signlePushButton_clicked()
 {
-    vector<drawcard_data> res = m_draw.singleGet();
+    vector<drawcard_data> res = m_draw.singleGet(m_isLog);
     writeDrawDataToEditor(res);
 }
 
 void MainWindow::on_u_tenPushButton_clicked()
 {
-    vector<drawcard_data> res = m_draw.tenGet();
+    vector<drawcard_data> res = m_draw.tenGet(m_isLog);
     writeDrawDataToEditor(res);
 }
 
@@ -61,5 +65,10 @@ void MainWindow::on_action_clear_triggered()
 
 void MainWindow::on_u_helpPushButton_clicked()
 {
+    QMessageBox::information(this,"帮助","这是一个抽卡模拟器\n允许单抽或十连");
+}
 
+void MainWindow::on_action_log_triggered(bool checked)
+{
+    m_isLog = checked;
 }

@@ -70,6 +70,12 @@ void server::handler_read(error_code_type ec, size_t bytes, socket_ptr& p_socket
         return;
     }
 
+    if(p_socket->available() == 0)
+    {
+        cout << "available bytes is zero..." << endl;
+        return;
+    }
+
 
     cout << "client msg: " << m_buf << "\t" << bytes << "bytes" << endl;
 

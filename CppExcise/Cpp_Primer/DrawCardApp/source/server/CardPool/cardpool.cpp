@@ -4,6 +4,7 @@
 #include <assert.h>
 #include <random>
 #include <ctime>
+
 //#include <direct.h>
 
 cardpool* cardpool::m_cardpool_ptr = nullptr;
@@ -218,7 +219,6 @@ vector<drawcard_data> cardpool::getRandom_drawcard(int cnt)
         res.push_back(data);
 
     }
-
     return res;
 
 }

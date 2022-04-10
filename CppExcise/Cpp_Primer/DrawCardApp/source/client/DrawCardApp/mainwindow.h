@@ -29,6 +29,8 @@ private slots:
 
     void on_u_helpPushButton_clicked();
 
+    void on_action_log_triggered(bool checked);
+
 private:
     Ui::MainWindow *ui;
 
@@ -38,6 +40,8 @@ private:
     string m_helpIcon;
 
     draw m_draw;
+
+    bool m_isLog;
 
 
     //将数据写入到编辑显示器中
