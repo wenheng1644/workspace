@@ -30,7 +30,7 @@ void server::handler_connect(const boost::system::error_code& ec, socket_ptr& p_
     msg += p_socket->local_endpoint().address().to_string();
     p_socket->async_write_some(buffer(msg), boost::bind(&server::handler_write, this, boost::placeholders::_1, p_socket));
 
-    p_socket->async_read_some(buffer(m_buf), boost::bind(&server::handler_read, this, boost::placeholders::_1, placeholders::bytes_transferred));
+    p_socket->async_read_some(buffer(m_buf), boost::bind(&server::handler_read, this, boost::placeholders::_1, placeholders::bytes_transferred, p_socket));
 
     run();
 }
@@ -61,7 +61,7 @@ void server::handler_write(error_code_type ec, socket_ptr& p_socket)
 
 }
 
-void server::handler_read(error_code_type ec, size_t bytes)
+void server::handler_read(error_code_type ec, size_t bytes, socket_ptr& p_socket)
 {
     using namespace std;
     if(ec)
@@ -72,4 +72,7 @@ void server::handler_read(error_code_type ec, size_t bytes)
 
 
     cout << "client msg: " << m_buf << "\t" << bytes << "bytes" << endl;
+
+    p_socket->async_read_some(buffer(m_buf), boost::bind(&server::handler_read, this, boost::placeholders::_1, boost::asio::placeholders::bytes_transferred, p_socket));
+
 }
