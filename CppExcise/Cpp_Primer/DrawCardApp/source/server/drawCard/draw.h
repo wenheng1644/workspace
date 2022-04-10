@@ -18,10 +18,10 @@ public:
     ~draw() {}
 
     //单抽
-    vector<drawcard_data> singleGet();
+    vector<drawcard_data> singleGet(bool isLog = false);
 
     //十连抽
-    vector<drawcard_data> tenGet();
+    vector<drawcard_data> tenGet(bool isLog = false);
 
     //显示卡池信息
     void showCardPoolInfos(int choice = 0);

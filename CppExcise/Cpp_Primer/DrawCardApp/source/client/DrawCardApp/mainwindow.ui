@@ -223,6 +223,14 @@ font: 24pt &quot;Comic Sans MS&quot;;</string>
     <string>Ctrl+H</string>
    </property>
   </action>
+  <action name="action_log">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>日志记录</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

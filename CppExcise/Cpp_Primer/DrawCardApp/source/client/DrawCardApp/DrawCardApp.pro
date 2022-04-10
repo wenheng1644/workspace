@@ -20,6 +20,7 @@ INCLUDEPATH += D:\MyGitHub\workspace\CppExcise\Cpp_Primer\DrawCardApp\source\
 SOURCES += \
     ../../server/CardPool/cardpool.cpp \
     ../../server/drawCard/draw.cpp \
+    ../../server/myLog/mylog.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -27,6 +28,7 @@ HEADERS += \
     ../../server/CardPool/cardpool.h \
     ../../server/drawCard/draw.h \
     ../../server/drawCard/drawcard_Data.h \
+    ../../server/myLog/mylog.h \
     mainwindow.h
 
 FORMS += \
@@ -40,6 +42,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     ../../comm/config/drawCardInfo.csv \
     ../../comm/config/rare_quality_pro.csv
+
 
 #RESOURCES += \
 #    picture_src.qrc

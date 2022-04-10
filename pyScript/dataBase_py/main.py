@@ -13,8 +13,10 @@ def print_hi(name):
     # database.queryDb("localhost","root","xwz111598","myinfo")
     # excl_myoper.read_excelTable("./src/example.xlsx",0,0,True)
     # readCensusExcel.test_readProject("./src/censuspopdata.xlsx")
-    write_excel.writeToExcel("./src/write1.xlsx")
-    write_excel.project_write()
+    # write_excel.writeToExcel("./src/write1.xlsx")
+    # write_excel.project_write()
+
+    write_excel.excise_excel("./src/lover.xlsx")
 
 # 按间距中的绿色按钮以运行脚本。
 if __name__ == '__main__':

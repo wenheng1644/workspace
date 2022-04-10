@@ -1,5 +1,5 @@
 //
-// Created by 文恒 on 2021/12/26.
+// Created by ??? on 2021/12/26.
 //
 #include <iostream>
 #include <fstream>
@@ -23,7 +23,7 @@ int main(void)
 
     int total_getCnt = 0;
     int getTimes = 0;
-    while(getTimes < 50)
+    while(getTimes < 25)
     {
         try {
             vector<drawcard_data> res = drawObj.tenGet();
@@ -33,12 +33,12 @@ int main(void)
 
             for(auto& e : res)
             {
-                cout << "输出: ";
+                cout << "???: ";
 
                 cout << "id:\t" << e.m_id << "\t";
-                cout << "名字:\t" << e.m_name << "\t";
-                cout << "稀有度:\t" << e.m_quality << "\t";
-                cout << "概率:\t" << e.m_pro << endl;
+                cout << "????:\t" << e.m_name << "\t";
+                cout << "??卸?:\t" << e.m_quality << "\t";
+                cout << "????:\t" << e.m_pro << endl;
                 quality_count[e.m_quality]++;
 
 
@@ -51,11 +51,12 @@ int main(void)
         }
     }
 
-    cout << "十连抽卡次数:\t" << getTimes << "\t总抽卡次数:\t" << total_getCnt << endl;
+    cardpool* cardPool_ptr = cardpool::GetCardPool();
+    cout << "?????????:\t" << getTimes << "\t???????:\t" << total_getCnt << endl;
     for(int i = 1;i < quality_count.size();i++)
     {
         float precise = (float)quality_count[i]/total_getCnt * 100;
-        cout << "稀有度:\t" << i << "\t次数:\t" << quality_count[i] << "\t抽中概率占比:\t" << precise << "%" ;
+        cout << "??卸?:\t" << cardPool_ptr->getQualityLangByRareId(i) << "\t????:\t" << quality_count[i] << "\t???懈??????:\t" << precise << "%" ;
         cout << endl;
     }
 
@@ -63,7 +64,7 @@ int main(void)
     size_t cost_times = game_money / 12000;
     size_t total_cost = cost_times * 648;
 
-    cout << "买648礼包次数:\t" << cost_times << "\t花费人民币:\t" << total_cost << endl;
+    cout << "鑺辫垂648:\t" << cost_times << "\t??????????:\t" << total_cost << endl;
 
 
 

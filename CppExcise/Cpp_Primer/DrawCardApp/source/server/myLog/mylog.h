@@ -9,11 +9,11 @@
 #include "fstream"
 #include "vector"
 
-#include "drawcard_Data.h"
+#include "../drawCard/drawcard_Data.h"
 
 class mylog {
 public:
-    mylog* getSingleton()
+    static mylog* getSingleton()
     {
         if(!s_ptr)
             s_ptr = new mylog;
@@ -27,11 +27,12 @@ public:
 
 private:
     static mylog* s_ptr;
-    std::string m_filename;
 
-
-    mylog();
+    mylog() {}
     std::string getTimeFile();
+    std::string getLogFile(); //确保生成日志文件路径正确
+
+    std::string getDrawDateInfo(int times = 1); //获取抽卡日期等信息
 
 };
 
