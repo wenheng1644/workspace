@@ -5,7 +5,7 @@
 #define MAX_MSG 512     //存储消息数量上限
 
 #include "boost/asio.hpp"
-#include "boost\shared_ptr.hpp"
+#include "boost/shared_ptr.hpp"
 #include <queue>
 #include <set>
 
