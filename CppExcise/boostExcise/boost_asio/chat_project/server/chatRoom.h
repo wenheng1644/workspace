@@ -10,14 +10,21 @@
 #include <set>
 
 #include "chatMsg.h"
-#include "chatSession.h"
 
 
 using namespace boost::asio;
 
+class chatParticipant
+{
+public:
+    virtual ~chatParticipant() {}
+
+    virtual void deliver(chatMsg& msg) = 0;
+};
+
 typedef boost::shared_ptr<chatParticipant> participant_ptr;
 
-using chatMsg_queue = std::queue<chatMsg>; //定义消息队列类型别名
+using chatMsg_queue = std::deque<chatMsg>; //定义消息队列类型别名
 using chatSession_queue = std::set<participant_ptr>; //定义用户队列类型别名
 class chatRoom
 {
@@ -25,8 +32,8 @@ private:
     chatMsg_queue m_chatMsgs;
     chatSession_queue m_sessions;
 public:
-    bool join(participant_ptr particiant);
-    bool leave(participant_ptr particiant);
+    void join(participant_ptr particiant);
+    void leave(participant_ptr particiant);
 
     void deliver(chatMsg& msg);
 };
