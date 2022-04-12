@@ -24,7 +24,6 @@ public:
 
 typedef boost::shared_ptr<chatParticipant> participant_ptr;
 
-using chatMsg_queue = std::deque<chatMsg>; //定义消息队列类型别名
 using chatSession_queue = std::set<participant_ptr>; //定义用户队列类型别名
 class chatRoom
 {

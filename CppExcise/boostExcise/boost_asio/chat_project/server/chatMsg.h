@@ -12,6 +12,7 @@
 
 #include "stdlib.h"
 #include "cstring"
+#include "queue"
 
 #include "boost/asio.hpp"
 #include "boost/shared_ptr.hpp"
@@ -19,6 +20,8 @@
 using namespace boost::asio;
 
 typedef boost::system::error_code error_code_type;
+
+
 
 class chatMsg
 {
@@ -77,4 +80,5 @@ public:
     }
 };
 
+using chatMsg_queue = std::deque<chatMsg>; //定义消息队列类型别名
 #endif
