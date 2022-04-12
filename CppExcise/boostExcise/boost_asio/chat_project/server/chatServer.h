@@ -21,8 +21,8 @@ private:
 
     void handler_accept_server(chatSessionPtr session_ptr, boost::system::error_code ec);
 public:
-    chatServer(io_service& ioserver, ip::tcp::endpoint& ed) : m_ioserver(ioserver), m_acceptor(ioserver, ed) { handler_accept_server();}
-    ~chatServer();
+    chatServer(io_service& ioserver, ip::tcp::endpoint& ed) : m_ioserver(ioserver), m_acceptor(ioserver, ed) {}
+    ~chatServer() {}
 
     void accept_server();
 
