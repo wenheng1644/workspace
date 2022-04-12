@@ -1,5 +1,5 @@
 #include "chatRoom.h"
-#include "boost\bind\bind.hpp"
+#include "boost/bind/bind.hpp"
 
 void chatRoom::join(participant_ptr particiant)
 {
