@@ -4,11 +4,13 @@
 #include "boost/asio.hpp"
 
 #include "chatServer.h"
-
+#include "dateTimeMgr.h"
 using namespace boost::asio;
 
 int main()
 {
+    system("chcp 65001");
+    dateTimeMgr::getDateTime();
     io_service ioserver;
     ip::tcp::endpoint ed(ip::tcp::v4(), 8080);
 

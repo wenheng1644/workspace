@@ -3,6 +3,7 @@
 
 #define BODY_LEN 256
 #define HEADER_LEN 10
+#define USERNAME_LEN 20
 
 /**
  * 消息结构：
@@ -31,6 +32,14 @@ private:
 public:
     chatMsg(){}
     ~chatMsg() {}
+
+     explicit chatMsg(std::string& str)
+    {
+        memset(m_data, 0, HEADER_LEN + BODY_LEN);
+        m_bodyLen = strlen(str.c_str());
+        encode();
+        memcpy(m_data + HEADER_LEN, str.c_str(), m_bodyLen);
+    }
 
     size_t bodyLen(){
         return m_bodyLen;
@@ -78,6 +87,8 @@ public:
         }
         return true;
     }
+
+
 };
 
 using chatMsg_queue = std::deque<chatMsg>; //定义消息队列类型别名

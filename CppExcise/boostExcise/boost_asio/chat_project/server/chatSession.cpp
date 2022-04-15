@@ -2,10 +2,22 @@
 #include "boost/bind/bind.hpp"
 
 #include <iostream>
+#include <string>
 
+#include "dateTimeMgr.h"
+
+using namespace boost::asio;
 void chatSession::start()
 {
+    std::string dateTime = dateTimeMgr::getDateTime();
+    std::string msg("server connect successfully~~~\t开服时间: ");
+    msg += dateTime;
+
+    chatMsg serverMsg(msg);
+
+    deliver(serverMsg);
     m_pRoom.join(shared_from_this());
+
     memset(m_readingChatMsg.getData(), 0, HEADER_LEN + BODY_LEN);
     std::cout << "[connect] remote ip: " << m_sock.remote_endpoint().address().to_string() << std::endl;
     boost::asio::async_read(m_sock, buffer(m_readingChatMsg.getData(), HEADER_LEN), boost::bind(&chatSession::handler_readhead, shared_from_this(), boost::asio::placeholders::error));
@@ -16,6 +28,10 @@ void chatSession::handler_readhead(const error_code_type &ec)
     if(ec)
     {
         std::cerr << "数据读取错误" << std::endl;
+        if(m_sock.available() == 0)
+        {
+            std::cerr << "客户端已断开连接" << std::endl;
+        }
         m_pRoom.leave(shared_from_this());
         return;
     }
@@ -39,12 +55,19 @@ void chatSession::handler_readbody(const error_code_type &ec)
         return;
     }
 
-//    std::cout << "" <<"reback client msg: " << m_readingChatMsg.body() << std::endl;
-    printf("[%s]:\t%s\n", m_sock.remote_endpoint().address().to_string().data(), m_readingChatMsg.body());
+    //处理用户名
+    std::string username_str(m_readingChatMsg.body(), USERNAME_LEN);
+    size_t idx = username_str.find_first_of(" ");
+    username_str = username_str.substr(0, idx);
+
+    //处理时间日期
+    std::string curDateTime = dateTimeMgr::getDateTime();
+    printf("[%s (%s   %s)]:\t%s\n", m_sock.remote_endpoint().address().to_string().data(), curDateTime.c_str(), username_str.c_str(), m_readingChatMsg.body() + USERNAME_LEN);
     char msg[BODY_LEN + 1] = "";
     memset(msg, 0, BODY_LEN + 1);
 
-    sprintf(msg,"[%s]:\t%s\n", m_sock.remote_endpoint().address().to_string().data(), m_readingChatMsg.body());
+
+    sprintf(msg,"[%s (%s   %s)]:\t%s\n", m_sock.remote_endpoint().address().to_string().data(), curDateTime.c_str(), username_str.c_str(), m_readingChatMsg.body() + USERNAME_LEN);
     //*******************************************************
     chatMsg newChatMsg;
     memset(newChatMsg.body(), 0, HEADER_LEN + BODY_LEN);
