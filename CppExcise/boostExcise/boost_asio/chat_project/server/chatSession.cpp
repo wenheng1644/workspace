@@ -10,9 +10,9 @@ using namespace boost::asio;
 void chatSession::start()
 {
     std::string dateTime = dateTimeMgr::getDateTime();
-    std::string msg("server connect successfully~~~\t server open time: ");
+    std::string msg("server connect successfully~~~\nserver open time: ");
     msg += dateTime;
-
+    msg += "\n";
     chatMsg serverMsg(msg);
 
     deliver(serverMsg);

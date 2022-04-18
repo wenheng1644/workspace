@@ -30,7 +30,9 @@ private:
     char m_data[HEADER_LEN + BODY_LEN];
     size_t m_bodyLen;
 public:
-    chatMsg(){}
+    chatMsg(){
+        memset(m_data, 0, HEADER_LEN + BODY_LEN);
+    }
     ~chatMsg() {}
 
      explicit chatMsg(std::string& str)
