@@ -30,7 +30,7 @@ void chatSession::handler_readhead(const error_code_type &ec)
         std::cerr << "数据读取错误" << std::endl;
         if(m_sock.available() == 0)
         {
-            std::cerr << "ip " << m_sock.remote_endpoint().address().to_string() << ": 客户端已断开连接" << std::endl;
+            std::cerr <<  "客户端已断开连接" << std::endl;
         }
         m_pRoom.leave(shared_from_this());
         return;
