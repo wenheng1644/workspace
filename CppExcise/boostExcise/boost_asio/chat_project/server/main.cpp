@@ -16,6 +16,7 @@ int main()
 
     chatServer server(ioserver, ed);
 
+    std::cout << "服务器开启监听:\n" << std::endl;
     server.accept_server();
 
     ioserver.run();
