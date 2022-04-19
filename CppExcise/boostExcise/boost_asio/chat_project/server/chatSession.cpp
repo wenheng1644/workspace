@@ -10,7 +10,7 @@ using namespace boost::asio;
 void chatSession::start()
 {
     std::string dateTime = dateTimeMgr::getDateTime();
-    std::string msg("server connect successfully~~~\nserver open time: ");
+    std::string msg("服务器连接成功~~~\n开服时间: ");
     msg += dateTime;
     msg += "\n";
     chatMsg serverMsg(msg);
@@ -30,7 +30,7 @@ void chatSession::handler_readhead(const error_code_type &ec)
         std::cerr << "数据读取错误" << std::endl;
         if(m_sock.available() == 0)
         {
-            std::cerr << "客户端已断开连接" << std::endl;
+            std::cerr << "ip " << m_sock.remote_endpoint().address().to_string() << ": 客户端已断开连接" << std::endl;
         }
         m_pRoom.leave(shared_from_this());
         return;
@@ -59,7 +59,7 @@ void chatSession::handler_readbody(const error_code_type &ec)
     std::string username_str(m_readingChatMsg.body(), USERNAME_LEN);
     size_t idx = username_str.find_first_of(" ");
     username_str = username_str.substr(0, idx);
-
+    if(username_str.empty() || strlen(username_str.c_str()) == 0) return;
     //处理时间日期
     std::string curDateTime = dateTimeMgr::getDateTime();
     printf("[%s (%s   %s)]:\t%s\n", m_sock.remote_endpoint().address().to_string().data(), curDateTime.c_str(), username_str.c_str(), m_readingChatMsg.body() + USERNAME_LEN);
