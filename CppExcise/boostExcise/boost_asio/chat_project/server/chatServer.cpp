@@ -3,6 +3,7 @@
 #include "boost/bind/bind.hpp"
 
 #include "thread"
+#include "iostream"
 
 void chatServer::accept_server()
 {
@@ -23,7 +24,12 @@ void chatServer::handler_accept_server(chatSessionPtr session_ptr, boost::system
     if(!ec)
     {
 //        std::cout << "当前线程id: " << std::this_thread::get_id() << std::endl
-        session_ptr->start();
+        std::thread newClient([=](){
+            session_ptr->start();
+            std::cout << "开启连接线程: " << std::this_thread::get_id() << std::endl;
+        });
+
+        newClient.detach();
     }
     accept_server();
 }
