@@ -8,14 +8,12 @@
 void chatServer::accept_server()
 {
 
-    auto p = [this](){
-        chatSessionPtr session_ptr(new chatSession(m_ioserver, m_room));
-        m_acceptor.async_accept(session_ptr->sock(), boost::bind(&chatServer::handler_accept_server, this, session_ptr, boost::asio::placeholders::error));
-    };
+    chatSessionPtr session_ptr(new chatSession(m_ioserver, m_room));
+    m_acceptor.async_accept(session_ptr->sock(), boost::bind(&chatServer::handler_accept_server, this, session_ptr, boost::asio::placeholders::error));
 
-    std::thread client_connect(p);
+//    std::thread client_connect(p);
 
-    client_connect.join();
+//    client_connect.join();
 }
 
 //递归运行
