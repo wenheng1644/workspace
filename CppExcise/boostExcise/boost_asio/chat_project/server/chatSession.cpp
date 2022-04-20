@@ -32,6 +32,13 @@ void chatSession::start()
             return;
         }
 
+        if(strlen(readHeadMsg.body()) == 0)
+        {
+            std::cerr << "非法数据: " << m_sock.remote_endpoint().address().to_string() << std::endl;
+            return;
+        }
+
+
         char connectedMsg [100] = {};
 
         sprintf(connectedMsg, "[connected  (time: %s)\t(ip: %s)\t(name: %s)]",
