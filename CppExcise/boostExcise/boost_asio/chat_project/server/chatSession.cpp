@@ -57,7 +57,7 @@ void chatSession::handler_readhead(const error_code_type &ec)
         if(m_sock.available() == 0)
         {
             char tips[100] = {};
-            std::sprintf(tips, "[ip: %s\tname: %s 客户端已断联]", m_ip.c_str(), m_name.c_str());
+            std::sprintf(tips, "[time: %s\tip: %s\tname: %s 客户端已断联]", dateTimeMgr::getDateTime().c_str(), m_ip.c_str(), m_name.c_str());
             std::cerr << tips << std::endl;
         }
         m_pRoom.leave(shared_from_this());
