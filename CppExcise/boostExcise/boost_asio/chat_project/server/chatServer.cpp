@@ -23,6 +23,12 @@ void chatServer::handler_accept_server(chatSessionPtr session_ptr, boost::system
     {
 //        std::cout << "当前线程id: " << std::this_thread::get_id() << std::endl
         std::thread newClient([=](){
+            std::string msg("服务器连接成功~~~\n开服时间: ");
+            msg += m_openServerTime;
+            msg += "\n";
+            chatMsg serverMsg(msg);
+
+            session_ptr->deliver(serverMsg);
             session_ptr->start();
             std::cout << "开启连接线程: " << std::this_thread::get_id() << std::endl;
         });

@@ -9,18 +9,42 @@
 using namespace boost::asio;
 void chatSession::start()
 {
-    std::string dateTime = dateTimeMgr::getDateTime();
-    std::string msg("服务器连接成功~~~\n开服时间: ");
-    msg += dateTime;
-    msg += "\n";
-    chatMsg serverMsg(msg);
+    auto readHeadMsg_lam = [this]()
+    {
+        m_pRoom.join(shared_from_this());
+        chatMsg readHeadMsg;
 
-    deliver(serverMsg);
-    m_pRoom.join(shared_from_this());
+        boost::system::error_code headMsg_ec;
+        boost::asio::read(m_sock, buffer(readHeadMsg.getData(), HEADER_LEN), headMsg_ec);
 
+        if(headMsg_ec || !readHeadMsg.decode())
+        {
+            std::cerr << m_sock.remote_endpoint().address().to_string() << ": " << "头消息读取失败..." << std::endl;
+            return;
+        }
+
+        boost::system::error_code headMsgUserName_ec;
+        boost::asio::read(m_sock, buffer(readHeadMsg.body(), readHeadMsg.bodyLen()), headMsgUserName_ec);
+
+        if(headMsgUserName_ec)
+        {
+            std::cerr << m_sock.remote_endpoint().address().to_string() << "读取头消息体失败..." << std::endl;
+            return;
+        }
+
+        char connectedMsg [100] = {};
+
+        sprintf(connectedMsg, "[connected  (time: %s)\t(ip: %s)\t(name: %s)]",
+                dateTimeMgr::getDateTime().c_str(), m_sock.remote_endpoint().address().to_string().c_str(), readHeadMsg.body());
+
+        std::cout << connectedMsg << std::endl;
+    };
+
+    std::thread t1(readHeadMsg_lam);
+    t1.join();
+
+//    std::cout << "[connect] remote ip: " << m_sock.remote_endpoint().address().to_string() << std::endl;
     memset(m_readingChatMsg.getData(), 0, HEADER_LEN + BODY_LEN);
-    std::cout << "[connect] remote ip: " << m_sock.remote_endpoint().address().to_string() << std::endl;
-
     m_ip = m_sock.remote_endpoint().address().to_string();
     boost::asio::async_read(m_sock, buffer(m_readingChatMsg.getData(), HEADER_LEN), boost::bind(&chatSession::handler_readhead, shared_from_this(), boost::asio::placeholders::error));
 }

@@ -19,12 +19,20 @@ private:
     chatRoom m_room;
     ip::tcp::acceptor m_acceptor;
 
+    std::string m_openServerTime;
+
     void handler_accept_server(chatSessionPtr session_ptr, boost::system::error_code ec);
 public:
     chatServer(io_service& ioserver, ip::tcp::endpoint& ed) : m_ioserver(ioserver), m_acceptor(ioserver, ed) {}
     ~chatServer() {}
 
     void accept_server();
+
+    void setOpenServerTime(const std::string serverTime)
+    {
+        m_openServerTime = serverTime;
+    }
+
 
 };
 
