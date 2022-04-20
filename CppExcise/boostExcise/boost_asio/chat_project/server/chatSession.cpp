@@ -44,6 +44,7 @@ void chatSession::start()
         sprintf(connectedMsg, "[connected  (time: %s)\t(ip: %s)\t(name: %s)]",
                 dateTimeMgr::getDateTime().c_str(), m_sock.remote_endpoint().address().to_string().c_str(), readHeadMsg.body());
 
+        m_name = std::string (readHeadMsg.body());
         std::cout << connectedMsg << std::endl;
     };
 
@@ -96,7 +97,11 @@ void chatSession::handler_readbody(const error_code_type &ec)
     username_str = username_str.substr(0, idx);
     if(username_str.empty() || strlen(username_str.c_str()) == 0) return;
 
-    m_name = username_str;
+//    m_name = username_str;
+    if(username_str != m_name)
+    {
+        std::cerr << "名字校对错误: " << username_str << "\t" << m_name << std::endl;
+    }
 
     //处理时间日期
     std::string curDateTime = dateTimeMgr::getDateTime();
