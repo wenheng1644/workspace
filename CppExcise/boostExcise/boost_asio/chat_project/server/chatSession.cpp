@@ -10,8 +10,6 @@
 using namespace boost::asio;
 void chatSession::start()
 {
-    boost::format fmt("%s + %s");
-    fmt % "1" %"2";
     auto readHeadMsg_lam = [this]()
     {
         m_pRoom.join(shared_from_this());
