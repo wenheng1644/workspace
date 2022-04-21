@@ -1,5 +1,6 @@
 #include "chatSession.h"
 #include "boost/bind/bind.hpp"
+#include "boost/format.hpp"
 
 #include <iostream>
 #include <string>
@@ -9,6 +10,8 @@
 using namespace boost::asio;
 void chatSession::start()
 {
+    boost::format fmt("%s + %s");
+    fmt % "1" %"2";
     auto readHeadMsg_lam = [this]()
     {
         m_pRoom.join(shared_from_this());
@@ -29,12 +32,14 @@ void chatSession::start()
         if(headMsgUserName_ec)
         {
             std::cerr << m_sock.remote_endpoint().address().to_string() << "读取头消息体失败..." << std::endl;
+            m_pRoom.leave(shared_from_this());
             return;
         }
 
         if(strlen(readHeadMsg.body()) == 0)
         {
             std::cerr << "非法数据: " << m_sock.remote_endpoint().address().to_string() << std::endl;
+            m_pRoom.leave(shared_from_this());
             return;
         }
 
@@ -45,7 +50,11 @@ void chatSession::start()
                 dateTimeMgr::getDateTime().c_str(), m_sock.remote_endpoint().address().to_string().c_str(), readHeadMsg.body());
 
         m_name = std::string (readHeadMsg.body());
+        m_ip = m_sock.remote_endpoint().address().to_string();
         std::cout << connectedMsg << std::endl;
+
+        m_pRoom.showChatPartianct();
+
     };
 
     std::thread t1(readHeadMsg_lam);
