@@ -1,6 +1,6 @@
 #include "chatRoom.h"
 #include "boost/bind/bind.hpp"
-
+#include "boost/format.hpp"
 #include "iostream"
 
 void chatRoom::join(participant_ptr particiant)
@@ -34,4 +34,20 @@ void chatRoom::deliver(chatMsg& msg)
         return;
     m_chatMsgs.push_back(msg);
     std::for_each(m_sessions.begin(), m_sessions.end(), std::bind(&chatParticipant::deliver, std::placeholders::_1, msg));
+}
+
+void chatRoom::showChatPartianct() {
+
+    std::string palceHoders(10, '#');
+    std::cout << "当前在线用户人数: " << m_sessions.size() << std::endl;
+    std::cout << "\n" << palceHoders << " 在线用户 " << palceHoders << std::endl;
+
+    boost::format fmt("[ip: %s\tname: %s]");
+    for(auto c : m_sessions)
+    {
+        std::cout << "\n" << fmt % c->ip() % c->name() << std::endl;
+    }
+
+    std::cout << "\n" << palceHoders << "##########" << palceHoders << std::endl;
+
 }

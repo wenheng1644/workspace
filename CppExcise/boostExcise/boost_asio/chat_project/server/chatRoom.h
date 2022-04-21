@@ -20,6 +20,19 @@ public:
     virtual ~chatParticipant() {}
 
     virtual void deliver(chatMsg& msg) = 0;
+
+    std::string ip()
+    {
+        return m_ip;
+    }
+
+    std::string name()
+    {
+        return m_name;
+    }
+protected:
+    std::string m_ip;
+    std::string m_name;
 };
 
 typedef boost::shared_ptr<chatParticipant> participant_ptr;
@@ -35,6 +48,8 @@ public:
     void leave(participant_ptr particiant);
 
     void deliver(chatMsg& msg);
+
+    void showChatPartianct();
 };
 
 

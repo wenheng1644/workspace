@@ -23,8 +23,7 @@ private:
     std::deque<chatMsg> m_wirteMsg; //正在写的消息队列
 
     //连接成功即记录数据，以防报错
-    std::string m_ip;
-    std::string m_name;
+
 public:
     chatSession(io_service& ioserver, chatRoom& room) : m_sock(ioserver), m_pRoom(room) {}
     ~chatSession() {}
