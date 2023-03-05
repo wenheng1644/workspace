@@ -1,0 +1,3 @@
+D:/MyGitHub/workspace/CppExcise/Cpp_Primer/BaseExcise/cmake-build-debug/CMakeFiles/BaseExcise.dir
+D:/MyGitHub/workspace/CppExcise/Cpp_Primer/BaseExcise/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/MyGitHub/workspace/CppExcise/Cpp_Primer/BaseExcise/cmake-build-debug/CMakeFiles/rebuild_cache.dir

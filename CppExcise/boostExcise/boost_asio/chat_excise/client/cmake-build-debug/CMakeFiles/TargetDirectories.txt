@@ -1,0 +1,3 @@
+D:/MyGitHub/workspace/CppExcise/boostExcise/boost_asio/chat_excise/client/cmake-build-debug/CMakeFiles/client.dir
+D:/MyGitHub/workspace/CppExcise/boostExcise/boost_asio/chat_excise/client/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/MyGitHub/workspace/CppExcise/boostExcise/boost_asio/chat_excise/client/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,26 @@
+# ninja log v5
+1	431	6871090821542350	ex_viewSelection_autogen/timestamp	95b1ca14f5cd3528
+432	2277	6871090839977172	CMakeFiles/ex_viewSelection.dir/ex_viewSelection_autogen/mocs_compilation.cpp.obj	7d3b73d2783001a5
+439	2293	6871090840146725	CMakeFiles/ex_viewSelection.dir/main.cpp.obj	d0424dcae8913eeb
+436	2303	6871090840236480	CMakeFiles/ex_viewSelection.dir/mainwindow.cpp.obj	6730af8a28f9f2be
+2304	2520	6871090842391814	ex_viewSelection.exe	f5027474951a999b
+5	1651	6871096829902051	CMakeFiles/ex_viewSelection.dir/mainwindow.cpp.obj	6730af8a28f9f2be
+1651	1854	6871096831904839	ex_viewSelection.exe	f5027474951a999b
+6	1827	6871098031185656	CMakeFiles/ex_viewSelection.dir/mainwindow.cpp.obj	6730af8a28f9f2be
+1827	2087	6871098033750318	ex_viewSelection.exe	f5027474951a999b
+6	399	6871108024727775	ex_viewSelection_autogen/timestamp	95b1ca14f5cd3528
+399	2462	6871108045351496	CMakeFiles/ex_viewSelection.dir/ex_viewSelection_autogen/mocs_compilation.cpp.obj	7d3b73d2783001a5
+402	2500	6871108045730497	CMakeFiles/ex_viewSelection.dir/main.cpp.obj	d0424dcae8913eeb
+6	2145	6871108131341208	CMakeFiles/ex_viewSelection.dir/mainwindow.cpp.obj	6730af8a28f9f2be
+2146	2369	6871108133540002	ex_viewSelection.exe	f5027474951a999b
+5	1908	6871108712965340	CMakeFiles/ex_viewSelection.dir/mainwindow.cpp.obj	6730af8a28f9f2be
+1908	2122	6871108715072296	ex_viewSelection.exe	f5027474951a999b
+5	411	6871119800221638	ex_viewSelection_autogen/timestamp	95b1ca14f5cd3528
+415	2310	6871119819204184	CMakeFiles/ex_viewSelection.dir/main.cpp.obj	d0424dcae8913eeb
+412	2339	6871119819483726	CMakeFiles/ex_viewSelection.dir/ex_viewSelection_autogen/mocs_compilation.cpp.obj	7d3b73d2783001a5
+419	2394	6871119820042279	CMakeFiles/ex_viewSelection.dir/mainwindow.cpp.obj	6730af8a28f9f2be
+2394	2644	6871119822495560	ex_viewSelection.exe	f5027474951a999b
+5	1854	6871121343411363	CMakeFiles/ex_viewSelection.dir/mainwindow.cpp.obj	6730af8a28f9f2be
+1855	2135	6871121346176819	ex_viewSelection.exe	f5027474951a999b
+5	1786	6871124554046886	CMakeFiles/ex_viewSelection.dir/mainwindow.cpp.obj	6730af8a28f9f2be
+1787	2132	6871124557462940	ex_viewSelection.exe	f5027474951a999b

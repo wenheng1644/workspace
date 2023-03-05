@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ex_user_slot",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ex_user_slot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex_user_slot-Debug-27c721e270787061e32d.json",
+					"name" : "ex_user_slot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex_user_slot_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex_user_slot_autogen-Debug-da85a9ea4255807409d7.json",
+					"name" : "ex_user_slot_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex_user_slot_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex_user_slot_autogen_timestamp_deps-Debug-1d342abad914bd7557fe.json",
+					"name" : "ex_user_slot_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_user_slot/build-ex_user_slot-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+		"source" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_user_slot/ex_user_slot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

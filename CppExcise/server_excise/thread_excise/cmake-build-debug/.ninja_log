@@ -1,0 +1,5 @@
+# ninja log v5
+0	134	6741568634272314	build.ninja	d9d0aa440944254a
+9	1844	6730808822703807	CMakeFiles/thread_excise.dir/main.cpp.obj	57e56f8a8a911047
+1845	2688	6730808831094080	thread_excise.exe	465188f7d891c117
+9	529	6724240723210881	CMakeFiles/thread_excise.dir/task.cpp.obj	d8dd7bef6ed7bc8b

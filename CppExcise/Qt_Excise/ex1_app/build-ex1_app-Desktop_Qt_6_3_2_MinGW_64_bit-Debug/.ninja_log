@@ -1,0 +1,10 @@
+# ninja log v5
+5	62	6865130784285116	ex1_app_autogen/timestamp	bc917696368e36ca
+144	1735	6865129825382942	CMakeFiles/ex1_app.dir/main.cpp.obj	d7115cde7b9c99b9
+63	105	6865130784723938	CMakeFiles/ex1_app.dir/ex1_app_autogen/mocs_compilation.cpp.obj	d3a7d270cb88728b
+371	2084	6865130392719696	CMakeFiles/ex1_app.dir/mainwindow.cpp.obj	9bfa693ce2e5bf10
+2085	2282	6865130394657632	ex1_app.exe	46eee9498f3e285b
+6	64	6865130934320977	ex1_app_autogen/timestamp	bc917696368e36ca
+64	1704	6865130950717109	CMakeFiles/ex1_app.dir/ex1_app_autogen/mocs_compilation.cpp.obj	d3a7d270cb88728b
+68	1778	6865130951465113	CMakeFiles/ex1_app.dir/mainwindow.cpp.obj	9bfa693ce2e5bf10
+1801	1993	6865130953556261	ex1_app.exe	46eee9498f3e285b

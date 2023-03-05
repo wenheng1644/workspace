@@ -1,0 +1,8 @@
+# ninja log v5
+30	3675	6706998335960792	CMakeFiles/server.dir/main.cpp.obj	306983960d7b7594
+24	3993	6706998339175448	CMakeFiles/server.dir/asynServer.cpp.obj	fbf0dc868782e214
+24	1233	6706999942882700	server.exe	acb3b2dd3a6707e7
+9	332	6707059523642010	build.ninja	d9747a9a7e925e6b
+30	6954	6707059593454269	CMakeFiles/server.dir/main.cpp.obj	306983960d7b7594
+37	7358	6707059597293134	CMakeFiles/server.dir/asynServer.cpp.obj	fbf0dc868782e214
+7359	11226	6707059636192693	server.exe	acb3b2dd3a6707e7

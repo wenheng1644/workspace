@@ -1,0 +1,9 @@
+# ninja log v5
+0	21	0	CMakeFiles/clean.additional	cee7e56548ea36fa
+431	2206	6870730743405774	CMakeFiles/ex_model2.dir/mainwindow.cpp.obj	6331eaf843a58f7d
+450	6042	6871586884498711	CMakeFiles/ex_model2.dir/main.cpp.obj	745945362bc126d2
+21	30	0	clean	101d0f6048d5fe99
+454	2241	6871586846529244	CMakeFiles/ex_model2.dir/ex_model2_autogen/mocs_compilation.cpp.obj	ffb8c5442d37dd9c
+1475	1749	6871595184925936	ex_model2.exe	c96d532224fe5ec0
+9	450	6871586828633257	ex_model2_autogen/timestamp	f368ef367889d4b8
+6	1475	6871595182226760	CMakeFiles/ex_model2.dir/stringlistmodel.cpp.obj	b41170c24e0efd5

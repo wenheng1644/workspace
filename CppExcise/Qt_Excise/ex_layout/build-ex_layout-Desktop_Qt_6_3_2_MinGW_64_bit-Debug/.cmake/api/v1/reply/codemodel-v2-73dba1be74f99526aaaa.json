@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ex_layout",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ex_layout::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex_layout-Debug-3bb9a3e841b89c306c25.json",
+					"name" : "ex_layout",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex_layout_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex_layout_autogen-Debug-820a6e392167e03dfea4.json",
+					"name" : "ex_layout_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex_layout_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex_layout_autogen_timestamp_deps-Debug-ac4d9282f5bcecf9018b.json",
+					"name" : "ex_layout_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_layout/build-ex_layout-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+		"source" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_layout/ex_layout"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

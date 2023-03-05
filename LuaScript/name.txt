@@ -1,0 +1,23 @@
+entry{
+    name = "徐伟镇",
+    sex = "male",
+    age = 24
+}
+
+entry{
+    name = "邝慧娴",
+    sex = "female",
+    age = 23
+}
+
+entry{
+    name = "徐紫泳",
+    sex = "female",
+    age = 23
+}
+
+entry{
+    name = "陈泽琪",
+    sex = "female",
+    age = 24,
+}

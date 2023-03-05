@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/main.cpp
+iostream
+D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/iostream
+thread
+D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/thread
+mutex
+D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/mutex
+condition_variable
+D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/condition_variable
+

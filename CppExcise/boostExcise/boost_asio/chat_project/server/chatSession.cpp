@@ -131,7 +131,7 @@ void chatSession::handler_readbody(const error_code_type &ec)
 
     boost::asio::async_read(m_sock, buffer(m_readingChatMsg.getData(), HEADER_LEN),
                             boost::bind(&chatSession::handler_readhead, shared_from_this(), placeholders::error));
-}
+} 
 
 void chatSession::deliver(chatMsg& msg)
 {
@@ -150,7 +150,7 @@ void chatSession::handler_write(const error_code_type &ec)
 {
     if(ec)
     {
-//        std::cerr << "send data error..." << std::endl;
+       std::cerr << "send data error..." << std::endl;
         return;
     }
     m_wirteMsg.pop_front();

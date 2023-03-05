@@ -10,22 +10,43 @@ CONFIG += c++11
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
 
+DEFINES += BOOST_USE_LIB
+#DEFINES += BOOST_ALL_NO_LIB=1
+DEFINES += BOOST_ALL_DYN_LINK=1
+
+LIBS += -lpthread libwsock32 libws2_32
+
+INCLUDEPATH += "C:\\exlib\\boost\\include\\boost-1_78"
+DEPENDPATH += "C:\\exlib\\boost\\lib"
+
 # You can also make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    ../../client/client.cpp \
+    chatroomwidget.cpp \
+    dispatch.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    syn_client.cpp
 
 HEADERS += \
-    mainwindow.h
+    ../../client/client.h \
+    chatroomwidget.h \
+    dispatch.h \
+    mainwindow.h \
+    syn_client.h
 
 FORMS += \
+    chatroomwidget.ui \
     mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    ../pictrue/images.qrc

@@ -1,0 +1,10 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "editor.fontSize": 15,
+    "files.associations": {
+        "*.json": "cpp",
+        "xstring": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    "cmake.configureOnOpen": false
+}

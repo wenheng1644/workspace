@@ -1,0 +1,21 @@
+# ninja log v5
+8	1331	6868918840638482	ex_stdModel_autogen/timestamp	aff521fd87bf23b8
+1336	9000	6868918917299321	CMakeFiles/ex_stdModel.dir/ex_stdModel_autogen/mocs_compilation.cpp.obj	5650732b8109f69e
+1332	9034	6868918917624104	CMakeFiles/ex_stdModel.dir/main.cpp.obj	29aad53c1eef6c0f
+7	5677	6868919671623126	CMakeFiles/ex_stdModel.dir/mainwindow.cpp.obj	1270eda3d595df75
+5678	5953	6868919674381410	ex_stdModel.exe	3061c0720e7223f6
+15	1232	6868926607422770	ex_stdModel_autogen/timestamp	aff521fd87bf23b8
+1245	3552	6868926630602799	CMakeFiles/ex_stdModel.dir/mydelegate.cpp.obj	6c5fe4d2dcfd1aa0
+1236	9676	6868926691817038	CMakeFiles/ex_stdModel.dir/main.cpp.obj	29aad53c1eef6c0f
+1232	9848	6868926693551319	CMakeFiles/ex_stdModel.dir/ex_stdModel_autogen/mocs_compilation.cpp.obj	5650732b8109f69e
+1240	10059	6868926695643100	CMakeFiles/ex_stdModel.dir/mainwindow.cpp.obj	1270eda3d595df75
+10059	10564	6868926700675847	ex_stdModel.exe	e9f10cf1f1a34982
+16	9624	6868928071873815	CMakeFiles/ex_stdModel.dir/mainwindow.cpp.obj	1270eda3d595df75
+9625	10019	6868928075807398	ex_stdModel.exe	e9f10cf1f1a34982
+8	6406	6868953817553479	CMakeFiles/ex_stdModel.dir/mainwindow.cpp.obj	1270eda3d595df75
+6407	6789	6868953821415169	ex_stdModel.exe	e9f10cf1f1a34982
+20	2315	6868954544396840	ex_stdModel_autogen/timestamp	aff521fd87bf23b8
+2323	13715	6868954658328546	CMakeFiles/ex_stdModel.dir/main.cpp.obj	29aad53c1eef6c0f
+2333	13909	6868954660198374	CMakeFiles/ex_stdModel.dir/mainwindow.cpp.obj	1270eda3d595df75
+2315	14072	6868954661863668	CMakeFiles/ex_stdModel.dir/ex_stdModel_autogen/mocs_compilation.cpp.obj	5650732b8109f69e
+14072	14523	6868954666352148	ex_stdModel.exe	e9f10cf1f1a34982

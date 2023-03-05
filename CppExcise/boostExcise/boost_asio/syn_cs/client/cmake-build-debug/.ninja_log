@@ -1,0 +1,13 @@
+# ninja log v5
+23	3609	6706820521036687	CMakeFiles/client.dir/synclient.cpp.obj	a6b7873c9e009eb7
+3610	4247	6706820527417712	client.exe	838e85bb8be3fdd4
+37	8177	6707062022570284	CMakeFiles/client.dir/synclient.cpp.obj	a6b7873c9e009eb7
+8178	10238	6707062043168600	client.exe	838e85bb8be3fdd4
+40	8037	6707079891335889	CMakeFiles/client.dir/synclient.cpp.obj	a6b7873c9e009eb7
+8038	9445	6707079905286484	client.exe	838e85bb8be3fdd4
+41	6191	6707080529342873	CMakeFiles/client.dir/synclient.cpp.obj	a6b7873c9e009eb7
+6192	7340	6707080540829626	client.exe	838e85bb8be3fdd4
+39	5884	6707081989735729	CMakeFiles/client.dir/synclient.cpp.obj	a6b7873c9e009eb7
+5914	7293	6707082003844033	client.exe	838e85bb8be3fdd4
+15	3185	6707392665107198	CMakeFiles/client.dir/synclient.cpp.obj	a6b7873c9e009eb7
+3185	3788	6707392671047597	client.exe	838e85bb8be3fdd4

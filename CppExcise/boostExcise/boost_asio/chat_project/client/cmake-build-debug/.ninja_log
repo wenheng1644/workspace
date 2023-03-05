@@ -1,0 +1,5 @@
+# ninja log v5
+29	3906	6719126547967618	CMakeFiles/client.dir/client.cpp.obj	9185bc3b790a5308
+36	6142	6719126570268809	CMakeFiles/client.dir/main.cpp.obj	eb2b03fb369ffecf
+6142	7812	6719126587032424	client.exe	5abe64249923ed23
+29	603	6717762089219117	CMakeFiles/client.dir/code_convert.cpp.obj	6a574cd78d1a1dd0

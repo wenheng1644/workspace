@@ -1,0 +1,5 @@
+# ninja log v5
+9	150	6699892975478006	build.ninja	cd8652303dfcfb2e
+59	6306	6699892184300793	CMakeFiles/boostExcise.dir/main.cpp.obj	d2673a650dca05ed
+3596	4317	6682598263489710	boostExcise.exe	f1ae8fcef042d985
+29	5191	6699893032843689	CMakeFiles/boostExcise.dir/main.cpp.obj	d2673a650dca05ed

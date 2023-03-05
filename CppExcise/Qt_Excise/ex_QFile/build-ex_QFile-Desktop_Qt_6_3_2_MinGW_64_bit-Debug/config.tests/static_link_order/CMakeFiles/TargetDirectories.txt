@@ -1,0 +1,5 @@
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_QFile/build-ex_QFile-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/config.tests/static_link_order/CMakeFiles/objLib.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_QFile/build-ex_QFile-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/config.tests/static_link_order/CMakeFiles/staticLib.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_QFile/build-ex_QFile-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/config.tests/static_link_order/CMakeFiles/edit_cache.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_QFile/build-ex_QFile-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/config.tests/static_link_order/CMakeFiles/static_link_order_test.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_QFile/build-ex_QFile-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/config.tests/static_link_order/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,16 @@
+# ninja log v5
+0	1864	6864638645408678	CMakeFiles/win_client_chat.dir/main.cpp.obj	a0ad327c274ca27e
+8	1871	6864638645458608	CMakeFiles/win_client_chat.dir/win_client_chat.cpp.obj	ad42fde772d17103
+1871	2070	6864638647441635	win_client_chat.exe	f53ec213b1d08c96
+4	1483	6864645654600661	CMakeFiles/win_client_chat.dir/win_client_chat.cpp.obj	ad42fde772d17103
+1484	1640	6864645656485713	win_client_chat.exe	f53ec213b1d08c96
+2	1178	6864656656514315	CMakeFiles/win_client_chat.dir/win_client_chat.cpp.obj	ad42fde772d17103
+1179	1309	6864656657804964	win_client_chat.exe	f53ec213b1d08c96
+3	1105	6864669022559066	CMakeFiles/win_client_chat.dir/win_client_chat.cpp.obj	ad42fde772d17103
+1136	1267	6864669024161431	win_client_chat.exe	f53ec213b1d08c96
+3	1169	6864681802342641	CMakeFiles/win_client_chat.dir/win_client_chat.cpp.obj	ad42fde772d17103
+1170	1353	6864681804180037	win_client_chat.exe	f53ec213b1d08c96
+3	1196	6864696125892559	CMakeFiles/win_client_chat.dir/win_client_chat.cpp.obj	ad42fde772d17103
+1196	1361	6864696127515258	win_client_chat.exe	f53ec213b1d08c96
+3	1123	6864696759436663	CMakeFiles/win_client_chat.dir/win_client_chat.cpp.obj	ad42fde772d17103
+1123	1243	6864696760602299	win_client_chat.exe	f53ec213b1d08c96

@@ -1,0 +1,12 @@
+# ninja log v5
+1	364	6865524292448332	ex1_moc_autogen/timestamp	4d0e078e6d084787
+369	1688	6865524305676031	CMakeFiles/ex1_moc.dir/main.cpp.obj	7dabc21eca8b4dda
+365	1755	6865524306357778	CMakeFiles/ex1_moc.dir/ex1_moc_autogen/mocs_compilation.cpp.obj	b291a5b8dd00051b
+373	1765	6865524306456689	CMakeFiles/ex1_moc.dir/test_a.cpp.obj	43184241a0b73d46
+1765	1907	6865524307849118	ex1_moc.exe	d010b935c37a4dda
+5	1180	6865524483320649	CMakeFiles/ex1_moc.dir/main.cpp.obj	7dabc21eca8b4dda
+1181	1316	6865524484648174	ex1_moc.exe	d010b935c37a4dda
+6	1214	6865524745941449	CMakeFiles/ex1_moc.dir/main.cpp.obj	7dabc21eca8b4dda
+1215	1353	6865524747289837	ex1_moc.exe	d010b935c37a4dda
+5	1239	6865524949115595	CMakeFiles/ex1_moc.dir/main.cpp.obj	7dabc21eca8b4dda
+1240	1373	6865524950418769	ex1_moc.exe	d010b935c37a4dda

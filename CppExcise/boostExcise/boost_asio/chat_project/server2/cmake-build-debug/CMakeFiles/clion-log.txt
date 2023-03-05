@@ -1,0 +1,5 @@
+"D:\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/JetBrains/CLion 2021.3.2/bin/ninja/win/ninja.exe" -G Ninja D:\MyGitHub\workspace\CppExcise\boostExcise\boost_asio\chat_project\server2
+-- Configuring done
+WARNING: Target "server2" requests linking to directory "C:\exlib\boost\lib".  Targets may link only to libraries.  CMake is dropping the item.
+-- Generating done
+-- Build files have been written to: D:/MyGitHub/workspace/CppExcise/boostExcise/boost_asio/chat_project/server2/cmake-build-debug

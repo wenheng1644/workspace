@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_frame/build-ex_frame-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/ex_frame_autogen",
+	"CMAKE_BINARY_DIR" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_frame/build-ex_frame-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_frame/build-ex_frame-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_frame/ex_frame",
+	"CMAKE_SOURCE_DIR" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_frame/ex_frame",
+	"INCLUDE_DIR" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_frame/build-ex_frame-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/ex_frame_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/MyGitHub/workspace/CppExcise/Qt_Excise/res/images/gensinImpact1.jpg"
+	],
+	"LOCK_FILE" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_frame/build-ex_frame-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/ex_frame_autogen.dir/AutoRcc_img_OUKRDUGFGD_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "img" ],
+	"OUTPUT_CHECKSUM" : "OUKRDUGFGD",
+	"OUTPUT_NAME" : "qrc_img.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/6.3.2/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex_frame/build-ex_frame-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/ex_frame_autogen.dir/AutoRcc_img_OUKRDUGFGD_Used.txt",
+	"SOURCE" : "D:/MyGitHub/workspace/CppExcise/Qt_Excise/res/images/img.qrc",
+	"VERBOSITY" : 0
+}

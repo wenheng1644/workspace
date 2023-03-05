@@ -1,0 +1,4 @@
+# ninja log v5
+0	150	6709641869338492	build.ninja	21db47e87fc3852a
+1	794	6711312403692390	CMakeFiles/chat_project.dir/server/chatMsg.cpp.obj	8e258d38f44d2d9f
+3	652	6711314273844754	CMakeFiles/chat_project.dir/server/chatMsg.cpp.obj	8e258d38f44d2d9f

@@ -1,0 +1,30 @@
+QWidget{
+	background-color:rgb(79, 79, 70);
+    color:blanchedalmond;
+    font: 12pt"新宋体";
+}
+
+QPushButton{
+    min-height: 60px;
+    min-height: 60px;
+    border: 2px groove red;
+    border-radius: 30px;
+    padding: 0px 20px 0px 20px;
+
+}
+
+QPushButton:hover{
+    background-color: rgb(51, 250, 184);
+    color: bisque;
+}
+
+QLineEdit{
+    background-color: aqua;
+    color: black;
+    font: 12pt "仿宋";
+}
+
+QLineEdit#sobj:hover{
+    color:brown;
+    background-color: blueviolet;
+}

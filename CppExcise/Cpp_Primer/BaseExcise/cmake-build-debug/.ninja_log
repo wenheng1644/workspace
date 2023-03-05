@@ -1,0 +1,19 @@
+# ninja log v5
+3	1315	6864241786597002	CMakeFiles/BaseExcise.dir/main.cpp.obj	dff56c6106ba53bf
+1316	1461	6864241788035816	BaseExcise.exe	bcc24d2733141eb
+2	330	6790546776893688	CMakeFiles/BaseExcise.dir/excise1.cpp.obj	e35f37635b87bdee
+13	2058	6853420883686544	CMakeFiles/BaseExcise.dir/myWinSock.cpp.obj	edcfb4f0cfa6c0c2
+8	1187	6864283144592359	CMakeFiles/BaseExcise.dir/win_ChatExcise.cpp.obj	a4108c1708eec254
+7	1183	6864283795725818	CMakeFiles/BaseExcise.dir/win_ChatExcise.cpp.obj	a4108c1708eec254
+3	1393	6864283797800530	CMakeFiles/BaseExcise.dir/main.cpp.obj	dff56c6106ba53bf
+7	1186	6864284418366736	CMakeFiles/BaseExcise.dir/win_ChatExcise.cpp.obj	a4108c1708eec254
+3	1402	6864284420501324	CMakeFiles/BaseExcise.dir/main.cpp.obj	dff56c6106ba53bf
+1402	1549	6864284421942931	BaseExcise.exe	93933138ac40e0e5
+6	1325	6864639303998499	CMakeFiles/BaseExcise.dir/win_ChatExcise.cpp.obj	a4108c1708eec254
+1325	1513	6864639305852320	BaseExcise.exe	93933138ac40e0e5
+3	1342	6864640631168813	CMakeFiles/BaseExcise.dir/win_ChatExcise.cpp.obj	a4108c1708eec254
+1343	1538	6864640633076670	BaseExcise.exe	93933138ac40e0e5
+3	1453	6864646035360016	CMakeFiles/BaseExcise.dir/win_ChatExcise.cpp.obj	a4108c1708eec254
+1453	1656	6864646037357533	BaseExcise.exe	93933138ac40e0e5
+6	1441	6864651375453829	CMakeFiles/BaseExcise.dir/win_ChatExcise.cpp.obj	a4108c1708eec254
+1442	1630	6864651377402184	BaseExcise.exe	93933138ac40e0e5

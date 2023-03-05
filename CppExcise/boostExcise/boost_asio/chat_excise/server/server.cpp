@@ -3,82 +3,70 @@
 //
 
 #include "server.h"
-
-#include <iostream>
-#include <thread>
+#include "chatMsg.h"
 void server::run()
 {
-    socket_ptr p_socket(new ip::tcp::socket(m_ioserver));
+    chatMsg_ptr ptr(new chatMsg(m_ioserver));
+    m_acceptor.async_accept(ptr->socket(), boost::bind(&server::handle_connect, this, ptr));
+}
 
-    m_acceptor.async_accept(*p_socket, boost::bind(&server::handler_connect, this, boost::placeholders::_1, p_socket));
-
+void server::handle_readBody(chatMsg_ptr chatMsgPtr) {
 
 }
 
-void server::handler_connect(const boost::system::error_code& ec, socket_ptr& p_socket)
+void server::handle_connect(chatMsg_ptr ptr)
 {
-    if(ec)
+    std::cout << "connect..." << std::endl;
+    auto p = [this,&ptr]()
     {
-        std::cerr << "server: connect error..." << std::endl;
-        return;
-    }
-
-    std::cout << "ok..., client connect\tremote ip: " << p_socket->remote_endpoint().address().to_string() << std::endl;
-
-
-    std::string msg("server connect successfully~~~, server ip: ");
-    msg += p_socket->local_endpoint().address().to_string();
-    p_socket->async_write_some(buffer(msg), boost::bind(&server::handler_write, this, boost::placeholders::_1, p_socket));
-
-    p_socket->async_read_some(buffer(m_buf), boost::bind(&server::handler_read, this, boost::placeholders::_1, placeholders::bytes_transferred, p_socket));
-
-    run();
-}
-
-void server::handler_write(error_code_type ec, socket_ptr& p_socket)
-{
-    using namespace std;
-    if(ec)
-    {
-         cerr << "handler error..." << endl;
-         return;
-    }
-
-    auto p = [p_socket](){
-        string send_buf;
-        while(getline(cin, send_buf) && send_buf != "q")
+        run();
+        while(true)
         {
-            cout << "server msg: " << send_buf << endl;
+            char buff[6] = {};
+            boost::system::error_code ec;
+            boost::asio::read(ptr->socket(), buffer(buff, sizeof(msgHeader)), ec);
 
-            p_socket->send(buffer(send_buf));
+            if(ec)
+            {
+                std::lock_guard<std::mutex> lg(m_mutex);
+                std::cout << "header error..." << std::endl;
+
+                ptr->socket().close();
+                return ;
+            }
+
+            msgHeader header = *(msgHeader*)buff;
+            if(header.bodySize == 0)
+            {
+                std::lock_guard<std::mutex> lg(m_mutex);
+                std::cerr << "bodySize error" << std::endl;
+                ptr->socket().close();
+                return ;
+            }
+
+            boost::system::error_code body_ec;
+            char body[512] = {};
+            boost::asio::read(ptr->socket(), buffer(body, header.bodySize), body_ec);
+
+            if(body_ec)
+            {
+                std::lock_guard<std::mutex> lg(m_mutex);
+                std::cerr << "body error" << std::endl;
+                ptr->socket().close();
+
+                return ;
+            }
+
+            {
+                std::lock_guard<std::mutex> lg(m_mutex);
+                std::cout << "body content: " << body << std::endl;
+            }
         }
+
     };
 
-    thread t1(p);
-
-    t1.detach();
-
-
+    std::thread t1(p);
+    t1.join();
 }
 
-void server::handler_read(error_code_type ec, size_t bytes, socket_ptr& p_socket)
-{
-    using namespace std;
-    if(ec)
-    {
-        cerr << "handler read error..." << endl;
-        return;
-    }
 
-    if(p_socket->available() == 0)
-    {
-        cout << "available bytes is zero..." << endl;
-        return;
-    }
-
-
-    cout << "client msg: " << m_buf << "\t" << bytes << "bytes" << endl;
-
-    p_socket->async_read_some(buffer(m_buf), boost::bind(&server::handler_read, this, boost::placeholders::_1, boost::asio::placeholders::bytes_transferred, p_socket));
-
-}

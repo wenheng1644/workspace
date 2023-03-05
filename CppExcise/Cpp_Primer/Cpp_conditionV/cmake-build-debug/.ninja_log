@@ -1,0 +1,5 @@
+# ninja log v5
+3	820	6741959484735429	CMakeFiles/Cpp_conditionV.dir/main.cpp.obj	8c6b169b09cfcb81
+3	539	6741961377336903	CMakeFiles/Cpp_conditionV.dir/cv_task.cpp.obj	8c8b3b5c63d7f7fd
+539	670	6741961378636471	Cpp_conditionV.exe	5d6efc9ba475d328
+0	129	6742169590820928	build.ninja	4ea559e29254d601

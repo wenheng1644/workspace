@@ -1,0 +1,12 @@
+INPUT(
+./debug\client.o
+./debug\chatroomwidget.o
+./debug\dispatch.o
+./debug\main.o
+./debug\mainwindow.o
+./debug\syn_client.o
+./debug\qrc_images.o
+./debug\moc_client.o
+./debug\moc_chatroomwidget.o
+./debug\moc_mainwindow.o
+);

@@ -1,0 +1,30 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'd:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise'
+"C:/Program Files/CMake/bin/cmake.exe" -SD:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise -BD:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise --check-build-system CMakeFiles/Makefile.cmake 0
+"C:/Program Files/CMake/bin/cmake.exe" -E cmake_progress_start D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/CMakeFiles D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise//CMakeFiles/progress.marks
+make.exe -s -f CMakeFiles/Makefile2 all
+ 
+make.exe[1]: Entering directory 'd:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise'
+make.exe -s -f CMakeFiles/Cmake_excise.dir/build.make CMakeFiles/Cmake_excise.dir/depend
+ 
+make.exe[2]: Entering directory 'd:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise'
+"C:/Program Files/CMake/bin/cmake.exe" -E cmake_depends "Unix Makefiles" D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/CMakeFiles/Cmake_excise.dir/DependInfo.cmake --color=
+make.exe[2]: Leaving directory 'd:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise'
+ 
+make.exe -s -f CMakeFiles/Cmake_excise.dir/build.make CMakeFiles/Cmake_excise.dir/build
+ 
+make.exe[2]: Entering directory 'd:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise'
+"C:/Program Files/CMake/bin/cmake.exe" -E cmake_echo_color --switch= --green --progress-dir=D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/CMakeFiles --progress-num=1 "Building CXX object CMakeFiles/Cmake_excise.dir/main.cpp.obj"
+C:/Compiler/mingw64/bin/c++.exe   -pthread -std=gnu++14 -o CMakeFiles/Cmake_excise.dir/main.cpp.obj -c D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/main.cpp
+"C:/Program Files/CMake/bin/cmake.exe" -E cmake_echo_color --switch= --green --bold --progress-dir=D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/CMakeFiles --progress-num=2 "Linking CXX executable Cmake_excise.exe"
+"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/Cmake_excise.dir/objects.a
+C:/Compiler/mingw64/bin/ar.exe cr CMakeFiles/Cmake_excise.dir/objects.a @CMakeFiles/Cmake_excise.dir/objects1.rsp
+C:/Compiler/mingw64/bin/c++.exe -pthread -Wl,--whole-archive CMakeFiles/Cmake_excise.dir/objects.a -Wl,--no-whole-archive -o Cmake_excise.exe -Wl,--out-implib,libCmake_excise.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/Cmake_excise.dir/linklibs.rsp
+make.exe[2]: Leaving directory 'd:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise'
+ 
+"C:/Program Files/CMake/bin/cmake.exe" -E cmake_echo_color --switch= --progress-dir=D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/CMakeFiles --progress-num=1,2 "Built target Cmake_excise"
+make.exe[1]: Leaving directory 'd:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise'
+ 
+"C:/Program Files/CMake/bin/cmake.exe" -E cmake_progress_start D:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise/CMakeFiles 0
+make.exe: Leaving directory 'd:/MyGitHub/workspace/CppExcise/Cpp_Primer/Cmake_excise'
+ 

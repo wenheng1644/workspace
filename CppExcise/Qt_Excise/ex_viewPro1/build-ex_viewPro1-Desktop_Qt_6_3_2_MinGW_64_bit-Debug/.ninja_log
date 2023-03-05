@@ -1,0 +1,6 @@
+# ninja log v5
+6	416	6871796153062652	ex_viewPro1_autogen/timestamp	688dd073e7e7c4a8
+416	2395	6871796172853438	CMakeFiles/ex_viewPro1.dir/main.cpp.obj	28a996a9f90ecef2
+421	2411	6871796173003039	CMakeFiles/ex_viewPro1.dir/ex_viewPro1_autogen/mocs_compilation.cpp.obj	d08c75013816ef43
+6	2105	6871797826492990	CMakeFiles/ex_viewPro1.dir/mainwindow.cpp.obj	a72fd13cdc9484c9
+2106	2319	6871797828607162	ex_viewPro1.exe	87b1c42e30cbb9dd

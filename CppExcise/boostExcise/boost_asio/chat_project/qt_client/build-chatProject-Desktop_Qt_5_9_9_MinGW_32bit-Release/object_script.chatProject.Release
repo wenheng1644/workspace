@@ -1,0 +1,12 @@
+INPUT(
+./release\client.o
+./release\chatroomwidget.o
+./release\dispatch.o
+./release\main.o
+./release\mainwindow.o
+./release\syn_client.o
+./release\qrc_images.o
+./release\moc_client.o
+./release\moc_chatroomwidget.o
+./release\moc_mainwindow.o
+);

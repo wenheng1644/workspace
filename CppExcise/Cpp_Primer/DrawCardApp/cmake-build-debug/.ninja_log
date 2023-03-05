@@ -1,0 +1,9 @@
+# ninja log v5
+3	2434	6652523827173321	CMakeFiles/DrawCardApp.dir/testClion_trunk/main.cpp.obj	d4bddbba65e82cb8
+4	829	6652521175142296	CMakeFiles/DrawCardApp.dir/source/server/drawCard/draw.cpp.obj	d3b90f199d529acc
+4	2787	6652524138725411	CMakeFiles/DrawCardApp.dir/source/server/CardPool/cardpool.cpp.obj	d86c20bec61a8e07
+2787	6845	6652524179322338	DrawCardApp.exe	c8fceffed0c1a4af
+0	12	0	clean	1d3812c238c8f50c
+33	1344	6663518503690162	CMakeFiles/DrawCardApp.dir/source/server/drawCard/draw.cpp.obj	492611d542447e7
+50	3269	6663518522847694	CMakeFiles/DrawCardApp.dir/testClion_trunk/main.cpp.obj	d23e8196309af038
+25	3674	6663518526897958	CMakeFiles/DrawCardApp.dir/source/server/CardPool/cardpool.cpp.obj	48e665de0f1e548c

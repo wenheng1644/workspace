@@ -1,0 +1,13 @@
+QWidget{
+    /* background-image: url('../images/gensinImpact1.jpg'); */
+    background-color: aquamarine;
+}
+
+QPushButton{
+    background-color: bisque;
+    color: black;
+}
+
+QPushButton:hover{
+    background-color: cadetblue;
+}

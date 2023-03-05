@@ -1,0 +1,9 @@
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/ex1_app.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/ex1_app_autogen_timestamp_deps.dir
+D:/MyGitHub/workspace/CppExcise/Qt_Excise/ex1_app/build-ex1_app-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/CMakeFiles/ex1_app_autogen.dir
