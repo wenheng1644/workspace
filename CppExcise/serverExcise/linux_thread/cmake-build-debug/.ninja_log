@@ -1,0 +1,8 @@
+# ninja log v5
+1	320	1650679292705296285	CMakeFiles/linux_thread.dir/main.cpp.o	e39b1c511f19893d
+1	282	1650679474901418892	CMakeFiles/linux_thread.dir/main.cpp.o	5ed93feed7122d0c
+282	332	1650679474953418892	linux_thread	b233a6965dd88f1d
+3	220	1650679495817417576	CMakeFiles/linux_thread.dir/main.cpp.o	5ed93feed7122d0c
+221	275	1650679495869417569	linux_thread	b233a6965dd88f1d
+0	358	1650680829274504372	CMakeFiles/linux_thread.dir/main.cpp.o	5ed93feed7122d0c
+358	423	1650680829338504174	linux_thread	b233a6965dd88f1d

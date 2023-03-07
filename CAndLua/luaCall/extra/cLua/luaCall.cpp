@@ -1,5 +1,5 @@
 //
-// Created by нд╨Ц on 2023/2/13.
+// Created by О©╫д╨О©╫ on 2023/2/13.
 //
 
 #include "luaCall.h"
@@ -8,7 +8,7 @@ luaCall* luaCall::m_luaCallobj = nullptr;
 
 luaCall::luaCall() : m_luaState(luaL_newstate()) {
     luaL_openlibs(m_luaState);
-    loadCfunc();
+//    loadCfunc();
 
     if(luaL_loadfile(m_luaState, LUAPATH) || lua_pcall(m_luaState, 0, 0 ,0))
         luaL_error(m_luaState, "error to create luaCall: %s", lua_tostring(m_luaState, -1));
@@ -50,21 +50,21 @@ void luaCall::registerFunc(const char *funcname, CFunc p) {
     lua_setglobal(m_luaState, funcname);
 }
 
-void luaCall::loadCfunc() {
-    registerFunc("c_dirs", l_dir);
-    registerFunc( "c_dirs2", c_listDirs);
-    registerFunc("c_sum", sumDig);
-    registerFunc( "c_pack", cPack);
-    registerFunc( "c_reverse", cReverse);
-    registerFunc("c_foreach", cforeach);
-    registerFunc("c_getworkdir", getWorkDir);
-    registerFunc("c_foreachMap", cforeach_map);
-    registerFunc("cSplitstr", cSplitstr);
-    registerFunc("cUpper", cUpper);
-    registerFunc("cConcat", cConcat);
-    registerFunc("cFliter", cFliter);
-    registerFunc("cTransliterate", cTransliterate);
-}
+//void luaCall::loadCfunc() {
+//    registerFunc("c_dirs", l_dir);
+//    registerFunc( "c_dirs2", c_listDirs);
+//    registerFunc("c_sum", sumDig);
+//    registerFunc( "c_pack", cPack);
+//    registerFunc( "c_reverse", cReverse);
+//    registerFunc("c_foreach", cforeach);
+//    registerFunc("c_getworkdir", getWorkDir);
+//    registerFunc("c_foreachMap", cforeach_map);
+//    registerFunc("cSplitstr", cSplitstr);
+//    registerFunc("cUpper", cUpper);
+//    registerFunc("cConcat", cConcat);
+//    registerFunc("cFliter", cFliter);
+//    registerFunc("cTransliterate", cTransliterate);
+//}
 
 void luaCall::run() {
 

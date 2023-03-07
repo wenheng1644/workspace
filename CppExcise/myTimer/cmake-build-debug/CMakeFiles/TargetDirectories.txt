@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CppExcise/myTimer/cmake-build-debug/CMakeFiles/myTimer.dir
+/home/wenheng/Desktop/workspace/CppExcise/myTimer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CppExcise/myTimer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

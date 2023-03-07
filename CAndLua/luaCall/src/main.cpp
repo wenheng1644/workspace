@@ -1,5 +1,5 @@
 //
-// Created by нд╨Ц on 2023/2/13.
+// Created by О©╫д╨О©╫ on 2023/2/13.
 //
 
 #include "luaCall.h"
@@ -7,11 +7,9 @@
 #include "iostream"
 #include "boost/format.hpp"
 
-int main(void)
+int main(int argc, char* argv[])
 {
-    char dir[256] = {0};
-    GetCurrentDirectory(256, dir);
-    std::cout << "current dir = " << dir << std::endl;
+//    std::cout << boost::format("argc = %d, argv[0] = %s") % argc % argv[0] << std::endl;
     luaCall* g_luaCall = luaCall::generator();
     std::string ip = g_luaCall->getLuaVarByKey("ip");
     std::string port = g_luaCall->getLuaVarByKey("port");

@@ -1,0 +1,13 @@
+# ninja log v5
+0	444	1666340263161709402	CMakeFiles/conditionVar_ex.dir/main.cpp.o	d0e72bdaa95f29b7
+1	62	1666340288769719087	conditionVar_ex	35a4e0aaa8c3a60a
+1	470	1666340316813711408	CMakeFiles/conditionVar_ex.dir/main.cpp.o	d0e72bdaa95f29b7
+471	532	1666340316873711372	conditionVar_ex	35a4e0aaa8c3a60a
+0	529	1666340386893615096	CMakeFiles/conditionVar_ex.dir/main.cpp.o	d0e72bdaa95f29b7
+529	576	1666340386941614995	conditionVar_ex	35a4e0aaa8c3a60a
+0	414	1666340412289555110	CMakeFiles/conditionVar_ex.dir/main.cpp.o	d0e72bdaa95f29b7
+414	464	1666340412337554985	conditionVar_ex	35a4e0aaa8c3a60a
+0	509	1666342537379256721	CMakeFiles/conditionVar_ex.dir/main.cpp.o	d0e72bdaa95f29b7
+509	570	1666342537443256833	conditionVar_ex	35a4e0aaa8c3a60a
+1	466	1666342622483343379	CMakeFiles/conditionVar_ex.dir/main.cpp.o	d0e72bdaa95f29b7
+466	519	1666342622535343396	conditionVar_ex	35a4e0aaa8c3a60a

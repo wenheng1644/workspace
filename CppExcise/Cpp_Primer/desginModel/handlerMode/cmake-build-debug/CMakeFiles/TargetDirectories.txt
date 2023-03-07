@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CppExcise/Cpp_Primer/desginModel/handlerMode/cmake-build-debug/CMakeFiles/handlerMode.dir
+/home/wenheng/Desktop/workspace/CppExcise/Cpp_Primer/desginModel/handlerMode/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CppExcise/Cpp_Primer/desginModel/handlerMode/cmake-build-debug/CMakeFiles/rebuild_cache.dir

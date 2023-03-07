@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CppExcise/Cpp_Primer/chatRoom/server/src/CMakeFiles/chatRoom_server.dir
+/home/wenheng/Desktop/workspace/CppExcise/Cpp_Primer/chatRoom/server/src/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CppExcise/Cpp_Primer/chatRoom/server/src/CMakeFiles/rebuild_cache.dir

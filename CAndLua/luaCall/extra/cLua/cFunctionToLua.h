@@ -1,5 +1,5 @@
 //
-// Created by нд╨Ц on 2023/2/19.
+// Created by О©╫д╨О©╫ on 2023/2/19.
 //
 
 #ifndef EX1_CFUNCTIONTOLUA_H
@@ -17,7 +17,6 @@
 #include "math.h"
 #include "dirent.h"
 
-#include "windows.h"
 #include "filesystem"
 
 extern "C"{
@@ -28,39 +27,31 @@ extern "C"{
 
 void stackDump(lua_State * L);
 
-int l_dir(lua_State* L);
-int c_listDirs(lua_State* L);
+//int l_dir(lua_State* L);
+//int c_listDirs(lua_State* L);
+//
+//int sumDig(lua_State* L);
+//int cPack(lua_State* L);
+//int cReverse(lua_State* L);
+//int cforeach(lua_State* L);
+//
+//int getWorkDir(lua_State* L);
+//
+//int cforeach_map(lua_State* L);
+//
+//int cSplitstr(lua_State* L);
+//
+//int cUpper(lua_State* L);
+//
+//int cConcat(lua_State* L);
+//
+//int cFliter(lua_State* L);
+//
+//int cTransliterate(lua_State* L);
 
-int sumDig(lua_State* L);
-int cPack(lua_State* L);
-int cReverse(lua_State* L);
-int cforeach(lua_State* L);
 
-int getWorkDir(lua_State* L);
 
-int cforeach_map(lua_State* L);
-
-int cSplitstr(lua_State* L);
-
-int cUpper(lua_State* L);
-
-int cConcat(lua_State* L);
-
-int cFliter(lua_State* L);
-
-int cTransliterate(lua_State* L);
-
-static const struct luaL_Reg mylib [] = {
-        {"c_dirs", l_dir},
-        {"c_dirs2", c_listDirs},
-        {"c_sum", sumDig},
-        {"c_pack", cPack},
-        {"c_reverse", cReverse},
-        {"c_foreach", cforeach},
-        {nullptr, nullptr},
-};
-
-int luaopen_mylib(lua_State* L);
+//int luaopen_mylib(lua_State* L);
 typedef int(*CFunc)(lua_State*);
 
 

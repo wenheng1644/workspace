@@ -1,7 +1,8 @@
 //
-// Created by ÎÄºã on 2023/2/19.
+// Created by ï¿½Äºï¿½ on 2023/2/19.
 //
 #include "cFunctionToLua.h"
+#include "string.h"
 
 void stackDump(lua_State * L)
 {
@@ -35,6 +36,7 @@ void stackDump(lua_State * L)
     printf("\n");
 }
 
+extern "C"{
 
 int l_dir(lua_State* L)
 {
@@ -138,7 +140,7 @@ int cPack(lua_State* L)
     lua_insert(L, 1);
 //    stackDump(L);
 
-    //²ÎÊýË³Ðòµ÷Õû
+    //ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½
     int insertIndex = 2;
     for(int i = 1; i < top; i++)
     {
@@ -216,7 +218,7 @@ int cforeach(lua_State* L)
 int getWorkDir(lua_State* L)
 {
     char dir[256] = {0};
-    GetCurrentDirectory(256, dir);
+    getcwd(dir, sizeof(dir));
 //    std::cout << "current dir = " << dir << std::endl;
 
     lua_pushstring(L, dir);
@@ -244,13 +246,15 @@ int cforeach_map(lua_State* L)
 
 int cSplitstr(lua_State* L)
 {
-    const char* str = luaL_checkstring(L, 1);
+    const char* cstr = luaL_checkstring(L, 1);
     const char* partten = luaL_checkstring(L, 2);
 
     char* target = nullptr;
 
     lua_newtable(L);
     int index = 1;
+    std::string stdstr(cstr);
+    char* str = stdstr.data();
     while((target = strchr(str, *partten)) != nullptr)
     {
         lua_pushlstring(L, str, target - str);
@@ -370,8 +374,26 @@ int cTransliterate(lua_State* L)
     return 1;
 }
 
+static const struct luaL_Reg mylib [] = {
+        {"c_dirs", l_dir},
+        {"c_dirs2", c_listDirs},
+        {"c_sum", sumDig},
+        {"c_pack", cPack},
+        {"c_reverse", cReverse},
+        {"c_foreach", cforeach},
+        {"c_getworkdir", getWorkDir},
+        {"c_foreachMap", cforeach_map},
+        {"cSplitstr", cSplitstr},
+        {"cUpper", cUpper},
+        {"cConcat", cConcat},
+        {"cFliter", cFliter},
+        {"cTransliterate", cTransliterate},
+        {nullptr, nullptr},
+};
+
 int luaopen_mylib(lua_State* L)
 {
     luaL_newlib(L, mylib);
     return 1;
+}
 }

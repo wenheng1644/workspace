@@ -1,0 +1,6 @@
+# ninja log v5
+1	613	1666020896635661319	CMakeFiles/obverser.dir/comp1.cpp.o	d2544747610f8ea4
+4	632	1666020896655661298	CMakeFiles/obverser.dir/comp2.cpp.o	53ffff56364fe0a8
+0	393	1666020964691587763	CMakeFiles/obverser.dir/subject.cpp.o	f0dcc2d27307598c
+0	416	1666020964715587736	CMakeFiles/obverser.dir/main.cpp.o	9ca1e2b1eef6c219
+416	476	1666020964775587668	obverser	d4fdba2e39dfcf1

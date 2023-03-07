@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/MyGitHub/workspace/CAndLua/luaCall/cmake-build-debug/
+cmake_ninja_workdir = /home/wenheng/Desktop/workspace/CAndLua/luaCall/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target luaCall
 
@@ -49,12 +49,12 @@ cmake_ninja_workdir = D$:/MyGitHub/workspace/CAndLua/luaCall/cmake-build-debug/
 
 build cmake_object_order_depends_target_luaCall: phony || CMakeFiles/luaCall.dir
 
-build CMakeFiles/luaCall.dir/src/main.cpp.obj: CXX_COMPILER__luaCall_Debug D$:/MyGitHub/workspace/CAndLua/luaCall/src/main.cpp || cmake_object_order_depends_target_luaCall
-  DEP_FILE = CMakeFiles\luaCall.dir\src\main.cpp.obj.d
+build CMakeFiles/luaCall.dir/src/main.cpp.o: CXX_COMPILER__luaCall_Debug /home/wenheng/Desktop/workspace/CAndLua/luaCall/src/main.cpp || cmake_object_order_depends_target_luaCall
+  DEP_FILE = CMakeFiles/luaCall.dir/src/main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -ID:/Lua/5.4.3/include -ID:/MyGitHub/workspace/CAndLua/luaCall/. -IC:/exlib/boost/include/boost-1_78 -ID:/MyGitHub/workspace/CAndLua/luaCall/extra/cLua -ID:/MyGitHub/workspace/CAndLua/luaCall/extra/cLua/lib
-  OBJECT_DIR = CMakeFiles\luaCall.dir
-  OBJECT_FILE_DIR = CMakeFiles\luaCall.dir\src
+  INCLUDES = -I/usr/local/lua/include -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/. -I/usr/local/include/boost -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib
+  OBJECT_DIR = CMakeFiles/luaCall.dir
+  OBJECT_FILE_DIR = CMakeFiles/luaCall.dir/src
 
 
 # =============================================================================
@@ -62,25 +62,25 @@ build CMakeFiles/luaCall.dir/src/main.cpp.obj: CXX_COMPILER__luaCall_Debug D$:/M
 
 
 #############################################
-# Link the executable D:\MyGitHub\workspace\CAndLua\luaCall\bin\luaCall.exe
+# Link the executable /home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall
 
-build D$:/MyGitHub/workspace/CAndLua/luaCall/bin/luaCall.exe: CXX_EXECUTABLE_LINKER__luaCall_Debug CMakeFiles/luaCall.dir/src/main.cpp.obj
+build /home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall: CXX_EXECUTABLE_LINKER__luaCall_Debug CMakeFiles/luaCall.dir/src/main.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-Bstatic  -lcFunlib  -llua  -Wl,-Bdynamic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LD:/MyGitHub/workspace/CAndLua/luaCall/extra/cLua/lib   -LD:/Lua/5.4.3/lib
-  OBJECT_DIR = CMakeFiles\luaCall.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = D:\MyGitHub\workspace\CAndLua\luaCall\bin\luaCall.exe
-  TARGET_IMPLIB = D:\MyGitHub\workspace\CAndLua\luaCall\bin\libluaCall.dll.a
-  TARGET_PDB = luaCall.exe.dbg
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -Wl,-rpath,/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib:/usr/local/lua/lib  -lmylib  -Wl,-Bstatic  -llua  -Wl,-Bdynamic  -lstdc++fs  -ldl
+  LINK_PATH = -L/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib   -L/usr/local/lua/lib
+  OBJECT_DIR = CMakeFiles/luaCall.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = /home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall
+  TARGET_PDB = luaCall.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\MyGitHub\workspace\CAndLua\luaCall\cmake-build-debug && "D:\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cd /home/wenheng/Desktop/workspace/CAndLua/luaCall/cmake-build-debug && /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -91,7 +91,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\MyGitHub\workspace\CAndLua\luaCall\cmake-build-debug && "D:\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\MyGitHub\workspace\CAndLua\luaCall -BD:\MyGitHub\workspace\CAndLua\luaCall\cmake-build-debug"
+  COMMAND = cd /home/wenheng/Desktop/workspace/CAndLua/luaCall/cmake-build-debug && /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/wenheng/Desktop/workspace/CAndLua/luaCall -B/home/wenheng/Desktop/workspace/CAndLua/luaCall/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -101,9 +101,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build luaCall: phony D$:/MyGitHub/workspace/CAndLua/luaCall/bin/luaCall.exe
-
-build luaCall.exe: phony D$:/MyGitHub/workspace/CAndLua/luaCall/bin/luaCall.exe
+build luaCall: phony /home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall
 
 # =============================================================================
 # Folder targets.
@@ -111,9 +109,9 @@ build luaCall.exe: phony D$:/MyGitHub/workspace/CAndLua/luaCall/bin/luaCall.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/MyGitHub/workspace/CAndLua/luaCall/cmake-build-debug
+# Folder: /home/wenheng/Desktop/workspace/CAndLua/luaCall/cmake-build-debug
 
-build all: phony D$:/MyGitHub/workspace/CAndLua/luaCall/bin/luaCall.exe
+build all: phony /home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -127,14 +125,14 @@ build all: phony D$:/MyGitHub/workspace/CAndLua/luaCall/bin/luaCall.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake D$:/MyGitHub/workspace/CAndLua/luaCall/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /home/wenheng/Desktop/workspace/CAndLua/luaCall/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake D$:/MyGitHub/workspace/CAndLua/luaCall/CMakeLists.txt: phony
+build /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux.cmake /home/wenheng/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /home/wenheng/Desktop/workspace/CAndLua/luaCall/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################

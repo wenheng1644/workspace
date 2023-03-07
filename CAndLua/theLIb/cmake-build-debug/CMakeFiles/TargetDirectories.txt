@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CAndLua/theLIb/cmake-build-debug/CMakeFiles/theLIb.dir
+/home/wenheng/Desktop/workspace/CAndLua/theLIb/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CAndLua/theLIb/cmake-build-debug/CMakeFiles/rebuild_cache.dir

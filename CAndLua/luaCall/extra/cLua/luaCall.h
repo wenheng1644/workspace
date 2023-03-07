@@ -1,5 +1,5 @@
 //
-// Created by нд╨Ц on 2023/2/13.
+// Created by О©╫д╨О©╫ on 2023/2/13.
 //
 
 #ifndef LUACALL_LUACALL_H
@@ -39,7 +39,7 @@ private:
 
 private:
     void registerFunc(const char* funcname, CFunc p);
-    void loadCfunc();
+//    void loadCfunc();
     void loadEnv();
     void run();
 

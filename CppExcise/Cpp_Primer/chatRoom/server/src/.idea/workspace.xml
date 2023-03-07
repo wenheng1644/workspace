@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3bbb6f71-7734-4f9c-86c4-50b493265713" name="变更" comment="加上打印">
+      <change beforePath="$PROJECT_DIR$/../../../DrawCardApp/source/client/DrawCardApp/DrawCardApp.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DrawCardApp/source/client/DrawCardApp/DrawCardApp.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DrawCardApp/source/client/DrawCardApp/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DrawCardApp/source/client/DrawCardApp/mainwindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/chatRoom_client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/chatRoom_client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/cmake-build-debug/CMakeFiles/src.dir/chatRoom_client.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/cmake-build-debug/CMakeFiles/src.dir/chatRoom_client.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/src/cmake-build-debug/src" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/src/cmake-build-debug/src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c046282b1b17ddeec746.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-09-12T02-46-26-0042.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-src-Debug-0ab262060ba4dfcc35ef.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/.cmake/api/v1/reply/cache-v2-84a5a051eb98f2826926.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-277ed5b3057609fa1458.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-95452b37872c7eece3d9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-25T15-21-26-0362.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/client.dir/linuxSock_client.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/client.dir/linuxSock_client.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/client.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/client.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/client" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/cmake-build-debug/client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/linuxSock_client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/linuxSock_client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/linuxSock_client.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/linuxSock_client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/client/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/client/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-a7ee4b8a59e72c6330ea.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-30T08-32-58-0540.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/.cmake/api/v1/reply/target-server-Debug-75aa9afb40608846089c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/CMakeFiles/server.dir/linuxSock.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/CMakeFiles/server.dir/linuxSock.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/server" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/cmake-build-debug/server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/linuxSock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/linuxSock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/linuxSock.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/linuxSock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linuxSocket/server/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linuxSocket/server/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/baseComm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/baseComm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/baseComm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/baseComm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c95563c7594872114650.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/.cmake/api/v1/reply/index-2022-09-04T08-42-56-0881.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/.cmake/api/v1/reply/target-linux_base-Debug-f28c5b491709be8e06c9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/CMakeFiles/linux_base.dir/baseComm.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/CMakeFiles/linux_base.dir/baseComm.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/CMakeFiles/linux_base.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/CMakeFiles/linux_base.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/linux_base" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/cmake-build-debug/linux_base" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../linux_base/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../linux_base/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../netlib/netServer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../netlib/netServer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../boostExcise/boost_220304/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../boostExcise/boost_220304/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../boostExcise/boost_asio/chat_project/server/chatRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../boostExcise/boost_asio/chat_project/server/chatRoom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../boostExcise/boost_asio/chat_project/server/chatRoom.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../boostExcise/boost_asio/chat_project/server/chatRoom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../boostExcise/boost_asio/chat_project/server/chatSession.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../boostExcise/boost_asio/chat_project/server/chatSession.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../boostExcise/boost_asio/chat_project/server/chatSession.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../boostExcise/boost_asio/chat_project/server/chatSession.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../boostExcise/boost_function/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../boostExcise/boost_function/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CMakeLists.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/chatRoom.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/chatRoom.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///usr/include/asm-generic/errno-base.h" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="2.1" />
+  </component>
+  <component name="ProjectId" id="2EeKbvDsKYJ1g0tKrQT6ah0GGFN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "004958",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio/chat_project/server"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="127.0.0.1 8888" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="src" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="src">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="3bbb6f71-7734-4f9c-86c4-50b493265713" name="变更" comment="" />
+      <created>1662950685997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662950685997</updated>
+      <workItem from="1662950687271" duration="1267000" />
+      <workItem from="1662967005083" duration="3905000" />
+      <workItem from="1662991158926" duration="3299000" />
+    </task>
+    <task id="LOCAL-00001" summary="測試提交">
+      <created>1662991703479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662991703479</updated>
+    </task>
+    <task id="LOCAL-00002" summary="測試提交2">
+      <created>1662991940354</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662991940354</updated>
+    </task>
+    <task id="LOCAL-00003" summary="加上打印">
+      <created>1662992596054</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662992596054</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="測試提交" />
+    <MESSAGE value="測試提交2" />
+    <MESSAGE value="加上打印" />
+    <option name="LAST_COMMIT_MESSAGE" value="加上打印" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/chatRoom.cpp</url>
+          <line>101</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

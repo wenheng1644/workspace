@@ -1,6 +1,7 @@
 ip = "127.0.0.0"
 port = "8888"
-
+package.cpath = package.cpath .. ";/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib/lib?.so"
+local mylib = require("mylib")
 local function test_dirs(path)
     local dirs = c_dirs2(path or ".")
 
@@ -11,27 +12,16 @@ local function test_dirs(path)
 end
 
 function main()
-    local curDir = c_getworkdir()
-    print(string.format("work dir = " .. curDir))
+    local curDir = mylib.c_getworkdir()
+    print(string.format("lua: work dir = " .. curDir))
 
-    -- local tb = {".", ".."}
-    -- c_foreachMap(tb, test_dirs)
-    --local str = "hello:world:ok:fuck"
-    --local tb = cSplitstr(str, ":")
-    --
-    --for _, v in ipairs(tb or{}) do
-    --    print(v)
-    --end
-    --test_dirs("..")
+    print("mylib type = ", type(mylib))
 
-    local str = "hello world"
-    local tb = {
-        ["h"] = "=",
-        ["o"] = "-",
-        ["l"] = false,
-    }
-    res = cTransliterate(str, tb)
-    print(res)
+    for index, v in pairs(mylib) do
+        print(index, v)
+    end
+
+    --print(package.cpath)
 end
 
 main()

@@ -1,0 +1,4 @@
+# ninja log v5
+0	498	1638672562414622163	CMakeFiles/thread_mutx.dir/ex_mutex.cpp.o	c283ead42483529
+0	333	1638673086626592364	build.ninja	df7fef8cd4a1152c
+4	81	1638673086714592693	thread_mutx	af91b530670a6866

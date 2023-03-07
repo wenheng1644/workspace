@@ -1,0 +1,4 @@
+# ninja log v5
+0	149	1666237153376667246	CMakeFiles/command.dir/main.cpp.o	c97c4534442ad8b6
+0	321	1666237153548666923	CMakeFiles/command.dir/command.cpp.o	d54eac6823720b9b
+322	384	1666237153612666802	command	dca9af859a841659

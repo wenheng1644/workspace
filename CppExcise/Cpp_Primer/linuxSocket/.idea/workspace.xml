@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="server" targetName="server" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a0e6324-2122-487a-bbf9-d4b9a4e1c1f4" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/../DrawCardApp/source/client/DrawCardApp/DrawCardApp.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../DrawCardApp/source/client/DrawCardApp/DrawCardApp.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DrawCardApp/source/client/DrawCardApp/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/../DrawCardApp/source/client/DrawCardApp/mainwindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/.cmake/api/v1/reply/cache-v2-3513af348a3a93ceb007.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-f2ab97e470998095dda3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-0b81030fdf68bd2a551b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-25T15-20-52-0355.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/server/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netlib/netServer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netlib/netServer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../boostExcise/boost_220304/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../boostExcise/boost_220304/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../boostExcise/boost_asio/chat_project/server/chatRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../boostExcise/boost_asio/chat_project/server/chatRoom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../boostExcise/boost_asio/chat_project/server/chatRoom.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../boostExcise/boost_asio/chat_project/server/chatRoom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../boostExcise/boost_asio/chat_project/server/chatSession.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../boostExcise/boost_asio/chat_project/server/chatSession.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../boostExcise/boost_asio/chat_project/server/chatSession.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../boostExcise/boost_asio/chat_project/server/chatSession.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../boostExcise/boost_function/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../boostExcise/boost_function/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectId" id="2BjVBII7XLRRu65jcOxhyZmEIAf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "01121a",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/wenheng/Desktop/workspace/CppExcise/Cpp_Primer/linux_base"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="server" TARGET_NAME="server" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="server" RUN_TARGET_NAME="server">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7a0e6324-2122-487a-bbf9-d4b9a4e1c1f4" name="变更" comment="" />
+      <created>1657419343935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657419343935</updated>
+      <workItem from="1657419345365" duration="49000" />
+      <workItem from="1657437795122" duration="2731000" />
+      <workItem from="1657440634242" duration="19000" />
+      <workItem from="1659015448166" duration="509000" />
+      <workItem from="1659169939721" duration="90000" />
+      <workItem from="1659170046724" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

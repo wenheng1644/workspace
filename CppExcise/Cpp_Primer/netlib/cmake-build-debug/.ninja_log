@@ -1,0 +1,5 @@
+# ninja log v5
+1	357	1658754525270945483	CMakeFiles/netlib.dir/main.cpp.o	1f75738e3fe8aa08
+0	394	1658652250655304684	CMakeFiles/netlib.dir/netServer.cpp.o	20048d10573498f0
+357	426	1658754525338945372	netlib	e818e08e79986297
+1	426	1658653704952175152	CMakeFiles/netlib.dir/lib/netServer.cpp.o	326df4e3a25f1b2c
