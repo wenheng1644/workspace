@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_luaCall: phony || CMakeFiles/luaCall.dir
 build CMakeFiles/luaCall.dir/src/main.cpp.o: CXX_COMPILER__luaCall_Debug /home/wenheng/Desktop/workspace/CAndLua/luaCall/src/main.cpp || cmake_object_order_depends_target_luaCall
   DEP_FILE = CMakeFiles/luaCall.dir/src/main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -I/usr/local/lua/include -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/. -I/usr/local/include/boost -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib
+  INCLUDES = -I/usr/local/lua/include -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/. -I/usr/local/include/boost -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/transLib -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib -I/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/transLib/lib
   OBJECT_DIR = CMakeFiles/luaCall.dir
   OBJECT_FILE_DIR = CMakeFiles/luaCall.dir/src
 
@@ -67,8 +67,8 @@ build CMakeFiles/luaCall.dir/src/main.cpp.o: CXX_COMPILER__luaCall_Debug /home/w
 build /home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall: CXX_EXECUTABLE_LINKER__luaCall_Debug CMakeFiles/luaCall.dir/src/main.cpp.o
   FLAGS = -g
   LINK_FLAGS = -rdynamic
-  LINK_LIBRARIES = -Wl,-rpath,/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib:/usr/local/lua/lib  -lmylib  -Wl,-Bstatic  -llua  -Wl,-Bdynamic  -lstdc++fs  -ldl
-  LINK_PATH = -L/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib   -L/usr/local/lua/lib
+  LINK_LIBRARIES = -Wl,-rpath,/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib:/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/transLib/lib:/usr/local/lua/lib  -lmylib  -ltranslib  -Wl,-Bstatic  -llua  -Wl,-Bdynamic  -lstdc++fs  -ldl
+  LINK_PATH = -L/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib   -L/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/transLib/lib   -L/usr/local/lua/lib
   OBJECT_DIR = CMakeFiles/luaCall.dir
   POST_BUILD = :
   PRE_LINK = :

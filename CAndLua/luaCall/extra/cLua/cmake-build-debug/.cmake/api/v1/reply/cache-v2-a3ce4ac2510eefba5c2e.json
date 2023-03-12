@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall/cmake-build-debug"
+			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -151,10 +151,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "STRING",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -279,10 +279,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "STRING",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall"
+			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "luaCall"
+			"value" : "mylib"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1138,19 +1138,7 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "cFunlib_LIB_DEPENDS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Dependencies for the target"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "general;liblua.a;"
-		},
-		{
-			"name" : "luaCall_BINARY_DIR",
+			"name" : "mylib_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1159,10 +1147,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall/cmake-build-debug"
+			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/cmake-build-debug"
 		},
 		{
-			"name" : "luaCall_IS_TOP_LEVEL",
+			"name" : "mylib_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1174,7 +1162,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "luaCall_SOURCE_DIR",
+			"name" : "mylib_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1183,31 +1171,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall"
-		},
-		{
-			"name" : "myl_LIB_DEPENDS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Dependencies for the target"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "general;liblua.a;"
-		},
-		{
-			"name" : "mylib_LIB_DEPENDS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Dependencies for the target"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "general;libmylib.so;general;liblua.a;"
+			"value" : "/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua"
 		}
 	],
 	"kind" : "cache",

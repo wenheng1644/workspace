@@ -1,0 +1,11 @@
+# ninja log v5
+0	504	1678283406506271391	CMakeFiles/translib.dir/transLib.cpp.o	83f443876f4ef3e1
+504	573	1678283406578269699	/home/wenheng/Desktop/workspace/CAndLua/transliterLib/lib/libtranslib.so	5d027492917c76ab
+1	1178	1678283573017597296	CMakeFiles/translib.dir/transLib.cpp.o	15c95e11847a1c1d
+1179	1281	1678283573117598162	/home/wenheng/Desktop/workspace/CAndLua/transliterLib/lib/libtranslib.so	5d027492917c76ab
+0	1202	1678283760600278687	CMakeFiles/translib.dir/transLib.cpp.o	15c95e11847a1c1d
+1202	1287	1678283760684280182	/home/wenheng/Desktop/workspace/CAndLua/transliterLib/lib/libtranslib.so	5d027492917c76ab
+1	1175	1678285239939083953	CMakeFiles/translib.dir/transLib.cpp.o	15c95e11847a1c1d
+1175	1269	1678285240035088105	/home/wenheng/Desktop/workspace/CAndLua/transliterLib/lib/libtranslib.so	5d027492917c76ab
+2	1382	1678285809126320939	CMakeFiles/translib.dir/transLib.cpp.o	15c95e11847a1c1d
+1382	1479	1678285809226310810	/home/wenheng/Desktop/workspace/CAndLua/transliterLib/lib/libtranslib.so	5d027492917c76ab

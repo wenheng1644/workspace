@@ -1,0 +1,5 @@
+# ninja log v5
+1	1236	1678585718820685659	CMakeFiles/uptranslib.dir/uptransLib.cpp.o	5fe7658f4e06c5eb
+1236	1347	1678585718932684330	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/uptransLib/lib/libuptranslib.so	2cbf5f7047c41a79
+3	1424	1678586676678724391	CMakeFiles/uptranslib.dir/uptransLib.cpp.o	5fe7658f4e06c5eb
+1424	1541	1678586676794723815	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/uptransLib/lib/libuptranslib.so	2cbf5f7047c41a79

@@ -1,15 +1,13 @@
 # ninja log v5
-980	1112	1678197034718295211	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib/libmylib.so	3e26b268a08424f4
-0	1354	1678195867623430470	CMakeFiles/luaCall.dir/src/main.cpp.o	23004bc782511edf
-1355	1477	1678195867751430274	/home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall	7d68350430898809
-1	980	1678197034586296126	CMakeFiles/mylib.dir/extra/cLua/luaCall.cpp.o	c188e75cb368ecae
+2496	2622	1678372918757088183	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib/libmylib.so	3e26b268a08424f4
+0	2296	1678372951668901669	CMakeFiles/luaCall.dir/src/main.cpp.o	7f5b5ead3ce4a444
+2297	2445	1678372951820900825	/home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall	9c8579838dd83c2e
+3	1704	1678372917833093532	CMakeFiles/mylib.dir/extra/cLua/luaCall.cpp.o	877a4266ebd2276d
 2470	2796	6990400809631805	libcFunlib.dll	1f0d0611a0eef02e
-1	39	1678197055778150932	build.ninja	3980a1286e648918
+1	39	1678586681018702770	build.ninja	3980a1286e648918
 2470	2796	6990400809631805	libcFunlib.dll.a	1f0d0611a0eef02e
 1606	1635	1678109929762407846	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib/libcFunlib.a	dec8a1a6249ebfb8
 1	1201	1678109929330407678	CMakeFiles/cFunlib.dir/extra/cLua/luaCall.cpp.o	e0e8b8e1f8f74d26
-0	1799	1678196998122553974	CMakeFiles/mylib.dir/extra/cLua/cFunctionToLua.cpp.o	3f24022646ec76f2
+0	2495	1678372918629088923	CMakeFiles/mylib.dir/extra/cLua/cFunctionToLua.cpp.o	aae0cc59f0ae93cf
 1	1606	1678109929734407835	CMakeFiles/cFunlib.dir/extra/cLua/cFunctionToLua.cpp.o	9cecb8a70ae34049
 2511	2878	6994699612121472	libcFunlib.a	6d230aeb64c105f7
-0	1229	1678197062770103752	CMakeFiles/luaCall.dir/src/main.cpp.o	23004bc782511edf
-1229	1324	1678197062862103133	/home/wenheng/Desktop/workspace/CAndLua/luaCall/bin/luaCall	7d68350430898809

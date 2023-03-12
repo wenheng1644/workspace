@@ -228,7 +228,7 @@ luaCall_SOURCE_DIR:STATIC=/home/wenheng/Desktop/workspace/CAndLua/luaCall
 myl_LIB_DEPENDS:STATIC=general;liblua.a;
 
 //Dependencies for the target
-mylib_LIB_DEPENDS:STATIC=general;libmylib.so;general;liblua.a;
+mylib_LIB_DEPENDS:STATIC=general;liblua.a;
 
 
 ########################

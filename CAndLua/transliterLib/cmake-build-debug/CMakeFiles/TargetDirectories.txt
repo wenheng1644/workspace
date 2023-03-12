@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CAndLua/transliterLib/cmake-build-debug/CMakeFiles/translib.dir
+/home/wenheng/Desktop/workspace/CAndLua/transliterLib/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CAndLua/transliterLib/cmake-build-debug/CMakeFiles/rebuild_cache.dir

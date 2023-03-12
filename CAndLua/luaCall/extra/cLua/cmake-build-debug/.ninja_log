@@ -1,0 +1,5 @@
+# ninja log v5
+1	891	1678456846542994176	CMakeFiles/mylib.dir/luaCall.cpp.o	aa790d9fe84bc245
+1	1448	1678456847094990716	CMakeFiles/mylib.dir/cFunctionToLua.cpp.o	fb635e1c3bda3b19
+1448	1560	1678456847210989988	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib/libmylib.so	97da227f897fa4b1
+1	98	1678456869803198815	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/cLua/lib/libmylib.so	97da227f897fa4b1
