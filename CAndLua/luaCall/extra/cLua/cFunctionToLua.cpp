@@ -337,42 +337,42 @@ int cFliter(lua_State* L)
     return 1;
 }
 
-int cTransliterate(lua_State* L)
-{
-    const char* cstr = luaL_checkstring(L, 1);
-    luaL_checktype(L, 2, LUA_TTABLE);
-
-    std::string str(cstr);
-    std::string res = str;
-
-    for(auto& c : str)
-    {
-        int type = lua_getfield(L, 2, std::string(1, c).c_str());
-        auto lam = [c](char x)
-        {
-            if(x == c)
-                return true;
-            return false;
-        };
-        if(type == LUA_TBOOLEAN)
-        {
-            bool status = lua_toboolean(L, -1);
-            if(!status)
-            {
-                auto iter = std::remove_if(res.begin(), res.end(), lam);
-                res.erase(iter, res.end());
-            }
-        }
-        else if(type == LUA_TSTRING)
-        {
-            const char* replaceStr = lua_tostring(L, -1);
-            std::replace_if(res.begin(), res.end(), lam, *replaceStr);
-        }
-        lua_pop(L, 1);
-    }
-    lua_pushstring(L, res.c_str());
-    return 1;
-}
+//int cTransliterate(lua_State* L)
+//{
+//    const char* cstr = luaL_checkstring(L, 1);
+//    luaL_checktype(L, 2, LUA_TTABLE);
+//
+//    std::string str(cstr);
+//    std::string res = str;
+//
+//    for(auto& c : str)
+//    {
+//        int type = lua_getfield(L, 2, std::string(1, c).c_str());
+//        auto lam = [c](char x)
+//        {
+//            if(x == c)
+//                return true;
+//            return false;
+//        };
+//        if(type == LUA_TBOOLEAN)
+//        {
+//            bool status = lua_toboolean(L, -1);
+//            if(!status)
+//            {
+//                auto iter = std::remove_if(res.begin(), res.end(), lam);
+//                res.erase(iter, res.end());
+//            }
+//        }
+//        else if(type == LUA_TSTRING)
+//        {
+//            const char* replaceStr = lua_tostring(L, -1);
+//            std::replace_if(res.begin(), res.end(), lam, *replaceStr);
+//        }
+//        lua_pop(L, 1);
+//    }
+//    lua_pushstring(L, res.c_str());
+//    return 1;
+//}
 
 static const struct luaL_Reg mylib [] = {
         {"c_dirs", l_dir},
@@ -387,7 +387,7 @@ static const struct luaL_Reg mylib [] = {
         {"cUpper", cUpper},
         {"cConcat", cConcat},
         {"cFliter", cFliter},
-        {"cTransliterate", cTransliterate},
+//        {"cTransliterate", cTransliterate},
         {nullptr, nullptr},
 };
 
