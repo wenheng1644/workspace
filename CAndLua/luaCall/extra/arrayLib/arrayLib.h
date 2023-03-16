@@ -26,6 +26,6 @@ typedef struct BitArray{
     unsigned int values[1];
 }BitArray;
 
-#define checkarray(L) ((BitArray *)luaL_checkudata(L, 1, "Luabook.array"))
+#define checkarray(L) ((BitArray *)luaL_checkudata(L, 1, "arraylib"))
 
 #endif //LUACALL_ARRAYLIB_H
