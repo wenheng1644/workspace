@@ -1,0 +1,6 @@
+# ninja log v5
+0	633	1678887525232390062	CMakeFiles/arrayLib.dir/arrayLib.cpp.o	459823289776d8e6
+1559	1678	1679126921104083039	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/arrayLib/lib/libarraylib.so	952dcdc4a6a82bf7
+2	1559	1679126920984083594	CMakeFiles/arraylib.dir/arrayLib.cpp.o	dfae504a379a0bef
+1	1624	1679127489133924324	CMakeFiles/arraylib.dir/arrayLib.cpp.o	dfae504a379a0bef
+1624	1760	1679127489269923885	/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/arrayLib/lib/libarraylib.so	952dcdc4a6a82bf7

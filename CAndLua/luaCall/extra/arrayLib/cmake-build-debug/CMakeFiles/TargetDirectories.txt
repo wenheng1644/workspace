@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/arrayLib/cmake-build-debug/CMakeFiles/arraylib.dir
+/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/arrayLib/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CAndLua/luaCall/extra/arrayLib/cmake-build-debug/CMakeFiles/rebuild_cache.dir

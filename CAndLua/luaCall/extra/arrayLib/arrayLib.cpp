@@ -85,17 +85,82 @@ extern "C"{
         return 1;
     }
 
+    int array2string(lua_State* L)
+    {
+        BitArray *a = checkarray(L);
+        lua_pushfstring(L, "array(%d)", a->size);
+        return 1;
+    }
+
+    int bandarray(lua_State* L)
+    {
+        BitArray *a = (BitArray*) luaL_checkudata(L, 1, "arraylib");
+        BitArray *b = (BitArray*) luaL_checkudata(L, 2, "arraylib");
+
+        luaL_argcheck(L, a != nullptr, 1,"expect array");
+        luaL_argcheck(L, b != nullptr && b->size == a->size, 2,"expect array and size same");
+
+
+        int nbytes = sizeof(BitArray) + I_WORD(a->size - 1) * sizeof(unsigned int);
+        BitArray *res = (BitArray*) lua_newuserdata(L, nbytes);
+
+        for(int i = 0; i <= I_WORD(a->size - 1); i++)
+        {
+            res->values[i] = a->values[i] & b->values[i];
+        }
+        res->size = a->size;
+
+        luaL_getmetatable(L, "arraylib");
+        lua_setmetatable(L, -2);
+        return 1;
+    }
+
+    int borarray(lua_State* L)
+    {
+        BitArray *a = (BitArray*) luaL_checkudata(L, 1, "arraylib");
+        BitArray *b = (BitArray*) luaL_checkudata(L, 2, "arraylib");
+
+        luaL_argcheck(L, a != nullptr, 1,"expect array");
+        luaL_argcheck(L, b != nullptr && b->size == a->size, 2,"expect array and size same");
+
+
+        int nbytes = sizeof(BitArray) + I_WORD(a->size - 1) * sizeof(unsigned int);
+        BitArray *res = (BitArray*) lua_newuserdata(L, nbytes);
+
+        for(int i = 0; i <= I_WORD(a->size - 1); i++)
+        {
+            res->values[i] = a->values[i] | b->values[i];
+        }
+        res->size = a->size;
+
+        luaL_getmetatable(L, "arraylib");
+        lua_setmetatable(L, -2);
+
+        return 1;
+    }
+
+    luaL_Reg arraylib_m[] ={
+            {"__index",     getarray},
+            {"__newindex",  setarray},
+            {"__len",       getsize},
+            {"__tostring",  array2string},
+            {"__band",      bandarray},
+            {"__bor",       borarray},
+            {nullptr,       nullptr},
+    };
+
     luaL_Reg arraylib[] = {
             {"new", newarray},
-            {"set", setarray},
-            {"get", getarray},
-            {"size", getsize},
+//            {"set", setarray},
+//            {"get", getarray},
+//            {"size", getsize},
             {nullptr, nullptr},
     };
 
     int luaopen_arraylib(lua_State* L)
     {
         luaL_newmetatable(L, "arraylib");
+        luaL_setfuncs(L, arraylib_m, 0);
         luaL_newlib(L, arraylib);
         return 1;
     }
