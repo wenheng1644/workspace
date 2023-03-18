@@ -75,7 +75,7 @@ function main()
     local a = arraylib.new(1000)
     local b = arraylib.new(1000)
     --a[1000] = true
-    --b[1000] = true
+    b[1000] = true
     print("a[1000], b[1000] = ", a[1000], b[1000])
     local c = a | b --测试或运算
     print("c = ", c)
