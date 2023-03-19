@@ -48,7 +48,12 @@ extern "C"{
         unsigned int mask;
         unsigned int * value;
         
-        luaL_checkany(L, 3);
+        if(!lua_isboolean(L, 3))
+        {
+            std::cerr << "not a bool value..." << std::endl;
+            return 0;
+        }
+
         value = getparam(L, &mask);
 
         if(lua_toboolean(L, 3))
