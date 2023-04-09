@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/. -g -std=gnu++17 -o CMakeFiles/boost_asio_client.dir/client.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/client.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/client.cpp",
+  "output": "CMakeFiles/boost_asio_client.dir/client.cpp.o"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/. -g -std=gnu++17 -o CMakeFiles/boost_asio_client.dir/main.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/main.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/main.cpp",
+  "output": "CMakeFiles/boost_asio_client.dir/main.cpp.o"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/. -g -std=gnu++17 -o CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp",
+  "output": "CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o"
+}
+]

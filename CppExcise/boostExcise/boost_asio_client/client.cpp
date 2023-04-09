@@ -6,71 +6,17 @@
 
 #include "iostream"
 
-std::mutex client::s_mutex;
+std::mutex s_mutex;
 
 void client::connect()
 {
-    m_socket.async_connect(m_ed, [&](boost::system::error_code ec){
-        if(!ec)
-        {
-            auto addr = m_socket.remote_endpoint().address();
-            std::cout << "pre server addr = " << addr.to_string() << std::endl;
-
-            std::thread t1(std::bind(&client::handle_write, this));
-            handle_read();
-            t1.detach();
-//            m_socket.async_read_some(boost::asio::buffer(m_buf), [&](boost::system::error_code ec, size_t len)
-//            {
-//               if(!ec)
-//               {
-//                    std::cout << boost::format("read data(%d) = %s") % len << m_buf << std::endl;
-//                    m_socket.async_write_some(boost::asio::buffer(m_buf, len), [&](boost::system::error_code ec, size_t len)
-//                    {
-//                       if(!ec)
-//                       {
-//                           std::cout << "echo data to server" << std::endl;
-//                       }
-//                    });
-//
-//                    memset(m_buf, 0, sizeof(m_buf)); //清空數據
-//               }
-//            });
-        }
-    });
-}
-
-void client::handle_read()
-{
-    char buff[1024] = {0};
-    using namespace boost::system;
-    m_socket.async_read_some(boost::asio::buffer(buff), [&](error_code ec, size_t len)
-    {
-        if(len == 0 || ec)
-        {
-            std::cerr << "Server error...." << std::endl;
-            m_socket.close();
-            exit(0);
-        }
-
-        if(!ec)
-        {
-            netHead head;
-            std::shared_ptr<netMsg> msg = netResolver::generator()->resolver(buff, len);
-            if(msg)
-            {
-                std::lock_guard<std::mutex> l(s_mutex);
-//                std::cout << boost::format("read data(%d): %s") %(len - sizeof(netHead)) % body << std::endl;
-            }
-            handle_read(); //递归回调一下
-        }
-    });
-
+    m_socket.async_connect(m_ed, boost::bind(&client::handle_connect, this, boost::asio::placeholders::error));
 }
 
 void client::handle_write()
 {
     std::string line;
-    std::cout << "enter your data: ";
+//    std::cout << "enter your data: ";
     while(std::getline(std::cin, line) && line != "quit")
     {
 
@@ -83,15 +29,68 @@ void client::handle_write()
         head.len = strlen(line.c_str());
         head.type =  1;
         head.version = 1;
-        auto buff =  netResolver::generator()->compose(head, line.data(), strlen(line.c_str()));
-        m_socket.write_some(boost::asio::buffer(buff.get(), sizeof(head) + strlen(line.c_str())));
-
-        {
-            std::lock_guard<std::mutex> l(s_mutex);
-            std::cout << "enter your data: ";
-        }
+        head.checknum = netMsg::makeChceknum(head);
+        char buff[1024] = {0};
+//        auto buff =  netResolver::generator()->compose(head, line.data(), strlen(line.c_str()));
+        netResolver::generator()->compose(head, line.data(), strlen(line.data()), buff);
+        m_socket.write_some(boost::asio::buffer(buff, sizeof(head) + strlen(line.data())));
     }
     m_socket.close();
     std::cout << "done!" << std::endl;
 
+}
+
+void client::handle_readhead(boost::system::error_code ec, size_t bytes)
+{
+    if(ec || bytes == 0)
+    {
+        std::cerr << boost::format("server close...") << std::endl;
+        m_socket.close();
+        exit(0);
+    }
+    if(!netMsg::isVaildChecknum(m_msg.head))
+    {
+        std::cerr << "handle_readhead | head is not vaild..." << std::endl;
+        m_socket.close();
+        return;
+    }
+    std::memset(m_msg.body, 0, sizeof(m_msg.body));
+    m_socket.async_read_some(boost::asio::buffer(m_msg.body, m_msg.head.len), \
+        boost::bind(&client::handle_readbody, this, boost::asio::placeholders::error, boost::asio::placeholders::bytes_transferred));
+}
+
+void client::handle_readbody(boost::system::error_code ec, size_t bytes)
+{
+    if(ec)
+    {
+        std::cerr << boost::format("handle_readbody error, bytes = %d") % bytes << std::endl;
+        m_socket.close();
+        return;
+    }
+
+    std::cout << boost::format("read databody(%d): %s") % bytes % m_msg.body << std::endl;
+
+    m_socket.async_read_some(boost::asio::buffer(&m_msg.head, sizeof(netHead)), boost::bind(&client::handle_readhead, this, \
+        boost::asio::placeholders::error, boost::asio::placeholders::bytes_transferred));
+}
+
+void client::handle_connect(boost::system::error_code ec)
+{
+    if(!ec)
+    {
+        using namespace boost::asio;
+        std::cout << boost::format("connect server successfully: addr = %s") % m_socket.remote_endpoint().address().to_string() << std::endl;
+//        boost::asio::async_read(m_socket, boost::asio::buffer(m_buf), boost::bind(&client::handle_read, this, placeholders::error, placeholders::bytes_transferred));
+
+        m_socket.async_read_some(boost::asio::buffer(&m_msg.head, sizeof(netHead)), boost::bind(&client::handle_readhead, this, placeholders::error, placeholders::bytes_transferred));
+        std::thread t1(boost::bind(&client::handle_write, this));
+        t1.detach();
+    }
+    else
+    {
+        std::cerr << boost::format("connect error, msg = %s") % ec.message() << std::endl;
+        std::cerr << "reconnect again... wait for 3 secs" << std::endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        connect();
+    }
 }
