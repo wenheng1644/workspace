@@ -1,0 +1,8 @@
+{
+    "cmake.configureOnOpen": false,
+    "C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
+    "files.associations": {
+        "array": "cpp",
+        "iostream": "cpp"
+    }
+}

@@ -10,6 +10,8 @@
 #include "iostream"
 #include "string"
 #include "memory"
+#include "queue"
+#include "set"
 
 #include "boost/format.hpp"
 #include "boost/asio.hpp"
@@ -22,31 +24,57 @@
 
 #include "../netResolver/netResolver.h"
 
+typedef boost::system::error_code error_code_type;
+
+class Room;
 using namespace boost::asio::ip;
 class Session : public std::enable_shared_from_this<Session>
 {
 public:
-    Session(tcp::socket socket) : m_sessionSocket(std::move(socket)) {}
+    Session(boost::asio::io_service& ioserver, Room& room) : m_sessionSocket(ioserver), m_Room(room) {}
 
-    void start() {read();}
+    void start();
 
+    void deliver(netMsg& msg);
+
+    tcp::socket& socket() { return m_sessionSocket;}
 private:
     tcp::socket m_sessionSocket;
-    std::array<char, BYTESLEN> m_data;
+    netMsg m_msg;
+    Room& m_Room;
 
-    void read();
-    void write(size_t len);
+
+    void handle_readhead(error_code_type ec, size_t bytes);
+    void handle_readbody(error_code_type ec);
+    void handle_write(error_code_type ec);
+};
+
+typedef std::set<std::shared_ptr<Session>>  SessionQueue;
+typedef std::deque<std::shared_ptr<netMsg>> netMsgQueue;
+class Room
+{
+public:
+    Room() = default;
+    void deliver(netMsg& msg);
+    void join(std::shared_ptr<Session> session);
+    void leave(std::shared_ptr<Session> session);
+private:
+    SessionQueue m_Sessionqueue;
+    netMsgQueue m_Msgqueue;
 };
 
 class network {
 public:
     network(boost::asio::io_service&  ioserver, tcp::endpoint ed): m_acceptor(ioserver, ed) \
-     , m_socket(ioserver) {}
+     , m_ioserver(ioserver) {}
 
     void run();
 private:
-    tcp::socket m_socket;
+    boost::asio::io_service& m_ioserver;
     tcp::acceptor m_acceptor;
+    Room m_Room;
+
+    void handle_accept(std::shared_ptr<Session> session, error_code_type ec);
 };
 
 

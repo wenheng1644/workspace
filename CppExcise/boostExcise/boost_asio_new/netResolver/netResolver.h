@@ -46,8 +46,10 @@ public:
         return m_ptr;
     }
 
-    std::shared_ptr<char> compose(netHead& head, char* body, size_t len);
-    std::shared_ptr<netMsg> resolver(const char* data, size_t len);
+    std::shared_ptr<char> compose(netHead& head, char* body, size_t bodylen);
+    std::shared_ptr<char> compose(netMsg& msg);
+    void compose(netHead& head, char* body, size_t bodylen, char* data);
+     std::shared_ptr<netMsg> resolver(const char* data, size_t len);
 
 
 
