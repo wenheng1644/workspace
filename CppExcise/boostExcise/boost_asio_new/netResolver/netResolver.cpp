@@ -1,5 +1,6 @@
 #include "netResolver.h"
 #include "memory"
+#include "algorithm"
 
 netResolver* netResolver::m_ptr = nullptr;
 std::mutex netResolver::m_mutex;
@@ -40,6 +41,13 @@ void netResolver::compose(netHead& head, char* body, size_t bodylen, char* data)
     memcpy(data + sizeof(netHead), body, bodylen);
 }
 
+netHead netResolver::getNetHead(const char *headData)
+{
+    netHead head;
+    memcpy(&head, headData, sizeof(netHead));
+    return head;
+}
+
 u_short netMsg::makeChceknum(netHead &head)
 {
     u_short checknum = 0;
@@ -56,4 +64,36 @@ bool netMsg::isVaildChecknum(netHead &head)
         return false;
 
     return true;
+}
+
+
+tm netTimeResolver::getTimeData(const time_t& t)
+{
+    std::tm res = *std::localtime(&t);
+    return res;
+}
+
+std::string netTimeResolver::getTimeString(const time_t& t)
+{
+    std::tm tm_t = getTimeData(t);
+    std::string res(std::asctime(&tm_t));
+
+    std::replace_if(res.begin(), res.end(), [](char c) {
+        if(c == '\n' || c == '\t')
+            return true;
+        return false;
+    }, '\0');
+    return res;
+}
+
+std::string netTimeResolver::getTimeString(const tm& t)
+{
+    std::string res(std::asctime(&t));
+
+    std::replace_if(res.begin(), res.end(), [](char c) {
+        if(c == '\n' || c == '\t')
+            return true;
+        return false;
+    }, '\0');
+    return res;
 }

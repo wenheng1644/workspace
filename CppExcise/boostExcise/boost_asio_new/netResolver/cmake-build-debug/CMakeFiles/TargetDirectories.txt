@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/cmake-build-debug/CMakeFiles/NetResolver.dir
+/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/cmake-build-debug/CMakeFiles/rebuild_cache.dir

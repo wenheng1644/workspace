@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmake-build-debug"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -151,10 +151,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -279,10 +279,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "boost_asio_new"
+			"value" : "libNetResolver"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1107,10 +1107,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "The CMake toolchain file"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "UNINITIALIZED",
 			"value" : "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
@@ -1350,7 +1350,7 @@
 			"value" : "/home/wenheng/.clion-vcpkg/vcpkg/installed"
 		},
 		{
-			"name" : "boost_asio_new_BINARY_DIR",
+			"name" : "libNetResolver_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1359,10 +1359,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmake-build-debug"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/cmake-build-debug"
 		},
 		{
-			"name" : "boost_asio_new_IS_TOP_LEVEL",
+			"name" : "libNetResolver_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1374,7 +1374,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "boost_asio_new_SOURCE_DIR",
+			"name" : "libNetResolver_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1383,7 +1383,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver"
 		}
 	],
 	"kind" : "cache",

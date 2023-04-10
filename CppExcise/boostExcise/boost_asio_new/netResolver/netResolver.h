@@ -1,37 +1,8 @@
 #ifndef NETWORKRESOLVER_HEAD
 #define NETWORKRESOLVER_HEAD
 
-#define NETBODYLEN 1024
-
-#include "iostream"
-#include "cstring"
+#include "../netMsg/netMsg.h"
 #include "mutex"
-#include "vector"
-#include "memory"
-#pragma (1)
-struct netHead
-{
-    u_short     len;        //包长度
-    u_char      type;       //消息类型
-    u_short     version;    //版本号
-    u_short     checknum;   //校验码 len | type ^ version
-
-    netHead() { std::memset(this, 0, sizeof(netHead));}
-};
-
-struct netMsg
-{
-    netHead head;   //数据头
-//    std::shared_ptr<char> body;     //数据体
-    char body[NETBODYLEN];
-    netMsg() {
-        memset(&head, 0, sizeof(head));
-        memset(body, 0, sizeof(body));
-    }
-
-    static u_short makeChceknum(netHead& head);
-    static bool isVaildChecknum(netHead& head);
-};
 
 class netResolver
 {
@@ -49,14 +20,19 @@ public:
     std::shared_ptr<char> compose(netHead& head, char* body, size_t bodylen);
     std::shared_ptr<char> compose(netMsg& msg);
     void compose(netHead& head, char* body, size_t bodylen, char* data);
-     std::shared_ptr<netMsg> resolver(const char* data, size_t len);
-
-
+    std::shared_ptr<netMsg> resolver(const char* data, size_t len);
+    netHead getNetHead(const char* headData);
 
 private:
     netResolver() = default;
     static netResolver* m_ptr;
     static std::mutex m_mutex;
+};
+
+namespace netTimeResolver{
+    tm getTimeData(const time_t& t);
+    std::string getTimeString(const time_t& t);
+    std::string getTimeString(const tm& t);
 };
 
 #endif

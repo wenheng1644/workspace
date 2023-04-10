@@ -23,45 +23,47 @@
 #include "boost/chrono/chrono.hpp"
 
 #include "../netResolver/netResolver.h"
+#include "../netMsg/netMsg.h"
+#include "../chat/chatRoom.h"
 
-typedef boost::system::error_code error_code_type;
-
-class Room;
-using namespace boost::asio::ip;
-class Session : public std::enable_shared_from_this<Session>
-{
-public:
-    Session(boost::asio::io_service& ioserver, Room& room) : m_sessionSocket(ioserver), m_Room(room) {}
-
-    void start();
-
-    void deliver(netMsg& msg);
-
-    tcp::socket& socket() { return m_sessionSocket;}
-private:
-    tcp::socket m_sessionSocket;
-    netMsg m_msg;
-    Room& m_Room;
-
-
-    void handle_readhead(error_code_type ec, size_t bytes);
-    void handle_readbody(error_code_type ec);
-    void handle_write(error_code_type ec);
-};
-
-typedef std::set<std::shared_ptr<Session>>  SessionQueue;
-typedef std::deque<std::shared_ptr<netMsg>> netMsgQueue;
-class Room
-{
-public:
-    Room() = default;
-    void deliver(netMsg& msg);
-    void join(std::shared_ptr<Session> session);
-    void leave(std::shared_ptr<Session> session);
-private:
-    SessionQueue m_Sessionqueue;
-    netMsgQueue m_Msgqueue;
-};
+//typedef boost::system::error_code error_code_type;
+//
+//class Room;
+//using namespace boost::asio::ip;
+//class Session : public std::enable_shared_from_this<Session>
+//{
+//public:
+//    Session(boost::asio::io_service& ioserver, Room& room) : m_sessionSocket(ioserver), m_Room(room) {}
+//
+//    void start();
+//
+//    void deliver(netMsg& msg);
+//
+//    tcp::socket& socket() { return m_sessionSocket;}
+//private:
+//    tcp::socket m_sessionSocket;
+//    netMsg m_msg;
+//    Room& m_Room;
+//
+//
+//    void handle_readhead(error_code_type ec, size_t bytes);
+//    void handle_readbody(error_code_type ec);
+//    void handle_write(error_code_type ec);
+//};
+//
+//typedef std::set<std::shared_ptr<Session>>  SessionQueue;
+//typedef std::deque<std::shared_ptr<netMsg>> netMsgQueue;
+//class Room
+//{
+//public:
+//    Room() = default;
+//    void deliver(netMsg& msg);
+//    void join(std::shared_ptr<Session> session);
+//    void leave(std::shared_ptr<Session> session);
+//private:
+//    SessionQueue m_Sessionqueue;
+//    netMsgQueue m_Msgqueue;
+//};
 
 class network {
 public:
@@ -72,15 +74,15 @@ public:
 private:
     boost::asio::io_service& m_ioserver;
     tcp::acceptor m_acceptor;
-    Room m_Room;
+    chatRoom m_Room;
 
-    void handle_accept(std::shared_ptr<Session> session, error_code_type ec);
+    void handle_accept(chatSessionPtr session, error_code_type ec);
 };
 
 
 class time_with_func
 {
-    typedef void(handlder_type)(boost::system::error_code ec);
+    typedef void(handlder_type)(error_code_type ec);
 
 public:
     time_with_func(boost::asio::io_service& ioService, int maxCnt, void(func)()) : m_cnt(0), m_maxCnt(maxCnt)\
