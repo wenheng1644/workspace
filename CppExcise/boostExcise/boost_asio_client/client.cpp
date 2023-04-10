@@ -17,6 +17,7 @@ void client::handle_write()
 {
     std::string line;
 //    std::cout << "enter your data: ";
+    std::string ip = m_socket.local_endpoint().address().to_string();
     while(std::getline(std::cin, line) && line != "quit")
     {
 
@@ -30,6 +31,9 @@ void client::handle_write()
         head.type =  1;
         head.version = 1;
         head.checknum = netMsg::makeChceknum(head);
+        memcpy(head.info.ip, ip.data(), strlen(ip.data()));
+        memcpy(head.info.name, "xwz", 3);
+        head.info.times = time(nullptr);
         char buff[1024] = {0};
 //        auto buff =  netResolver::generator()->compose(head, line.data(), strlen(line.c_str()));
         netResolver::generator()->compose(head, line.data(), strlen(line.data()), buff);
@@ -51,7 +55,7 @@ void client::handle_readhead(boost::system::error_code ec, size_t bytes)
     if(!netMsg::isVaildChecknum(m_msg.head))
     {
         std::cerr << "handle_readhead | head is not vaild..." << std::endl;
-        m_socket.close();
+//        m_socket.close();
         return;
     }
     std::memset(m_msg.body, 0, sizeof(m_msg.body));
@@ -67,8 +71,13 @@ void client::handle_readbody(boost::system::error_code ec, size_t bytes)
         m_socket.close();
         return;
     }
+    if(bytes == 0)
+    {
+        return;
+    }
 
-    std::cout << boost::format("read databody(%d): %s") % bytes % m_msg.body << std::endl;
+    std::cout << boost::format("[ip: %s, name: %s, time = %s] read databody(%d): %s") \
+        % m_msg.head.info.ip % m_msg.head.info.name % netTimeResolver::getTimeString(m_msg.head.info.times) % bytes % m_msg.body << std::endl;
 
     m_socket.async_read_some(boost::asio::buffer(&m_msg.head, sizeof(netHead)), boost::bind(&client::handle_readhead, this, \
         boost::asio::placeholders::error, boost::asio::placeholders::bytes_transferred));

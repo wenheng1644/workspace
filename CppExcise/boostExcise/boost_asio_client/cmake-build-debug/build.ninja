@@ -52,23 +52,16 @@ build cmake_object_order_depends_target_boost_asio_client: phony || CMakeFiles/b
 build CMakeFiles/boost_asio_client.dir/client.cpp.o: CXX_COMPILER__boost_asio_client_Debug /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/client.cpp || cmake_object_order_depends_target_boost_asio_client
   DEP_FILE = CMakeFiles/boost_asio_client.dir/client.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/.
+  INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/. -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib
   OBJECT_DIR = CMakeFiles/boost_asio_client.dir
   OBJECT_FILE_DIR = CMakeFiles/boost_asio_client.dir
 
 build CMakeFiles/boost_asio_client.dir/main.cpp.o: CXX_COMPILER__boost_asio_client_Debug /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/main.cpp || cmake_object_order_depends_target_boost_asio_client
   DEP_FILE = CMakeFiles/boost_asio_client.dir/main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/.
+  INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/. -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib
   OBJECT_DIR = CMakeFiles/boost_asio_client.dir
   OBJECT_FILE_DIR = CMakeFiles/boost_asio_client.dir
-
-build CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o: CXX_COMPILER__boost_asio_client_Debug /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp || cmake_object_order_depends_target_boost_asio_client
-  DEP_FILE = CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/.
-  OBJECT_DIR = CMakeFiles/boost_asio_client.dir
-  OBJECT_FILE_DIR = CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver
 
 
 # =============================================================================
@@ -78,9 +71,10 @@ build CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/
 #############################################
 # Link the executable boost_asio_client
 
-build boost_asio_client: CXX_EXECUTABLE_LINKER__boost_asio_client_Debug CMakeFiles/boost_asio_client.dir/client.cpp.o CMakeFiles/boost_asio_client.dir/main.cpp.o CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o
+build boost_asio_client: CXX_EXECUTABLE_LINKER__boost_asio_client_Debug CMakeFiles/boost_asio_client.dir/client.cpp.o CMakeFiles/boost_asio_client.dir/main.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -lpthread
+  LINK_LIBRARIES = -Wl,-rpath,/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib  -lpthread  -lNetResolver
+  LINK_PATH = -L/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib
   OBJECT_DIR = CMakeFiles/boost_asio_client.dir
   POST_BUILD = :
   PRE_LINK = :
