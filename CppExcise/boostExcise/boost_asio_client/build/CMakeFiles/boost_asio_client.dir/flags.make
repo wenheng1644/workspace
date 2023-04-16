@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/.
+CXX_INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/. -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib
 
 CXX_FLAGS = -g -std=gnu++17
 

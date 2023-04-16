@@ -83,11 +83,26 @@ void client::handle_readbody(boost::system::error_code ec, size_t bytes)
         boost::asio::placeholders::error, boost::asio::placeholders::bytes_transferred));
 }
 
+void client::handle_checkConnect()
+{
+    netHead head;
+    head.type = 1;
+    head.version = 1;
+    head.len = 0;
+    head.checknum = netMsg::makeChceknum(head);
+
+    char buff[1024] = {0};
+    netResolver::generator()->compose(head, nullptr, 0, buff);
+
+    m_socket.write_some(boost::asio::buffer(buff, sizeof(netHead)));
+}
+
 void client::handle_connect(boost::system::error_code ec)
 {
     if(!ec)
     {
         using namespace boost::asio;
+        handle_checkConnect();
         std::cout << boost::format("connect server successfully: addr = %s") % m_socket.remote_endpoint().address().to_string() << std::endl;
 //        boost::asio::async_read(m_socket, boost::asio::buffer(m_buf), boost::bind(&client::handle_read, this, placeholders::error, placeholders::bytes_transferred));
 

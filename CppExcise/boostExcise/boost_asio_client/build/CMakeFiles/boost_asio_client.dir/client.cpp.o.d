@@ -3,7 +3,7 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/include/stdc-predef.h \
  /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/client.h \
  /usr/local/include/boost/asio.hpp \
- /usr/local/include/boost/asio/associated_allocator.hpp \
+ /usr/local/include/boost/asio/any_completion_executor.hpp \
  /usr/local/include/boost/asio/detail/config.hpp \
  /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
@@ -21,10 +21,12 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h \
  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
@@ -63,14 +65,34 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/config/helper_macros.hpp \
  /usr/local/include/boost/config/detail/cxx_composite.hpp \
  /usr/local/include/boost/version.hpp /usr/include/linux/version.h \
+ /usr/local/include/boost/asio/execution.hpp \
+ /usr/local/include/boost/asio/execution/allocator.hpp \
+ /usr/local/include/boost/asio/detail/type_traits.hpp \
+ /usr/include/c++/8/type_traits \
+ /usr/local/include/boost/asio/execution/executor.hpp \
+ /usr/local/include/boost/asio/execution/invocable_archetype.hpp \
+ /usr/local/include/boost/asio/detail/variadic_templates.hpp \
+ /usr/local/include/boost/asio/detail/push_options.hpp \
+ /usr/local/include/boost/asio/detail/pop_options.hpp \
+ /usr/local/include/boost/asio/traits/equality_comparable.hpp \
+ /usr/local/include/boost/asio/traits/execute_member.hpp \
+ /usr/local/include/boost/asio/execution/execute.hpp \
+ /usr/local/include/boost/asio/execution/detail/as_invocable.hpp \
+ /usr/local/include/boost/asio/detail/atomic_count.hpp \
+ /usr/include/c++/8/atomic /usr/include/c++/8/bits/atomic_base.h \
+ /usr/lib/gcc/x86_64-linux-gnu/8/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/8/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/8/bits/move.h /usr/include/c++/8/bits/concept_check.h \
+ /usr/local/include/boost/asio/detail/memory.hpp \
  /usr/include/c++/8/memory /usr/include/c++/8/bits/stl_algobase.h \
  /usr/include/c++/8/bits/functexcept.h \
  /usr/include/c++/8/bits/exception_defines.h \
  /usr/include/c++/8/bits/cpp_type_traits.h \
  /usr/include/c++/8/ext/type_traits.h \
  /usr/include/c++/8/ext/numeric_traits.h \
- /usr/include/c++/8/bits/stl_pair.h /usr/include/c++/8/bits/move.h \
- /usr/include/c++/8/bits/concept_check.h /usr/include/c++/8/type_traits \
+ /usr/include/c++/8/bits/stl_pair.h \
  /usr/include/c++/8/bits/stl_iterator_base_types.h \
  /usr/include/c++/8/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/8/debug/assertions.h \
@@ -96,7 +118,6 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/include/c++/8/bits/stringfwd.h /usr/include/c++/8/bits/postypes.h \
  /usr/include/c++/8/cwchar /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/8/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -122,10 +143,7 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/include/c++/8/bits/unique_ptr.h /usr/include/c++/8/tuple \
  /usr/include/c++/8/array /usr/include/c++/8/stdexcept \
  /usr/include/c++/8/string /usr/include/c++/8/bits/char_traits.h \
- /usr/include/c++/8/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/c++/8/bits/localefwd.h \
+ /usr/include/c++/8/cstdint /usr/include/c++/8/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/c++locale.h \
  /usr/include/c++/8/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/8/cctype \
@@ -154,40 +172,16 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/include/c++/8/bits/refwrap.h \
  /usr/include/c++/8/ext/aligned_buffer.h \
  /usr/include/c++/8/bits/shared_ptr_atomic.h \
- /usr/include/c++/8/bits/atomic_base.h \
- /usr/include/c++/8/bits/atomic_lockfree_defines.h \
  /usr/include/c++/8/backward/auto_ptr.h \
- /usr/local/include/boost/asio/associator.hpp \
- /usr/local/include/boost/asio/detail/push_options.hpp \
- /usr/local/include/boost/asio/detail/pop_options.hpp \
- /usr/local/include/boost/asio/detail/functional.hpp \
- /usr/include/c++/8/functional /usr/include/c++/8/bits/std_function.h \
- /usr/include/c++/8/unordered_map /usr/include/c++/8/bits/hashtable.h \
- /usr/include/c++/8/bits/hashtable_policy.h \
- /usr/include/c++/8/bits/node_handle.h /usr/include/c++/8/optional \
- /usr/include/c++/8/bits/enable_special_members.h \
- /usr/include/c++/8/bits/unordered_map.h /usr/include/c++/8/vector \
- /usr/include/c++/8/bits/stl_vector.h \
- /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
- /usr/include/c++/8/bits/stl_algo.h \
- /usr/include/c++/8/bits/algorithmfwd.h \
- /usr/include/c++/8/bits/stl_heap.h \
- /usr/include/c++/8/bits/uniform_int_dist.h \
- /usr/local/include/boost/asio/detail/type_traits.hpp \
- /usr/local/include/boost/asio/associated_executor.hpp \
- /usr/local/include/boost/asio/execution/executor.hpp \
- /usr/local/include/boost/asio/execution/execute.hpp \
- /usr/local/include/boost/asio/execution/detail/as_invocable.hpp \
- /usr/local/include/boost/asio/detail/atomic_count.hpp \
- /usr/include/c++/8/atomic \
- /usr/local/include/boost/asio/detail/memory.hpp \
+ /usr/local/include/boost/asio/detail/cstdint.hpp \
  /usr/local/include/boost/asio/detail/throw_exception.hpp \
  /usr/local/include/boost/throw_exception.hpp \
  /usr/local/include/boost/exception/exception.hpp \
  /usr/local/include/boost/assert/source_location.hpp \
  /usr/local/include/boost/current_function.hpp \
- /usr/local/include/boost/cstdint.hpp \
  /usr/local/include/boost/config/workaround.hpp \
+ /usr/local/include/boost/cstdint.hpp /usr/include/c++/8/cstring \
+ /usr/include/string.h /usr/include/strings.h \
  /usr/local/include/boost/asio/execution/receiver_invocation_error.hpp \
  /usr/local/include/boost/asio/execution/impl/receiver_invocation_error.ipp \
  /usr/local/include/boost/asio/execution/set_done.hpp \
@@ -197,19 +191,10 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/traits/set_error_member.hpp \
  /usr/local/include/boost/asio/traits/set_error_free.hpp \
  /usr/local/include/boost/asio/execution/set_value.hpp \
- /usr/local/include/boost/asio/detail/variadic_templates.hpp \
  /usr/local/include/boost/asio/traits/set_value_member.hpp \
  /usr/local/include/boost/asio/traits/set_value_free.hpp \
  /usr/local/include/boost/asio/execution/detail/as_receiver.hpp \
- /usr/local/include/boost/asio/traits/execute_member.hpp \
  /usr/local/include/boost/asio/traits/execute_free.hpp \
- /usr/local/include/boost/asio/execution/invocable_archetype.hpp \
- /usr/local/include/boost/asio/traits/equality_comparable.hpp \
- /usr/local/include/boost/asio/is_executor.hpp \
- /usr/local/include/boost/asio/detail/is_executor.hpp \
- /usr/local/include/boost/asio/system_executor.hpp \
- /usr/local/include/boost/asio/execution.hpp \
- /usr/local/include/boost/asio/execution/allocator.hpp \
  /usr/local/include/boost/asio/execution/scheduler.hpp \
  /usr/local/include/boost/asio/execution/schedule.hpp \
  /usr/local/include/boost/asio/traits/schedule_member.hpp \
@@ -253,6 +238,21 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/detail/thread_info_base.hpp \
  /usr/local/include/boost/asio/multiple_exceptions.hpp \
  /usr/local/include/boost/asio/impl/multiple_exceptions.ipp \
+ /usr/local/include/boost/asio/associated_allocator.hpp \
+ /usr/local/include/boost/asio/associator.hpp \
+ /usr/local/include/boost/asio/detail/functional.hpp \
+ /usr/include/c++/8/functional /usr/include/c++/8/bits/std_function.h \
+ /usr/include/c++/8/unordered_map /usr/include/c++/8/bits/hashtable.h \
+ /usr/include/c++/8/bits/hashtable_policy.h \
+ /usr/include/c++/8/bits/node_handle.h /usr/include/c++/8/optional \
+ /usr/include/c++/8/bits/enable_special_members.h \
+ /usr/include/c++/8/bits/unordered_map.h /usr/include/c++/8/vector \
+ /usr/include/c++/8/bits/stl_vector.h \
+ /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
+ /usr/include/c++/8/bits/stl_algo.h \
+ /usr/include/c++/8/bits/algorithmfwd.h \
+ /usr/include/c++/8/bits/stl_heap.h \
+ /usr/include/c++/8/bits/uniform_int_dist.h \
  /usr/local/include/boost/asio/handler_alloc_hook.hpp \
  /usr/local/include/boost/asio/impl/handler_alloc_hook.ipp \
  /usr/local/include/boost/asio/detail/handler_invoke_helpers.hpp \
@@ -287,7 +287,6 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/system/detail/error_condition.hpp \
  /usr/local/include/boost/system/detail/generic_category.hpp \
  /usr/local/include/boost/system/detail/generic_category_message.hpp \
- /usr/include/c++/8/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/local/include/boost/system/detail/enable_if.hpp \
  /usr/local/include/boost/system/detail/is_same.hpp \
  /usr/local/include/boost/system/detail/errc.hpp \
@@ -298,8 +297,10 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/include/c++/8/cstdarg \
  /usr/local/include/boost/system/detail/system_category.hpp \
  /usr/local/include/boost/system/detail/system_category_impl.hpp \
+ /usr/local/include/boost/system/detail/system_category_message.hpp \
  /usr/local/include/boost/system/api_config.hpp \
  /usr/local/include/boost/system/detail/interop_category.hpp \
+ /usr/local/include/boost/system/detail/std_category.hpp \
  /usr/include/c++/8/ostream /usr/include/c++/8/ios \
  /usr/include/c++/8/bits/ios_base.h \
  /usr/include/c++/8/bits/locale_classes.h \
@@ -316,7 +317,11 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/include/c++/8/bits/ostream.tcc \
  /usr/local/include/boost/system/error_category.hpp \
  /usr/local/include/boost/system/detail/error_category_impl.hpp \
- /usr/local/include/boost/system/detail/std_category.hpp \
+ /usr/local/include/boost/system/detail/std_category_impl.hpp \
+ /usr/include/c++/8/mutex /usr/include/c++/8/chrono \
+ /usr/include/c++/8/ratio /usr/include/c++/8/ctime \
+ /usr/include/c++/8/bits/parse_numbers.h \
+ /usr/include/c++/8/bits/std_mutex.h \
  /usr/local/include/boost/system/error_condition.hpp \
  /usr/local/include/boost/system/errc.hpp \
  /usr/local/include/boost/system/generic_category.hpp \
@@ -368,6 +373,16 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/execution/detail/submit_receiver.hpp \
  /usr/local/include/boost/asio/traits/submit_member.hpp \
  /usr/local/include/boost/asio/traits/submit_free.hpp \
+ /usr/local/include/boost/asio/impl/any_completion_executor.ipp \
+ /usr/local/include/boost/asio/any_completion_handler.hpp \
+ /usr/local/include/boost/asio/associated_cancellation_slot.hpp \
+ /usr/local/include/boost/asio/cancellation_signal.hpp \
+ /usr/local/include/boost/asio/cancellation_type.hpp \
+ /usr/local/include/boost/asio/impl/cancellation_signal.ipp \
+ /usr/local/include/boost/asio/associated_executor.hpp \
+ /usr/local/include/boost/asio/is_executor.hpp \
+ /usr/local/include/boost/asio/detail/is_executor.hpp \
+ /usr/local/include/boost/asio/system_executor.hpp \
  /usr/local/include/boost/asio/impl/system_executor.hpp \
  /usr/local/include/boost/asio/detail/executor_op.hpp \
  /usr/local/include/boost/asio/detail/fenced_block.hpp \
@@ -436,7 +451,6 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/sys/eventfd.h \
  /usr/include/x86_64-linux-gnu/bits/eventfd.h \
- /usr/local/include/boost/asio/detail/cstdint.hpp \
  /usr/local/include/boost/asio/detail/socket_types.hpp \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
@@ -465,24 +479,25 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/detail/thread_group.hpp \
  /usr/local/include/boost/asio/impl/system_context.hpp \
  /usr/local/include/boost/asio/impl/system_context.ipp \
- /usr/local/include/boost/asio/associated_cancellation_slot.hpp \
- /usr/local/include/boost/asio/cancellation_signal.hpp \
- /usr/local/include/boost/asio/cancellation_type.hpp \
- /usr/local/include/boost/asio/impl/cancellation_signal.ipp \
+ /usr/local/include/boost/asio/cancellation_state.hpp \
+ /usr/local/include/boost/asio/recycling_allocator.hpp \
+ /usr/local/include/boost/asio/any_io_executor.hpp \
+ /usr/local/include/boost/asio/impl/any_io_executor.ipp \
+ /usr/local/include/boost/asio/append.hpp \
+ /usr/local/include/boost/asio/impl/append.hpp \
+ /usr/local/include/boost/asio/detail/handler_cont_helpers.hpp \
+ /usr/local/include/boost/asio/handler_continuation_hook.hpp \
+ /usr/local/include/boost/asio/detail/utility.hpp \
+ /usr/local/include/boost/asio/as_tuple.hpp \
+ /usr/local/include/boost/asio/impl/as_tuple.hpp \
  /usr/local/include/boost/asio/awaitable.hpp \
  /usr/local/include/boost/asio/basic_datagram_socket.hpp \
  /usr/local/include/boost/asio/basic_socket.hpp \
- /usr/local/include/boost/asio/any_io_executor.hpp \
- /usr/local/include/boost/asio/impl/any_io_executor.ipp \
  /usr/local/include/boost/asio/detail/io_object_impl.hpp \
  /usr/local/include/boost/asio/io_context.hpp \
  /usr/local/include/boost/asio/detail/wrapped_handler.hpp \
  /usr/local/include/boost/asio/detail/bind_handler.hpp \
- /usr/local/include/boost/asio/detail/handler_cont_helpers.hpp \
- /usr/local/include/boost/asio/handler_continuation_hook.hpp \
  /usr/local/include/boost/asio/detail/chrono.hpp \
- /usr/include/c++/8/chrono /usr/include/c++/8/ratio \
- /usr/include/c++/8/ctime /usr/include/c++/8/bits/parse_numbers.h \
  /usr/local/include/boost/asio/impl/io_context.hpp \
  /usr/local/include/boost/asio/detail/completion_handler.hpp \
  /usr/local/include/boost/asio/detail/handler_work.hpp \
@@ -498,6 +513,10 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/buffer.hpp \
  /usr/local/include/boost/asio/detail/array_fwd.hpp \
  /usr/local/include/boost/asio/detail/string_view.hpp \
+ /usr/local/include/boost/asio/is_contiguous_iterator.hpp \
+ /usr/include/c++/8/iterator /usr/include/c++/8/istream \
+ /usr/include/c++/8/bits/istream.tcc \
+ /usr/include/c++/8/bits/stream_iterator.h \
  /usr/local/include/boost/detail/workaround.hpp \
  /usr/local/include/boost/asio/detail/is_buffer_sequence.hpp \
  /usr/local/include/boost/asio/detail/buffer_sequence_adapter.hpp \
@@ -540,7 +559,6 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
  /usr/local/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
  /usr/local/include/boost/smart_ptr/detail/sp_noexcept.hpp \
- /usr/local/include/boost/checked_delete.hpp \
  /usr/local/include/boost/core/checked_delete.hpp \
  /usr/local/include/boost/core/addressof.hpp \
  /usr/local/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
@@ -589,9 +607,7 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/core/enable_if.hpp \
  /usr/local/include/boost/date_time/special_defs.hpp \
  /usr/local/include/boost/date_time/time_defs.hpp \
- /usr/local/include/boost/operators.hpp /usr/include/c++/8/iterator \
- /usr/include/c++/8/istream /usr/include/c++/8/bits/istream.tcc \
- /usr/include/c++/8/bits/stream_iterator.h \
+ /usr/local/include/boost/operators.hpp \
  /usr/local/include/boost/static_assert.hpp \
  /usr/local/include/boost/type_traits/is_integral.hpp \
  /usr/local/include/boost/type_traits/integral_constant.hpp \
@@ -789,8 +805,6 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/mpl/identity.hpp \
  /usr/local/include/boost/numeric/conversion/detail/int_float_mixture.hpp \
  /usr/local/include/boost/numeric/conversion/int_float_mixture_enum.hpp \
- /usr/local/include/boost/mpl/integral_c.hpp \
- /usr/local/include/boost/mpl/integral_c_fwd.hpp \
  /usr/local/include/boost/numeric/conversion/detail/sign_mixture.hpp \
  /usr/local/include/boost/numeric/conversion/sign_mixture_enum.hpp \
  /usr/local/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp \
@@ -799,6 +813,8 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/mpl/multiplies.hpp \
  /usr/local/include/boost/mpl/times.hpp \
  /usr/local/include/boost/mpl/aux_/arithmetic_op.hpp \
+ /usr/local/include/boost/mpl/integral_c.hpp \
+ /usr/local/include/boost/mpl/integral_c_fwd.hpp \
  /usr/local/include/boost/mpl/aux_/largest_int.hpp \
  /usr/local/include/boost/mpl/aux_/preprocessed/gcc/times.hpp \
  /usr/local/include/boost/mpl/aux_/preprocessor/default_params.hpp \
@@ -858,6 +874,7 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/basic_streambuf.hpp \
  /usr/local/include/boost/asio/basic_streambuf_fwd.hpp \
  /usr/local/include/boost/asio/basic_writable_pipe.hpp \
+ /usr/local/include/boost/asio/bind_allocator.hpp \
  /usr/local/include/boost/asio/bind_cancellation_slot.hpp \
  /usr/local/include/boost/asio/bind_executor.hpp \
  /usr/local/include/boost/asio/uses_executor.hpp \
@@ -875,7 +892,6 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/write.hpp \
  /usr/local/include/boost/asio/impl/write.hpp \
  /usr/local/include/boost/asio/detail/base_from_cancellation_state.hpp \
- /usr/local/include/boost/asio/cancellation_state.hpp \
  /usr/local/include/boost/asio/detail/base_from_completion_cond.hpp \
  /usr/local/include/boost/asio/detail/consuming_buffers.hpp \
  /usr/local/include/boost/asio/detail/dependent_type.hpp \
@@ -883,16 +899,20 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/buffers_iterator.hpp \
  /usr/local/include/boost/asio/co_spawn.hpp \
  /usr/local/include/boost/asio/compose.hpp \
- /usr/local/include/boost/asio/impl/compose.hpp \
+ /usr/local/include/boost/asio/detail/composed_work.hpp \
  /usr/local/include/boost/asio/connect.hpp \
  /usr/local/include/boost/asio/impl/connect.hpp \
  /usr/local/include/boost/asio/connect_pipe.hpp \
  /usr/local/include/boost/asio/impl/connect_pipe.hpp \
  /usr/local/include/boost/asio/impl/connect_pipe.ipp \
+ /usr/local/include/boost/asio/consign.hpp \
+ /usr/local/include/boost/asio/impl/consign.hpp \
  /usr/local/include/boost/asio/coroutine.hpp \
  /usr/local/include/boost/asio/deadline_timer.hpp \
  /usr/local/include/boost/asio/defer.hpp \
  /usr/local/include/boost/asio/impl/defer.hpp \
+ /usr/local/include/boost/asio/deferred.hpp \
+ /usr/local/include/boost/asio/impl/deferred.hpp \
  /usr/local/include/boost/asio/detached.hpp \
  /usr/local/include/boost/asio/impl/detached.hpp \
  /usr/local/include/boost/asio/dispatch.hpp \
@@ -973,8 +993,7 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/local/stream_protocol.hpp \
  /usr/local/include/boost/asio/packaged_task.hpp \
  /usr/local/include/boost/asio/detail/future.hpp \
- /usr/include/c++/8/future /usr/include/c++/8/mutex \
- /usr/include/c++/8/bits/std_mutex.h /usr/include/c++/8/thread \
+ /usr/include/c++/8/future /usr/include/c++/8/thread \
  /usr/include/c++/8/condition_variable \
  /usr/include/c++/8/bits/atomic_futex.h \
  /usr/local/include/boost/asio/placeholders.hpp \
@@ -984,6 +1003,8 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/asio/posix/basic_stream_descriptor.hpp \
  /usr/local/include/boost/asio/posix/descriptor.hpp \
  /usr/local/include/boost/asio/posix/stream_descriptor.hpp \
+ /usr/local/include/boost/asio/prepend.hpp \
+ /usr/local/include/boost/asio/impl/prepend.hpp \
  /usr/local/include/boost/asio/random_access_file.hpp \
  /usr/local/include/boost/asio/read.hpp \
  /usr/local/include/boost/asio/impl/read.hpp \
@@ -1010,6 +1031,7 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/predef/architecture/convex.h \
  /usr/local/include/boost/predef/architecture/e2k.h \
  /usr/local/include/boost/predef/architecture/ia64.h \
+ /usr/local/include/boost/predef/architecture/loongarch.h \
  /usr/local/include/boost/predef/architecture/m68k.h \
  /usr/local/include/boost/predef/architecture/mips.h \
  /usr/local/include/boost/predef/architecture/parisc.h \
@@ -1196,6 +1218,8 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/core/swap.hpp \
  /usr/local/include/boost/optional/bad_optional_access.hpp \
  /usr/local/include/boost/type_traits/alignment_of.hpp \
+ /usr/local/include/boost/type_traits/conjunction.hpp \
+ /usr/local/include/boost/type_traits/disjunction.hpp \
  /usr/local/include/boost/type_traits/has_nothrow_constructor.hpp \
  /usr/local/include/boost/type_traits/is_default_constructible.hpp \
  /usr/local/include/boost/type_traits/is_complete.hpp \
@@ -1223,12 +1247,16 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/type_traits/remove_bounds.hpp \
  /usr/local/include/boost/type_traits/remove_extent.hpp \
  /usr/local/include/boost/type_traits/add_pointer.hpp \
+ /usr/local/include/boost/type_traits/is_assignable.hpp \
  /usr/local/include/boost/type_traits/is_const.hpp \
  /usr/local/include/boost/type_traits/is_constructible.hpp \
  /usr/local/include/boost/type_traits/is_destructible.hpp \
+ /usr/local/include/boost/type_traits/is_convertible.hpp \
+ /usr/local/include/boost/type_traits/is_abstract.hpp \
+ /usr/local/include/boost/type_traits/add_lvalue_reference.hpp \
+ /usr/local/include/boost/type_traits/add_reference.hpp \
  /usr/local/include/boost/type_traits/is_nothrow_move_assignable.hpp \
  /usr/local/include/boost/type_traits/has_trivial_move_assign.hpp \
- /usr/local/include/boost/type_traits/is_assignable.hpp \
  /usr/local/include/boost/type_traits/is_volatile.hpp \
  /usr/local/include/boost/type_traits/has_nothrow_assign.hpp \
  /usr/local/include/boost/type_traits/enable_if.hpp \
@@ -1241,6 +1269,7 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/move/detail/config_end.hpp \
  /usr/local/include/boost/move/detail/meta_utils.hpp \
  /usr/local/include/boost/move/detail/meta_utils_core.hpp \
+ /usr/local/include/boost/move/detail/addressof.hpp \
  /usr/local/include/boost/move/traits.hpp \
  /usr/local/include/boost/move/detail/type_traits.hpp \
  /usr/local/include/boost/none.hpp /usr/local/include/boost/none_t.hpp \
@@ -1252,6 +1281,7 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/optional/detail/optional_config.hpp \
  /usr/local/include/boost/optional/detail/optional_factory_support.hpp \
  /usr/local/include/boost/optional/detail/optional_aligned_storage.hpp \
+ /usr/local/include/boost/optional/detail/optional_hash.hpp \
  /usr/local/include/boost/optional/detail/optional_trivially_copyable_base.hpp \
  /usr/local/include/boost/optional/detail/optional_reference_spec.hpp \
  /usr/local/include/boost/optional/detail/optional_relops.hpp \
@@ -1275,7 +1305,6 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/format/detail/unset_macros.hpp \
  /usr/local/include/boost/bind.hpp /usr/local/include/boost/bind/bind.hpp \
  /usr/local/include/boost/ref.hpp /usr/local/include/boost/core/ref.hpp \
- /usr/local/include/boost/mem_fn.hpp \
  /usr/local/include/boost/bind/mem_fn.hpp \
  /usr/local/include/boost/get_pointer.hpp \
  /usr/local/include/boost/config/no_tr1/memory.hpp \
@@ -1291,4 +1320,5 @@ CMakeFiles/boost_asio_client.dir/client.cpp.o: \
  /usr/local/include/boost/bind/bind_mf2_cc.hpp \
  /usr/local/include/boost/bind/placeholders.hpp \
  /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/../boost_asio_new/netResolver/netResolver.h \
+ /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/../boost_asio_new/netResolver/../netMsg/netMsg.h \
  /usr/include/c++/8/iostream

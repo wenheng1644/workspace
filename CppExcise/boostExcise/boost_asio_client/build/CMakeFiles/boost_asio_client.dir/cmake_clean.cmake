@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/boost_asio_client.dir/client.cpp.o"
   "CMakeFiles/boost_asio_client.dir/client.cpp.o.d"
-  "CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o"
-  "CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o.d"
   "CMakeFiles/boost_asio_client.dir/main.cpp.o"
   "CMakeFiles/boost_asio_client.dir/main.cpp.o.d"
   "boost_asio_client"

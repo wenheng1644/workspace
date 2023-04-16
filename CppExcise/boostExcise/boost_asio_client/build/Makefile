@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/cmake-3.26.0/bin/cmake
+CMAKE_COMMAND = /usr/local/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/cmake-3.26.0/bin/cmake -E rm -f
+RM = /usr/local/cmake/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_a
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/opt/cmake-3.26.0/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/cmake/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/cmake-3.26.0/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/cmake/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -153,30 +153,6 @@ client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/client.cpp.s
 .PHONY : client.cpp.s
 
-home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.o: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o
-.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.o
-
-# target to build an object file
-home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o
-.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o
-
-home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.i: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.i
-.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.i
-
-# target to preprocess a source file
-home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.i
-.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.i
-
-home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.s: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.s
-.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.s
-
-# target to generate assembly for a file
-home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.s
-.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -213,9 +189,6 @@ help:
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"
-	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.o"
-	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.i"
-	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

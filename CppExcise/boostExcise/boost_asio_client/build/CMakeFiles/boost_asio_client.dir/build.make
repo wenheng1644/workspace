@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/cmake-3.26.0/bin/cmake
+CMAKE_COMMAND = /usr/local/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/cmake-3.26.0/bin/cmake -E rm -f
+RM = /usr/local/cmake/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -97,35 +97,19 @@ CMakeFiles/boost_asio_client.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_asio_client.dir/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/main.cpp -o CMakeFiles/boost_asio_client.dir/main.cpp.s
 
-CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o: CMakeFiles/boost_asio_client.dir/flags.make
-CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp
-CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o: CMakeFiles/boost_asio_client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o -MF CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o.d -o CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp
-
-CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp > CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.i
-
-CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp -o CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.s
-
 # Object files for target boost_asio_client
 boost_asio_client_OBJECTS = \
 "CMakeFiles/boost_asio_client.dir/client.cpp.o" \
-"CMakeFiles/boost_asio_client.dir/main.cpp.o" \
-"CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o"
+"CMakeFiles/boost_asio_client.dir/main.cpp.o"
 
 # External object files for target boost_asio_client
 boost_asio_client_EXTERNAL_OBJECTS =
 
 boost_asio_client: CMakeFiles/boost_asio_client.dir/client.cpp.o
 boost_asio_client: CMakeFiles/boost_asio_client.dir/main.cpp.o
-boost_asio_client: CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/netResolver.cpp.o
 boost_asio_client: CMakeFiles/boost_asio_client.dir/build.make
 boost_asio_client: CMakeFiles/boost_asio_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable boost_asio_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable boost_asio_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boost_asio_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

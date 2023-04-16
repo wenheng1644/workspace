@@ -30,6 +30,8 @@ private:
     
     void handle_readhead(boost::system::error_code ec, size_t bytes);
     void handle_readbody(boost::system::error_code ec, size_t bytes);
+
+    void handle_checkConnect();
 };
 
 
