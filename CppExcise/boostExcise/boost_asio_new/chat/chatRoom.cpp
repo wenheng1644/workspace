@@ -103,3 +103,28 @@ void chatSession::handle_write(error_code_type ec, size_t bytes)
         return;
     }
 }
+
+bool chatSession::isVaildConnect()
+{
+    char buff[1024] = {0};
+    boost::system::error_code ec;
+    size_t bytes = m_sessionSocket.read_some(boost::asio::buffer(buff, sizeof(netHead)), ec);
+
+    if(ec)
+    {
+        std::cerr << "isVaildConnect error" << std::endl;
+        m_sessionSocket.close();
+        return false;
+    }
+
+    if(bytes == 0 || bytes != sizeof(netHead))
+    {
+        std::cerr << boost::format("pre socket has done..., bytes = %d") % bytes << std::endl;
+        m_sessionSocket.close();
+        return false;
+    }
+
+    netHead head = netResolver::generator()->getNetHead(buff);
+
+    return netMsg::isVaildChecknum(head);
+}

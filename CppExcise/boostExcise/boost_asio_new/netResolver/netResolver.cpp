@@ -38,7 +38,10 @@ std::shared_ptr<char> netResolver::compose(netMsg &msg)
 void netResolver::compose(netHead& head, char* body, size_t bodylen, char* data)
 {
     memcpy(data, &head, sizeof(netHead));
-    memcpy(data + sizeof(netHead), body, bodylen);
+    if(body && bodylen > 0)
+    {
+        memcpy(data + sizeof(netHead), body, bodylen);
+    }
 }
 
 netHead netResolver::getNetHead(const char *headData)

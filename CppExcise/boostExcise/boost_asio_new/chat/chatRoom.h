@@ -29,6 +29,8 @@ public:
 
     void deliver(netMsg& msg);
 
+    bool isVaildConnect();
+
     tcp::socket& socket() { return m_sessionSocket;}
 private:
     tcp::socket m_sessionSocket;
