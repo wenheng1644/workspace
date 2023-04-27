@@ -1,0 +1,10 @@
+{
+  "name" : "boost-asio-new",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "d4acc3c3f2db0b9fa7fc47b4751ec5778331f996",
+  "dependencies" : [ {
+    "name" : "sol2",
+    "version>=" : "3.3.0",
+    "$comment" : "    # this is heuristically generated, and may not be correct\n\n    find_package(sol2 CONFIG REQUIRED)\n\n    target_link_libraries(main PRIVATE sol2)\n"
+  } ]
+}

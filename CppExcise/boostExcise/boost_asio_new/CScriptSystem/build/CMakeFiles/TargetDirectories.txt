@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/build/CMakeFiles/cscriptsystem.dir
+/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/build/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/build/CMakeFiles/rebuild_cache.dir

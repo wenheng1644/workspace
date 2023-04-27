@@ -16,6 +16,8 @@
 #include "../netResolver/netResolver.h"
 //class chatSession;
 
+#include "../CScriptSystem/CScriptSystem.h"
+
 using namespace boost::asio::ip;
 
 typedef boost::system::error_code error_code_type;
@@ -57,6 +59,5 @@ private:
     SessionQueue m_Sessionqueue;
     netMsgQueue m_Msgqueue;
 };
-
 
 #endif //BOOST_ASIO_NEW_CHATROOM_H

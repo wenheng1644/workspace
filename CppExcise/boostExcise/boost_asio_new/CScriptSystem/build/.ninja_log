@@ -1,0 +1,5 @@
+# ninja log v5
+4677	4839	1682512140864588526	/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib/libcscriptsystem.so	c8442f5603f684b9
+1	4677	1682512140700588814	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	ac051c5a08fa4ebf
+0	4502	1682512628859869552	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	ac051c5a08fa4ebf
+4502	4653	1682512629015869354	/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib/libcscriptsystem.so	c8442f5603f684b9

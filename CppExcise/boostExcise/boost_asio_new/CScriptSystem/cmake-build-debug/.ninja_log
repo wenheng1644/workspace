@@ -1,0 +1,7 @@
+# ninja log v5
+1427	1438	1682178294147293239	/home/wenheng/Desktop/workspace/CAndLua/sol2Project/text1/CScriptSystem/lib/libcscriptsystem.a	94f3f0ef1156bf39
+0	16	1682178457431372414	build.ninja	ecacd6c3bdb300e2
+1	1427	1682178294135293231	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	d2ef8f275e9af504
+0	18	1682178457431372414	build.ninja	ecacd6c3bdb300e2
+1	1567	1682178458999373020	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	eea770897cfec87
+1567	1618	1682178459051373040	/home/wenheng/Desktop/workspace/CAndLua/sol2Project/text1/CScriptSystem/lib/libcscriptsystem.so	137ebdc150745aba

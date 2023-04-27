@@ -25,6 +25,8 @@
 #include "../netMsg/netMsg.h"
 #include "../chat/chatRoom.h"
 
+#include "sol/sol.hpp"
+
 class network {
 public:
     network(boost::asio::io_service&  ioserver, tcp::endpoint ed): m_acceptor(ioserver, ed) \

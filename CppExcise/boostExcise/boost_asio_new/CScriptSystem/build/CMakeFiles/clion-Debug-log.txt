@@ -1,0 +1,5 @@
+/usr/local/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/wenheng/应用/clion-2023.1.1/bin/ninja/linux/x64/ninja -DCMAKE_TOOLCHAIN_FILE=/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem -B /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/build
+DL_LIBRARY: /usr/lib/x86_64-linux-gnu/libdl.so
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/build
