@@ -70,6 +70,20 @@ build CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o: CXX_COMPILER__boost_asi
   OBJECT_DIR = CMakeFiles/boost_asio_new.dir
   OBJECT_FILE_DIR = CMakeFiles/boost_asio_new.dir/chat
 
+build CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o: CXX_COMPILER__boost_asio_new_unscanned_Debug /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/logManager/logManager.cpp || cmake_object_order_depends_target_boost_asio_new
+  DEP_FILE = CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/network -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem -isystem /home/wenheng/.clion-vcpkg/vcpkg/installed/x64-linux/include
+  OBJECT_DIR = CMakeFiles/boost_asio_new.dir
+  OBJECT_FILE_DIR = CMakeFiles/boost_asio_new.dir/logManager
+
+build CMakeFiles/boost_asio_new.dir/common/commonClass.cpp.o: CXX_COMPILER__boost_asio_new_unscanned_Debug /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/commonClass.cpp || cmake_object_order_depends_target_boost_asio_new
+  DEP_FILE = CMakeFiles/boost_asio_new.dir/common/commonClass.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/network -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib -I/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem -isystem /home/wenheng/.clion-vcpkg/vcpkg/installed/x64-linux/include
+  OBJECT_DIR = CMakeFiles/boost_asio_new.dir
+  OBJECT_FILE_DIR = CMakeFiles/boost_asio_new.dir/common
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target boost_asio_new
@@ -78,7 +92,7 @@ build CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o: CXX_COMPILER__boost_asi
 #############################################
 # Link the executable boost_asio_new
 
-build boost_asio_new: CXX_EXECUTABLE_LINKER__boost_asio_new_Debug CMakeFiles/boost_asio_new.dir/network/network.cpp.o CMakeFiles/boost_asio_new.dir/main.cpp.o CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o
+build boost_asio_new: CXX_EXECUTABLE_LINKER__boost_asio_new_Debug CMakeFiles/boost_asio_new.dir/network/network.cpp.o CMakeFiles/boost_asio_new.dir/main.cpp.o CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o CMakeFiles/boost_asio_new.dir/common/commonClass.cpp.o
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib:/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib  -lcscriptsystem  -lpthread  -lNetResolver  -lstdc++fs
   LINK_PATH = -L/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/lib   -L/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib

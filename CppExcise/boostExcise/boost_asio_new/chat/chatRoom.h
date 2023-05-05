@@ -17,10 +17,10 @@
 //class chatSession;
 
 #include "../CScriptSystem/CScriptSystem.h"
+#include "../common/commonClass.h"
 
 using namespace boost::asio::ip;
 
-typedef boost::system::error_code error_code_type;
 
 class chatRoom;
 class chatSession : public std::enable_shared_from_this<chatSession>{
@@ -52,9 +52,12 @@ typedef std::shared_ptr<chatSession> chatSessionPtr;
 class chatRoom{
 public:
     chatRoom() = default;
+    chatRoom(const std::vector<netMsg>& netMsgs);
     void deliver(netMsg& msg);
     void join(chatSessionPtr session);
     void leave(chatSessionPtr session);
+
+    void writeToFile();
 private:
     SessionQueue m_Sessionqueue;
     netMsgQueue m_Msgqueue;

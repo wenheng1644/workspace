@@ -114,18 +114,40 @@ std::vector<netMsg> CScriptSystem::loadNetMsg()
         u_int version = tb[i]["version"];
         u_int checknum = tb[i]["checknum"];
         std::string body = tb[i]["body"];
+        size_t times = tb[i]["times"];
 
         msg.head.len = len;
         msg.head.checknum = checknum;
         msg.head.type = type;
         msg.head.version = version;
-        memcpy(msg.head.info.name, name.c_str(), sizeof(name.c_str()));
-        memcpy(msg.head.info.ip, ip.c_str(), sizeof(ip.c_str()));
-
+        msg.head.info.times = times;
+        memcpy(msg.head.info.name, name.c_str(), strlen(name.c_str()) + 1);
+        memcpy(msg.head.info.ip, ip.c_str(), strlen(ip.c_str()) + 1);
+        memcpy(msg.body, body.c_str(), strlen(body.c_str()) + 1);
         records.push_back(msg);
     }
 
     return records;
+}
+
+void CScriptSystem::clua_wirtefile(const netMsgList &netMsgs)
+{
+    sol::table datas = m_luaState.create_table();
+    int index = 1;
+    for(auto msg : netMsgs)
+    {
+        sol::table info = m_luaState.create_table();
+        info["ip"] = msg.head.info.ip;
+        info["name"] = msg.head.info.name;
+        info["times"] = msg.head.info.times;
+        info["len"] = msg.head.len;
+        info["type"] = msg.head.type;
+        info["version"] = msg.head.version;
+        info["checknum"] = msg.head.checknum;
+        info["body"] = msg.body;
+        datas[index++] = info;
+    }
+    m_luaState["lua_writeDatasToFile"](datas);
 }
 
 
@@ -161,3 +183,9 @@ bool fileFunc::createFile(const std::string &filename)
     }
     return true;
 }
+
+//CScriptSystem::~CScriptSystem()
+//{
+//    if(m_ScriptPtr)
+//        delete m_ScriptPtr;
+//}

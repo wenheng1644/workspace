@@ -11,61 +11,77 @@
 #include "string"
 #include "cstring"
 
-void test()
-{
-    netResolver* resolver = netResolver::generator();
+void test() {
+    netResolver *resolver = netResolver::generator();
     char body[] = "hello linux";
     netHead head;
     head.len = sizeof(body);
     std::shared_ptr<char> data = resolver->compose(head, body, sizeof body);
 
     char buff[1024] = {0};
-    char* ptr = data.get();
+    char *ptr = data.get();
     memcpy(buff, ptr, sizeof(head) + sizeof(body) + 1);
     std::cout << "data = " << data << std::endl;
 }
 
-
-int main(int argc, char* argv[])
+void checkSize()
 {
-    CScriptSystem* lua = CScriptSystem::getSingalton();
-    netHead ptr;
-    ptr.type = 1;
-    ptr.len = 0;
-    ptr.version = 1;
-    ptr.checknum = netMsg::makeChceknum(ptr);
-    memcpy(ptr.info.ip, "127.0.0.1", strlen("127.0.0.1"));
-    memcpy(ptr.info.name, "xwz", 3);
+    std::string str1("hello world");
+    std::string str2("你好 世界!");
 
-    netMsg msg;
-    msg.head = ptr;
-    memcpy(msg.body, "hello fuckyou!!!", strlen("hello fuckyou!!!"));
-//    lua->test_toLua(ptr);
+    std::cout << boost::format("str1 bytes = %d, str2 bytes = %d") % strlen(str1.c_str()) % strlen(str2.c_str()) << std::endl;
+}
+
+int main(int argc, char *argv[]) {
+    CScriptSystem *lua = CScriptSystem::getSingalton();
+
+//    std::deque<netMsg> netMsgs;
+//    int t = 0;
+//    for(int i = 0; i < 5; i++)
+//    {
+//        netHead ptr;
+//        ptr.type = 1;
+//        ptr.len = sizeof("what the fuck?");
+//        ptr.version = 1;
+//        ptr.checknum = netMsg::makeChceknum(ptr);
+//        memcpy(ptr.info.ip, "127.0.0.1", sizeof("127.0.0.1"));
+//        memcpy(ptr.info.name, "xwz", 3);
+//        ptr.info.times = t++;
+//        netMsg msg;
+//        msg.head = ptr;
+//        memcpy(msg.body, "what the fuck?", sizeof("what the fuck?"));
 //
-    lua->loadNetMsg();
-    // if(argc != 2)
-    // {
-    //     std::cerr << "arg count error" << std::endl;
-    //     exit(-1);
-    // }
-    // std::cout << "*argv[0] = " << (argv[0]) << std::endl;
-    // std::cout << "*argv[1] = " << (argv[1]) << std::endl;
-    // u_short port = std::stoi(std::string(argv[1]));
-    // std::cout << "port = " << port << std::endl;
-    // boost::asio::io_service ioserver;
-
-    // using namespace boost::asio;
+//        netMsgs.push_back(msg);
+//    }
+//    lua->clua_wirtefile(netMsgs);
+//    lua->test_toLua(msg);
+//
+//    lua->clua_wirtefile(msg);
+//    lua->clua_wirtefile()
+    std::vector<netMsg> netMsgs = lua->loadNetMsg();
+     if(argc != 2)
+     {
+         std::cerr << "arg count error" << std::endl;
+         exit(-1);
+     }
+     std::cout << "*argv[0] = " << (argv[0]) << std::endl;
+     std::cout << "*argv[1] = " << (argv[1]) << std::endl;
+     u_short port = std::stoi(std::string(argv[1]));
+     std::cout << "port = " << port << std::endl;
+     boost::asio::io_service ioserver;
+//
+     using namespace boost::asio;
 
 //    time_with_func timers(ioserver, 5, [](){
 //       std::cout << "hello world" << std::endl;
 //    });
+//
+     boost::asio::ip::tcp::endpoint  ed(tcp::v4(), port);
+     std::cout << "addr = " << ed.address().to_string() << std::endl;
+     network net(ioserver, ed, netMsgs);
+     net.run();
 
-    // boost::asio::ip::tcp::endpoint  ed(tcp::v4(), port);
-    // std::cout << "addr = " << ed.address().to_string() << std::endl;
-    // network net(ioserver, ed);
-    // net.run();
-
-    // ioserver.run();
-//    test();
+     ioserver.run();
+//    checkSize();
     return 0;
 }

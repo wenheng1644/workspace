@@ -58,8 +58,8 @@ end
 string.serialize = Serialize
 string.unserialize = UnSerialize
 
-function GetDate()
-    local date = os.date("*t")
+function GetDate(timeZone)
+    local date = os.date("*t", timeZone or os.time())
     local date_str = string.format("%04d-%02d-%02d", date.year, date.month, date.day)
     local datetime_str = string.format("%s %02d:%02d:%02d", date_str, date.hour, date.min, date.sec)
 
@@ -98,4 +98,28 @@ function dump(tb, level)
     end
     local str = string.rep("\t", level - 1) .. "},\n"
     io.write(str)
+end
+
+function GetTimeZoneFromDateTimeStr(datetime_str)
+    local tm = {}
+
+    local partten = "(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+)"
+    local year, month, day, hour, min, sec = string.match(datetime_str, partten)
+
+    if year then
+        tm.year = tonumber(year)
+        tm.month = tonumber(month)
+        tm.day = tonumber(day)
+        tm.hour = tonumber(hour)
+        tm.min = tonumber(min)
+        tm.sec = tonumber(sec)
+    
+        local time = os.time(tm)
+    
+        return time
+    end
+end
+
+function GetDateTimeStrFromTimeZone(timezone)
+    return GetDate(timezone)
 end

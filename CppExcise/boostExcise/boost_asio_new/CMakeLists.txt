@@ -23,7 +23,7 @@ message("sol2_INCLUDE_DIRS = " ${sol2_INCLUDE_DIRS})
 add_executable(boost_asio_new
         network/network.cpp
         network/network.h
-        main.cpp  chat/chatRoom.cpp chat/chatRoom.h)
+        main.cpp  chat/chatRoom.cpp chat/chatRoom.h logManager/logManager.cpp logManager/logManager.h common/commonClass.h common/commonClass.cpp)
 
 target_link_libraries(boost_asio_new pthread NetResolver)
 target_link_libraries(boost_asio_new  sol2)

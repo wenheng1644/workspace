@@ -36,6 +36,23 @@ void network::handle_accept(chatSessionPtr session, error_code_type ec)
     }
     run();
 }
+
+network::network(boost::asio::io_service &ioserver, tcp::endpoint ed, std::vector<netMsg> netMsgs) : m_acceptor(ioserver, ed) \
+     , m_ioserver(ioserver), m_Room(netMsgs), m_timer(ioserver)
+{
+//    m_Room = chatRoom(netMsgs);
+    m_timer.start(std::bind(&chatRoom::writeToFile, &m_Room) , std::chrono::seconds(60), -1);
+}
+
+network::~network()
+{
+    std::cout << "network is deleted...." << std::endl;
+}
+
+void network::writeToFile()
+{
+
+}
 //
 //void Room::deliver(netMsg &msg) {
 //    for (auto session: m_Sessionqueue) {

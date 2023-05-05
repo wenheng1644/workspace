@@ -80,12 +80,78 @@ function lua_loadNetMsg()
     tb = string.unserialize(content)
 
     print("打印读取的聊天数据:")
-    dump(tb)
+    -- dump(tb)
 
     local array = {}
-    for _, v in pairs(tb) do
-        array[#array+1] = v
+    -- for _, v in pairs(tb) do
+    --     array[#array+1] = v
+    -- end
+
+    for datetime_str, info in pairs(tb) do
+        info.times = GetTimeZoneFromDateTimeStr(datetime_str) or 0
+        info.dateTime = datetime_str
+        array[#array+1] = info
     end
 
+    table.sort(array, function(t1, t2)
+        if t1.times <= t2.times then return true end
+        return false
+    end)
+
+    dump(array)
+
     return array
+end
+
+--[[
+    @function:  lua_writeDatasToFile
+    @param:     netMsgs(聊天消息记录)
+
+    @desc:      将聊天数据批量写入文件
+    @return:    true/false(判断是否正确处理)
+]]
+function lua_writeDatasToFile(netMsgs)
+    if not netMsgs or type(netMsgs) ~="table" then
+        print("lua_writeDatasToFile | netMsgs not vaild " .. type(netMsgs))
+        return false
+    end
+
+    local _, date = GetDate()
+    local fd = OpenFile(LOGFILEPATH .. date .. ".log", "a+")
+    if not fd then 
+        print("fd open error") 
+        return false
+    end
+    local content = fd:read("*a")
+    local str2tb = string.unserialize(content)
+
+    -- local datas = {}
+    --dump(netMsgs)
+    for index, tb in ipairs(netMsgs) do
+        --local tb = {}
+        --local head = msg.head
+        --tb.ip = head.info.ip
+        --tb.name = head.info.name
+        --tb.type = head.type
+        --tb.len = head.len
+        --tb.version = head.version
+        --tb.checknum = head.checknum
+        --tb.body = msg.body
+
+        print(string.format("lua |index = %d, times = %d", index, tb.times))
+        local _, _, datetime = GetDate(tb.times)
+        str2tb[datetime or "nil"] = tb
+    end
+
+    --print("打印序列化后的表：")
+    --dump(str2tb)
+
+    fd:close()
+
+    fd = OpenFile(LOGFILEPATH .. date .. ".log", "w")
+    fd:write(string.serialize(str2tb))
+    fd:close()
+
+    print("log文件写入完毕")
+    return true
 end

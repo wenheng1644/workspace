@@ -22,6 +22,7 @@ void chatRoom::join(chatSessionPtr session)
         return;
     m_Sessionqueue.insert(session);
 
+    std::cout << boost::format("m_msgqueue size = %d") % m_Msgqueue.size() << std::endl;
     for(auto msg : m_Msgqueue)
         session->deliver(*msg);
 }
@@ -34,6 +35,36 @@ void chatRoom::leave(chatSessionPtr session)
     m_Sessionqueue.erase(session);
 }
 
+chatRoom::chatRoom(const std::vector<netMsg> &netMsgs)
+{
+    for(netMsg msg : netMsgs)
+    {
+        std::shared_ptr<netMsg> ptr(new netMsg);
+        ptr->head.len = msg.head.len;
+        ptr->head.type = msg.head.type;
+        ptr->head.version = msg.head.version;
+        ptr->head.checknum = msg.head.checknum;
+        ptr->head.info.times = msg.head.info.times;
+        memcpy(ptr->head.info.ip, msg.head.info.ip, sizeof(msg.head.info.ip));
+        memcpy(ptr->head.info.name, msg.head.info.name, sizeof(msg.head.info.name));
+        memcpy(ptr->body, msg.body, sizeof(msg.body));
+
+        m_Msgqueue.push_back(ptr);
+    }
+}
+
+void chatRoom::writeToFile()
+{
+    CScriptSystem *lua = CScriptSystem::getSingalton();
+    netMsgList netMsgs;
+
+    for(const auto ptr : m_Msgqueue)
+    {
+        netMsgs.push_back(*ptr);
+    }
+    lua->clua_wirtefile(netMsgs);
+    std::cout << "chatRoom::writeToFile | write to file done" << std::endl;
+}
 
 
 void chatSession::start()

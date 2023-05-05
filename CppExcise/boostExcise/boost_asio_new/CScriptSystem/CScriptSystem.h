@@ -12,10 +12,10 @@
 #include "sol/sol.hpp"
 
 #include "../netMsg/netMsg.h"
+#include "../common/commonClass.h"
 
 #include "filesystem"
 
-#define LUASCRIPTFILE "../luaScript/main.lua"
 //管理lua
 class CScriptSystem {
 public:
@@ -31,7 +31,9 @@ public:
 
     void test_toLua(netHead ptr);
     void clua_wirtefile(netMsg msg);
+    void clua_wirtefile(const netMsgList& netMsgs);
     std::vector<netMsg> loadNetMsg();
+    ~CScriptSystem() = default;
 private:
     static CScriptSystem* m_ScriptPtr;
 
