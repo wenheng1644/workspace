@@ -11,22 +11,21 @@ void CScriptSystem::load()
 {
 //    m_luaState.open_libraries(sol::lib::base, sol::lib::string, sol::lib::table, sol::lib::os, sol::lib::io);
     luaL_openlibs(m_luaState);
-    sol::load_result res = m_luaState.load_file(std::string(LUASCRIPTFILE));
+    auto res = m_luaState.safe_script_file(std::string(LUASCRIPTFILE));
     if(!res.valid())
     {
         sol::error err = res;
         std::cerr << "lua file load error: " << err.what() << std::endl;
         exit(-1);
     }
+//    sol::function_result call_res = res.call();
 
-    sol::function_result call_res = res.call();
-
-    if(!call_res.valid())
-    {
-        sol::error err = call_res;
-        std::cerr << "call lua file error: " << err.what() << std::endl;
-        exit(-1);
-    }
+//    if(!call_res.valid())
+//    {
+//        sol::error err = call_res;
+//        std::cerr << "call lua file error: " << err.what() << std::endl;
+//        exit(-1);
+//    }
 }
 
 void CScriptSystem::defCFunc()
@@ -189,3 +188,4 @@ bool fileFunc::createFile(const std::string &filename)
 //    if(m_ScriptPtr)
 //        delete m_ScriptPtr;
 //}
+

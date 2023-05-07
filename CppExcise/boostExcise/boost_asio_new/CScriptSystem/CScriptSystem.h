@@ -34,13 +34,14 @@ public:
     void clua_wirtefile(const netMsgList& netMsgs);
     std::vector<netMsg> loadNetMsg();
     ~CScriptSystem() = default;
+    void load();
+
 private:
     static CScriptSystem* m_ScriptPtr;
 
     sol::state m_luaState;
 
     CScriptSystem();
-    void load();
     void defCFunc();
 
 };

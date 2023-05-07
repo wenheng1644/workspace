@@ -9,16 +9,13 @@ require("userglobal")
 
 function main()
     local date = os.date("*t")
-    local datetime = string.format("%04d-%02d-%2d %02d:%02d:%02d", date.year, date.month, date.day, date.hour, date.min, date.sec)
-    print(string.format("%s>main load: %s", string.rep("-", 10), datetime))
+    local datetime = string.format("%04d-%02d-%02d %02d:%02d:%02d", date.year, date.month, date.day, date.hour, date.min, date.sec)
+    print(string.format("%s>main load: %s<%s", string.rep("-", 20), datetime, string.rep("-", 20)))
 
 end
 
 main()
 
-local function writeToFile()
-
-end
 
 function lua_writeFile(netMsg)
     if not netMsg then 
@@ -43,7 +40,7 @@ function lua_writeFile(netMsg)
     local _, date, datetime = GetDate()
     --print("date, datetime = ", date, datetime)
     --print("filepath = ", LOGFILEPATH .. date .. ".log")
-    local fd = OpenFile(LOGFILEPATH .. date .. ".log", "a+")
+    local fd = OpenFile(LOGFILEPATH .. CHATLOGFILENAME, "a+")
     local content = fd:read("*a")
     --print("content = ", content)
 
@@ -51,12 +48,12 @@ function lua_writeFile(netMsg)
     --print("type(str2tb) = ", type(str2tb))
     str2tb[datetime] = tb
 
-    dump(str2tb)
+    --dump(str2tb)
 
     fd:close()
 
     --print("打印序列化后的表： ", string.serialize(str2tb))
-    fd = OpenFile(LOGFILEPATH .. date .. ".log", "w")
+    fd = OpenFile(LOGFILEPATH .. CHATLOGFILENAME, "w")
     fd:write(string.serialize(str2tb))
     fd:close()
     print("fd wirte done")
@@ -74,12 +71,12 @@ end
 function lua_loadNetMsg()
     local tb = {}
     local _, date, datetime = GetDate()
-    local fd = OpenFile(LOGFILEPATH .. date .. ".log", "a+")
+    local fd = OpenFile(LOGFILEPATH .. CHATLOGFILENAME, "a+")
     local content = fd:read("*a")
 
     tb = string.unserialize(content)
 
-    print("打印读取的聊天数据:")
+    --print("打印读取的聊天数据:")
     -- dump(tb)
 
     local array = {}
@@ -98,7 +95,7 @@ function lua_loadNetMsg()
         return false
     end)
 
-    dump(array)
+    --dump(array)
 
     return array
 end
@@ -116,8 +113,8 @@ function lua_writeDatasToFile(netMsgs)
         return false
     end
 
-    local _, date = GetDate()
-    local fd = OpenFile(LOGFILEPATH .. date .. ".log", "a+")
+    local _, date, datetime_str = GetDate()
+    local fd = OpenFile(LOGFILEPATH .. CHATLOGFILENAME, "a+")
     if not fd then 
         print("fd open error") 
         return false
@@ -138,20 +135,20 @@ function lua_writeDatasToFile(netMsgs)
         --tb.checknum = head.checknum
         --tb.body = msg.body
 
-        print(string.format("lua |index = %d, times = %d", index, tb.times))
+        --print(string.format("lua |index = %d, times = %d", index, tb.times))
         local _, _, datetime = GetDate(tb.times)
         str2tb[datetime or "nil"] = tb
     end
 
-    --print("打印序列化后的表：")
-    --dump(str2tb)
+    -- print("打印序列化后的表：")
+    -- dump(str2tb)
 
     fd:close()
 
-    fd = OpenFile(LOGFILEPATH .. date .. ".log", "w")
+    fd = OpenFile(LOGFILEPATH .. CHATLOGFILENAME, "w")
     fd:write(string.serialize(str2tb))
     fd:close()
 
-    print("log文件写入完毕")
+    print(string.format("(%s): lua | log文件写入完毕", datetime_str))
     return true
 end

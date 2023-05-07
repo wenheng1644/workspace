@@ -5,6 +5,7 @@
 ---
 
 LOGFILEPATH = "./log/"
+CHATLOGFILENAME = "chatLog.log"
 
 function Serialize(tb, level)
     --assert(type(tb) == "table", "tb is not a table")

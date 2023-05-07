@@ -32,6 +32,34 @@ void checkSize()
     std::cout << boost::format("str1 bytes = %d, str2 bytes = %d") % strlen(str1.c_str()) % strlen(str2.c_str()) << std::endl;
 }
 
+void inputThread()
+{
+    std::string line;
+    std::cout << "inputThread | coming" << std::endl;
+    while(true)
+    {
+        std::getline(std::cin, line);
+        if(line == "quit")
+        {
+            std::cout << "input thread done.." << std::endl;
+            break;
+        }
+
+        if(line == "@reload")
+        {
+            CScriptSystem *lua = CScriptSystem::getSingalton();
+            lua->load();
+            std::cout << "###reload lua successfully" << std::endl;
+        }
+        else
+        {
+            std::cout << "invaild input" << std::endl;
+        }
+
+
+    }
+}
+
 int main(int argc, char *argv[]) {
     CScriptSystem *lua = CScriptSystem::getSingalton();
 
@@ -80,6 +108,9 @@ int main(int argc, char *argv[]) {
      std::cout << "addr = " << ed.address().to_string() << std::endl;
      network net(ioserver, ed, netMsgs);
      net.run();
+
+     std::thread t2(inputThread);
+     t2.detach();
 
      ioserver.run();
 //    checkSize();
