@@ -9,30 +9,27 @@ CScriptSystem* CScriptSystem::m_ScriptPtr = nullptr;
 
 void CScriptSystem::load()
 {
-//    m_luaState.open_libraries(sol::lib::base, sol::lib::string, sol::lib::table, sol::lib::os, sol::lib::io);
+    m_luaState = sol::state();
+    defCFunc(); //先导出Cpp函数
+
+
     luaL_openlibs(m_luaState);
-    auto res = m_luaState.safe_script_file(std::string(LUASCRIPTFILE));
+    auto res = m_luaState.do_file(std::string(LUASCRIPTFILE));
+
     if(!res.valid())
     {
         sol::error err = res;
         std::cerr << "lua file load error: " << err.what() << std::endl;
         exit(-1);
     }
-//    sol::function_result call_res = res.call();
-
-//    if(!call_res.valid())
-//    {
-//        sol::error err = call_res;
-//        std::cerr << "call lua file error: " << err.what() << std::endl;
-//        exit(-1);
-//    }
 }
 
 void CScriptSystem::defCFunc()
 {
     m_luaState.new_usertype<dataInfo>("dataInfo", sol::constructors<dataInfo()>(),
                     "ip", &dataInfo::ip,
-                    "name", &dataInfo::name);
+                    "name", &dataInfo::name,
+                    "times", &dataInfo::times);
 
     m_luaState.new_usertype<netHead>("netHead", sol::constructors<netHead()>(),
                     "len", &netHead::len,
@@ -45,12 +42,18 @@ void CScriptSystem::defCFunc()
                     "head", &netMsg::head,
                     "body", &netMsg::body);
 
+    m_luaState.new_usertype<SessionQueue>("SessionQueue", sol::default_constructor);
+    m_luaState.new_usertype<netMsgQueue>("netMsgQueue", sol::default_constructor);
+
+    m_luaState.new_usertype<chatRoom>("chatRoom", sol::default_constructor,
+                                      "sessions", &chatRoom::m_Sessionqueue,
+                                      "msgs", &chatRoom::m_Msgqueue);
+
     m_luaState.set_function("createFile", &fileFunc::createFile);
 }
 
 CScriptSystem::CScriptSystem()
 {
-    defCFunc(); //先导出Cpp函数
     load();     //再加载lua文件
 }
 
@@ -93,16 +96,27 @@ void CScriptSystem::clua_wirtefile(netMsg msg)
 std::vector<netMsg> CScriptSystem::loadNetMsg()
 {
     std::vector<netMsg> records;
-    sol::table tb = m_luaState["lua_loadNetMsg"]();
 
-    if(sol::type::table == tb.get_type())
+    if(!isLuaFuncExist("lua_loadNetMsg"))
     {
-        std::cout << "tb is a table: " << tb.size() << std::endl;
+        std::cerr << "lua_loadNetMsg is not exist" << std::endl;
+        exit(-1);
     }
-    else
+    sol::function func = m_luaState["lua_loadNetMsg"];
+    sol::object obj;
+    if(func.valid())
     {
-        std::cout << "tb is not a table " << std::endl;
+        std::cout << "function valid~" << std::endl;
+        obj = func.call();
     }
+
+    if(obj.get_type() != sol::type::table)
+    {
+        std::cerr << "return value is not a table" << std::endl;
+        exit(-1);
+    }
+    sol::table tb = obj;
+
     for(int i = 1; i <= tb.size(); i++)
     {
         netMsg msg;
@@ -149,6 +163,36 @@ void CScriptSystem::clua_wirtefile(const netMsgList &netMsgs)
     m_luaState["lua_writeDatasToFile"](datas);
 }
 
+bool CScriptSystem::isLuaFuncExist(const std::string &funcname)
+{
+    auto v = m_luaState[funcname];
+
+    if(v.get_type() != sol::type::function)
+    {
+        std::cerr << boost::format("lua function: %s is not exist...") % funcname << std::endl;
+        return false;
+    }
+    return true;
+}
+
+bool CScriptSystem::loadLuaGM(const std::string &funcname)
+{
+    if(funcname.empty())
+    {
+        std::cerr << "funcname is empty..." << std::endl;
+        return false;
+    }
+
+    if(!isLuaFuncExist(funcname))
+    {
+        std::cerr << boost::format("%s is not a global function name") %funcname << std::endl;
+        return false;
+    }
+
+    m_luaState[funcname]();
+
+    return true;
+}
 
 bool fileFunc::createFile(const std::string &filename)
 {

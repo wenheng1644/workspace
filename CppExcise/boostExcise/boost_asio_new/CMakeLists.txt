@@ -14,6 +14,9 @@ include_directories(${PROJECT_SOURCE_DIR}/CScriptSystem)
 link_directories(${PROJECT_SOURCE_DIR}/CScriptSystem/lib)
 link_libraries(libcscriptsystem.so)
 
+#link_directories(/usr/local/lib)
+#link_libraries(liblua.a)
+
 set(CMAKE_TOOLCHAIN_FILE "~/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "")
 
 find_package(sol2 CONFIG REQUIRED)

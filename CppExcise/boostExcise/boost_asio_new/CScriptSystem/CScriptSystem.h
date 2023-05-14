@@ -10,9 +10,11 @@
 #include "fstream"
 
 #include "sol/sol.hpp"
+#include "boost/format.hpp"
 
 #include "../netMsg/netMsg.h"
 #include "../common/commonClass.h"
+#include "../chat/chatRoom.h"
 
 #include "filesystem"
 
@@ -36,6 +38,8 @@ public:
     ~CScriptSystem() = default;
     void load();
 
+    bool loadLuaGM(const std::string& funcname);
+    template<typename T> void setCFunc(const std::string& funcName, T f);
 private:
     static CScriptSystem* m_ScriptPtr;
 
@@ -43,12 +47,19 @@ private:
 
     CScriptSystem();
     void defCFunc();
+    bool isLuaFuncExist(const std::string& funcname);
 
 };
 
 //void getChatsTable(sol::table& t);
 namespace fileFunc{
     bool createFile(const std::string& filename);
+}
+
+template<typename T>
+void CScriptSystem::setCFunc(const std::string &funcName, T f)
+{
+    m_luaState.set_function(funcName, f);
 }
 
 #endif //TEXT1_CSCRIPTSYSTEM_H

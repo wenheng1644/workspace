@@ -1,5 +1,7 @@
 # ninja log v5
-6009	6174	1683428648468701063	/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib/libcscriptsystem.so	c8442f5603f684b9
-2	6009	1683428648296701602	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	ac051c5a08fa4ebf
-4	6358	1683445257970657690	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	ac051c5a08fa4ebf
-6358	6542	1683445258158657293	/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib/libcscriptsystem.so	c8442f5603f684b9
+9868	10136	1684030666639058485	/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib/libcscriptsystem.so	c8442f5603f684b9
+3	9868	1684030666359059978	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	ac051c5a08fa4ebf
+3	11184	1684030863443123845	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	ac051c5a08fa4ebf
+11184	11519	1684030863795129408	/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib/libcscriptsystem.so	c8442f5603f684b9
+3	10408	1684032588360208173	CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o	ac051c5a08fa4ebf
+10408	10728	1684032588692207642	/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/CScriptSystem/lib/libcscriptsystem.so	c8442f5603f684b9

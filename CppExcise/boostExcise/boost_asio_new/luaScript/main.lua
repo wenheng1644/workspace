@@ -76,9 +76,6 @@ function lua_loadNetMsg()
 
     tb = string.unserialize(content)
 
-    --print("打印读取的聊天数据:")
-    -- dump(tb)
-
     local array = {}
     -- for _, v in pairs(tb) do
     --     array[#array+1] = v
@@ -90,12 +87,14 @@ function lua_loadNetMsg()
         array[#array+1] = info
     end
 
-    table.sort(array, function(t1, t2)
-        if t1.times <= t2.times then return true end
-        return false
-    end)
-
-    --dump(array)
+    local sortFunc = function (t1, t2)
+        if t1.times < t2.times then
+            return true
+        else
+            return false
+        end
+    end
+    table.sort(array, sortFunc)
 
     return array
 end
@@ -151,4 +150,48 @@ function lua_writeDatasToFile(netMsgs)
 
     print(string.format("(%s): lua | log文件写入完毕", datetime_str))
     return true
+end
+
+--[[
+    @function:  lua_loadMsg
+
+    @desc:      打印当前内存聊天记录
+]]
+function lua_loadMsg()
+    local room = getRoom()
+    if not room then
+        return
+    end
+
+    local msgs = room.msgs
+    if not msgs then 
+        return 
+    end
+
+    for index, msg in pairs(msgs) do
+        local head = msg.head
+        local body = msg.body
+
+        local name  = head.info.name or ""
+        local ip    = head.info.ip or ""
+        local time  = head.info.times or 0
+
+        local _, _, datetiem_str = GetDateTimeStrFromTimeZone(time)
+
+        print(string.format("(%d)[time = %s, name = %s, ip = %s]: %s", index, datetiem_str or "nil", name, ip, body))
+    end
+    print("打印内存聊天记录完成~")
+end
+
+function GM_File()
+    if createFile then
+        print("createFile func is here")
+        if createFile("./test_create.txt") then
+            print("create file successfully")
+        else
+            print("create file error")
+        end
+    else
+        print("createFile is not ...")
+    end
 end

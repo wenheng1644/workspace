@@ -1,13 +1,16 @@
 # ninja log v5
 2	2230	1683294885927471236	CMakeFiles/boost_asio_new.dir/common/commonClass.cpp.o	51e0170d72a50950
-5	3776	1683427978154685781	CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o	27e095a70d1c57
-0	26	1683445260418652525	build.ninja	334f3a2e0e4d4f9e
-5	4893	1683427979270682767	CMakeFiles/boost_asio_new.dir/main.cpp.o	dbee2577da7f3fac
-5	4774	1683427979150683092	CMakeFiles/boost_asio_new.dir/network/network.cpp.o	4be1d03309a4caa3
-5	4912	1683427979290682714	CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o	b2f69d1af1c86c34
-4912	5169	1683427979550682011	boost_asio_new	d16da6b5513ed844
-3	3258	1683445446762308875	CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o	27e095a70d1c57
-2	4327	1683445447826307161	CMakeFiles/boost_asio_new.dir/main.cpp.o	dbee2577da7f3fac
-2	4437	1683445447938306980	CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o	b2f69d1af1c86c34
-2	4488	1683445447990306896	CMakeFiles/boost_asio_new.dir/network/network.cpp.o	4be1d03309a4caa3
-4488	4695	1683445448198306561	boost_asio_new	d16da6b5513ed844
+3	4179	1684029986442698498	CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o	27e095a70d1c57
+0	16	1684030691030928407	build.ninja	334f3a2e0e4d4f9e
+3	5871	1684029988130689417	CMakeFiles/boost_asio_new.dir/main.cpp.o	dbee2577da7f3fac
+3	3752	1684030166493731686	CMakeFiles/boost_asio_new.dir/network/network.cpp.o	4be1d03309a4caa3
+2	9968	1683970793534125483	CMakeFiles/boost_asio_new.dir/CScriptSystem/CScriptSystem.cpp.o	4562d49f38e4581e
+3	5300	1684029987562692473	CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o	b2f69d1af1c86c34
+6551	6959	1684029989222683543	boost_asio_new	d16da6b5513ed844
+4	4109	1684030699258884532	CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o	27e095a70d1c57
+4	5444	1684030700590877429	CMakeFiles/boost_asio_new.dir/main.cpp.o	dbee2577da7f3fac
+3	5553	1684030700698876854	CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o	b2f69d1af1c86c34
+3	6137	1684030701282873740	CMakeFiles/boost_asio_new.dir/network/network.cpp.o	4be1d03309a4caa3
+6137	6443	1684030701590872097	boost_asio_new	d16da6b5513ed844
+3	4156	1684030796866364222	CMakeFiles/boost_asio_new.dir/network/network.cpp.o	4be1d03309a4caa3
+4156	4346	1684030797058363199	boost_asio_new	d16da6b5513ed844

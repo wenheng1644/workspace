@@ -42,10 +42,14 @@ network::network(boost::asio::io_service &ioserver, tcp::endpoint ed, std::vecto
 {
 //    m_Room = chatRoom(netMsgs);
     m_timer.start(std::bind(&chatRoom::writeToFile, &m_Room) , std::chrono::seconds(60), -1);
+    lua_loadFunc();
 }
 
 network::~network()
 {
+
+    std::cout << "close to save netMsg Records..." << std::endl;
+    m_Room.writeToFile();
     std::cout << "network is deleted...." << std::endl;
 }
 
@@ -53,37 +57,34 @@ void network::writeToFile()
 {
 
 }
+
+void network::stop()
+{
+    if(!m_acceptor.is_open())
+    {
+        std::cout << "is not open" << std::endl;
+        return;
+    }
+
+    error_code_type ec;
+    m_acceptor.close(ec);
+    m_ioserver.stop();
+
+    if(ec)
+    {
+        std::cout << "close server error: " << ec.what() << std::endl;
+        exit(-1);
+    }
+
+    std::cout << "server close successfully!" << std::endl;
+}
+
+void network::lua_loadFunc()
+{
+//    sol::state& lua = CScriptSystem::getSingalton()->getLua_State();
 //
-//void Room::deliver(netMsg &msg) {
-//    for (auto session: m_Sessionqueue) {
-//        session->deliver(msg);
-//    }
-//
-//    while(m_Msgqueue.size() >= 100)
-//    {
-//        m_Msgqueue.pop_back();
-//    }
-//    m_Msgqueue.push_back(std::shared_ptr<netMsg>(new netMsg(msg)));
-//}
-//
-//void Room::join(std::shared_ptr<Session> session) {
-//    if(m_Sessionqueue.count(session))
-//        return;
-//    m_Sessionqueue.insert(session);
-//    std::cout << boost::format("m_Msgqueue size = %d") % m_Msgqueue.size() << std::endl;
-//    int index = 0;
-//    for (std::shared_ptr<netMsg> msg: m_Msgqueue) {
-//        std::cout << boost::format("index(%d): msg = %s") % (++index) % msg->body << std::endl;
-//        session->deliver(*msg);
-//    }
-//}
-//
-//void Room::leave(std::shared_ptr<Session> session) {
-//    if(m_Sessionqueue.empty())
-//        return;
-//
-//    if(!m_Sessionqueue.count(session))
-//        return;
-//
-//    m_Sessionqueue.erase(session);
-//}
+//    lua.set_function("loadNetMsg", (std::function<void()>)std::bind(&chatRoom::printMsgs, &m_Room));
+//    lua.set_function("getRoom", (std::function<chatRoom()>)std::bind(&network::getRoom, this));
+    CScriptSystem::getSingalton()->setCFunc<std::function<void()>>("loadNetMsg", (std::function<void()>)std::bind(&chatRoom::printMsgs, &m_Room));
+    CScriptSystem::getSingalton()->setCFunc<std::function<chatRoom()>>("getRoom", (std::function<chatRoom()>)std::bind(&network::getRoom, this));
+}

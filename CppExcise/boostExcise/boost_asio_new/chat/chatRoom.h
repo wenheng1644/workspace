@@ -58,9 +58,11 @@ public:
     void leave(chatSessionPtr session);
 
     void writeToFile();
-private:
+    void printMsgs();
+//private:
     SessionQueue m_Sessionqueue;
     netMsgQueue m_Msgqueue;
+
 };
 
 #endif //BOOST_ASIO_NEW_CHATROOM_H

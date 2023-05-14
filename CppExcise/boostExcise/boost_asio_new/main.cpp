@@ -32,7 +32,7 @@ void checkSize()
     std::cout << boost::format("str1 bytes = %d, str2 bytes = %d") % strlen(str1.c_str()) % strlen(str2.c_str()) << std::endl;
 }
 
-void inputThread()
+void inputThread(network* net)
 {
     std::string line;
     std::cout << "inputThread | coming" << std::endl;
@@ -41,15 +41,27 @@ void inputThread()
         std::getline(std::cin, line);
         if(line == "quit")
         {
-            std::cout << "input thread done.." << std::endl;
+            net->stop();
             break;
         }
 
-        if(line == "@reload")
+        if(line[0] == '@')
         {
             CScriptSystem *lua = CScriptSystem::getSingalton();
-            lua->load();
-            std::cout << "###reload lua successfully" << std::endl;
+            if(line == "@reload")
+            {
+                lua->load();
+                net->lua_loadFunc();
+                std::cout << "###reload lua successfully" << std::endl;
+            }
+            else
+            {
+                std::string funcname = line.substr(1);
+                if(lua->loadLuaGM(funcname))
+                    std::cout << boost::format("###dolua (%s) successfully") %funcname << std::endl;
+                else
+                    std::cerr << boost::format("###dolua fail") << std::endl;
+            }
         }
         else
         {
@@ -109,7 +121,7 @@ int main(int argc, char *argv[]) {
      network net(ioserver, ed, netMsgs);
      net.run();
 
-     std::thread t2(inputThread);
+     std::thread t2(inputThread, &net);
      t2.detach();
 
      ioserver.run();

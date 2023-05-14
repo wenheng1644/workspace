@@ -66,6 +66,17 @@ void chatRoom::writeToFile()
     std::cout << "chatRoom::writeToFile | write to file done" << std::endl;
 }
 
+void chatRoom::printMsgs()
+{
+    for(const auto& data : m_Msgqueue)
+    {
+        netMsg msg = *data;
+        std::cout << boost::format("[time = %s, name = %s, ip = %s] = %s") % netTimeResolver::getTimeString(msg.head.info.times) %
+            msg.head.info.name % msg.head.info.ip %
+            msg.body << std::endl;
+    }
+}
+
 
 void chatSession::start()
 {

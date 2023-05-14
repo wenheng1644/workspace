@@ -33,7 +33,10 @@ public:
     network(boost::asio::io_service&  ioserver, tcp::endpoint ed, std::vector<netMsg> netMsgs);
 
     void run();
+    void stop();
     ~network();
+
+    void lua_loadFunc();
 private:
     boost::asio::io_service& m_ioserver;
     tcp::acceptor m_acceptor;
@@ -42,6 +45,7 @@ private:
 
     void handle_accept(chatSessionPtr session, error_code_type ec);
 
+    chatRoom& getRoom() { return m_Room; }
     void writeToFile();
 };
 
