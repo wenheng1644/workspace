@@ -26,6 +26,11 @@ void client::handle_write()
             std::cout << "write data break" << std::endl;
             exit(0);
         }
+        if(line.empty())
+        {
+            std::cout << "please enter content..." << std::endl;
+            continue;
+        }
         netHead head;
         head.len = strlen(line.c_str());
         head.type =  1;
