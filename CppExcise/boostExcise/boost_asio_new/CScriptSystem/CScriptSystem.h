@@ -38,7 +38,9 @@ public:
     ~CScriptSystem() = default;
     void load();
 
-    bool loadLuaGM(const std::string& funcname);
+    template<typename T, typename... ArgsT>
+    bool loadLuaGM(const T& name, ArgsT... args);
+
     template<typename T> void setCFunc(const std::string& funcName, T f);
 private:
     static CScriptSystem* m_ScriptPtr;
@@ -60,6 +62,14 @@ template<typename T>
 void CScriptSystem::setCFunc(const std::string &funcName, T f)
 {
     m_luaState.set_function(funcName, f);
+}
+
+template<typename T, typename... ArgsT>
+bool CScriptSystem::loadLuaGM(const T &name, ArgsT... args) {
+    if(!isLuaFuncExist(name)) return false;
+
+    std::cout << "CScriptSystem::loadLuaGM | size params = " << sizeof...(args) << std::endl;
+    m_luaState[name](args...);
 }
 
 #endif //TEXT1_CSCRIPTSYSTEM_H

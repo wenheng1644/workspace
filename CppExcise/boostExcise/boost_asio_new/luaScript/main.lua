@@ -183,10 +183,13 @@ function lua_loadMsg()
     print("打印内存聊天记录完成~")
 end
 
-function GM_File()
+function GM_File(filename, needtip)
+    print("args = ", filename, needtip)
+    filename = filename or "./test_create.txt"
+
     if createFile then
         print("createFile func is here")
-        if createFile("./test_create.txt") then
+        if createFile(filename) then
             print("create file successfully")
         else
             print("create file error")

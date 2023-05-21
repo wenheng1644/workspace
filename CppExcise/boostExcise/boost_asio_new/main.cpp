@@ -7,6 +7,7 @@
 #include "CScriptSystem/CScriptSystem.h"
 #include "boost/asio/steady_timer.hpp"
 
+#include "regex"
 #include "thread"
 #include "string"
 #include "cstring"
@@ -56,9 +57,57 @@ void inputThread(network* net)
             }
             else
             {
-                std::string funcname = line.substr(1);
-                if(lua->loadLuaGM(funcname))
-                    std::cout << boost::format("###dolua (%s) successfully") %funcname << std::endl;
+//                std::string funcname = line.substr(1);
+                line = line.substr(1);
+                std::vector<std::string> strs;
+                std::regex partten("[^\\s]+");
+                std::sregex_iterator next(line.begin(), line.end(), partten);
+                std::sregex_iterator end;
+                while(next != end)
+                {
+                    std::smatch match = *next;
+                    next++;
+                    strs.push_back(match.str());
+                }
+
+                int paramSize = strs.size();
+                if(paramSize >= 1)
+                {
+                    std::string funcname = strs[0];
+                    switch (paramSize)
+                    {
+//                        bool isExec;
+                        case 1:
+                            if(lua->loadLuaGM(funcname))
+                            {
+                                std::cout << boost::format("###dolua %s successfully") % funcname << std::endl;
+                            }
+                            break;
+                        case 2:
+                        {
+                            if(lua->loadLuaGM(funcname, strs[1]))
+                            {
+                                std::cout << boost::format("###dolua %s(%s) successfully") % funcname % strs[1] << std::endl;
+                            }
+                            break;
+                        }
+                        case 3:
+                        {
+                            if(lua->loadLuaGM(funcname, strs[1], strs[2]))
+                            {
+                                std::cout << boost::format("###dolua %s(%s, %s) successfully") % funcname % strs[1] % strs[2] << std::endl;
+                            }
+                            break;
+                        }
+                        default:
+                        {
+                            std::cout << "没有适配函数，请检查" << std::endl;
+                            break;
+                        }
+                    }
+
+
+                }
                 else
                     std::cerr << boost::format("###dolua fail") << std::endl;
             }
@@ -119,7 +168,8 @@ int main(int argc, char *argv[]) {
      boost::asio::ip::tcp::endpoint  ed(tcp::v4(), port);
      std::cout << "addr = " << ed.address().to_string() << std::endl;
      network net(ioserver, ed, netMsgs);
-     net.run();
+    std::cout << "start to listen" << std::endl;
+    net.run();
 
      std::thread t2(inputThread, &net);
      t2.detach();

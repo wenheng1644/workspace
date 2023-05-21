@@ -6,7 +6,6 @@
 
 void network::run() {
     using namespace boost::system;
-    std::cout << "start to listen" << std::endl;
     chatSessionPtr session_ptr(new chatSession(m_ioserver, m_Room));
     m_acceptor.async_accept(session_ptr->socket(), boost::bind(&network::handle_accept, this, session_ptr, boost::asio::placeholders::error));
 

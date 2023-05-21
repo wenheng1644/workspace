@@ -165,6 +165,12 @@ void CScriptSystem::clua_wirtefile(const netMsgList &netMsgs)
 
 bool CScriptSystem::isLuaFuncExist(const std::string &funcname)
 {
+    if(funcname.empty())
+    {
+        std::cerr << "funcname is empty..." << std::endl;
+        return false;
+    }
+
     auto v = m_luaState[funcname];
 
     if(v.get_type() != sol::type::function)
@@ -175,24 +181,17 @@ bool CScriptSystem::isLuaFuncExist(const std::string &funcname)
     return true;
 }
 
-bool CScriptSystem::loadLuaGM(const std::string &funcname)
-{
-    if(funcname.empty())
-    {
-        std::cerr << "funcname is empty..." << std::endl;
-        return false;
-    }
-
-    if(!isLuaFuncExist(funcname))
-    {
-        std::cerr << boost::format("%s is not a global function name") %funcname << std::endl;
-        return false;
-    }
-
-    m_luaState[funcname]();
-
-    return true;
-}
+//bool CScriptSystem::loadLuaGM(const std::string &funcname)
+//{
+//    if(!isLuaFuncExist(funcname))
+//    {
+//        return false;
+//    }
+//
+//    m_luaState[funcname]();
+//
+//    return true;
+//}
 
 bool fileFunc::createFile(const std::string &filename)
 {

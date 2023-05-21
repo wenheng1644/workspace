@@ -5,7 +5,7 @@
 #include "chatRoom.h"
 
 void chatRoom::deliver(netMsg &msg) {
-    for(auto session : m_Sessionqueue)
+    for(auto& session : m_Sessionqueue)
     {
         session->deliver(msg);
     }
@@ -23,7 +23,7 @@ void chatRoom::join(chatSessionPtr session)
     m_Sessionqueue.insert(session);
 
     std::cout << boost::format("m_msgqueue size = %d") % m_Msgqueue.size() << std::endl;
-    for(auto msg : m_Msgqueue)
+    for(auto& msg : m_Msgqueue)
         session->deliver(*msg);
 }
 
@@ -58,7 +58,7 @@ void chatRoom::writeToFile()
     CScriptSystem *lua = CScriptSystem::getSingalton();
     netMsgList netMsgs;
 
-    for(const auto ptr : m_Msgqueue)
+    for(const auto& ptr : m_Msgqueue)
     {
         netMsgs.push_back(*ptr);
     }
