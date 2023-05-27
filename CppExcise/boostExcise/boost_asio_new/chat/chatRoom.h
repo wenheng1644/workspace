@@ -25,7 +25,11 @@ using namespace boost::asio::ip;
 class chatRoom;
 class chatSession : public std::enable_shared_from_this<chatSession>{
 public:
-    chatSession(boost::asio::io_service& ioserver, chatRoom& room) : m_sessionSocket(ioserver), m_Room(room) {}
+
+    chatSession(boost::asio::io_service& ioserver, chatRoom& room, const std::string& name = "null") :
+        m_sessionSocket(ioserver), m_Room(room), m_name(name) {}
+
+//    chatSession() = default;
 
     void start();
 
@@ -33,11 +37,33 @@ public:
 
     bool isVaildConnect();
 
-    tcp::socket& socket() { return m_sessionSocket;}
+    inline tcp::socket& socket() { return m_sessionSocket;}
+
+    inline void setname(const std::string& name)
+    {
+        if(name != m_name)
+            m_name = name;
+    }
+
+    inline std::string name()
+    {
+        return m_name;
+    }
+
+    inline std::string ip()
+    {
+        return m_sessionSocket.remote_endpoint().address().to_string();
+    }
+
+    inline size_t port()
+    {
+        return m_sessionSocket.remote_endpoint().port();
+    }
 private:
     tcp::socket m_sessionSocket;
     netMsg m_msg;
     chatRoom& m_Room;
+    std::string m_name;
 
 
     void handle_readhead(error_code_type ec, size_t bytes);

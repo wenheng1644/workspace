@@ -198,3 +198,48 @@ function GM_File(filename, needtip)
         print("createFile is not ...")
     end
 end
+
+
+function lua_loadSession()
+    if printSessionInfo then
+        printSessionInfo()
+    end
+end
+
+function lua_loadSession2()
+    if not getRoom then
+        print("lua |  not getRoom function")
+        return
+    end
+
+    local room = getRoom()
+
+    if not room then
+        print("room obj is nil")
+        return
+    end
+
+    print(string.format("type(room.sessions) = %s", type(room.sessions)))
+    if not room.sessions then
+        print("room.sessions is nil")
+        return
+    end
+
+    local sessions = room.sessions
+
+    if #sessions == 0 then
+        print("没有客户端连接...")
+        return
+    end
+
+    local index = 1
+    for _, session in pairs(sessions) do
+        local name = session.name or "null"
+        local ip = session:ip() or "error ip"
+        local port = session:port() or -1
+        print(string.format("%d: name = %s, ip = %s, port = %d",
+                index, name, ip, port))
+        index = index + 1
+    end
+
+end

@@ -86,4 +86,5 @@ void network::lua_loadFunc()
 //    lua.set_function("getRoom", (std::function<chatRoom()>)std::bind(&network::getRoom, this));
     CScriptSystem::getSingalton()->setCFunc<std::function<void()>>("loadNetMsg", (std::function<void()>)std::bind(&chatRoom::printMsgs, &m_Room));
     CScriptSystem::getSingalton()->setCFunc<std::function<chatRoom()>>("getRoom", (std::function<chatRoom()>)std::bind(&network::getRoom, this));
+    CScriptSystem::getSingalton()->setCFunc<std::function<void()>>("printSessionInfo", (std::function<void()>)std::bind(&chatRoom::printSession, &m_Room));
 }

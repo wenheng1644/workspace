@@ -42,6 +42,11 @@ void CScriptSystem::defCFunc()
                     "head", &netMsg::head,
                     "body", &netMsg::body);
 
+    m_luaState.new_usertype<chatSession>("chatSession", sol::constructors<chatSession(boost::asio::io_service, chatRoom&, const std::string)>(),
+            "name", sol::property(&chatSession::name, &chatSession::setname),
+            "ip", &chatSession::ip,
+            "port", &chatSession::port);
+
     m_luaState.new_usertype<SessionQueue>("SessionQueue", sol::default_constructor);
     m_luaState.new_usertype<netMsgQueue>("netMsgQueue", sol::default_constructor);
 

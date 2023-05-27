@@ -77,7 +77,6 @@ void chatRoom::printMsgs()
     }
 }
 
-
 void chatSession::start()
 {
     m_Room.join(shared_from_this());
@@ -98,15 +97,9 @@ void chatSession::handle_readhead(error_code_type ec, size_t bytes)
 {
     using namespace boost::asio;
 
-    if(ec)
+    if(ec || bytes == 0)
     {
-        std::cerr << "handle_readhead | ec" << std::endl;
-        return;
-    }
-
-    if(bytes == 0)
-    {
-        std::cerr << "handle_readhead | per socket closed..." << std::endl;
+        std::cerr << boost::format ("连接断开 | ec = %s bytes = %d") % ec.what() % bytes << std::endl;
         m_Room.leave(shared_from_this());
         m_sessionSocket.close();
         return;
@@ -131,6 +124,7 @@ void chatSession::handle_readbody(error_code_type ec, size_t bytes)
     }
 
     std::cout << boost::format("read data(%d): %s") % bytes % m_msg.body << std::endl;
+//    setname(m_msg.head.info.name);
     m_Room.deliver(m_msg);
     std::memset(m_msg.body, 0, 1024);
     m_sessionSocket.async_read_some(boost::asio::buffer(&m_msg.head, sizeof(netHead)), \
@@ -167,6 +161,6 @@ bool chatSession::isVaildConnect()
     }
 
     netHead head = netResolver::generator()->getNetHead(buff);
-
+    m_name = head.info.name;
     return netMsg::isVaildChecknum(head);
 }
