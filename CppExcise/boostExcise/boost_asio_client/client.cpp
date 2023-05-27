@@ -37,7 +37,7 @@ void client::handle_write()
         head.version = 1;
         head.checknum = netMsg::makeChceknum(head);
         memcpy(head.info.ip, ip.data(), strlen(ip.data()));
-        memcpy(head.info.name, "xwz", 3);
+        memcpy(head.info.name, m_name.c_str(), strlen(m_name.c_str()));
         head.info.times = time(nullptr);
         char buff[1024] = {0};
 //        auto buff =  netResolver::generator()->compose(head, line.data(), strlen(line.c_str()));
@@ -95,6 +95,7 @@ void client::handle_checkConnect()
     head.version = 1;
     head.len = 0;
     head.checknum = netMsg::makeChceknum(head);
+    memcpy(head.info.name, m_name.c_str(), strlen(m_name.c_str()));
 
     char buff[1024] = {0};
     netResolver::generator()->compose(head, nullptr, 0, buff);

@@ -16,7 +16,8 @@
 using namespace boost::asio;
 class client : public std::enable_shared_from_this<client>{
 public:
-    client(io_service& ioService, ip::tcp::endpoint ed) : m_socket(ioService), m_ed(ed) {}
+    client(io_service& ioService, ip::tcp::endpoint ed, const std::string& name)
+        : m_socket(ioService), m_ed(ed), m_name(name) {}
 
     void connect();
 
@@ -24,6 +25,7 @@ private:
     ip::tcp::socket m_socket;
     ip::tcp::endpoint m_ed;
     netMsg m_msg;
+    std::string m_name;
 
     void handle_connect(boost::system::error_code ec);
     void handle_write();
