@@ -4,7 +4,7 @@
 
 #include "chatRoom.h"
 
-void chatRoom::deliver(netMsg &msg) {
+void chatRoom::deliver(netMsg &msg, bool isSave) {
     for(auto& session : m_Sessionqueue)
     {
         session->deliver(msg);
@@ -13,7 +13,7 @@ void chatRoom::deliver(netMsg &msg) {
     while(m_Msgqueue.size() >= 100)
         m_Msgqueue.pop_back();
 
-    m_Msgqueue.push_back(std::shared_ptr<netMsg>(new netMsg(msg)));
+    if(isSave) m_Msgqueue.push_back(std::shared_ptr<netMsg>(new netMsg(msg)));
 }
 
 void chatRoom::join(chatSessionPtr session)
@@ -79,7 +79,6 @@ void chatRoom::printMsgs()
 
 void chatSession::start()
 {
-    m_Room.join(shared_from_this());
     m_sessionSocket.async_read_some(boost::asio::buffer(&m_msg.head, sizeof(netHead)), \
         boost::bind(&chatSession::handle_readhead, shared_from_this(), boost::asio::placeholders::error, boost::asio::placeholders::bytes_transferred));
 }
@@ -102,6 +101,9 @@ void chatSession::handle_readhead(error_code_type ec, size_t bytes)
         std::cerr << boost::format ("连接断开 | ec = %s bytes = %d") % ec.what() % bytes << std::endl;
         m_Room.leave(shared_from_this());
         m_sessionSocket.close();
+//        std::string content = m_name + "退出连接";
+//        netMsg info("server", "sys", content);
+//        m_Room.deliver(info, false);
         return;
     }
 
@@ -163,4 +165,14 @@ bool chatSession::isVaildConnect()
     netHead head = netResolver::generator()->getNetHead(buff);
     m_name = head.info.name;
     return netMsg::isVaildChecknum(head);
+}
+
+bool chatSession::close()
+{
+    if(!m_sessionSocket.is_open()) return false;
+
+    m_Room.leave(shared_from_this());
+    m_sessionSocket.close();
+
+    return true;
 }

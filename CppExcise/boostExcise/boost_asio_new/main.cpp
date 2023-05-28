@@ -168,8 +168,8 @@ int main(int argc, char *argv[]) {
      boost::asio::ip::tcp::endpoint  ed(tcp::v4(), port);
      std::cout << "addr = " << ed.address().to_string() << std::endl;
      network net(ioserver, ed, netMsgs);
-    std::cout << "start to listen" << std::endl;
-    net.run();
+     std::cout << "start to listen" << std::endl;
+     net.run();
 
      std::thread t2(inputThread, &net);
      t2.detach();

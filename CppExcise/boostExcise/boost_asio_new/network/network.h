@@ -46,7 +46,6 @@ private:
     void handle_accept(chatSessionPtr session, error_code_type ec);
 
     chatRoom& getRoom() { return m_Room; }
-    void writeToFile();
 };
 
 #endif //BOOST_ASIO_NEW_NETWORK_H

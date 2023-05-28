@@ -38,21 +38,23 @@ void CScriptSystem::defCFunc()
                     "checknum", &netHead::checknum,
                     "info", &netHead::info);
 
-    m_luaState.new_usertype<netMsg>("netMsg", sol::constructors<netMsg>(),
+    m_luaState.new_usertype<netMsg>("netMsg", sol::constructors<netMsg(), netMsg(const std::string, const std::string, const std::string)>(),
                     "head", &netMsg::head,
                     "body", &netMsg::body);
 
     m_luaState.new_usertype<chatSession>("chatSession", sol::constructors<chatSession(boost::asio::io_service, chatRoom&, const std::string)>(),
             "name", sol::property(&chatSession::name, &chatSession::setname),
             "ip", &chatSession::ip,
-            "port", &chatSession::port);
+            "port", &chatSession::port,
+            "close", &chatSession::close);
 
     m_luaState.new_usertype<SessionQueue>("SessionQueue", sol::default_constructor);
     m_luaState.new_usertype<netMsgQueue>("netMsgQueue", sol::default_constructor);
 
     m_luaState.new_usertype<chatRoom>("chatRoom", sol::default_constructor,
                                       "sessions", &chatRoom::m_Sessionqueue,
-                                      "msgs", &chatRoom::m_Msgqueue);
+                                      "msgs", &chatRoom::m_Msgqueue,
+                                      "deliver", &chatRoom::deliver);
 
     m_luaState.set_function("createFile", &fileFunc::createFile);
 }

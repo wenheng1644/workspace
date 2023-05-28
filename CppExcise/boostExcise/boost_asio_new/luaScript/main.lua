@@ -199,14 +199,7 @@ function GM_File(filename, needtip)
     end
 end
 
-
 function lua_loadSession()
-    if printSessionInfo then
-        printSessionInfo()
-    end
-end
-
-function lua_loadSession2()
     if not getRoom then
         print("lua |  not getRoom function")
         return
@@ -219,7 +212,7 @@ function lua_loadSession2()
         return
     end
 
-    print(string.format("type(room.sessions) = %s", type(room.sessions)))
+    --print(string.format("type(room.sessions) = %s", type(room.sessions)))
     if not room.sessions then
         print("room.sessions is nil")
         return
@@ -242,4 +235,51 @@ function lua_loadSession2()
         index = index + 1
     end
 
+end
+
+local function isSessionExist(name)
+    local room = getRoom()
+    if not room then return end
+
+    local seesions = room.sessions
+    --if #seesions == 0 then
+    --    print("没有客户端连接...")
+    --    return
+    --end
+
+    for _, session in pairs(seesions or {}) do
+        if name == (session.name or "") then
+            return session
+        end
+    end
+end
+
+function lua_closeSession(name)
+    if type(name) ~= "string" then
+        print("请输入要断开的客户端连接名字")
+        return
+    end
+
+    print("lua_closeSession | ", name)
+    local session = isSessionExist(name)
+    if not session then
+        print(string.format("没有找到指定客户端: %s", name))
+        return
+    end
+
+    print("lua_closeSession | is exist")
+
+    local room = getRoom()
+    if not room then return end
+
+    if session:close() then
+        print(string.format("指定客户端(%s)关闭成功", name))
+        print("test!!!!!!!!!!!!!!!!1")
+        local netMsg = netMsg.new("server", "sys", string.format("sys 已将用户[%s]踢出去, 请各位引以为戒", name))
+        print("lua_closeSession | type(netMsg) = ", type(netMsg))
+        room:deliver(netMsg, false)
+        return
+    end
+
+    print("关闭失败....")
 end

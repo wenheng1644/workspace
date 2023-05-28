@@ -1,6 +1,8 @@
 #include "netResolver.h"
 #include "memory"
 #include "algorithm"
+#include "../netMsg/netMsg.h"
+
 
 netResolver* netResolver::m_ptr = nullptr;
 std::mutex netResolver::m_mutex;

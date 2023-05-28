@@ -30,6 +30,11 @@ void network::handle_accept(chatSessionPtr session, error_code_type ec)
             netResolver::generator()->compose(head, connectMsg.data(), head.len, buff);
             auto msg_ptr = netResolver::generator()->resolver(buff, sizeof(netHead) + head.len);
             session->deliver(*msg_ptr);
+
+            std::string content = session->name() + "进入聊天室";
+            netMsg info2("server", "sys", content);
+            m_Room.join(session);
+            m_Room.deliver(info2, false);
             session->start();
         }
     }
@@ -52,10 +57,6 @@ network::~network()
     std::cout << "network is deleted...." << std::endl;
 }
 
-void network::writeToFile()
-{
-
-}
 
 void network::stop()
 {
@@ -80,11 +81,6 @@ void network::stop()
 
 void network::lua_loadFunc()
 {
-//    sol::state& lua = CScriptSystem::getSingalton()->getLua_State();
-//
-//    lua.set_function("loadNetMsg", (std::function<void()>)std::bind(&chatRoom::printMsgs, &m_Room));
-//    lua.set_function("getRoom", (std::function<chatRoom()>)std::bind(&network::getRoom, this));
     CScriptSystem::getSingalton()->setCFunc<std::function<void()>>("loadNetMsg", (std::function<void()>)std::bind(&chatRoom::printMsgs, &m_Room));
     CScriptSystem::getSingalton()->setCFunc<std::function<chatRoom()>>("getRoom", (std::function<chatRoom()>)std::bind(&network::getRoom, this));
-    CScriptSystem::getSingalton()->setCFunc<std::function<void()>>("printSessionInfo", (std::function<void()>)std::bind(&chatRoom::printSession, &m_Room));
 }

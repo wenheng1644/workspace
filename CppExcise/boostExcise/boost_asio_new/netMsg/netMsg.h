@@ -42,9 +42,22 @@ struct netMsg
         memset(body, 0, sizeof(body));
     }
 
+    netMsg(const std::string& ip, const std::string& name, const std::string content)
+    {
+        head.len = strlen(content.c_str());
+        head.type = 1;
+        head.version = 1;
+        memcpy(head.info.ip, ip.c_str(), strlen(ip.c_str()));
+        memcpy(head.info.name, name.c_str(), strlen(name.c_str()));
+        head.info.times = time(nullptr);
+
+        head.checknum = makeChceknum(head);
+
+        memcpy(body, content.c_str(), strlen(content.c_str()));
+    }
+
     static u_short makeChceknum(netHead& head);
     static bool isVaildChecknum(netHead& head);
 };
-
 
 #endif //BOOST_ASIO_NEW_NETMSG_H

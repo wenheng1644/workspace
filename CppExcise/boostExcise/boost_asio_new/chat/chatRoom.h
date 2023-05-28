@@ -59,6 +59,8 @@ public:
     {
         return m_sessionSocket.remote_endpoint().port();
     }
+
+    bool close();
 private:
     tcp::socket m_sessionSocket;
     netMsg m_msg;
@@ -79,7 +81,7 @@ class chatRoom{
 public:
     chatRoom() = default;
     chatRoom(const std::vector<netMsg>& netMsgs);
-    void deliver(netMsg& msg);
+    void deliver(netMsg& msg, bool isSave = true);
     void join(chatSessionPtr session);
     void leave(chatSessionPtr session);
 

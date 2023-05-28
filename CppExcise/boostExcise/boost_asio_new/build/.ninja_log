@@ -1,14 +1,9 @@
 # ninja log v5
-2	2230	1683294885927471236	CMakeFiles/boost_asio_new.dir/common/commonClass.cpp.o	51e0170d72a50950
-3	3080	1685182158872566165	CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o	27e095a70d1c57
-0	16	1685197423592471817	build.ninja	334f3a2e0e4d4f9e
-3	5454	1685182161240445075	CMakeFiles/boost_asio_new.dir/main.cpp.o	dbee2577da7f3fac
-2	4645	1685182160432486338	CMakeFiles/boost_asio_new.dir/network/network.cpp.o	4be1d03309a4caa3
+3	3220	1685240443372628924	CMakeFiles/boost_asio_new.dir/common/commonClass.cpp.o	51e0170d72a50950
+3	3664	1685242229130358743	CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o	27e095a70d1c57
+0	16	1685243968628218663	build.ninja	334f3a2e0e4d4f9e
+3	6218	1685242231682405168	CMakeFiles/boost_asio_new.dir/main.cpp.o	dbee2577da7f3fac
+2	4917	1685242495734348247	CMakeFiles/boost_asio_new.dir/network/network.cpp.o	4be1d03309a4caa3
 2	9968	1683970793534125483	CMakeFiles/boost_asio_new.dir/CScriptSystem/CScriptSystem.cpp.o	4562d49f38e4581e
-2	3814	1685195805826940935	CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o	b2f69d1af1c86c34
-3814	4085	1685195806098942787	boost_asio_new	d16da6b5513ed844
-3	3430	1685197431228431435	CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o	27e095a70d1c57
-3	4599	1685197432392425346	CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o	b2f69d1af1c86c34
-3	5025	1685197432816423131	CMakeFiles/boost_asio_new.dir/network/network.cpp.o	4be1d03309a4caa3
-3	5906	1685197433696418545	CMakeFiles/boost_asio_new.dir/main.cpp.o	dbee2577da7f3fac
-5906	6218	1685197434016416878	boost_asio_new	d16da6b5513ed844
+3	4145	1685243270464515109	CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o	b2f69d1af1c86c34
+4145	4405	1685243270724516506	boost_asio_new	d16da6b5513ed844
