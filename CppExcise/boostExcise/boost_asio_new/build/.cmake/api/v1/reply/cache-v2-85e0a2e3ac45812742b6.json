@@ -2,6 +2,46 @@
 	"entries" : 
 	[
 		{
+			"name" : "Boost_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Boost."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/lib/cmake/Boost-1.81.0"
+		},
+		{
+			"name" : "Boost_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/include"
+		},
+		{
+			"name" : "Boost_SERIALIZATION_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "/usr/local/lib/libboost_serialization.so.1.81.0"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -55,7 +95,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/build"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -555,7 +595,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -615,7 +655,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -855,7 +895,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "libNetResolver"
+			"value" : "boost_asio_new"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1119,10 +1159,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "The CMake toolchain file"
+					"value" : ""
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
@@ -1152,6 +1192,18 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Boost",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Boost"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/local/lib/cmake/Boost-1.81.0/BoostConfig.cmake][cfound components: serialization ][v1.81.0()]"
 		},
 		{
 			"name" : "VCPKG_APPLOCAL_DEPS",
@@ -1362,7 +1414,7 @@
 			"value" : "/home/wenheng/.clion-vcpkg/vcpkg/installed"
 		},
 		{
-			"name" : "libNetResolver_BINARY_DIR",
+			"name" : "boost_asio_new_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1371,10 +1423,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/build"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build"
 		},
 		{
-			"name" : "libNetResolver_IS_TOP_LEVEL",
+			"name" : "boost_asio_new_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1386,7 +1438,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "libNetResolver_SOURCE_DIR",
+			"name" : "boost_asio_new_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1395,7 +1447,51 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new"
+		},
+		{
+			"name" : "boost_headers_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_headers."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/lib/cmake/boost_headers-1.81.0"
+		},
+		{
+			"name" : "boost_serialization_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_serialization."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/lib/cmake/boost_serialization-1.81.0"
+		},
+		{
+			"name" : "sol2_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for sol2."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/wenheng/.clion-vcpkg/vcpkg/installed/x64-linux/share/sol2"
 		}
 	],
 	"kind" : "cache",

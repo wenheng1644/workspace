@@ -4,4 +4,5 @@
 
 #include "commonClass.h"
 
-Singleton* Singleton::m_signleton = nullptr;
+//template<typename T>
+//T* Singleton<T>::m_signleton = nullptr;

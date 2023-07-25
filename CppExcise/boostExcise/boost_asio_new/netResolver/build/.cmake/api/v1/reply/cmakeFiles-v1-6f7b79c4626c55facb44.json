@@ -129,25 +129,13 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/usr/local/cmake/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/home/wenheng/.clion-vcpkg/vcpkg/installed/x64-linux/share/sol2/sol2-config-version.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/home/wenheng/.clion-vcpkg/vcpkg/installed/x64-linux/share/sol2/sol2-config.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/home/wenheng/.clion-vcpkg/vcpkg/installed/x64-linux/share/sol2/sol2-targets.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build",
-		"source" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new"
+		"build" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/build",
+		"source" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver"
 	},
 	"version" : 
 	{

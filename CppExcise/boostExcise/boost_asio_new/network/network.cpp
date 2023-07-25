@@ -18,23 +18,31 @@ void network::handle_accept(chatSessionPtr session, error_code_type ec)
         if(session->isVaildConnect())
         {
             std::string connectMsg = "thank you connect the server!!!";
-            netHead head;
-            head.len = strlen(connectMsg.data());
-            head.type = 1;
-            head.version = 0;
-            head.checknum = netMsg::makeChceknum(head);
-            head.info.times = std::time(nullptr);
-            memcpy(head.info.name, "sys", 3);
-            memcpy(head.info.ip, "server", 6);
-            char buff[1024] = {0};
-            netResolver::generator()->compose(head, connectMsg.data(), head.len, buff);
-            auto msg_ptr = netResolver::generator()->resolver(buff, sizeof(netHead) + head.len);
-            session->deliver(*msg_ptr);
+            playerChatMsgCmd_Ret retcmd;
+            retcmd.ret = 1;
+            memcpy(retcmd.buff, connectMsg.c_str(), strlen(connectMsg.c_str()));
+
+            dataInfo info = netResolver::makeDataInfo("server", "sys", time(nullptr));
+            std::string datas = netResolver::getSerializationStr(retcmd);
+
+            netMsg msg = netResolver::makeNetMsg(datas, CHATSYS, CHATSYS_CHATMSG_RET, 1, info);
+            session->deliver(msg);
+
+
 
             std::string content = session->name() + "进入聊天室";
-            netMsg info2("server", "sys", content);
+            playerChatMsgCmd_Ret allCmd;
+            allCmd.ret = 1;
+            memcpy(allCmd.buff, content.c_str(), strlen(content.c_str()));
+
+            std::string datas2 = netResolver::getSerializationStr(allCmd);
+            netMsg allMsg = netResolver::makeNetMsg(datas2, CHATSYS, CHATSYS_CHATMSG_RET, 1, info);
+
             m_Room.join(session);
-            m_Room.deliver(info2, false);
+            m_Room.deliver(allMsg, false);
+
+            std::cout << boost::format("name = %s 进入聊天室...") %session->name() << std::endl;
+
             session->start();
         }
     }
@@ -82,5 +90,6 @@ void network::stop()
 void network::lua_loadFunc()
 {
     CScriptSystem::getSingalton()->setCFunc<std::function<void()>>("loadNetMsg", (std::function<void()>)std::bind(&chatRoom::printMsgs, &m_Room));
-    CScriptSystem::getSingalton()->setCFunc<std::function<chatRoom()>>("getRoom", (std::function<chatRoom()>)std::bind(&network::getRoom, this));
+    std::function<chatRoom()> f = (std::function<chatRoom()>)std::bind(&network::getRoom, this);
+    CScriptSystem::getSingalton()->setCFunc<std::function<chatRoom()>>("getRoom", std::function<chatRoom()>(std::bind(&network::getRoom, this)));
 }

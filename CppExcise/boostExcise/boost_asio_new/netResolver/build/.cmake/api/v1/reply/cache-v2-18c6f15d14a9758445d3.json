@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -615,7 +615,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -855,7 +855,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "boost_asio_new"
+			"value" : "libNetResolver"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1119,10 +1119,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
@@ -1362,7 +1362,7 @@
 			"value" : "/home/wenheng/.clion-vcpkg/vcpkg/installed"
 		},
 		{
-			"name" : "boost_asio_new_BINARY_DIR",
+			"name" : "libNetResolver_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1371,10 +1371,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver/build"
 		},
 		{
-			"name" : "boost_asio_new_IS_TOP_LEVEL",
+			"name" : "libNetResolver_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1386,7 +1386,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "boost_asio_new_SOURCE_DIR",
+			"name" : "libNetResolver_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1395,19 +1395,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new"
-		},
-		{
-			"name" : "sol2_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for sol2."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/home/wenheng/.clion-vcpkg/vcpkg/installed/x64-linux/share/sol2"
+			"value" : "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/netResolver"
 		}
 	],
 	"kind" : "cache",

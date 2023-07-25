@@ -68,8 +68,14 @@ template<typename T, typename... ArgsT>
 bool CScriptSystem::loadLuaGM(const T &name, ArgsT... args) {
     if(!isLuaFuncExist(name)) return false;
 
-    std::cout << "CScriptSystem::loadLuaGM | size params = " << sizeof...(args) << std::endl;
-    m_luaState[name](args...);
+//    std::cout << "CScriptSystem::loadLuaGM | size params = " << sizeof...(args) << std::endl;
+    sol::function_result res = m_luaState[name](args...);
+    if(res.get_type() == sol::type::boolean)
+    {
+        bool reslut = res.get<bool>();
+        return reslut;
+    }
+    return true;
 }
 
 #endif //TEXT1_CSCRIPTSYSTEM_H

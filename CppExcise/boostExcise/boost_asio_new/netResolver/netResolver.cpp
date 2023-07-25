@@ -5,53 +5,9 @@
 
 
 netResolver* netResolver::m_ptr = nullptr;
+
 std::mutex netResolver::m_mutex;
 
-std::shared_ptr<char> netResolver::compose(netHead &head, char *body, size_t bodylen)
-{
-    std::shared_ptr<char> data(new char(sizeof(head) + bodylen + 1));
-    char *p = data.get();
-    char* h =  reinterpret_cast<char*>(&head);
-    std::memcpy(p, h, sizeof(head));
-    std::memcpy((p + sizeof(head)), body, bodylen);
-
-    return data;
-}
-
-std::shared_ptr<netMsg> netResolver::resolver(const char *data,  size_t len)
-{
-    auto netMsg_ptr = std::shared_ptr<netMsg>(new netMsg);
-    memcpy(&(netMsg_ptr->head), data, sizeof(netHead));
-    memcpy(netMsg_ptr->body, data + sizeof(netHead), len - sizeof(netHead));
-
-    return netMsg_ptr;
-}
-
-std::shared_ptr<char> netResolver::compose(netMsg &msg)
-{
-    u_short bodyLen = msg.head.len;
-    std::shared_ptr<char> data(new char(sizeof(netHead) + bodyLen) + 1);
-    std::memcpy(data.get(), &(msg.head), sizeof(netHead));
-    std::memcpy(data.get() + sizeof(netHead), msg.body, bodyLen);
-
-    return data;
-}
-
-void netResolver::compose(netHead& head, char* body, size_t bodylen, char* data)
-{
-    memcpy(data, &head, sizeof(netHead));
-    if(body && bodylen > 0)
-    {
-        memcpy(data + sizeof(netHead), body, bodylen);
-    }
-}
-
-netHead netResolver::getNetHead(const char *headData)
-{
-    netHead head;
-    memcpy(&head, headData, sizeof(netHead));
-    return head;
-}
 
 u_short netMsg::makeChceknum(netHead &head)
 {
@@ -69,6 +25,12 @@ bool netMsg::isVaildChecknum(netHead &head)
         return false;
 
     return true;
+}
+
+u_short netMsg::maketypenum(const netHead& head)
+{
+    u_short v = head.type | head.subtype << 8;
+    return v;
 }
 
 
@@ -102,3 +64,45 @@ std::string netTimeResolver::getTimeString(const tm& t)
     }, '\0');
     return res;
 }
+
+netMsg netResolver::makeNetMsg(const std::string& datas, u_char type, u_char subtype, u_char version, dataInfo info)
+{
+    netHead head;
+    head.len = strlen(datas.c_str());
+    head.type = type;
+    head.subtype = subtype;
+    head.version = version;
+    head.info = info;
+    head.checknum = netMsg::makeChceknum(head);
+
+    netMsg msg;
+    msg.head = head;
+    msg.body = datas;
+
+    return msg;
+}
+
+dataInfo netResolver::makeDataInfo(const std::string &ip, const std::string &name, time_t time) {
+    dataInfo info;
+    memcpy(info.ip, ip.c_str(), sizeof(info.ip));
+    memcpy(info.name, name.c_str(), sizeof(info.name));
+    info.times = time;
+
+    return info;
+}
+
+std::string netResolver::getSerializationStrByNetMsg(const netMsg &msg) {
+    char buff[MAXBYTES] = {0};
+    memcpy(buff, (char*)&(msg.head), sizeof(netHead));
+
+    size_t headlen = sizeof(netHead);
+    size_t bodylen = msg.head.len;
+    std::string msgBuff(headlen + bodylen, 0);
+
+    memcpy((char*)msgBuff.data(), buff, headlen);
+    memcpy((char*)msgBuff.data() + headlen, msg.body.c_str(), bodylen);
+
+    return msgBuff;
+}
+
+

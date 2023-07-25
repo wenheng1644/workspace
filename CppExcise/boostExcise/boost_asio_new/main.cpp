@@ -12,18 +12,18 @@
 #include "string"
 #include "cstring"
 
-void test() {
-    netResolver *resolver = netResolver::generator();
-    char body[] = "hello linux";
-    netHead head;
-    head.len = sizeof(body);
-    std::shared_ptr<char> data = resolver->compose(head, body, sizeof body);
-
-    char buff[1024] = {0};
-    char *ptr = data.get();
-    memcpy(buff, ptr, sizeof(head) + sizeof(body) + 1);
-    std::cout << "data = " << data << std::endl;
-}
+//void test() {
+//    netResolver *resolver = netResolver::generator();
+//    char body[] = "hello linux";
+//    netHead head;
+//    head.len = sizeof(body);
+//    std::shared_ptr<char> data = resolver->compose(head, body, sizeof body);
+//
+//    char buff[1024] = {0};
+//    char *ptr = data.get();
+//    memcpy(buff, ptr, sizeof(head) + sizeof(body) + 1);
+//    std::cout << "data = " << data << std::endl;
+//}
 
 void checkSize()
 {
@@ -165,7 +165,8 @@ int main(int argc, char *argv[]) {
 //       std::cout << "hello world" << std::endl;
 //    });
 //
-     boost::asio::ip::tcp::endpoint  ed(tcp::v4(), port);
+
+     boost::asio::ip::tcp::endpoint  ed(boost::asio::ip::address::from_string("192.168.31.145"), port);
      std::cout << "addr = " << ed.address().to_string() << std::endl;
      network net(ioserver, ed, netMsgs);
      std::cout << "start to listen" << std::endl;

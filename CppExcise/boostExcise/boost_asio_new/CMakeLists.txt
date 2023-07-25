@@ -23,11 +23,13 @@ find_package(sol2 CONFIG REQUIRED)
 include_directories(${sol2_INCLUDE_DIRS})
 message("sol2_INCLUDE_DIRS = " ${sol2_INCLUDE_DIRS})
 
+find_package(Boost REQUIRED COMPONENTS serialization)
+
 add_executable(boost_asio_new
         network/network.cpp
         network/network.h
-        main.cpp  chat/chatRoom.cpp chat/chatRoom.h logManager/logManager.cpp logManager/logManager.h common/commonClass.h common/commonClass.cpp)
+        main.cpp  chat/chatRoom.cpp chat/chatRoom.h logManager/logManager.cpp logManager/logManager.h common/commonClass.h common/commonClass.cpp cmd/base_cmd.h cmd/base_cmd.cpp common/user.cpp common/user.h cmd/playerSys_cmd.h cmd/playerChat_cmd.h)
 
-target_link_libraries(boost_asio_new pthread NetResolver)
+target_link_libraries(boost_asio_new pthread NetResolver Boost::serialization)
 target_link_libraries(boost_asio_new  sol2)
 target_link_libraries(boost_asio_new stdc++fs)

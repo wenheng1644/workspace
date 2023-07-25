@@ -8,6 +8,7 @@
 #define LUASCRIPTFILE "../luaScript/main.lua"
 
 #include "deque"
+#include "mutex"
 
 #include "functional"
 #include "boost/timer.hpp"
@@ -19,25 +20,27 @@
 typedef std::deque<netMsg> netMsgList;
 typedef boost::system::error_code error_code_type;
 
-
-class Singleton
-{
-public:
-    static Singleton* getSingleton() {
-        if(!m_signleton)
-            m_signleton = new Singleton();
-        return m_signleton;
-    }
-
-    virtual ~Singleton(){
-        if(m_signleton)
-            delete m_signleton;
-    }
-protected:
-    Singleton() = default;
-private:
-    static Singleton* m_signleton;
-};
+//template<typename T>
+//class Singleton
+//{
+//public:
+//    template<class T2>
+//    static T2* getSingleton() {
+//        if(!m_signleton)
+//            m_signleton = new Singleton<T2>;
+//        return m_signleton;
+//    }
+//
+//    virtual ~Singleton(){
+//        if(m_signleton)
+//            delete m_signleton;
+//    }
+//
+//protected:
+//    Singleton<T>() = default;
+//private:
+//    static Singleton<T> *m_signleton;
+//};
 
 class time_with_func
 {
@@ -94,5 +97,11 @@ private:
     }
 
 };
+
+//class UgEng : public Singleton<UgEng>
+//{
+//public:
+//    std::mutex m_sessionMutex;
+//};
 
 #endif //BOOST_ASIO_NEW_COMMONCLASS_H

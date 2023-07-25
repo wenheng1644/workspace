@@ -42,11 +42,12 @@ void CScriptSystem::defCFunc()
                     "head", &netMsg::head,
                     "body", &netMsg::body);
 
-    m_luaState.new_usertype<chatSession>("chatSession", sol::constructors<chatSession(boost::asio::io_service, chatRoom&, const std::string)>(),
+    m_luaState.new_usertype<chatSession>("chatSession", sol::constructors<chatSession(boost::asio::io_service, chatRoom&)>(),
             "name", sol::property(&chatSession::name, &chatSession::setname),
             "ip", &chatSession::ip,
             "port", &chatSession::port,
-            "close", &chatSession::close);
+            "close", &chatSession::close,
+            "deliver", &chatSession::deliver);
 
     m_luaState.new_usertype<SessionQueue>("SessionQueue", sol::default_constructor);
     m_luaState.new_usertype<netMsgQueue>("netMsgQueue", sol::default_constructor);
@@ -54,7 +55,9 @@ void CScriptSystem::defCFunc()
     m_luaState.new_usertype<chatRoom>("chatRoom", sol::default_constructor,
                                       "sessions", &chatRoom::m_Sessionqueue,
                                       "msgs", &chatRoom::m_Msgqueue,
-                                      "deliver", &chatRoom::deliver);
+                                      "leave", &chatRoom::leave,
+                                      "deliver", sol::overload(static_cast<void (chatRoom::*)(netMsg&, bool)>(&chatRoom::deliver),
+                                                               static_cast<void (chatRoom::*)(const std::string&, netMsg&)>(&chatRoom::deliver)));
 
     m_luaState.set_function("createFile", &fileFunc::createFile);
 }
@@ -131,19 +134,34 @@ std::vector<netMsg> CScriptSystem::loadNetMsg()
         std::string name = tb[i]["name"];
         u_int len = tb[i]["len"];
         u_int type = tb[i]["type"];
+        u_int subtype = tb[i]["subtype"];
         u_int version = tb[i]["version"];
         u_int checknum = tb[i]["checknum"];
-        std::string body = tb[i]["body"];
+//        std::string body = tb[i]["body"];
         size_t times = tb[i]["times"];
+        std::string content = tb[i]["chatInfo"]["content"];
+//        size_t retTimes = tb[i]["chatInfo"]["times"];
+        u_char ret = tb[i]["chatInfo"]["ret"];
 
         msg.head.len = len;
         msg.head.checknum = checknum;
         msg.head.type = type;
+        msg.head.subtype = subtype;
         msg.head.version = version;
         msg.head.info.times = times;
         memcpy(msg.head.info.name, name.c_str(), strlen(name.c_str()) + 1);
         memcpy(msg.head.info.ip, ip.c_str(), strlen(ip.c_str()) + 1);
-        memcpy(msg.body, body.c_str(), strlen(body.c_str()) + 1);
+
+        playerChatMsgCmd_Ret retcmd;
+//        retcmd.t = retTimes;
+        retcmd.ret = ret;
+        size_t cStrlen = strlen(content.c_str());
+        memcpy(retcmd.buff, content.c_str(), cStrlen);
+
+        msg.body = netResolver::getSerializationStr(retcmd);
+
+//        memcpy(msg.body, (char*)&retcmd, sizeof(playerChatMsgCmd_Ret));
+        std::cout << boost::format("loadNetMsg | [%d]: content = %s, cstrLen = %d") % i % content % cStrlen << std::endl;
         records.push_back(msg);
     }
 
@@ -156,16 +174,27 @@ void CScriptSystem::clua_wirtefile(const netMsgList &netMsgs)
     int index = 1;
     for(auto msg : netMsgs)
     {
+
+        playerChatMsgCmd_Ret ret = netResolver::getReSerializationObjByStr<playerChatMsgCmd_Ret>(msg.body);
+
         sol::table info = m_luaState.create_table();
         info["ip"] = msg.head.info.ip;
         info["name"] = msg.head.info.name;
         info["times"] = msg.head.info.times;
         info["len"] = msg.head.len;
         info["type"] = msg.head.type;
+        info["subtype"] = msg.head.subtype;
         info["version"] = msg.head.version;
         info["checknum"] = msg.head.checknum;
-        info["body"] = msg.body;
-        datas[index++] = info;
+        info["chatInfo"] = m_luaState.create_table();
+        info["chatInfo"]["content"] = std::string(ret.buff);
+        info["chatInfo"]["ret"] = ret.ret;
+//        info["chatInfo"]["times"] = ret.t;
+//        info["body"] = msg.body;
+        datas[index] = info;
+
+//        std::cout << boost::format("clua_wirtefile | [%d]: content = %s") % index % std::string(ret.buff) << std::endl;
+        index++;
     }
     m_luaState["lua_writeDatasToFile"](datas);
 }

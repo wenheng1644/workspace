@@ -69,13 +69,16 @@ function test_getuserdata(netPtr)
 end
 
 function lua_loadNetMsg()
+    print("lua_loadNetMsg | 开始加载聊天数据....")
     local tb = {}
     local _, date, datetime = GetDate()
     local fd = OpenFile(LOGFILEPATH .. CHATLOGFILENAME, "a+")
     local content = fd:read("*a")
-
+    --print("lua_loadNetMsg | 打印數據111")
+    --print(string.format("lua_loadNetMsg | content = %s", content))
     tb = string.unserialize(content)
-
+    --print("lua_loadNetMsg | 打印數據222")
+    --dump(tb)
     local array = {}
     -- for _, v in pairs(tb) do
     --     array[#array+1] = v
@@ -95,7 +98,7 @@ function lua_loadNetMsg()
         end
     end
     table.sort(array, sortFunc)
-
+    print("lua_loadNetMsg | 聊天数据加載完成")
     return array
 end
 
@@ -123,6 +126,7 @@ function lua_writeDatasToFile(netMsgs)
 
     -- local datas = {}
     --dump(netMsgs)
+    local cnt = 0
     for index, tb in ipairs(netMsgs) do
         --local tb = {}
         --local head = msg.head
@@ -137,10 +141,15 @@ function lua_writeDatasToFile(netMsgs)
         --print(string.format("lua |index = %d, times = %d", index, tb.times))
         local _, _, datetime = GetDate(tb.times)
         str2tb[datetime or "nil"] = tb
+        cnt = cnt + 1
+        -- print(string.format("lua_writeDatasToFile | [%d]: content = %s & times = %d", cnt, tb.chatInfo.content or "nil", tb.times))
+        -- print(string.format("[%d]: 序列化当前表: ", cnt))
+        -- dump(tb)
+        -- print("================================================================")
     end
-
-    -- print("打印序列化后的表：")
-    -- dump(str2tb)
+    -- print(string.format("当前写入数据数量 = %d", cnt))
+    --  print("打印序列化后的表：")
+    --  dump(str2tb)
 
     fd:close()
 
@@ -225,19 +234,19 @@ function lua_loadSession()
         return
     end
 
-    local index = 1
+    local index = 0
     for _, session in pairs(sessions) do
         local name = session.name or "null"
         local ip = session:ip() or "error ip"
         local port = session:port() or -1
         print(string.format("%d: name = %s, ip = %s, port = %d",
-                index, name, ip, port))
+                index + 1, name, ip, port))
         index = index + 1
     end
-
+    print(string.format("lua_loadSession | 现在剩余连接数: %d", index))
 end
 
-local function isSessionExist(name)
+function IsSessionExist(name)
     local room = getRoom()
     if not room then return end
 
@@ -254,7 +263,7 @@ local function isSessionExist(name)
     end
 end
 
-function lua_closeSession(name)
+function lua_closeSession(name, msg)
     if type(name) ~= "string" then
         print("请输入要断开的客户端连接名字")
         return
@@ -272,14 +281,66 @@ function lua_closeSession(name)
     local room = getRoom()
     if not room then return end
 
+    local goodbye = netMsg.new("server", "sys", "您已被系统踢了")
+    session:deliver(goodbye)
     if session:close() then
         print(string.format("指定客户端(%s)关闭成功", name))
-        print("test!!!!!!!!!!!!!!!!1")
-        local netMsg = netMsg.new("server", "sys", string.format("sys 已将用户[%s]踢出去, 请各位引以为戒", name))
+        local content = msg or string.format("sys 已将用户[%s]踢出去, 请各位引以为戒", name)
+        local netMsg = netMsg.new("server", "sys", content)
         print("lua_closeSession | type(netMsg) = ", type(netMsg))
         room:deliver(netMsg, false)
+        if room:leave(session) then
+            print(string.format("%s 已移除出聊天室", name))
+        end
         return
     end
 
     print("关闭失败....")
+end
+
+--直接在聊天室发消息
+function lua_sysMsg(msg)
+    local room = getRoom()
+    if not room then return end
+
+    local netMsg = netMsg.new("server", "sys", msg or "null")
+    room:deliver(netMsg, false)
+end
+
+--对某个用户发消息
+function lua_sendMsgToUser(name, msg)
+    if type(name) ~= "string" then return end
+    local session = isSessionExist(name)
+    if not session then
+        print(string.format("name = %s 不存在"))
+        return
+    end
+
+    msg = msg or "系统信息"
+
+    local netMsg = netMsg.new("服务端", "系统消息", msg)
+
+    session:deliver(netMsg)
+end
+
+local banUserTb = {
+    ["bbb"] = true,
+    --["xwz1"] = true,
+}
+
+function IsBanUserTb(name)
+    if type(name) ~= "string"  then return false end
+
+    if not banUserTb[name] then return false end
+    print(string.format("name = %s 禁止進入", name))
+    return true
+end
+
+function SendMsgToUser(session, msg)
+    if not session then return end
+
+    local netMsg = netMsg.new("server", "sys", "您已进入黑名单")
+
+    session:deliver(netMsg)
+    --session:close()
 end
