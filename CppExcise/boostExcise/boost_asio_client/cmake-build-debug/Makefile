@@ -153,6 +153,54 @@ client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/client.cpp.s
 .PHONY : client.cpp.s
 
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.o: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.o
+
+# target to build an object file
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o
+
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.i: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.i
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.i
+
+# target to preprocess a source file
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.i
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.i
+
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.s: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.s
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.s
+
+# target to generate assembly for a file
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.s
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.s
+
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.o: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.o
+
+# target to build an object file
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o
+
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.i: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.i
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.i
+
+# target to preprocess a source file
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.i
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.i
+
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.s: home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.s
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.s
+
+# target to generate assembly for a file
+home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_asio_client.dir/build.make CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.s
+.PHONY : home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +237,12 @@ help:
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"
+	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.o"
+	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.i"
+	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.s"
+	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.o"
+	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.i"
+	@echo "... home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

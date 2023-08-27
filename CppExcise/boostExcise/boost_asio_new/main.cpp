@@ -4,13 +4,25 @@
 
 #include "network/network.h"
 #include "netResolver/netResolver.h"
+#include "netQtResolver.h"
 #include "CScriptSystem/CScriptSystem.h"
 #include "boost/asio/steady_timer.hpp"
+
+#include "QtCore/QDataStream"
+#include "QtCore/QIODevice"
+#include "QtCore/QByteArray"
+#include "QtCore/QBuffer"
 
 #include "regex"
 #include "thread"
 #include "string"
 #include "cstring"
+
+#include <signal.h>
+#include <unistd.h>
+#include <execinfo.h>
+#include <fcntl.h>
+
 
 //void test() {
 //    netResolver *resolver = netResolver::generator();
@@ -121,8 +133,79 @@ void inputThread(network* net)
     }
 }
 
+void handler_signal(int signal_)
+{
+    const char* dumpFile = "./log/crash_dump.dmp";
+
+    // 创建Dump文件
+    int fd = open(dumpFile, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+    if (fd != -1)
+    {
+        // 获取调用栈信息
+        void* callstack[128];
+        int frames = backtrace(callstack, sizeof(callstack) / sizeof(void*));
+        backtrace_symbols_fd(callstack, frames, fd);
+
+        close(fd);
+    }
+
+    // 继续执行默认的信号处理
+    signal(signal_, SIG_DFL);
+    raise(signal_);
+}
+
+void test_newCmd()
+{
+    playcheckLoginCmd cmd;
+    user userinfo("xwz");
+    cmd.userinfo = userinfo;
+
+    std::string datas = netResolver::getSerializationStr(cmd);
+
+    playcheckLoginCmd cmd2 = netResolver::getReSerializationObjByStr<playcheckLoginCmd>(datas);
+
+    std::cout << boost::format("(data size = %d)type = %d, subtype = %d, username = %s, sex = %d") % datas.length() % (int)cmd2.type
+        % (int)cmd2.subtype % cmd2.userinfo.name() % int(cmd2.userinfo.sex()) << std::endl;
+}
+
+void test_QtDataStream()
+{
+
+    playcheckLoginCmd cmd;
+    user userinfo("xwz");
+    cmd.userinfo = userinfo;
+
+    user userinfo1("xzy");
+    cmd.userinfo = userinfo;
+
+    user userinfo2("khx");
+    cmd.userinfo = userinfo;
+
+    cmd.otherUsers.push_back(userinfo1);
+    cmd.otherUsers.push_back(userinfo2);
+
+    netStrData netData = netQtResolver::getSerialStrByCmdData(cmd);
+
+    std::cout << boost::format("serStr = %s, len = %d") % netData.first % netData.second << std::endl;
+
+    playcheckLoginCmd getCmd = netQtResolver::getCmdDataBySerStr<playcheckLoginCmd>(netData);
+
+
+
+    std::cout << "ok";
+}
+
 int main(int argc, char *argv[]) {
+    signal(SIGSEGV, handler_signal);
+    signal(SIGABRT, handler_signal);
+
+//    playcheckLoginCmd cmd;
+//
+//    std::cout << boost::format("当前cmd type = %d, subtype = %d") % int(cmd.type) % int(cmd.subtype) << std::endl;
+//
     CScriptSystem *lua = CScriptSystem::getSingalton();
+
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 //    std::deque<netMsg> netMsgs;
 //    int t = 0;
@@ -147,6 +230,8 @@ int main(int argc, char *argv[]) {
 //
 //    lua->clua_wirtefile(msg);
 //    lua->clua_wirtefile()
+
+//***************************************************
     std::vector<netMsg> netMsgs = lua->loadNetMsg();
      if(argc != 2)
      {
@@ -158,15 +243,17 @@ int main(int argc, char *argv[]) {
      u_short port = std::stoi(std::string(argv[1]));
      std::cout << "port = " << port << std::endl;
      boost::asio::io_service ioserver;
-//
+
      using namespace boost::asio;
+
+     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 //    time_with_func timers(ioserver, 5, [](){
 //       std::cout << "hello world" << std::endl;
 //    });
 //
-
-     boost::asio::ip::tcp::endpoint  ed(boost::asio::ip::address::from_string("192.168.31.145"), port);
+//***********************************************
+     boost::asio::ip::tcp::endpoint  ed(boost::asio::ip::address::from_string("192.168.1.6"), port);
      std::cout << "addr = " << ed.address().to_string() << std::endl;
      network net(ioserver, ed, netMsgs);
      std::cout << "start to listen" << std::endl;
@@ -176,6 +263,8 @@ int main(int argc, char *argv[]) {
      t2.detach();
 
      ioserver.run();
-//    checkSize();
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
+
     return 0;
 }

@@ -3,6 +3,31 @@
 //
 
 #include "client.h"
+#include "vector"
+
+
+void test_mulclient()
+{
+    io_service ioService;
+    io_service::work w(ioService);
+    ip::tcp::endpoint ed(boost::asio::ip::address::from_string("192.168.31.145"), 8888);
+//    client c(ioService, ed, name);
+    std::vector<client> vec;
+
+    std::string name = "xwz";
+    for(int i = 0; i < 1; i++)
+    {
+//        client c(ioService, ed, name + std::to_string(i + 1));
+        vec.push_back(client(ioService, ed, name + std::to_string(i + 1)));
+    }
+
+    for(auto& c : vec)
+    {
+        c.connect();
+    }
+
+    ioService.run();
+}
 
 int main()
 {
@@ -20,12 +45,14 @@ int main()
 
     io_service ioService;
     io_service::work w(ioService);
-    ip::tcp::endpoint ed(ip::tcp::v4(), 8888);
+    ip::tcp::endpoint ed(boost::asio::ip::address::from_string("192.168.31.145"), 8888);
     client c(ioService, ed, name);
 
     c.connect();
 
     ioService.run();
+
+//    test_mulclient();
 
     return 0;
 }

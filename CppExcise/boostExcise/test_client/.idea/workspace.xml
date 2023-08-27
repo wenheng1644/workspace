@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="test_client" targetName="test_client" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60e127be-fe6e-49b9-98ff-853be1566033" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/client.h" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/client.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/client.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/client.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/client.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/main.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/CMakeFiles/boost_asio_client.dir/main.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/boost_asio_client" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/cmake-build-debug/boost_asio_client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_client/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_client/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/CScriptSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/CScriptSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/CScriptSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/CScriptSystem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/.cmake/api/v1/reply/index-2023-05-28T03-18-14-0547.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/CMakeFiles/cscriptsystem.dir/CScriptSystem.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/build/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/lib/libcscriptsystem.so" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/CScriptSystem/lib/libcscriptsystem.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/.cmake/api/v1/reply/index-2023-05-28T03-19-28-0637.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/CMakeFiles/boost_asio_new.dir/chat/chatRoom.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/CMakeFiles/boost_asio_new.dir/logManager/logManager.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/CMakeFiles/boost_asio_new.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/CMakeFiles/boost_asio_new.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/CMakeFiles/boost_asio_new.dir/network/network.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/CMakeFiles/boost_asio_new.dir/network/network.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/boost_asio_new" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/boost_asio_new" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/build/log/chatLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/build/log/chatLog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/chat/chatRoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/chat/chatRoom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/chat/chatRoom.h" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/chat/chatRoom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boost_asio_new/luaScript/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/../boost_asio_new/luaScript/main.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pyScript/fileDiff_py/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../pyScript/fileDiff_py/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1.4" />
+  </component>
+  <component name="ProjectId" id="2RyYLShIU27ItfUQys6vFEX1O31" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="test_client" TARGET_NAME="test_client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="test_client" RUN_TARGET_NAME="test_client">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="60e127be-fe6e-49b9-98ff-853be1566033" name="更改" comment="" />
+      <created>1688223731736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688223731736</updated>
+      <workItem from="1688223733809" duration="600000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

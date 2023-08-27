@@ -1,3 +1,5 @@
+//class chatSession;
+
 //
 // Created by wenheng on 23-4-9.
 //
@@ -15,7 +17,7 @@
 
 #include "../netMsg/netMsg.h"
 #include "../netResolver/netResolver.h"
-//class chatSession;
+#include "../netResolver/netQtResolver.h"
 
 #include "../CScriptSystem/CScriptSystem.h"
 #include "../common/commonClass.h"

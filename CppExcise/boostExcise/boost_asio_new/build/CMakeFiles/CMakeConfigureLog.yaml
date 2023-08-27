@@ -509,3 +509,127 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/cmake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/cmake/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/local/cmake/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/local/cmake/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:852 (_find_package)"
+      - "/usr/local/cmake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake:48 (find_dependency)"
+      - "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/Qt6Config.cmake:171 (include)"
+      - "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:852 (_find_package)"
+      - "CMakeLists.txt:31 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-nIae6B"
+      binary: "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-nIae6B"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/3rdparty/kwin"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/wenheng/.clion-vcpkg/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-nIae6B
+        
+        Run Build Command(s):/home/wenheng/应用/clion-2023.1.1/bin/ninja/linux/x64/ninja -v cmTC_cb72a && [1/2] /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cb72a.dir/src.c.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-nIae6B/src.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_cb72a.dir/src.c.o -o cmTC_cb72a   && :
+        \x1b[31mFAILED: \x1b[0mcmTC_cb72a 
+        : && /usr/bin/cc   CMakeFiles/cmTC_cb72a.dir/src.c.o -o cmTC_cb72a   && :
+        /usr/bin/ld: CMakeFiles/cmTC_cb72a.dir/src.c.o: in function `main':
+        src.c:(.text+0x2d): undefined reference to `pthread_create'
+        /usr/bin/ld: src.c:(.text+0x39): undefined reference to `pthread_detach'
+        /usr/bin/ld: src.c:(.text+0x45): undefined reference to `pthread_cancel'
+        /usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_join'
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/cmake/share/cmake-3.26/Modules/FindThreads.cmake:136 (try_compile)"
+      - "/usr/local/cmake/share/cmake-3.26/Modules/FindThreads.cmake:169 (_threads_check_flag_pthread)"
+      - "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:852 (_find_package)"
+      - "/usr/local/cmake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake:48 (find_dependency)"
+      - "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/Qt6Config.cmake:171 (include)"
+      - "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:852 (_find_package)"
+      - "CMakeLists.txt:31 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-UzY6M1"
+      binary: "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-UzY6M1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/3rdparty/kwin"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/wenheng/.clion-vcpkg/vcpkg"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-UzY6M1
+        
+        Run Build Command(s):/home/wenheng/应用/clion-2023.1.1/bin/ninja/linux/x64/ninja -v cmTC_a69ca && [1/2] /usr/bin/cc    -o CMakeFiles/cmTC_a69ca.dir/CheckForPthreads.c.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-UzY6M1/CheckForPthreads.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_a69ca.dir/CheckForPthreads.c.o -o cmTC_a69ca  -pthread && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/cmake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/cmake/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/FindWrapAtomic.cmake:31 (check_cxx_source_compiles)"
+      - "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:852 (_find_package)"
+      - "/usr/local/cmake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:48 (find_dependency)"
+      - "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
+      - "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:852 (_find_package)"
+      - "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/Qt6Config.cmake:209 (find_package)"
+      - "/home/wenheng/.clion-vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:852 (_find_package)"
+      - "CMakeLists.txt:32 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-JthBjA"
+      binary: "/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-JthBjA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/3rdparty/kwin;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/wenheng/QtFolder/Qt/6.2.4/gcc_64/lib/cmake/Qt6/3rdparty/kwin"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/wenheng/.clion-vcpkg/vcpkg"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-JthBjA
+        
+        Run Build Command(s):/home/wenheng/应用/clion-2023.1.1/bin/ninja/linux/x64/ninja -v cmTC_75313 && [1/2] /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_75313.dir/src.cxx.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/build/CMakeFiles/CMakeScratch/TryCompile-JthBjA/src.cxx
+        [2/2] : && /usr/bin/c++   CMakeFiles/cmTC_75313.dir/src.cxx.o -o cmTC_75313   && :
+        
+      exitCode: 0
+...

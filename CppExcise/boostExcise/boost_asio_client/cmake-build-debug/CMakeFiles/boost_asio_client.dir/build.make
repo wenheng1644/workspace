@@ -97,19 +97,52 @@ CMakeFiles/boost_asio_client.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_asio_client.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/main.cpp -o CMakeFiles/boost_asio_client.dir/main.cpp.s
 
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o: CMakeFiles/boost_asio_client.dir/flags.make
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o: CMakeFiles/boost_asio_client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o -MF CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o.d -o CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp
+
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp > CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.i
+
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp -o CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.s
+
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o: CMakeFiles/boost_asio_client.dir/flags.make
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o: CMakeFiles/boost_asio_client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o -MF CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o.d -o CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp
+
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp > CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.i
+
+CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp -o CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.s
+
 # Object files for target boost_asio_client
 boost_asio_client_OBJECTS = \
 "CMakeFiles/boost_asio_client.dir/client.cpp.o" \
-"CMakeFiles/boost_asio_client.dir/main.cpp.o"
+"CMakeFiles/boost_asio_client.dir/main.cpp.o" \
+"CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o" \
+"CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o"
 
 # External object files for target boost_asio_client
 boost_asio_client_EXTERNAL_OBJECTS =
 
 boost_asio_client: CMakeFiles/boost_asio_client.dir/client.cpp.o
 boost_asio_client: CMakeFiles/boost_asio_client.dir/main.cpp.o
+boost_asio_client: CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/cmd/base_cmd.cpp.o
+boost_asio_client: CMakeFiles/boost_asio_client.dir/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_new/common/user.cpp.o
 boost_asio_client: CMakeFiles/boost_asio_client.dir/build.make
+boost_asio_client: /usr/local/lib/libboost_serialization.so.1.81.0
 boost_asio_client: CMakeFiles/boost_asio_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable boost_asio_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/boostExcise/boost_asio_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable boost_asio_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boost_asio_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

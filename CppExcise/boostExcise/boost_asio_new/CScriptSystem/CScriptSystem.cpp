@@ -161,7 +161,8 @@ std::vector<netMsg> CScriptSystem::loadNetMsg()
         msg.body = netResolver::getSerializationStr(retcmd);
 
 //        memcpy(msg.body, (char*)&retcmd, sizeof(playerChatMsgCmd_Ret));
-        std::cout << boost::format("loadNetMsg | [%d]: content = %s, cstrLen = %d") % i % content % cStrlen << std::endl;
+        std::cout << boost::format("loadNetMsg | [%d]: content = %s, cstrLen = %d (type = %d, subtype = %d)") % i % content % cStrlen \
+           % type % subtype << std::endl;
         records.push_back(msg);
     }
 

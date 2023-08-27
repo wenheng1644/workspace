@@ -39,7 +39,7 @@ void chatRoom::join(chatSessionPtr session)
     }
 
 //    std::cout << boost::format("m_msgqueue size = %d") % m_Msgqueue.size() << std::endl;
-    sendOnlineCountMsg();
+//    sendOnlineCountMsg();
     for(auto& msg : m_Msgqueue)
         session->deliver(*msg);
 }
@@ -191,7 +191,9 @@ void chatSession::deliver(netMsg &msg)
 //    char buff[MAXBYTES] = {0};
 //    netHead head;
     std::string sendBuff = netResolver::getSerializationStrByNetMsg(msg);
-
+    int type = msg.head.type;
+    int subtype = msg.head.subtype;
+    std::cout << boost::format("type = %d, subtype = %d") % type % subtype << std::endl;
     m_sessionSocket.async_write_some(boost::asio::buffer(sendBuff, sizeof(netHead) + msg.head.len), boost::bind(&chatSession::handle_write, shared_from_this(), \
         placeholders::error, placeholders::bytes_transferred));
 }
@@ -254,6 +256,7 @@ bool chatSession::isVaildConnect()
     size_t needGetBytes = sizeof(netHead);
     std::string revHeadBuff(needGetBytes, 0);
     char buff[MAXBYTES] = {0};
+
     size_t bytes = m_sessionSocket.read_some(boost::asio::buffer(buff, needGetBytes), ec);
 
     netHead head;
@@ -264,6 +267,8 @@ bool chatSession::isVaildConnect()
     std::string datas(head.len, 0);
 
     m_sessionSocket.read_some(boost::asio::buffer(datas, head.len), ec);
+
+    playcheckLoginCmd cmd222 = netQtResolver::getCmdDataBySerStr<playcheckLoginCmd>(std::make_pair(datas, head.len));
     char ret[1024] = {0};
     playerConnectCmd_Ret retcmd;
 
