@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package persion;
+
+message Persion{
+  string name = 1;
+  int32 age = 2;
+  int32 sex = 3;
+}
+
+message ChatCmd{
+  Persion p = 1;
+  uint64 time = 2;
+  string content = 3;
+}
+
+message PersionList{
+  map<int32, Persion> list = 1;
+  uint64 time = 2;
+}

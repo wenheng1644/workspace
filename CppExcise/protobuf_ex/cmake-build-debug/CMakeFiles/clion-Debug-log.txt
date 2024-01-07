@@ -1,0 +1,16 @@
+/home/wenheng/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/wenheng/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja /home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/.. -G Ninja -S /home/wenheng/Desktop/workspace/CppExcise/protobuf_ex -B /home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/cmake-build-debug
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/wenheng/Desktop/workspace/CppExcise"
+
+
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/.."
+
+
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/cmake-build-debug

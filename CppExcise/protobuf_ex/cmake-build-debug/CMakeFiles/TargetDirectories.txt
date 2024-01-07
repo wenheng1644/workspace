@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/cmake-build-debug/CMakeFiles/protobuf_ex.dir
+/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,7 @@
+# ninja log v5
+1	725	1703948119349517297	CMakeFiles/protobuf_ex.dir/comm/DisPatcher.cpp.o	2b9d002e8c5bda42
+1558	1666	1704511198396821567	protobuf_ex	bfcfa78c8a9736db
+0	11	1704511316084609252	build.ninja	56973deb3a204920
+1	1238	1703948231683513481	CMakeFiles/protobuf_ex.dir/protomsg.pb.cc.o	608a2b6a73ec350b
+1	1558	1704511198284821799	CMakeFiles/protobuf_ex.dir/main.cpp.o	e868e3b9b09a5306
+1	698	1703948119321516620	CMakeFiles/protobuf_ex.dir/comm/CallBack.cpp.o	16c8ce4d87b319c5

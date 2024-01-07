@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/protobuf_ex.dir/main.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/main.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/main.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/protobuf_ex.dir/protomsg.pb.cc.o -c /home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/protomsg.pb.cc",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/protomsg.pb.cc"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/protobuf_ex.dir/comm/CallBack.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/comm/CallBack.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/comm/CallBack.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/protobuf_ex.dir/comm/DisPatcher.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/comm/DisPatcher.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/protobuf_ex/comm/DisPatcher.cpp"
+}
+]

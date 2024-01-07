@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/protobuf_ex.dir/main.cpp.o CMakeFiles/protobuf_ex.dir/protomsg.pb.cc.o CMakeFiles/protobuf_ex.dir/comm/CallBack.cpp.o CMakeFiles/protobuf_ex.dir/comm/DisPatcher.cpp.o -o protobuf_ex  -lpthread -lprotobuf 
