@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles/newFrameEx.dir
+/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles/rebuild_cache.dir

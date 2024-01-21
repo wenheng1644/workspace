@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/newFrameEx.dir/main.cpp.o -o newFrameEx  -lpthread -lboost_thread 
