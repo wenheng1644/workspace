@@ -1,7 +1,42 @@
 [
 {
   "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/newFrameEx.dir/main.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/main.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp",
   "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/resolveManager.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/resolveManager.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp"
 }
 ]

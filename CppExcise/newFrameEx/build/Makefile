@@ -129,6 +129,30 @@ newFrameEx/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/build
 .PHONY : newFrameEx/fast
 
+comm/resourceManager.o: comm/resourceManager.cpp.o
+.PHONY : comm/resourceManager.o
+
+# target to build an object file
+comm/resourceManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o
+.PHONY : comm/resourceManager.cpp.o
+
+comm/resourceManager.i: comm/resourceManager.cpp.i
+.PHONY : comm/resourceManager.i
+
+# target to preprocess a source file
+comm/resourceManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.i
+.PHONY : comm/resourceManager.cpp.i
+
+comm/resourceManager.s: comm/resourceManager.cpp.s
+.PHONY : comm/resourceManager.s
+
+# target to generate assembly for a file
+comm/resourceManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.s
+.PHONY : comm/resourceManager.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -153,6 +177,150 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+netcomm/chatcmd/chatcmd.pb.o: netcomm/chatcmd/chatcmd.pb.cc.o
+.PHONY : netcomm/chatcmd/chatcmd.pb.o
+
+# target to build an object file
+netcomm/chatcmd/chatcmd.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o
+.PHONY : netcomm/chatcmd/chatcmd.pb.cc.o
+
+netcomm/chatcmd/chatcmd.pb.i: netcomm/chatcmd/chatcmd.pb.cc.i
+.PHONY : netcomm/chatcmd/chatcmd.pb.i
+
+# target to preprocess a source file
+netcomm/chatcmd/chatcmd.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.i
+.PHONY : netcomm/chatcmd/chatcmd.pb.cc.i
+
+netcomm/chatcmd/chatcmd.pb.s: netcomm/chatcmd/chatcmd.pb.cc.s
+.PHONY : netcomm/chatcmd/chatcmd.pb.s
+
+# target to generate assembly for a file
+netcomm/chatcmd/chatcmd.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.s
+.PHONY : netcomm/chatcmd/chatcmd.pb.cc.s
+
+netcomm/cmddispatch/CallBack.o: netcomm/cmddispatch/CallBack.cpp.o
+.PHONY : netcomm/cmddispatch/CallBack.o
+
+# target to build an object file
+netcomm/cmddispatch/CallBack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o
+.PHONY : netcomm/cmddispatch/CallBack.cpp.o
+
+netcomm/cmddispatch/CallBack.i: netcomm/cmddispatch/CallBack.cpp.i
+.PHONY : netcomm/cmddispatch/CallBack.i
+
+# target to preprocess a source file
+netcomm/cmddispatch/CallBack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.i
+.PHONY : netcomm/cmddispatch/CallBack.cpp.i
+
+netcomm/cmddispatch/CallBack.s: netcomm/cmddispatch/CallBack.cpp.s
+.PHONY : netcomm/cmddispatch/CallBack.s
+
+# target to generate assembly for a file
+netcomm/cmddispatch/CallBack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.s
+.PHONY : netcomm/cmddispatch/CallBack.cpp.s
+
+netcomm/cmddispatch/DisPatcher.o: netcomm/cmddispatch/DisPatcher.cpp.o
+.PHONY : netcomm/cmddispatch/DisPatcher.o
+
+# target to build an object file
+netcomm/cmddispatch/DisPatcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o
+.PHONY : netcomm/cmddispatch/DisPatcher.cpp.o
+
+netcomm/cmddispatch/DisPatcher.i: netcomm/cmddispatch/DisPatcher.cpp.i
+.PHONY : netcomm/cmddispatch/DisPatcher.i
+
+# target to preprocess a source file
+netcomm/cmddispatch/DisPatcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.i
+.PHONY : netcomm/cmddispatch/DisPatcher.cpp.i
+
+netcomm/cmddispatch/DisPatcher.s: netcomm/cmddispatch/DisPatcher.cpp.s
+.PHONY : netcomm/cmddispatch/DisPatcher.s
+
+# target to generate assembly for a file
+netcomm/cmddispatch/DisPatcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.s
+.PHONY : netcomm/cmddispatch/DisPatcher.cpp.s
+
+netcomm/net/netMsg.o: netcomm/net/netMsg.cpp.o
+.PHONY : netcomm/net/netMsg.o
+
+# target to build an object file
+netcomm/net/netMsg.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o
+.PHONY : netcomm/net/netMsg.cpp.o
+
+netcomm/net/netMsg.i: netcomm/net/netMsg.cpp.i
+.PHONY : netcomm/net/netMsg.i
+
+# target to preprocess a source file
+netcomm/net/netMsg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.i
+.PHONY : netcomm/net/netMsg.cpp.i
+
+netcomm/net/netMsg.s: netcomm/net/netMsg.cpp.s
+.PHONY : netcomm/net/netMsg.s
+
+# target to generate assembly for a file
+netcomm/net/netMsg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.s
+.PHONY : netcomm/net/netMsg.cpp.s
+
+netcomm/net/resolveManager.o: netcomm/net/resolveManager.cpp.o
+.PHONY : netcomm/net/resolveManager.o
+
+# target to build an object file
+netcomm/net/resolveManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o
+.PHONY : netcomm/net/resolveManager.cpp.o
+
+netcomm/net/resolveManager.i: netcomm/net/resolveManager.cpp.i
+.PHONY : netcomm/net/resolveManager.i
+
+# target to preprocess a source file
+netcomm/net/resolveManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.i
+.PHONY : netcomm/net/resolveManager.cpp.i
+
+netcomm/net/resolveManager.s: netcomm/net/resolveManager.cpp.s
+.PHONY : netcomm/net/resolveManager.s
+
+# target to generate assembly for a file
+netcomm/net/resolveManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.s
+.PHONY : netcomm/net/resolveManager.cpp.s
+
+netcomm/netcmdfunc.o: netcomm/netcmdfunc.cpp.o
+.PHONY : netcomm/netcmdfunc.o
+
+# target to build an object file
+netcomm/netcmdfunc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o
+.PHONY : netcomm/netcmdfunc.cpp.o
+
+netcomm/netcmdfunc.i: netcomm/netcmdfunc.cpp.i
+.PHONY : netcomm/netcmdfunc.i
+
+# target to preprocess a source file
+netcomm/netcmdfunc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.i
+.PHONY : netcomm/netcmdfunc.cpp.i
+
+netcomm/netcmdfunc.s: netcomm/netcmdfunc.cpp.s
+.PHONY : netcomm/netcmdfunc.s
+
+# target to generate assembly for a file
+netcomm/netcmdfunc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.s
+.PHONY : netcomm/netcmdfunc.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +330,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... newFrameEx"
+	@echo "... comm/resourceManager.o"
+	@echo "... comm/resourceManager.i"
+	@echo "... comm/resourceManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... netcomm/chatcmd/chatcmd.pb.o"
+	@echo "... netcomm/chatcmd/chatcmd.pb.i"
+	@echo "... netcomm/chatcmd/chatcmd.pb.s"
+	@echo "... netcomm/cmddispatch/CallBack.o"
+	@echo "... netcomm/cmddispatch/CallBack.i"
+	@echo "... netcomm/cmddispatch/CallBack.s"
+	@echo "... netcomm/cmddispatch/DisPatcher.o"
+	@echo "... netcomm/cmddispatch/DisPatcher.i"
+	@echo "... netcomm/cmddispatch/DisPatcher.s"
+	@echo "... netcomm/net/netMsg.o"
+	@echo "... netcomm/net/netMsg.i"
+	@echo "... netcomm/net/netMsg.s"
+	@echo "... netcomm/net/resolveManager.o"
+	@echo "... netcomm/net/resolveManager.i"
+	@echo "... netcomm/net/resolveManager.s"
+	@echo "... netcomm/netcmdfunc.o"
+	@echo "... netcomm/netcmdfunc.i"
+	@echo "... netcomm/netcmdfunc.s"
 .PHONY : help
 
 

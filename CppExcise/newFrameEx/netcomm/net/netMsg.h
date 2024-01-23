@@ -43,7 +43,7 @@ struct netMsg
     netMsg() : head(netHead()), datas(std::string()) {}
     netMsg(const netHead& datahead) : head(datahead), datas(std::string()) {}
     netMsg(u_char dataType, u_char dataSubType) : head(dataType, dataSubType), datas(std::string()) {}
-
+    netMsg(u_char dataType, u_char dataSubType, const std::string& serStr);
     netMsg(const netMsg& other);
     netMsg& operator=(const netMsg& other);
 

@@ -2,7 +2,7 @@
 #include "netMsg.h"
 
 
-netHead::netHead(u_char dataType, u_char dataSubType, u_int bodyLen = 0)
+netHead::netHead(u_char dataType, u_char dataSubType, u_int bodyLen)
 {
     type = dataType;
     subtype = dataSubType;
@@ -49,6 +49,11 @@ bool netHead::isvaildcheckcode(const netHead& head)
     u_short checkcode = makecheckcode(head);
 
     return checkcode == head.checkcode;
+}
+
+netMsg::netMsg(u_char dataType, u_char dataSubType, const std::string &serStr) : 
+    head(netHead(dataType, dataSubType, strlen(serStr.c_str()))), datas(serStr)
+{
 }
 
 netMsg::netMsg(const netMsg &other) : head(other.head), datas(other.datas)

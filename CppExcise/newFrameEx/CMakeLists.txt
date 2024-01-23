@@ -4,6 +4,16 @@ project(newFrameEx)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(newFrameEx main.cpp)
+include_directories(./comm ./cmd ./cmd/chatcmd ./cmd/resolvecmd/) 
 
-target_link_libraries(newFrameEx pthread boost_thread)
+add_executable(newFrameEx main.cpp
+                            ./netcomm/netcmdfunc.cpp
+                            ./netcomm/net/netMsg.cpp
+                            ./netcomm/net/resolveManager.cpp
+                            ./netcomm/chatcmd/chatcmd.pb.cc
+                            ./netcomm/cmddispatch/CallBack.cpp
+                            ./netcomm/cmddispatch/DisPatcher.cpp
+                            ./comm/singleton.h
+                            ./comm/resourceManager.cpp)
+
+target_link_libraries(newFrameEx pthread boost_thread protobuf)
