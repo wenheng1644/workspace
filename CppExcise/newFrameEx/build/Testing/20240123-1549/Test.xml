@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240123-1549-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.25.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="wenheng-PC"
+	OSRelease="5.15.45-amd64-desktop"
+	OSVersion="#1 SMP Tue Jun 21 10:10:45 UTC 2022"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="165"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="16250"
+	TotalPhysicalMemory="15870"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2600"
+	>
+	<Testing>
+		<StartDateTime>Jan 23 23:49 CST</StartDateTime>
+		<StartTestTime>1706024986</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 23 23:49 CST</EndDateTime>
+		<EndTestTime>1706024986</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

@@ -283,4 +283,5 @@ CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../chatcmd/chatcmd.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/11/cassert \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h

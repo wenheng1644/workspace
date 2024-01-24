@@ -8,10 +8,12 @@
 
 #include "chatcmd/chatcmd.pb.h"
 
+#include "net/netMsg.h"
+
 
 typedef std::function<void(google::protobuf::Message*)> MessageCB;
 
 
-void onchatMessageCmd(google::protobuf::Message* msg);
+void onchatMessageCmd(chatMessageCmd* msg);
 
 #endif

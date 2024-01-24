@@ -12,18 +12,21 @@ class TCPConnection : public boost::enable_shared_from_this<TCPConnection>
 {
 
 public:
-    TCPConnection() = default;
+    TCPConnection(boost::asio::io_service& io) : m_io(io), m_sockect(io) {}
     ~TCPConnection() = default;
 
-    void send(std::vector<char>& buff);
+    void send(const std::vector<char>& buff);
     void run();
 private:
     socket_tp m_sockect;
+    boost::asio::io_service& m_io;
+    boost::uuids::uuid m_onlyid;
 
+    void send(const char* buff, size_t len);
 
     void on_handleSend(ec_code_tp ec, size_t bytes);
-    void on_handleReadHead(ec_code_tp ec, size_t bytes);
-    void on_handleReadBody(ec_code_tp ec, size_t bytes);
+    void on_handleReadHead(netMsg_ptr msg, ec_code_tp ec, size_t bytes);
+    void on_handleReadBody(netMsg_ptr msg, ec_code_tp ec, size_t bytes);
 
 };
 

@@ -4,6 +4,7 @@
 #include "iostream"
 #include "string"
 #include "cstring"
+#include "memory"
 
 #define MEMZERO (memset((this), 0, sizeof(*this)))
 
@@ -51,6 +52,8 @@ struct netMsg
 
 };
 
+
+typedef typename std::shared_ptr<netMsg> netMsg_ptr;
 
 
 #endif

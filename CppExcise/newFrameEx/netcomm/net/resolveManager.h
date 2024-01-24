@@ -2,13 +2,14 @@
 #define RESOLVEMANAGER
 
 #include "../chatcmd/chatcmd.pb.h"
+#include "netMsg.h"
 
 template<typename T>
-std::string serlizeCmdToStr(T* cmd)
+std::string serlizeCmdToStr(T cmd)
 {
-    assert(cmd != nullptr);
+    // assert(cmd != nullptr);
 
-    std::string str = cmd->SerializeAsString();
+    std::string str = cmd.SerializeAsString();
 
     return str;
 }
@@ -23,5 +24,7 @@ T parseSerlizeStr(const std::string& str)
 
     return cmd;
 }
+
+std::string getSerlizeNetMsgStr(const netMsg& netmsg);
 
 #endif

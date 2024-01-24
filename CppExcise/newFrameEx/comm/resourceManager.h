@@ -12,9 +12,10 @@ public:
     ResourceManager();
     ~ResourceManager() = default;
 
-    void init();
+    void onCallMessage(google::protobuf::Message* msg);
 private:
     DisPatcher __CmdDispatch;
+    void init();
 
     void init_cmdDisPatch();
 };

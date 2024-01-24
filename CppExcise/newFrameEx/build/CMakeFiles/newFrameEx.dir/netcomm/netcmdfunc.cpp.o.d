@@ -278,4 +278,5 @@ CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: \
  /usr/local/include/boost/config/detail/cxx_composite.hpp \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
- /usr/include/c++/11/cassert
+ /usr/include/c++/11/cassert \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.h

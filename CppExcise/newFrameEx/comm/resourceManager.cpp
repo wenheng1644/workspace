@@ -6,6 +6,11 @@ ResourceManager::ResourceManager()
     init();
 }
 
+void ResourceManager::onCallMessage(google::protobuf::Message *msg)
+{
+    __CmdDispatch.onCallMessage(msg);
+}
+
 void ResourceManager::init()
 {
     init_cmdDisPatch();
