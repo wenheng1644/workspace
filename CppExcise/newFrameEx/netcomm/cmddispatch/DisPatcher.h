@@ -14,7 +14,7 @@
 
 class DisPatcher : public boost::noncopyable, public Singleton<DisPatcher> {
 public:
-    DisPatcher() = default;
+    DisPatcher();
 
     void setDefalutCB(std::function<void(google::protobuf::Message*)> cb) {__defalutcb = cb;}
     

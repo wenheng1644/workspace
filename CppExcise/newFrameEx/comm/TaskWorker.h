@@ -2,6 +2,8 @@
 #ifndef TASKWORKER
 #define TASKWORKER
 
+#include "commhead.h"
+#include "../server/commServer.h"
 class TaskWorker
 {
 public:
@@ -10,7 +12,6 @@ public:
 
     
 private:
-    /* data */
 
     
 };

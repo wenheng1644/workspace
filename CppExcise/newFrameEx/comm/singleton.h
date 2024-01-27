@@ -12,7 +12,7 @@ public:
     {
         std::lock_guard<std::mutex> gl(m_singletonM);
         if(!m_obj)
-            m_obj = new T();
+            m_obj = new T;
         return m_obj;
     }
 
@@ -29,5 +29,8 @@ protected:
 
 template<typename T>
 T* Singleton<T>::m_obj = nullptr;
+
+template<typename  T>
+std::mutex Singleton<T>::m_singletonM;
 
 #endif

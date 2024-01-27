@@ -3,7 +3,11 @@
 #define TCPSEVER
 
 #include "commServer.h"
+#include "TCPConnection.h"
 
+#include "../comm/commhead.h"
+
+#include "map"
 
 class TCPServer
 {
@@ -16,6 +20,8 @@ public:
 private:
     ioserver_tp& m_io;
     acceptor_tp m_acceptor;
+
+    void onHandleAccept(TCPConnection_ptr conn, ec_code_tp ec);
 
 };
 

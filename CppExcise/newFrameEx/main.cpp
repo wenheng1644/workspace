@@ -5,6 +5,8 @@
 
 #include "comm/resourceManager.h"
 
+#include "server/TCPServer.h"
+
 void test_dispatch()
 {
     ResourceManager manager;
@@ -43,7 +45,20 @@ int main(int argc, char* argv[])
 {
     std::cout << "hello remote host" << std::endl;
 
-    test();
-    test_dispatch();
+    // test();
+    // test_dispatch();
+    
+    ResourceManager::getObj();
+
+    boost::asio::io_service server_io;    
+    boost::asio::io_service::work w(server_io);
+
+    boost::asio::ip::address add = boost::asio::ip::make_address("192.168.31.26");
+    TCPServer server(server_io, add, 8888);
+    server.run();
+
+    server_io.run();
+
+    printf("done ....\n");
     return 0;
 }

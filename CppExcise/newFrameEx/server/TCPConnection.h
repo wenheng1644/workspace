@@ -8,15 +8,19 @@
 
 #include "vector"
 
-class TCPConnection : public boost::enable_shared_from_this<TCPConnection>
+class TCPConnection : public std::enable_shared_from_this<TCPConnection>
 {
 
 public:
-    TCPConnection(boost::asio::io_service& io) : m_io(io), m_sockect(io) {}
+    TCPConnection(boost::asio::io_service& io) : m_io(io), m_sockect(io), m_onlyid(boost::uuids::random_generator()()) {}
     ~TCPConnection() = default;
 
     void send(const std::vector<char>& buff);
+    void send(const netMsg_ptr& msg);
     void run();
+
+    socket_tp& socket() {return m_sockect;}
+    boost::uuids::uuid onlyid() {return m_onlyid;}
 private:
     socket_tp m_sockect;
     boost::asio::io_service& m_io;

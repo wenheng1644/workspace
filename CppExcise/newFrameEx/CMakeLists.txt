@@ -14,6 +14,12 @@ add_executable(newFrameEx main.cpp
                             ./netcomm/cmddispatch/CallBack.cpp
                             ./netcomm/cmddispatch/DisPatcher.cpp
                             ./comm/singleton.h
-                            ./comm/resourceManager.cpp)
+                            ./comm/singleton.cpp
+                            ./comm/resourceManager.cpp
+                            ./comm/WorkRunner.cpp
+                            ./comm/commhead.cpp
+                            ./server/TCPConnection.cpp
+                            ./server/TCPServer.cpp
+                            )
 
 target_link_libraries(newFrameEx pthread boost_thread protobuf)

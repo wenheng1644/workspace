@@ -36,7 +36,32 @@
 },
 {
   "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/singleton.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/singleton.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
   "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp",
   "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPConnection.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPConnection.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPServer.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPServer.cpp"
 }
 ]

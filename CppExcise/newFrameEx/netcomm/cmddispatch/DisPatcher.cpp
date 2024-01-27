@@ -4,7 +4,13 @@
 
 #include "DisPatcher.h"
 
-void DisPatcher::onCallMessage(google::protobuf::Message* msg)
+DisPatcher::DisPatcher()
+{
+    std::shared_ptr<CallBackT<chatMessageCmd>> cb1(new CallBackT<chatMessageCmd>(onchatMessageCmd));
+    registerCb(chatMessageCmd::descriptor(), cb1);
+}
+
+void DisPatcher::onCallMessage(google::protobuf::Message *msg)
 {
     using namespace google::protobuf;
 
