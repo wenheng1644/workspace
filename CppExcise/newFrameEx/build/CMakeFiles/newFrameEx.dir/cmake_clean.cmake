@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o.d"
   "CMakeFiles/newFrameEx.dir/main.cpp.o"
   "CMakeFiles/newFrameEx.dir/main.cpp.o.d"
+  "CMakeFiles/newFrameEx.dir/netcomm/baseCmd/basecmd.pb.cc.o"
+  "CMakeFiles/newFrameEx.dir/netcomm/baseCmd/basecmd.pb.cc.o.d"
   "CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o"
   "CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o.d"
   "CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o"

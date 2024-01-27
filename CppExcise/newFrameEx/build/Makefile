@@ -249,6 +249,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+netcomm/baseCmd/basecmd.pb.o: netcomm/baseCmd/basecmd.pb.cc.o
+.PHONY : netcomm/baseCmd/basecmd.pb.o
+
+# target to build an object file
+netcomm/baseCmd/basecmd.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/baseCmd/basecmd.pb.cc.o
+.PHONY : netcomm/baseCmd/basecmd.pb.cc.o
+
+netcomm/baseCmd/basecmd.pb.i: netcomm/baseCmd/basecmd.pb.cc.i
+.PHONY : netcomm/baseCmd/basecmd.pb.i
+
+# target to preprocess a source file
+netcomm/baseCmd/basecmd.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/baseCmd/basecmd.pb.cc.i
+.PHONY : netcomm/baseCmd/basecmd.pb.cc.i
+
+netcomm/baseCmd/basecmd.pb.s: netcomm/baseCmd/basecmd.pb.cc.s
+.PHONY : netcomm/baseCmd/basecmd.pb.s
+
+# target to generate assembly for a file
+netcomm/baseCmd/basecmd.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/baseCmd/basecmd.pb.cc.s
+.PHONY : netcomm/baseCmd/basecmd.pb.cc.s
+
 netcomm/chatcmd/chatcmd.pb.o: netcomm/chatcmd/chatcmd.pb.cc.o
 .PHONY : netcomm/chatcmd/chatcmd.pb.o
 
@@ -465,6 +489,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... netcomm/baseCmd/basecmd.pb.o"
+	@echo "... netcomm/baseCmd/basecmd.pb.i"
+	@echo "... netcomm/baseCmd/basecmd.pb.s"
 	@echo "... netcomm/chatcmd/chatcmd.pb.o"
 	@echo "... netcomm/chatcmd/chatcmd.pb.i"
 	@echo "... netcomm/chatcmd/chatcmd.pb.s"

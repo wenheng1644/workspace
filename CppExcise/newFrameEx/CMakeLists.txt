@@ -11,6 +11,7 @@ add_executable(newFrameEx main.cpp
                             ./netcomm/net/netMsg.cpp
                             ./netcomm/net/resolveManager.cpp
                             ./netcomm/chatcmd/chatcmd.pb.cc
+                            ./netcomm/baseCmd/basecmd.pb.cc
                             ./netcomm/cmddispatch/CallBack.cpp
                             ./netcomm/cmddispatch/DisPatcher.cpp
                             ./comm/singleton.h

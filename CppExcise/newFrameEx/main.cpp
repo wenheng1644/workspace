@@ -39,25 +39,37 @@ void test()
     chatMessageCmd resolve_cmd = parseSerlizeStr<chatMessageCmd>(datas);
 
     printf("parseStr --->  content = %s, status = %d\n", resolve_cmd.content().c_str(), resolve_cmd.status());
+
+    netHeadCmd nethead;
+    nethead.set_type(12);
+    nethead.set_subtype(221);
+    nethead.set_len(113);
+    nethead.set_version(102);
+    nethead.set_checkcode(3224);
+
+    // sizeof(netHeadCmd);
+
+    printf("netHeadCmd sizeof = %d, sizeof nethead var = %d\n", sizeof(netHeadCmd), sizeof(nethead));
+    
 }
 
 int main(int argc, char* argv[])
 {
     std::cout << "hello remote host" << std::endl;
 
-    // test();
+    test();
     // test_dispatch();
     
-    ResourceManager::getObj();
+    // ResourceManager::getObj();
 
-    boost::asio::io_service server_io;    
-    boost::asio::io_service::work w(server_io);
+    // boost::asio::io_service server_io;    
+    // boost::asio::io_service::work w(server_io);
 
-    boost::asio::ip::address add = boost::asio::ip::make_address("192.168.31.26");
-    TCPServer server(server_io, add, 8888);
-    server.run();
+    // boost::asio::ip::address add = boost::asio::ip::make_address("192.168.31.26");
+    // TCPServer server(server_io, add, 8888);
+    // server.run();
 
-    server_io.run();
+    // server_io.run();
 
     printf("done ....\n");
     return 0;

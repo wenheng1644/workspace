@@ -1552,6 +1552,7 @@ CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o: \
  /usr/local/include/boost/noncopyable.hpp \
  /usr/local/include/boost/core/noncopyable.hpp \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../chatcmd/chatcmd.pb.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../baseCmd/basecmd.pb.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/WorkRunner.h \

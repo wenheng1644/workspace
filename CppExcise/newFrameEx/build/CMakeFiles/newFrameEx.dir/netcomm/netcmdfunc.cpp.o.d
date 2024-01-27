@@ -279,4 +279,5 @@ CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/11/cassert \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/baseCmd/basecmd.pb.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.h

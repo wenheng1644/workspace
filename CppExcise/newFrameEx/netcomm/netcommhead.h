@@ -7,6 +7,7 @@
 #include "boost/noncopyable.hpp"
 
 #include "chatcmd/chatcmd.pb.h"
+#include "baseCmd/basecmd.pb.h"
 
 #include "net/netMsg.h"
 
