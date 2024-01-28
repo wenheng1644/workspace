@@ -282,6 +282,8 @@ CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o: \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/../chatcmd/chatcmd.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/11/cassert \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/../baseCmd/basecmd.pb.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/../net/resolveManager.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/../net/../chatcmd/chatcmd.pb.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/../net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/../net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h

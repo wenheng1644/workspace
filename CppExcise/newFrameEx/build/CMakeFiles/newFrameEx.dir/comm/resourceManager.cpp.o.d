@@ -283,15 +283,15 @@ CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../chatcmd/chatcmd.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/11/cassert \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../baseCmd/basecmd.pb.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../net/resolveManager.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../net/../chatcmd/chatcmd.pb.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/resolveManager.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/../chatcmd/chatcmd.pb.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/netMsg.h \
  /usr/local/include/boost/uuid/uuid.hpp \
  /usr/local/include/boost/cstdint.hpp \
  /usr/local/include/boost/uuid/detail/config.hpp \

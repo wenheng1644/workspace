@@ -16,7 +16,7 @@ public:
     ~TCPConnection() = default;
 
     void send(const std::vector<char>& buff);
-    void send(const netMsg_ptr& msg);
+    void send(netMsg_ptr& msg);
     void run();
 
     socket_tp& socket() {return m_sockect;}

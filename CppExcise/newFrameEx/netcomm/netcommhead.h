@@ -7,7 +7,8 @@
 #include "boost/noncopyable.hpp"
 
 #include "chatcmd/chatcmd.pb.h"
-#include "baseCmd/basecmd.pb.h"
+
+#include "net/resolveManager.h"
 
 #include "net/netMsg.h"
 
@@ -15,6 +16,6 @@
 typedef std::function<void(google::protobuf::Message*)> MessageCB;
 
 
-void onchatMessageCmd(chatMessageCmd* msg);
+void onchatMessageCmd(cmd::chatMessageCmd* msg);
 
 #endif

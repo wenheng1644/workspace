@@ -44,17 +44,20 @@ struct TableStruct_chatcmd_2eproto {
   static const uint32_t offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_chatcmd_2eproto;
+namespace cmd {
 class chatMessageCmd;
 struct chatMessageCmdDefaultTypeInternal;
 extern chatMessageCmdDefaultTypeInternal _chatMessageCmd_default_instance_;
+}  // namespace cmd
 PROTOBUF_NAMESPACE_OPEN
-template<> ::chatMessageCmd* Arena::CreateMaybeMessage<::chatMessageCmd>(Arena*);
+template<> ::cmd::chatMessageCmd* Arena::CreateMaybeMessage<::cmd::chatMessageCmd>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
+namespace cmd {
 
 // ===================================================================
 
 class chatMessageCmd final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:chatMessageCmd) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:cmd.chatMessageCmd) */ {
  public:
   inline chatMessageCmd() : chatMessageCmd(nullptr) {}
   ~chatMessageCmd() override;
@@ -157,7 +160,7 @@ class chatMessageCmd final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "chatMessageCmd";
+    return "cmd.chatMessageCmd";
   }
   protected:
   explicit chatMessageCmd(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -200,7 +203,7 @@ class chatMessageCmd final :
   void _internal_set_status(uint32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:chatMessageCmd)
+  // @@protoc_insertion_point(class_scope:cmd.chatMessageCmd)
  private:
   class _Internal;
 
@@ -231,7 +234,7 @@ inline void chatMessageCmd::clear_content() {
   _impl_.content_.ClearToEmpty();
 }
 inline const std::string& chatMessageCmd::content() const {
-  // @@protoc_insertion_point(field_get:chatMessageCmd.content)
+  // @@protoc_insertion_point(field_get:cmd.chatMessageCmd.content)
   return _internal_content();
 }
 template <typename ArgT0, typename... ArgT>
@@ -239,11 +242,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void chatMessageCmd::set_content(ArgT0&& arg0, ArgT... args) {
  
  _impl_.content_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:chatMessageCmd.content)
+  // @@protoc_insertion_point(field_set:cmd.chatMessageCmd.content)
 }
 inline std::string* chatMessageCmd::mutable_content() {
   std::string* _s = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:chatMessageCmd.content)
+  // @@protoc_insertion_point(field_mutable:cmd.chatMessageCmd.content)
   return _s;
 }
 inline const std::string& chatMessageCmd::_internal_content() const {
@@ -258,7 +261,7 @@ inline std::string* chatMessageCmd::_internal_mutable_content() {
   return _impl_.content_.Mutable(GetArenaForAllocation());
 }
 inline std::string* chatMessageCmd::release_content() {
-  // @@protoc_insertion_point(field_release:chatMessageCmd.content)
+  // @@protoc_insertion_point(field_release:cmd.chatMessageCmd.content)
   return _impl_.content_.Release();
 }
 inline void chatMessageCmd::set_allocated_content(std::string* content) {
@@ -273,7 +276,7 @@ inline void chatMessageCmd::set_allocated_content(std::string* content) {
     _impl_.content_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:chatMessageCmd.content)
+  // @@protoc_insertion_point(field_set_allocated:cmd.chatMessageCmd.content)
 }
 
 // uint32 status = 2;
@@ -284,7 +287,7 @@ inline uint32_t chatMessageCmd::_internal_status() const {
   return _impl_.status_;
 }
 inline uint32_t chatMessageCmd::status() const {
-  // @@protoc_insertion_point(field_get:chatMessageCmd.status)
+  // @@protoc_insertion_point(field_get:cmd.chatMessageCmd.status)
   return _internal_status();
 }
 inline void chatMessageCmd::_internal_set_status(uint32_t value) {
@@ -293,7 +296,7 @@ inline void chatMessageCmd::_internal_set_status(uint32_t value) {
 }
 inline void chatMessageCmd::set_status(uint32_t value) {
   _internal_set_status(value);
-  // @@protoc_insertion_point(field_set:chatMessageCmd.status)
+  // @@protoc_insertion_point(field_set:cmd.chatMessageCmd.status)
 }
 
 #ifdef __GNUC__
@@ -302,6 +305,7 @@ inline void chatMessageCmd::set_status(uint32_t value) {
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace cmd
 
 // @@protoc_insertion_point(global_scope)
 

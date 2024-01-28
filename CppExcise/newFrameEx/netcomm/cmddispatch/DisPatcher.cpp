@@ -6,8 +6,8 @@
 
 DisPatcher::DisPatcher()
 {
-    std::shared_ptr<CallBackT<chatMessageCmd>> cb1(new CallBackT<chatMessageCmd>(onchatMessageCmd));
-    registerCb(chatMessageCmd::descriptor(), cb1);
+    std::shared_ptr<CallBackT<cmd::chatMessageCmd>> cb1(new CallBackT<cmd::chatMessageCmd>(onchatMessageCmd));
+    registerCb(cmd::chatMessageCmd::descriptor(), cb1);
 }
 
 void DisPatcher::onCallMessage(google::protobuf::Message *msg)

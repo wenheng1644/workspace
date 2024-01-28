@@ -129,6 +129,30 @@ newFrameEx/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/build
 .PHONY : newFrameEx/fast
 
+comm/TaskWork.o: comm/TaskWork.cpp.o
+.PHONY : comm/TaskWork.o
+
+# target to build an object file
+comm/TaskWork.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o
+.PHONY : comm/TaskWork.cpp.o
+
+comm/TaskWork.i: comm/TaskWork.cpp.i
+.PHONY : comm/TaskWork.i
+
+# target to preprocess a source file
+comm/TaskWork.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.i
+.PHONY : comm/TaskWork.cpp.i
+
+comm/TaskWork.s: comm/TaskWork.cpp.s
+.PHONY : comm/TaskWork.s
+
+# target to generate assembly for a file
+comm/TaskWork.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.s
+.PHONY : comm/TaskWork.cpp.s
+
 comm/WorkRunner.o: comm/WorkRunner.cpp.o
 .PHONY : comm/WorkRunner.o
 
@@ -152,6 +176,30 @@ comm/WorkRunner.s: comm/WorkRunner.cpp.s
 comm/WorkRunner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.s
 .PHONY : comm/WorkRunner.cpp.s
+
+comm/commFunc.o: comm/commFunc.cpp.o
+.PHONY : comm/commFunc.o
+
+# target to build an object file
+comm/commFunc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o
+.PHONY : comm/commFunc.cpp.o
+
+comm/commFunc.i: comm/commFunc.cpp.i
+.PHONY : comm/commFunc.i
+
+# target to preprocess a source file
+comm/commFunc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.i
+.PHONY : comm/commFunc.cpp.i
+
+comm/commFunc.s: comm/commFunc.cpp.s
+.PHONY : comm/commFunc.s
+
+# target to generate assembly for a file
+comm/commFunc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.s
+.PHONY : comm/commFunc.cpp.s
 
 comm/commhead.o: comm/commhead.cpp.o
 .PHONY : comm/commhead.o
@@ -248,30 +296,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-netcomm/baseCmd/basecmd.pb.o: netcomm/baseCmd/basecmd.pb.cc.o
-.PHONY : netcomm/baseCmd/basecmd.pb.o
-
-# target to build an object file
-netcomm/baseCmd/basecmd.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/baseCmd/basecmd.pb.cc.o
-.PHONY : netcomm/baseCmd/basecmd.pb.cc.o
-
-netcomm/baseCmd/basecmd.pb.i: netcomm/baseCmd/basecmd.pb.cc.i
-.PHONY : netcomm/baseCmd/basecmd.pb.i
-
-# target to preprocess a source file
-netcomm/baseCmd/basecmd.pb.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/baseCmd/basecmd.pb.cc.i
-.PHONY : netcomm/baseCmd/basecmd.pb.cc.i
-
-netcomm/baseCmd/basecmd.pb.s: netcomm/baseCmd/basecmd.pb.cc.s
-.PHONY : netcomm/baseCmd/basecmd.pb.s
-
-# target to generate assembly for a file
-netcomm/baseCmd/basecmd.pb.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/baseCmd/basecmd.pb.cc.s
-.PHONY : netcomm/baseCmd/basecmd.pb.cc.s
 
 netcomm/chatcmd/chatcmd.pb.o: netcomm/chatcmd/chatcmd.pb.cc.o
 .PHONY : netcomm/chatcmd/chatcmd.pb.o
@@ -474,9 +498,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... newFrameEx"
+	@echo "... comm/TaskWork.o"
+	@echo "... comm/TaskWork.i"
+	@echo "... comm/TaskWork.s"
 	@echo "... comm/WorkRunner.o"
 	@echo "... comm/WorkRunner.i"
 	@echo "... comm/WorkRunner.s"
+	@echo "... comm/commFunc.o"
+	@echo "... comm/commFunc.i"
+	@echo "... comm/commFunc.s"
 	@echo "... comm/commhead.o"
 	@echo "... comm/commhead.i"
 	@echo "... comm/commhead.s"
@@ -489,9 +519,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... netcomm/baseCmd/basecmd.pb.o"
-	@echo "... netcomm/baseCmd/basecmd.pb.i"
-	@echo "... netcomm/baseCmd/basecmd.pb.s"
 	@echo "... netcomm/chatcmd/chatcmd.pb.o"
 	@echo "... netcomm/chatcmd/chatcmd.pb.i"
 	@echo "... netcomm/chatcmd/chatcmd.pb.s"

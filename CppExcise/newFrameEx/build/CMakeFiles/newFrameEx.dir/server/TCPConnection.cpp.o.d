@@ -1592,6 +1592,7 @@ CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o: \
  /usr/local/include/boost/function/function_template.hpp \
  /usr/local/include/boost/core/no_exceptions_support.hpp \
  /usr/local/include/boost/function/detail/epilogue.hpp \
+ /usr/include/c++/11/thread /usr/include/c++/11/bits/this_thread_sleep.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/resourceManager.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/DisPatcher.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/CallBack.h \
@@ -1599,7 +1600,7 @@ CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o: \
  /usr/local/include/boost/noncopyable.hpp \
  /usr/local/include/boost/core/noncopyable.hpp \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../chatcmd/chatcmd.pb.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../baseCmd/basecmd.pb.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../net/resolveManager.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/WorkRunner.h \

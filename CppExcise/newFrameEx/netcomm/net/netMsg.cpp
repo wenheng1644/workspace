@@ -1,6 +1,6 @@
 
 #include "netMsg.h"
-
+#include "../netcommhead.h"
 
 netHead::netHead(u_char dataType, u_char dataSubType, u_int bodyLen)
 {
@@ -11,6 +11,7 @@ netHead::netHead(u_char dataType, u_char dataSubType, u_int bodyLen)
     version = 0;
     checkcode = makecheckcode(*this);
 }
+
 
 netHead &netHead::operator=(const netHead &other)
 {
@@ -24,7 +25,6 @@ netHead &netHead::operator=(const netHead &other)
     
     return *this;
 }
-
 
 /*
     校验码算法：

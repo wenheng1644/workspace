@@ -6,15 +6,17 @@
 #include "cstring"
 #include "memory"
 
-#define MEMZERO (memset((this), 0, sizeof(*this)))
+// #include "../netcommhead.h"
 
+#define MEMZERO (memset((this), 0, sizeof(*this)))
+#pragma pack(1)
 //网络包消息头
 struct netHead
 {
     u_char      type;       //主协议id
     u_char      subtype;    //副协议id
-    u_int       len;        //数据体长度
-    time_t      sendtime;   //发送的时间戳
+    u_int32_t       len;        //数据体长度
+    u_int64_t      sendtime;   //发送的时间戳
     u_char      version;    //版本号(目前没用到)
     u_short     checkcode;  //校验码
 
@@ -32,7 +34,7 @@ struct netHead
     static u_short makecheckcode(const netHead& head);      //创建校验码
     static bool isvaildcheckcode(const netHead& head);      //检查校验码是否合法
 };
-
+#pragma pack()
 
 
 //网络包结构体
@@ -52,8 +54,16 @@ struct netMsg
 
 };
 
+//网络传输序列号包
+struct netStrMsg
+{
+    std::string headStr;
+    std::string bodyStr;
+
+    netStrMsg() = default;
+};
 
 typedef typename std::shared_ptr<netMsg> netMsg_ptr;
-
+typedef typename std::shared_ptr<netStrMsg> netStrMsg_ptr;
 
 #endif

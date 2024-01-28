@@ -20,6 +20,7 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
+namespace cmd {
 PROTOBUF_CONSTEXPR chatMessageCmd::chatMessageCmd(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.content_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
@@ -34,35 +35,36 @@ struct chatMessageCmdDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 chatMessageCmdDefaultTypeInternal _chatMessageCmd_default_instance_;
+}  // namespace cmd
 static ::_pb::Metadata file_level_metadata_chatcmd_2eproto[1];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_chatcmd_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_chatcmd_2eproto = nullptr;
 
 const uint32_t TableStruct_chatcmd_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::chatMessageCmd, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::cmd::chatMessageCmd, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::chatMessageCmd, _impl_.content_),
-  PROTOBUF_FIELD_OFFSET(::chatMessageCmd, _impl_.status_),
+  PROTOBUF_FIELD_OFFSET(::cmd::chatMessageCmd, _impl_.content_),
+  PROTOBUF_FIELD_OFFSET(::cmd::chatMessageCmd, _impl_.status_),
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::chatMessageCmd)},
+  { 0, -1, -1, sizeof(::cmd::chatMessageCmd)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::_chatMessageCmd_default_instance_._instance,
+  &::cmd::_chatMessageCmd_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_chatcmd_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\rchatcmd.proto\"1\n\016chatMessageCmd\022\017\n\007con"
-  "tent\030\001 \001(\t\022\016\n\006status\030\002 \001(\rb\006proto3"
+  "\n\rchatcmd.proto\022\003cmd\"1\n\016chatMessageCmd\022\017"
+  "\n\007content\030\001 \001(\t\022\016\n\006status\030\002 \001(\rb\006proto3"
   ;
 static ::_pbi::once_flag descriptor_table_chatcmd_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_chatcmd_2eproto = {
-    false, false, 74, descriptor_table_protodef_chatcmd_2eproto,
+    false, false, 79, descriptor_table_protodef_chatcmd_2eproto,
     "chatcmd.proto",
     &descriptor_table_chatcmd_2eproto_once, nullptr, 0, 1,
     schemas, file_default_instances, TableStruct_chatcmd_2eproto::offsets,
@@ -75,6 +77,7 @@ PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_chatcmd_
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_chatcmd_2eproto(&descriptor_table_chatcmd_2eproto);
+namespace cmd {
 
 // ===================================================================
 
@@ -86,7 +89,7 @@ chatMessageCmd::chatMessageCmd(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:chatMessageCmd)
+  // @@protoc_insertion_point(arena_constructor:cmd.chatMessageCmd)
 }
 chatMessageCmd::chatMessageCmd(const chatMessageCmd& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -106,7 +109,7 @@ chatMessageCmd::chatMessageCmd(const chatMessageCmd& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.status_ = from._impl_.status_;
-  // @@protoc_insertion_point(copy_constructor:chatMessageCmd)
+  // @@protoc_insertion_point(copy_constructor:cmd.chatMessageCmd)
 }
 
 inline void chatMessageCmd::SharedCtor(
@@ -125,7 +128,7 @@ inline void chatMessageCmd::SharedCtor(
 }
 
 chatMessageCmd::~chatMessageCmd() {
-  // @@protoc_insertion_point(destructor:chatMessageCmd)
+  // @@protoc_insertion_point(destructor:cmd.chatMessageCmd)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -143,7 +146,7 @@ void chatMessageCmd::SetCachedSize(int size) const {
 }
 
 void chatMessageCmd::Clear() {
-// @@protoc_insertion_point(message_clear_start:chatMessageCmd)
+// @@protoc_insertion_point(message_clear_start:cmd.chatMessageCmd)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -165,7 +168,7 @@ const char* chatMessageCmd::_InternalParse(const char* ptr, ::_pbi::ParseContext
           auto str = _internal_mutable_content();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "chatMessageCmd.content"));
+          CHK_(::_pbi::VerifyUTF8(str, "cmd.chatMessageCmd.content"));
         } else
           goto handle_unusual;
         continue;
@@ -202,7 +205,7 @@ failure:
 
 uint8_t* chatMessageCmd::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:chatMessageCmd)
+  // @@protoc_insertion_point(serialize_to_array_start:cmd.chatMessageCmd)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -211,7 +214,7 @@ uint8_t* chatMessageCmd::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "chatMessageCmd.content");
+      "cmd.chatMessageCmd.content");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_content(), target);
   }
@@ -226,12 +229,12 @@ uint8_t* chatMessageCmd::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:chatMessageCmd)
+  // @@protoc_insertion_point(serialize_to_array_end:cmd.chatMessageCmd)
   return target;
 }
 
 size_t chatMessageCmd::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:chatMessageCmd)
+// @@protoc_insertion_point(message_byte_size_start:cmd.chatMessageCmd)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -263,7 +266,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*chatMessageCmd::GetClassData()
 void chatMessageCmd::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
   auto* const _this = static_cast<chatMessageCmd*>(&to_msg);
   auto& from = static_cast<const chatMessageCmd&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:chatMessageCmd)
+  // @@protoc_insertion_point(class_specific_merge_from_start:cmd.chatMessageCmd)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -278,7 +281,7 @@ void chatMessageCmd::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const :
 }
 
 void chatMessageCmd::CopyFrom(const chatMessageCmd& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:chatMessageCmd)
+// @@protoc_insertion_point(class_specific_copy_from_start:cmd.chatMessageCmd)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -307,10 +310,11 @@ void chatMessageCmd::InternalSwap(chatMessageCmd* other) {
 }
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace cmd
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::chatMessageCmd*
-Arena::CreateMaybeMessage< ::chatMessageCmd >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::chatMessageCmd >(arena);
+template<> PROTOBUF_NOINLINE ::cmd::chatMessageCmd*
+Arena::CreateMaybeMessage< ::cmd::chatMessageCmd >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::cmd::chatMessageCmd >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

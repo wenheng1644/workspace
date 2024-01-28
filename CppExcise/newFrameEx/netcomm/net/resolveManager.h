@@ -9,7 +9,8 @@ std::string serlizeCmdToStr(T cmd)
 {
     // assert(cmd != nullptr);
 
-    std::string str = cmd.SerializeAsString();
+    std::string str;
+    cmd.SerializeToString(&str);
 
     return str;
 }
@@ -25,6 +26,8 @@ T parseSerlizeStr(const std::string& str)
     return cmd;
 }
 
-std::string getSerlizeNetMsgStr(const netMsg& netmsg);
+
+//将网络包序列化
+std::string getSerlizeNetMsgStr(const netMsg&);
 
 #endif
