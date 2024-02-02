@@ -9,19 +9,19 @@
 
 void test_dispatch()
 {
-    ResourceManager manager;
-    cmd::chatMessageCmd cmd;
-    cmd.set_content("好想要个女朋友啊1111");
-    cmd.set_status(1);
-    manager.onCallMessage(&cmd);
+//     ResourceManager manager;
+//     cmd::chatMessageCmd cmd;
+//     cmd.set_content("好想要个女朋友啊1111");
+//     cmd.set_status(1);
+//     manager.onCallMessage(&cmd);
 
-    std::cout << getFormatStr("cmd content: %s, status: %d", cmd.content(), cmd.status()) << std::endl;
-    std::string str = serlizeCmdToStr<cmd::chatMessageCmd>(cmd);
-    netMsg msg(1,1, str);
+//     std::cout << getFormatStr("cmd content: %s, status: %d", cmd.content(), cmd.status()) << std::endl;
+//     std::string str = serlizeCmdToStr<cmd::chatMessageCmd>(cmd);
+//     netMsg msg(1,1, str);
 
-    std::string sendStr = getSerlizeNetMsgStr(msg);
-    cmd.SerializeToString(&sendStr);
-    std::cout << getFormatStr("head len = %d, body len = %d, sendStr len = %d",sizeof(netHead), msg.head.len, sendStr.size()) << std::endl;
+//     std::string sendStr = getSerlizeNetMsgStr(msg);
+//     cmd.SerializeToString(&sendStr);
+//     std::cout << getFormatStr("head len = %d, body len = %d, sendStr len = %d",sizeof(netHead), msg.head.len, sendStr.size()) << std::endl;
 }
 
 void test()

@@ -8,31 +8,32 @@
 #include "functional"
 #include "../netcommhead.h"
 
+#include "../logic/user.h"
 // typedef std::shared_ptr<google::protobuf::Message> Message_Ptr;
 class CallBack {
 public:
     CallBack() = default;
     virtual  ~CallBack() {}
 
-    virtual void onMessage(google::protobuf::Message* msg) = 0;
+    virtual void onMessage(google::protobuf::Message* msg, user_ptr user) = 0;
 };
 
 template<typename T>
 class CallBackT : public CallBack
 {
 public:
-    CallBackT(std::function<void(T*)> cb) : __cb(cb) {}
+    CallBackT(std::function<void(T*, user_ptr)> cb) : __cb(cb) {}
     virtual ~CallBackT() {}
 
-    virtual void onMessage(google::protobuf::Message* msg) override;
+    virtual void onMessage(google::protobuf::Message* msg, user_ptr user) override;
 private:
-    std::function<void(T*)> __cb;
+    std::function<void(T*, user_ptr)> __cb;
 };
 
 typedef std::shared_ptr<CallBack> CB;
 
 template<typename T>
-void CallBackT<T>::onMessage(google::protobuf::Message* msg)
+void CallBackT<T>::onMessage(google::protobuf::Message* msg, user_ptr user)
 {
     if(!msg)
     {
@@ -44,7 +45,7 @@ void CallBackT<T>::onMessage(google::protobuf::Message* msg)
     T* concertP = dynamic_cast<T*>(msg);
     assert(concertP != nullptr);
     // std::shared_ptr<T> concertObj(concertP);
-    __cb(concertP);
+    __cb(concertP, user);
 }
 
 

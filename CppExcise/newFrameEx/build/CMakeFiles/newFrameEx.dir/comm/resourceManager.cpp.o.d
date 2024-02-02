@@ -287,11 +287,13 @@ CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../net/../chatcmd/chatcmd.pb.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../net/netMsg.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../net/netMsg.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/netMsg.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/resolveManager.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/user.h \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../netcomm/netcommhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../comm/commhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../comm/../netcomm/net/netMsg.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../comm/../netcomm/net/resolveManager.h \
  /usr/local/include/boost/uuid/uuid.hpp \
  /usr/local/include/boost/cstdint.hpp \
  /usr/local/include/boost/uuid/detail/config.hpp \
@@ -944,7 +946,8 @@ CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: \
  /usr/local/include/boost/format/parsing.hpp \
  /usr/local/include/boost/format/free_funcs.hpp \
  /usr/local/include/boost/format/detail/unset_macros.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../server/commServer.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/TCPConnection.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/commServer.h \
  /usr/local/include/boost/asio.hpp \
  /usr/local/include/boost/asio/any_completion_executor.hpp \
  /usr/local/include/boost/asio/detail/config.hpp \
@@ -1548,8 +1551,15 @@ CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: \
  /usr/local/include/boost/asio/writable_pipe.hpp \
  /usr/local/include/boost/asio/write_at.hpp \
  /usr/local/include/boost/asio/impl/write_at.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../server/../comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../server/../netcomm/net/resolveManager.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/../comm/commhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/../netcomm/net/resolveManager.h \
+ /usr/local/include/boost/enable_shared_from_this.hpp \
+ /usr/local/include/boost/smart_ptr/enable_shared_from_this.hpp \
+ /usr/local/include/boost/smart_ptr/weak_ptr.hpp \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../server/commServer.h \
  /usr/local/include/boost/thread.hpp \
  /usr/local/include/boost/thread/thread.hpp \
  /usr/local/include/boost/thread/thread_only.hpp \
@@ -1725,9 +1735,6 @@ CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: \
  /usr/local/include/boost/thread/pthread/condition_variable_fwd.hpp \
  /usr/local/include/boost/thread/cv_status.hpp \
  /usr/local/include/boost/core/scoped_enum.hpp \
- /usr/local/include/boost/enable_shared_from_this.hpp \
- /usr/local/include/boost/smart_ptr/enable_shared_from_this.hpp \
- /usr/local/include/boost/smart_ptr/weak_ptr.hpp \
  /usr/local/include/boost/thread/detail/thread.hpp \
  /usr/local/include/boost/thread/interruption.hpp \
  /usr/local/include/boost/thread/detail/thread_heap_alloc.hpp \

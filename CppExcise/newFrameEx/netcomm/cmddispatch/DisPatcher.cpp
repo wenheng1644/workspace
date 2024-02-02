@@ -10,7 +10,7 @@ DisPatcher::DisPatcher()
     registerCb(cmd::chatMessageCmd::descriptor(), cb1);
 }
 
-void DisPatcher::onCallMessage(google::protobuf::Message *msg)
+void DisPatcher::onCallMessage(google::protobuf::Message *msg, user_ptr user)
 {
     using namespace google::protobuf;
 
@@ -23,5 +23,5 @@ void DisPatcher::onCallMessage(google::protobuf::Message *msg)
         if(__defalutcb) __defalutcb(msg); 
         return;
     }
-    iter->second->onMessage(msg);
+    iter->second->onMessage(msg, user);
 }

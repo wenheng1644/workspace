@@ -12,6 +12,9 @@
 
 #include "boost/format.hpp"
 
+#include "mutex"
+
+typedef std::lock_guard<std::mutex> lockGuard_tp;
 
 namespace commStr{
     std::string rec_formatStr(boost::format& f);

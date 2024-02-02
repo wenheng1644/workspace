@@ -21,7 +21,7 @@ public:
     template<typename T>
     void registerCb(const google::protobuf::Descriptor* key, std::shared_ptr<CallBackT<T>> cb);
 
-    void onCallMessage(google::protobuf::Message* msg);
+    void onCallMessage(google::protobuf::Message* msg, user_ptr user);
 private:
     std::map<const google::protobuf::Descriptor*, CB> __cb_hash;
 

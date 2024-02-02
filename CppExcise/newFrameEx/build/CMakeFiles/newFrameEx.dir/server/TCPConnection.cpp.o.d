@@ -1602,6 +1602,12 @@ CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o: \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../chatcmd/chatcmd.pb.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../net/resolveManager.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/../netcomm/cmddispatch/../net/netMsg.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/user.h \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../netcomm/netcommhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../comm/commhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/TCPConnection.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/WorkRunner.h \
  /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/commhead.h \

@@ -67,3 +67,11 @@ netMsg &netMsg::operator=(const netMsg &other)
 
     return *this;
 }
+
+google::protobuf::Message *netMsg::getGoogleMessage()
+{
+    
+    
+
+    return nullptr;
+}

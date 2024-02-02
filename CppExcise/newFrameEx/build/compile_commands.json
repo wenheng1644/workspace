@@ -73,5 +73,10 @@
   "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
   "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/main.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp",
   "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp"
+},
+{
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/chatcmd -I/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./cmd/resolvecmd -g -o CMakeFiles/newFrameEx.dir/logic/user.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/user.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/user.cpp"
 }
 ]

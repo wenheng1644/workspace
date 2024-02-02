@@ -273,6 +273,30 @@ comm/singleton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/singleton.cpp.s
 .PHONY : comm/singleton.cpp.s
 
+logic/user.o: logic/user.cpp.o
+.PHONY : logic/user.o
+
+# target to build an object file
+logic/user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/logic/user.cpp.o
+.PHONY : logic/user.cpp.o
+
+logic/user.i: logic/user.cpp.i
+.PHONY : logic/user.i
+
+# target to preprocess a source file
+logic/user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/logic/user.cpp.i
+.PHONY : logic/user.cpp.i
+
+logic/user.s: logic/user.cpp.s
+.PHONY : logic/user.s
+
+# target to generate assembly for a file
+logic/user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/logic/user.cpp.s
+.PHONY : logic/user.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -516,6 +540,9 @@ help:
 	@echo "... comm/singleton.o"
 	@echo "... comm/singleton.i"
 	@echo "... comm/singleton.s"
+	@echo "... logic/user.o"
+	@echo "... logic/user.i"
+	@echo "... logic/user.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

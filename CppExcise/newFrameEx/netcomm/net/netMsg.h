@@ -6,7 +6,7 @@
 #include "cstring"
 #include "memory"
 
-// #include "../netcommhead.h"
+#include "../netcommhead.h"
 
 #define MEMZERO (memset((this), 0, sizeof(*this)))
 #pragma pack(1)
@@ -51,6 +51,8 @@ struct netMsg
     netMsg& operator=(const netMsg& other);
 
     ~netMsg() = default;
+
+    google::protobuf::Message* getGoogleMessage();
 
 };
 

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o.d"
   "CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o"
   "CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o.d"
+  "CMakeFiles/newFrameEx.dir/logic/user.cpp.o"
+  "CMakeFiles/newFrameEx.dir/logic/user.cpp.o.d"
   "CMakeFiles/newFrameEx.dir/main.cpp.o"
   "CMakeFiles/newFrameEx.dir/main.cpp.o.d"
   "CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o"

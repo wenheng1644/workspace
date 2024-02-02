@@ -16,6 +16,8 @@
 typedef std::function<void(google::protobuf::Message*)> MessageCB;
 
 
-void onchatMessageCmd(cmd::chatMessageCmd* msg);
+class user;
+typedef std::shared_ptr<user> user_ptr;
+void onchatMessageCmd(cmd::chatMessageCmd* msg, user_ptr user);
 
 #endif

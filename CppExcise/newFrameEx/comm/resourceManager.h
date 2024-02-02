@@ -14,7 +14,7 @@ public:
     ~ResourceManager() = default;
 
 
-    void onCallMessage(google::protobuf::Message* msg);
+    void onCallMessage(google::protobuf::Message* msg, user_ptr user);
     ioserver_tp& net_io() {return __netRunner.get_io();}
     size_t get_ioThreadSize() { return __netRunner.get_curthreadsize(); }
 private:
