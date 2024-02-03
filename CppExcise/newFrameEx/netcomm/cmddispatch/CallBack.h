@@ -15,37 +15,39 @@ public:
     CallBack() = default;
     virtual  ~CallBack() {}
 
-    virtual void onMessage(google::protobuf::Message* msg, user_ptr user) = 0;
+    virtual void onMessage(const netMsg& msg, user_ptr user) = 0;
 };
 
 template<typename T>
 class CallBackT : public CallBack
 {
 public:
-    CallBackT(std::function<void(T*, user_ptr)> cb) : __cb(cb) {}
+    CallBackT(std::function<void(const T*, user_ptr)> cb) : __cb(cb) {}
     virtual ~CallBackT() {}
 
-    virtual void onMessage(google::protobuf::Message* msg, user_ptr user) override;
+    virtual void onMessage(const netMsg& msg, user_ptr user) override;
 private:
-    std::function<void(T*, user_ptr)> __cb;
+    std::function<void(const T*, user_ptr)> __cb;
 };
 
 typedef std::shared_ptr<CallBack> CB;
 
 template<typename T>
-void CallBackT<T>::onMessage(google::protobuf::Message* msg, user_ptr user)
+void CallBackT<T>::onMessage(const netMsg& msg, user_ptr user)
 {
-    if(!msg)
-    {
-        printf("type name msg(%s) is null\n", msg->GetTypeName().c_str());
-        return;
-    }
+    // if(!msg)
+    // {
+    //     printf("type name msg(%s) is null\n", msg->GetTypeName().c_str());
+    //     return;
+    // }
     // using namespace google::protobuf;
     // Message* p = msg.get();
-    T* concertP = dynamic_cast<T*>(msg);
-    assert(concertP != nullptr);
+    T cmd = parseSerlizeStr<T>(msg.datas);
+
+    // const T* concertP = dynamic_cast<const T*>(msg);
+    // assert(concertP != nullptr);
     // std::shared_ptr<T> concertObj(concertP);
-    __cb(concertP, user);
+    __cb(&cmd, user);
 }
 
 

@@ -29,6 +29,8 @@ struct netHead
 
     netHead& operator=(const netHead& other);
 
+    size_t getProtoValue() const { return ((type << 8 ) | subtype);}
+
     ~netHead() = default;
 
     static u_short makecheckcode(const netHead& head);      //创建校验码

@@ -1,8 +1,19 @@
 #include "netcommhead.h"
 #include "../logic/user.h"
 
+google::protobuf::Message *getGoogleMessage(const netMsg &msg)
+{
 
-void onchatMessageCmd(cmd::chatMessageCmd* msg, user_ptr user)
+    cmd::chatMessageCmd chatMsg;
+
+    google::protobuf::Message * googleMsg = &chatMsg;
+
+    googleMsg->ParseFromString(msg.datas);
+    
+    return googleMsg;
+}
+
+void onchatMessageCmd(const cmd::chatMessageCmd *msg, user_ptr user)
 {
     if(!user)
     {

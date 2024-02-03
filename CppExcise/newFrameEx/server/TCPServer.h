@@ -9,6 +9,8 @@
 
 #include "map"
 
+#include "../logic/user.h"
+
 class TCPServer
 {
 

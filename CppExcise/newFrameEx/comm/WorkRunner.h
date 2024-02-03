@@ -12,7 +12,7 @@
 class WorkRunner : public boost::noncopyable
 {
 public:
-    WorkRunner();
+    WorkRunner(size_t threadNum = 3);
 
 
     ~WorkRunner() = default;

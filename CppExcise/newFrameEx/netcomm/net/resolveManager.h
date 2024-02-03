@@ -26,6 +26,7 @@ T parseSerlizeStr(const std::string& str)
     return cmd;
 }
 
+class netMsg;
 
 //将网络包序列化
 std::string getSerlizeNetMsgStr(const netMsg&);

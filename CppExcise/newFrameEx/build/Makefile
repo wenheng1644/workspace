@@ -297,6 +297,30 @@ logic/user.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/logic/user.cpp.s
 .PHONY : logic/user.cpp.s
 
+logic/userEng.o: logic/userEng.cpp.o
+.PHONY : logic/userEng.o
+
+# target to build an object file
+logic/userEng.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o
+.PHONY : logic/userEng.cpp.o
+
+logic/userEng.i: logic/userEng.cpp.i
+.PHONY : logic/userEng.i
+
+# target to preprocess a source file
+logic/userEng.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/logic/userEng.cpp.i
+.PHONY : logic/userEng.cpp.i
+
+logic/userEng.s: logic/userEng.cpp.s
+.PHONY : logic/userEng.s
+
+# target to generate assembly for a file
+logic/userEng.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/logic/userEng.cpp.s
+.PHONY : logic/userEng.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -543,6 +567,9 @@ help:
 	@echo "... logic/user.o"
 	@echo "... logic/user.i"
 	@echo "... logic/user.s"
+	@echo "... logic/userEng.o"
+	@echo "... logic/userEng.i"
+	@echo "... logic/userEng.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

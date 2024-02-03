@@ -5,6 +5,7 @@ project(newFrameEx)
 set(CMAKE_CXX_STANDARD 17)
 
 include_directories(./comm ./cmd ./cmd/chatcmd ./cmd/resolvecmd/) 
+link_directories(/usr/local/lib)
 
 aux_source_directory(./comm COMM_CPPDIR)
 aux_source_directory(./netcomm NETCOMM_CPPDIR)

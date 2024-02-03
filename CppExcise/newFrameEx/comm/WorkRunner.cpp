@@ -1,8 +1,8 @@
 #include "WorkRunner.h"
 
-WorkRunner::WorkRunner() : m_work(m_io)
+WorkRunner::WorkRunner(size_t threadNum) : m_work(m_io), m_threadnum(threadNum)
 {
-    m_threadnum = 3;
+    // m_threadnum = 3;
 
     for(int i = 0; i < m_threadnum; i++)
     {
@@ -14,5 +14,5 @@ WorkRunner::WorkRunner() : m_work(m_io)
 
 void WorkRunner::post(std::function<void()> func)
 {
-    // m_io.post(func);
+    m_io.post(func);
 }

@@ -2,6 +2,7 @@
 #include "functional"
 
 #include "../comm/resourceManager.h"
+#include "../logic/userEng.h"
 
 void TCPServer::run()
 {
@@ -21,6 +22,16 @@ void TCPServer::onHandleAccept(TCPConnection_ptr conn, ec_code_tp ec)
 
     std::string formatStr = getFormatStr("conn uuid = %1%, threadId = %2%", conn->onlyid(), std::this_thread::get_id());
     printf("TCPServer::onHandleAccept | 连接成功 --> %s\n", formatStr.c_str());
+
+    userComm comm;
+    comm.account = "aab";
+    comm.age = 25;
+    comm.name = "邝慧娴";
+    comm.sex = female;
+    user_ptr connectUser(new user(comm, conn));
+
+    conn->m_target = connectUser;
+    UserEng::getObj()->push(connectUser);
 
     conn->run();
     run();

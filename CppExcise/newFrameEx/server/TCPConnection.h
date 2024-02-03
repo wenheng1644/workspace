@@ -8,6 +8,8 @@
 
 #include "vector"
 
+class user;
+
 class TCPConnection : public std::enable_shared_from_this<TCPConnection>
 {
 
@@ -21,10 +23,14 @@ public:
 
     socket_tp& socket() {return m_sockect;}
     boost::uuids::uuid onlyid() {return m_onlyid;}
+
+    std::weak_ptr<user> m_target;
+
 private:
     socket_tp m_sockect;
     boost::asio::io_service& m_io;
     boost::uuids::uuid m_onlyid;
+
 
     void send(const char* buff, size_t len);
 

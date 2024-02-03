@@ -23,7 +23,7 @@ struct userComm
     Sex         sex;
 };
 
-class user
+class user : public std::enable_shared_from_this<user>
 {
 public:
     user() = default;
@@ -34,7 +34,9 @@ public:
     void push_netMsg(netMsg_ptr msg);
     void run();
 
-    void onChatContentMessage(cmd::chatMessageCmd* msg);
+    void onChatContentMessage(const cmd::chatMessageCmd* msg);
+
+    boost::uuids::uuid onlyid() { return m_onlyid;}
 
 protected:
     std::string m_name;
@@ -42,6 +44,7 @@ protected:
     u_char      m_age;
     Sex         m_sex;
 
+    boost::uuids::uuid m_onlyid;
     std::mutex m_commMutex;             //通用锁
 
     std::mutex m_msgListMutex;          //消息队列锁

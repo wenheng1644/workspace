@@ -16,22 +16,26 @@ class DisPatcher : public boost::noncopyable, public Singleton<DisPatcher> {
 public:
     DisPatcher();
 
-    void setDefalutCB(std::function<void(google::protobuf::Message*)> cb) {__defalutcb = cb;}
+    void setDefalutCB(std::function<const void(google::protobuf::Message*)> cb) {__defalutcb = cb;}
     
     template<typename T>
-    void registerCb(const google::protobuf::Descriptor* key, std::shared_ptr<CallBackT<T>> cb);
+    void registerCb(const google::protobuf::Descriptor* key, std::shared_ptr<CallBackT<T>> cb, size_t protovalue);
 
-    void onCallMessage(google::protobuf::Message* msg, user_ptr user);
+    void onCallMessage(const netMsg& msg, user_ptr user);
 private:
     std::map<const google::protobuf::Descriptor*, CB> __cb_hash;
+
+    std::map<size_t, const google::protobuf::Descriptor*> __proto_hash;
 
     std::function<void(google::protobuf::Message*)> __defalutcb;
 };
 
 template<typename T>
-void DisPatcher::registerCb(const google::protobuf::Descriptor *key, std::shared_ptr<CallBackT<T>> cb)
+void DisPatcher::registerCb(const google::protobuf::Descriptor *key, std::shared_ptr<CallBackT<T>> cb, size_t protovalue)
 {
     __cb_hash[key] = cb;
+    __proto_hash[protovalue] = key;
+
 }
 
 

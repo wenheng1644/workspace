@@ -6,6 +6,7 @@
 #include "thread"
 
 #include "../comm/resourceManager.h"
+#include "../logic/userEng.h"
 
 
 void TCPConnection::send(const std::vector<char> &buff)
@@ -71,6 +72,7 @@ void TCPConnection::on_handleReadHead(netMsg_ptr msg, ec_code_tp ec, size_t byte
     if(ec)
     {
         printf("TCPConnection::on_handleRead | read data error!  bytes = %d\n", bytes);
+        UserEng::getObj()->erase(m_onlyid);
         m_sockect.close();
         return;
     }
@@ -100,15 +102,9 @@ void TCPConnection::on_handleReadBody(netMsg_ptr msg, ec_code_tp ec, size_t byte
         return;
     }
 
-    netHead head = msg->head;
-    std::string formatStr = getFormatStr("收到的数据打印 : type = %1%, subtype = %2%, bodylen = %3%, threadId = %4%", (int)head.type, (int)head.subtype, (int)head.len, std::this_thread::get_id());
-
-    printf("TCPConnection::on_handleReadBody  | %s\n", formatStr.c_str());
-    cmd::chatMessageCmd content = parseSerlizeStr<cmd::chatMessageCmd>(msg->datas);
-
-    printf("TCPConnection::on_handleReadBody | status = %d, content = %s\n", content.status(), content.content().c_str());
-
-    send(msg);
+    user_ptr p = m_target.lock();
+    if(p)
+        p->push_netMsg(msg);
     //业务操作--ToDo 免互斥量
     run();
 }
