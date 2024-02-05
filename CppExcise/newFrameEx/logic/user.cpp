@@ -20,16 +20,20 @@ void user::run()
     std::deque<netMsg_ptr> curMsgLists;
     {
         lockGuard_tp lg(m_msgListMutex);
+        // printf("交换前用户队列包数量 = %d, 临时队列包数量 = %d\n", m_msgLists.size(), curMsgLists.size());
         std::swap(curMsgLists, m_msgLists);
+        // printf("交换后用户队列包数量 = %d, 临时队列包数量 = %d\n", m_msgLists.size(), curMsgLists.size());
     }
     // printf("user::run | 用户事件循环 名字 = %s\n", m_name.c_str());
     for(auto& netMsg : curMsgLists)
     {
         //TO-DO
         time_t now = time(nullptr);
-        std::string formatStr = getFormatStr("当前包(type = %1%, subtype = %2%) 延迟%3%秒", netMsg->head.type, netMsg->head.subtype, now - netMsg->head.sendtime);
+        std::string formatStr = getFormatStr("当前包(type = %1%, subtype = %2%) 延迟%3%秒", (int)netMsg->head.type, (int)netMsg->head.subtype, now - netMsg->head.sendtime);
         printf("user::run | %s\n", formatStr.c_str());
         ResourceManager::getObj()->onCallMessage(*netMsg, shared_from_this());
+
+        
         
     }
 }

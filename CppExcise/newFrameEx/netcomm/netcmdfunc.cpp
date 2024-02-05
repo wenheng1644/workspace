@@ -1,5 +1,6 @@
 #include "netcommhead.h"
 #include "../logic/user.h"
+#include "vector"
 
 google::protobuf::Message *getGoogleMessage(const netMsg &msg)
 {

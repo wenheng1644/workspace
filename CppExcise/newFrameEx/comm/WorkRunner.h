@@ -12,10 +12,12 @@
 class WorkRunner : public boost::noncopyable
 {
 public:
-    WorkRunner(size_t threadNum = 3);
+    WorkRunner();
 
 
     ~WorkRunner() = default;
+
+    bool start(size_t num);
 
     ioserver_tp& get_io() { return m_io;}
 

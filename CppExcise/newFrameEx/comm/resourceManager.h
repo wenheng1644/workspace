@@ -5,6 +5,13 @@
 #include "../netcomm/cmddispatch/DisPatcher.h"
 #include "WorkRunner.h"
 
+#include "vector"
+
+enum NETWORK_TYPE
+{
+    NET_IO,
+    NET_WORK
+};
 
 //资源管理类
 class ResourceManager : public Singleton<ResourceManager>
@@ -19,12 +26,14 @@ public:
     ioserver_tp& net_io() {return __netRunner.get_io();}
     size_t get_ioThreadSize() { return __netRunner.get_curthreadsize(); }
 
-    WorkRunner m_workRunner;
+    void post(NETWORK_TYPE tp, std::function<void()> f);
 private:
     DisPatcher __CmdDispatch;
     WorkRunner __netRunner;
-    
-    // void init();
+    // WorkRunner m_workRunner;
+
+    std::vector<WorkRunner> m_works;
+    void init_WorkRunner();
 
     // void init_cmdDisPatch();
 

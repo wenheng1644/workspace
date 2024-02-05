@@ -52,7 +52,7 @@ int main(int argc, char* argv[])
     // test_dispatch();
     
     ResourceManager::getObj();
-    ResourceManager::getObj()->m_workRunner.post(std::bind(&UserEng::run, UserEng::getObj()));
+    ResourceManager::getObj()->post(NET_WORK ,std::bind(&UserEng::run, UserEng::getObj()));
 
     boost::asio::io_service server_io;    
     boost::asio::io_service::work w(server_io);

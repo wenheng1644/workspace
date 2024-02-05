@@ -31,7 +31,7 @@ void UserEng::run()
     {
         // printf("UserEng::run| 用户引擎事件循环\n");
         processUser();
-        std::this_thread::sleep_for(std::chrono::milliseconds(300));    //睡眠300毫秒
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));    //睡眠300毫秒
     }
 }
 
