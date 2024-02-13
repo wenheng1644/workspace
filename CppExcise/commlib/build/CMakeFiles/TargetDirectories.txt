@@ -1,0 +1,3 @@
+/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles/commlib.dir
+/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles/edit_cache.dir
+/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles/rebuild_cache.dir
