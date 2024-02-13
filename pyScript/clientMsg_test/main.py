@@ -6,7 +6,7 @@ import threading
 
 def test__():
     c = client.Client()
-    c.connect("192.168.31.145", 8888)
+    c.connect("192.168.147.194", 8888)
     
     
     while True:
@@ -22,8 +22,7 @@ def test__():
     c.fd.close()
 
 
-contents = ["我好想草你啊 邝慧娴", "能不能给我插插？", "想射在你小穴逼逼里面", "给个机会 很安全的", "让我爽一下好吧"]
-
+contents = ["hello linux", "这是测试11111111",  "服务器测压..."]
 def clinetToTest():
     c = client.Client()
     c.connect("192.168.31.145", 8888)
