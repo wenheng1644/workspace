@@ -1,11 +1,11 @@
 
 #include "iostream"
 
-#include "comm/commhead.h"
+#include "commhead.h"
 
-#include "comm/resourceManager.h"
+#include "../comm/resourceManager.h"
 
-#include "server/TCPServer.h"
+#include "server/TCPServer_logic.h"
 
 #include "logic/userEng.h"
 void test_dispatch()
@@ -57,8 +57,8 @@ int main(int argc, char* argv[])
     boost::asio::io_service server_io;    
     boost::asio::io_service::work w(server_io);
 
-    boost::asio::ip::address add = boost::asio::ip::make_address("192.168.31.145");
-    TCPServer server(server_io, add, 8888);
+    boost::asio::ip::address add = boost::asio::ip::make_address("192.168.147.194");
+    TCPServer_logic server(server_io, add, 8888);
     server.run();
 
     server_io.run();

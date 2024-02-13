@@ -1,8 +1,8 @@
 #include "user.h"
 
-#include "../comm/resourceManager.h"
+#include "resourceManager.h"
 
-user::user(const userComm& comm, TCPConnection_ptr conn) : m_name(comm.name), m_account(comm.account)\
+user::user(const userComm& comm, TCPConnectionLogic_ptr conn) : m_name(comm.name), m_account(comm.account)\
     ,m_age(comm.age), m_sex(comm.sex), m_wTcpConn(conn), m_onlyid(conn->onlyid())
 {
 

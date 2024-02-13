@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wenheng/Desktop/workspace/CppExcise/newFrameEx
+CMAKE_SOURCE_DIR = /home/wenheng/workspace/CppExcise/newFrameEx
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build
+CMAKE_BINARY_DIR = /home/wenheng/workspace/CppExcise/newFrameEx/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/newFrameEx.dir/depend.make
@@ -69,260 +69,155 @@ include CMakeFiles/newFrameEx.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/newFrameEx.dir/flags.make
 
-CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/TaskWork.cpp
-CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o -MF CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o.d -o CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/TaskWork.cpp
-
-CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/TaskWork.cpp > CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.i
-
-CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/TaskWork.cpp -o CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.s
-
-CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.cpp
-CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o -MF CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o.d -o CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.cpp
-
-CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.cpp > CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.i
-
-CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.cpp -o CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.s
-
-CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commFunc.cpp
-CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o -MF CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o.d -o CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commFunc.cpp
-
-CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commFunc.cpp > CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.i
-
-CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commFunc.cpp -o CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.s
-
-CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.cpp
-CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o -MF CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o.d -o CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.cpp
-
-CMakeFiles/newFrameEx.dir/comm/commhead.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/comm/commhead.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.cpp > CMakeFiles/newFrameEx.dir/comm/commhead.cpp.i
-
-CMakeFiles/newFrameEx.dir/comm/commhead.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/comm/commhead.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.cpp -o CMakeFiles/newFrameEx.dir/comm/commhead.cpp.s
-
 CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp
+CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp
 CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o -MF CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o.d -o CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o -MF CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o.d -o CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp
 
 CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp > CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp > CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.i
 
 CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp -o CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.s
-
-CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/singleton.cpp
-CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o -MF CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o.d -o CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/singleton.cpp
-
-CMakeFiles/newFrameEx.dir/comm/singleton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/comm/singleton.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/singleton.cpp > CMakeFiles/newFrameEx.dir/comm/singleton.cpp.i
-
-CMakeFiles/newFrameEx.dir/comm/singleton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/comm/singleton.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/singleton.cpp -o CMakeFiles/newFrameEx.dir/comm/singleton.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/comm/resourceManager.cpp -o CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.s
 
 CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp
+CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp
 CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o -MF CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o.d -o CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o -MF CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o.d -o CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp
 
 CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp > CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp > CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.i
 
 CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp -o CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp -o CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.s
 
 CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc
+CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o: /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc
 CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o -MF CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o.d -o CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o -MF CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o.d -o CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o -c /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc
 
 CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc > CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc > CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.i
 
 CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc -o CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc -o CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.s
 
 CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp
+CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp
 CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o -MF CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o.d -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o -MF CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o.d -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp
 
 CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp > CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp > CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.i
 
 CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/CallBack.cpp -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.s
 
 CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp
+CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp
 CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o -MF CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o.d -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o -MF CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o.d -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp
 
 CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp > CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp > CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.i
 
 CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/cmddispatch/DisPatcher.cpp -o CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.s
 
-CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.cpp
-CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o -MF CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o.d -o CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.cpp
+CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
+CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPConnection_logic.cpp
+CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o -MF CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o.d -o CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPConnection_logic.cpp
 
-CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.cpp > CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.i
+CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPConnection_logic.cpp > CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.i
 
-CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.cpp -o CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.s
+CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPConnection_logic.cpp -o CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.s
 
-CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/resolveManager.cpp
-CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o -MF CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o.d -o CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/resolveManager.cpp
+CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
+CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPServer_logic.cpp
+CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o -MF CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o.d -o CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPServer_logic.cpp
 
-CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/resolveManager.cpp > CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.i
+CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPServer_logic.cpp > CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.i
 
-CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/resolveManager.cpp -o CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.s
-
-CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPConnection.cpp
-CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o -MF CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o.d -o CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPConnection.cpp
-
-CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPConnection.cpp > CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.i
-
-CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPConnection.cpp -o CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.s
-
-CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPServer.cpp
-CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o -MF CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o.d -o CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPServer.cpp
-
-CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPServer.cpp > CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.i
-
-CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPServer.cpp -o CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.s
+CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPServer_logic.cpp -o CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.s
 
 CMakeFiles/newFrameEx.dir/main.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/main.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp
+CMakeFiles/newFrameEx.dir/main.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/main.cpp
 CMakeFiles/newFrameEx.dir/main.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/newFrameEx.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/main.cpp.o -MF CMakeFiles/newFrameEx.dir/main.cpp.o.d -o CMakeFiles/newFrameEx.dir/main.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/newFrameEx.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/main.cpp.o -MF CMakeFiles/newFrameEx.dir/main.cpp.o.d -o CMakeFiles/newFrameEx.dir/main.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/main.cpp
 
 CMakeFiles/newFrameEx.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp > CMakeFiles/newFrameEx.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/main.cpp > CMakeFiles/newFrameEx.dir/main.cpp.i
 
 CMakeFiles/newFrameEx.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp -o CMakeFiles/newFrameEx.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/main.cpp -o CMakeFiles/newFrameEx.dir/main.cpp.s
 
 CMakeFiles/newFrameEx.dir/logic/user.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/logic/user.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/user.cpp
+CMakeFiles/newFrameEx.dir/logic/user.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/logic/user.cpp
 CMakeFiles/newFrameEx.dir/logic/user.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/newFrameEx.dir/logic/user.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/logic/user.cpp.o -MF CMakeFiles/newFrameEx.dir/logic/user.cpp.o.d -o CMakeFiles/newFrameEx.dir/logic/user.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/user.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/newFrameEx.dir/logic/user.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/logic/user.cpp.o -MF CMakeFiles/newFrameEx.dir/logic/user.cpp.o.d -o CMakeFiles/newFrameEx.dir/logic/user.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/logic/user.cpp
 
 CMakeFiles/newFrameEx.dir/logic/user.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/logic/user.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/user.cpp > CMakeFiles/newFrameEx.dir/logic/user.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/logic/user.cpp > CMakeFiles/newFrameEx.dir/logic/user.cpp.i
 
 CMakeFiles/newFrameEx.dir/logic/user.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/logic/user.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/user.cpp -o CMakeFiles/newFrameEx.dir/logic/user.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/logic/user.cpp -o CMakeFiles/newFrameEx.dir/logic/user.cpp.s
 
 CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o: CMakeFiles/newFrameEx.dir/flags.make
-CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/userEng.cpp
+CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o: /home/wenheng/workspace/CppExcise/newFrameEx/logic/userEng.cpp
 CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o: CMakeFiles/newFrameEx.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o -MF CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o.d -o CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/userEng.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o -MF CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o.d -o CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o -c /home/wenheng/workspace/CppExcise/newFrameEx/logic/userEng.cpp
 
 CMakeFiles/newFrameEx.dir/logic/userEng.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrameEx.dir/logic/userEng.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/userEng.cpp > CMakeFiles/newFrameEx.dir/logic/userEng.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrameEx/logic/userEng.cpp > CMakeFiles/newFrameEx.dir/logic/userEng.cpp.i
 
 CMakeFiles/newFrameEx.dir/logic/userEng.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrameEx.dir/logic/userEng.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/userEng.cpp -o CMakeFiles/newFrameEx.dir/logic/userEng.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrameEx/logic/userEng.cpp -o CMakeFiles/newFrameEx.dir/logic/userEng.cpp.s
 
 # Object files for target newFrameEx
 newFrameEx_OBJECTS = \
-"CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o" \
-"CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o" \
-"CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o" \
-"CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o" \
 "CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o" \
-"CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o" \
 "CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o" \
 "CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o" \
 "CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o" \
 "CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o" \
-"CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o" \
-"CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o" \
-"CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o" \
-"CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o" \
+"CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o" \
+"CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o" \
 "CMakeFiles/newFrameEx.dir/main.cpp.o" \
 "CMakeFiles/newFrameEx.dir/logic/user.cpp.o" \
 "CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o"
@@ -330,26 +225,19 @@ newFrameEx_OBJECTS = \
 # External object files for target newFrameEx
 newFrameEx_EXTERNAL_OBJECTS =
 
-newFrameEx: CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o
-newFrameEx: CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o
-newFrameEx: CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o
-newFrameEx: CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o
 newFrameEx: CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.o
-newFrameEx: CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o
 newFrameEx: CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o
 newFrameEx: CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o
 newFrameEx: CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/CallBack.cpp.o
 newFrameEx: CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.o
-newFrameEx: CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o
-newFrameEx: CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o
-newFrameEx: CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o
-newFrameEx: CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o
+newFrameEx: CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o
+newFrameEx: CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o
 newFrameEx: CMakeFiles/newFrameEx.dir/main.cpp.o
 newFrameEx: CMakeFiles/newFrameEx.dir/logic/user.cpp.o
 newFrameEx: CMakeFiles/newFrameEx.dir/logic/userEng.cpp.o
 newFrameEx: CMakeFiles/newFrameEx.dir/build.make
 newFrameEx: CMakeFiles/newFrameEx.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable newFrameEx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable newFrameEx"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/newFrameEx.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -361,6 +249,6 @@ CMakeFiles/newFrameEx.dir/clean:
 .PHONY : CMakeFiles/newFrameEx.dir/clean
 
 CMakeFiles/newFrameEx.dir/depend:
-	cd /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wenheng/Desktop/workspace/CppExcise/newFrameEx /home/wenheng/Desktop/workspace/CppExcise/newFrameEx /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles/newFrameEx.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wenheng/workspace/CppExcise/newFrameEx/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wenheng/workspace/CppExcise/newFrameEx /home/wenheng/workspace/CppExcise/newFrameEx /home/wenheng/workspace/CppExcise/newFrameEx/build /home/wenheng/workspace/CppExcise/newFrameEx/build /home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles/newFrameEx.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/newFrameEx.dir/depend
 

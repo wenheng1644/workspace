@@ -1,4 +1,4 @@
-# Install script for directory: /home/wenheng/Desktop/workspace/CppExcise/newFrameEx
+# Install script for directory: /home/wenheng/workspace/CppExcise/newFrameEx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wenheng/workspace/CppExcise/newFrameEx/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

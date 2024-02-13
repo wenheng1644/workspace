@@ -6,17 +6,16 @@
 
 #include "boost/noncopyable.hpp"
 
-#include "chatcmd/chatcmd.pb.h"
+#include "chatcmd/chatcmdhead.h"
 
-#include "net/resolveManager.h"
+#include "resolveManager.h"
 
-#include "net/netMsg.h"
+#include "netMsg.h"
 
 
 #define MAKEPROTO(TYPE, SUBTYPE) ((SUBTYPE) | (TYPE << 8))
 
 #define CHATSYS 1
-#define CHATSYS_CHAT 1
 
 #define PROTO_CHATSYS_SYS MAKEPROTO(CHATSYS, CHATSYS_CHAT)
 

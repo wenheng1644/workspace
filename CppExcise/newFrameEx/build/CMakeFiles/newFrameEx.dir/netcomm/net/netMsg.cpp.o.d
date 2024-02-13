@@ -1,7 +1,7 @@
 CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o: \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.cpp \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.cpp \
  /usr/include/stdc-predef.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -170,7 +170,7 @@ CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/../netcommhead.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/net/../netcommhead.h \
  /usr/local/include/google/protobuf/message.h /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
@@ -268,23 +268,23 @@ CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o: \
  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
  /usr/include/c++/13/version \
  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
  /usr/local/include/boost/config/detail/select_platform_config.hpp \
  /usr/local/include/boost/config/platform/linux.hpp \
  /usr/local/include/boost/config/detail/posix_features.hpp \
  /usr/local/include/boost/config/detail/suffix.hpp \
  /usr/local/include/boost/config/helper_macros.hpp \
  /usr/local/include/boost/config/detail/cxx_composite.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/../chatcmd/chatcmd.pb.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/net/../chatcmd/chatcmdhead.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/net/../chatcmd/chatcmd.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/13/cassert \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/../net/resolveManager.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/../net/../chatcmd/chatcmd.pb.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/../net/netMsg.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/../net/netMsg.h
+ /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.h \
+ /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.h

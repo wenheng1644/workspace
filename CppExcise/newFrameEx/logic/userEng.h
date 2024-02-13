@@ -1,8 +1,8 @@
 #ifndef USERENG
 #define USERENG
 
-#include "../comm/commhead.h"
-#include "../comm/singleton.h"
+#include "commhead.h"
+#include "singleton.h"
 #include "user.h"
 
 #include "map"

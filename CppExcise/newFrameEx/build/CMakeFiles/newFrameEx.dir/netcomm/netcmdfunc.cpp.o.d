@@ -1,7 +1,7 @@
 CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/netcmdfunc.cpp \
  /usr/include/stdc-predef.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/netcommhead.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/netcommhead.h \
  /usr/local/include/google/protobuf/message.h /usr/include/c++/13/iosfwd \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -266,34 +266,33 @@ CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: \
  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
  /usr/include/c++/13/version \
  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
  /usr/local/include/boost/config/detail/select_platform_config.hpp \
  /usr/local/include/boost/config/platform/linux.hpp \
  /usr/local/include/boost/config/detail/posix_features.hpp \
  /usr/local/include/boost/config/detail/suffix.hpp \
  /usr/local/include/boost/config/helper_macros.hpp \
  /usr/local/include/boost/config/detail/cxx_composite.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmdhead.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/13/cassert \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/resolveManager.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/../chatcmd/chatcmd.pb.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/../netcommhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/net/netMsg.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/user.h \
+ /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.h \
+ /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/../logic/user.h \
  /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
  /usr/include/c++/13/bits/deque.tcc \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/../netcomm/netcommhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/../comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/../comm/../netcomm/net/netMsg.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/../comm/../netcomm/net/resolveManager.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/../logic/../netcomm/netcommhead.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/commhead.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/../cmdcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/../cmdcomm/net/resolveManager.h \
  /usr/local/include/boost/uuid/uuid.hpp \
  /usr/local/include/boost/cstdint.hpp \
  /usr/local/include/boost/uuid/detail/config.hpp \
@@ -946,8 +945,8 @@ CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: \
  /usr/local/include/boost/format/parsing.hpp \
  /usr/local/include/boost/format/free_funcs.hpp \
  /usr/local/include/boost/format/detail/unset_macros.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/../server/TCPConnection.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/../server/commServer.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/../logic/../server/TCPConnection_logic.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/../logic/../server/commServer.h \
  /usr/local/include/boost/asio.hpp \
  /usr/local/include/boost/asio/any_completion_executor.hpp \
  /usr/local/include/boost/asio/detail/config.hpp \
@@ -1552,8 +1551,8 @@ CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.o: \
  /usr/local/include/boost/asio/writable_pipe.hpp \
  /usr/local/include/boost/asio/write_at.hpp \
  /usr/local/include/boost/asio/impl/write_at.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/../server/../comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/../logic/../server/../netcomm/net/resolveManager.h \
  /usr/local/include/boost/enable_shared_from_this.hpp \
  /usr/local/include/boost/smart_ptr/enable_shared_from_this.hpp \
- /usr/local/include/boost/smart_ptr/weak_ptr.hpp
+ /usr/local/include/boost/smart_ptr/weak_ptr.hpp \
+ /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPConnection.h \
+ /home/wenheng/workspace/CppExcise/commlib/TCP_comm/commServer.h

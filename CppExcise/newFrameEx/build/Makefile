@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wenheng/Desktop/workspace/CppExcise/newFrameEx
+CMAKE_SOURCE_DIR = /home/wenheng/workspace/CppExcise/newFrameEx
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build
+CMAKE_BINARY_DIR = /home/wenheng/workspace/CppExcise/newFrameEx/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles /home/wenheng/workspace/CppExcise/newFrameEx/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenheng/workspace/CppExcise/newFrameEx/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,102 +129,6 @@ newFrameEx/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/build
 .PHONY : newFrameEx/fast
 
-comm/TaskWork.o: comm/TaskWork.cpp.o
-.PHONY : comm/TaskWork.o
-
-# target to build an object file
-comm/TaskWork.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.o
-.PHONY : comm/TaskWork.cpp.o
-
-comm/TaskWork.i: comm/TaskWork.cpp.i
-.PHONY : comm/TaskWork.i
-
-# target to preprocess a source file
-comm/TaskWork.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.i
-.PHONY : comm/TaskWork.cpp.i
-
-comm/TaskWork.s: comm/TaskWork.cpp.s
-.PHONY : comm/TaskWork.s
-
-# target to generate assembly for a file
-comm/TaskWork.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/TaskWork.cpp.s
-.PHONY : comm/TaskWork.cpp.s
-
-comm/WorkRunner.o: comm/WorkRunner.cpp.o
-.PHONY : comm/WorkRunner.o
-
-# target to build an object file
-comm/WorkRunner.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.o
-.PHONY : comm/WorkRunner.cpp.o
-
-comm/WorkRunner.i: comm/WorkRunner.cpp.i
-.PHONY : comm/WorkRunner.i
-
-# target to preprocess a source file
-comm/WorkRunner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.i
-.PHONY : comm/WorkRunner.cpp.i
-
-comm/WorkRunner.s: comm/WorkRunner.cpp.s
-.PHONY : comm/WorkRunner.s
-
-# target to generate assembly for a file
-comm/WorkRunner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/WorkRunner.cpp.s
-.PHONY : comm/WorkRunner.cpp.s
-
-comm/commFunc.o: comm/commFunc.cpp.o
-.PHONY : comm/commFunc.o
-
-# target to build an object file
-comm/commFunc.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.o
-.PHONY : comm/commFunc.cpp.o
-
-comm/commFunc.i: comm/commFunc.cpp.i
-.PHONY : comm/commFunc.i
-
-# target to preprocess a source file
-comm/commFunc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.i
-.PHONY : comm/commFunc.cpp.i
-
-comm/commFunc.s: comm/commFunc.cpp.s
-.PHONY : comm/commFunc.s
-
-# target to generate assembly for a file
-comm/commFunc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commFunc.cpp.s
-.PHONY : comm/commFunc.cpp.s
-
-comm/commhead.o: comm/commhead.cpp.o
-.PHONY : comm/commhead.o
-
-# target to build an object file
-comm/commhead.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commhead.cpp.o
-.PHONY : comm/commhead.cpp.o
-
-comm/commhead.i: comm/commhead.cpp.i
-.PHONY : comm/commhead.i
-
-# target to preprocess a source file
-comm/commhead.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commhead.cpp.i
-.PHONY : comm/commhead.cpp.i
-
-comm/commhead.s: comm/commhead.cpp.s
-.PHONY : comm/commhead.s
-
-# target to generate assembly for a file
-comm/commhead.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/commhead.cpp.s
-.PHONY : comm/commhead.cpp.s
-
 comm/resourceManager.o: comm/resourceManager.cpp.o
 .PHONY : comm/resourceManager.o
 
@@ -248,30 +152,6 @@ comm/resourceManager.s: comm/resourceManager.cpp.s
 comm/resourceManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/resourceManager.cpp.s
 .PHONY : comm/resourceManager.cpp.s
-
-comm/singleton.o: comm/singleton.cpp.o
-.PHONY : comm/singleton.o
-
-# target to build an object file
-comm/singleton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/singleton.cpp.o
-.PHONY : comm/singleton.cpp.o
-
-comm/singleton.i: comm/singleton.cpp.i
-.PHONY : comm/singleton.i
-
-# target to preprocess a source file
-comm/singleton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/singleton.cpp.i
-.PHONY : comm/singleton.cpp.i
-
-comm/singleton.s: comm/singleton.cpp.s
-.PHONY : comm/singleton.s
-
-# target to generate assembly for a file
-comm/singleton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/comm/singleton.cpp.s
-.PHONY : comm/singleton.cpp.s
 
 logic/user.o: logic/user.cpp.o
 .PHONY : logic/user.o
@@ -417,54 +297,6 @@ netcomm/cmddispatch/DisPatcher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/cmddispatch/DisPatcher.cpp.s
 .PHONY : netcomm/cmddispatch/DisPatcher.cpp.s
 
-netcomm/net/netMsg.o: netcomm/net/netMsg.cpp.o
-.PHONY : netcomm/net/netMsg.o
-
-# target to build an object file
-netcomm/net/netMsg.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.o
-.PHONY : netcomm/net/netMsg.cpp.o
-
-netcomm/net/netMsg.i: netcomm/net/netMsg.cpp.i
-.PHONY : netcomm/net/netMsg.i
-
-# target to preprocess a source file
-netcomm/net/netMsg.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.i
-.PHONY : netcomm/net/netMsg.cpp.i
-
-netcomm/net/netMsg.s: netcomm/net/netMsg.cpp.s
-.PHONY : netcomm/net/netMsg.s
-
-# target to generate assembly for a file
-netcomm/net/netMsg.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/netMsg.cpp.s
-.PHONY : netcomm/net/netMsg.cpp.s
-
-netcomm/net/resolveManager.o: netcomm/net/resolveManager.cpp.o
-.PHONY : netcomm/net/resolveManager.o
-
-# target to build an object file
-netcomm/net/resolveManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.o
-.PHONY : netcomm/net/resolveManager.cpp.o
-
-netcomm/net/resolveManager.i: netcomm/net/resolveManager.cpp.i
-.PHONY : netcomm/net/resolveManager.i
-
-# target to preprocess a source file
-netcomm/net/resolveManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.i
-.PHONY : netcomm/net/resolveManager.cpp.i
-
-netcomm/net/resolveManager.s: netcomm/net/resolveManager.cpp.s
-.PHONY : netcomm/net/resolveManager.s
-
-# target to generate assembly for a file
-netcomm/net/resolveManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/net/resolveManager.cpp.s
-.PHONY : netcomm/net/resolveManager.cpp.s
-
 netcomm/netcmdfunc.o: netcomm/netcmdfunc.cpp.o
 .PHONY : netcomm/netcmdfunc.o
 
@@ -489,53 +321,53 @@ netcomm/netcmdfunc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/netcomm/netcmdfunc.cpp.s
 .PHONY : netcomm/netcmdfunc.cpp.s
 
-server/TCPConnection.o: server/TCPConnection.cpp.o
-.PHONY : server/TCPConnection.o
+server/TCPConnection_logic.o: server/TCPConnection_logic.cpp.o
+.PHONY : server/TCPConnection_logic.o
 
 # target to build an object file
-server/TCPConnection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.o
-.PHONY : server/TCPConnection.cpp.o
+server/TCPConnection_logic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.o
+.PHONY : server/TCPConnection_logic.cpp.o
 
-server/TCPConnection.i: server/TCPConnection.cpp.i
-.PHONY : server/TCPConnection.i
+server/TCPConnection_logic.i: server/TCPConnection_logic.cpp.i
+.PHONY : server/TCPConnection_logic.i
 
 # target to preprocess a source file
-server/TCPConnection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.i
-.PHONY : server/TCPConnection.cpp.i
+server/TCPConnection_logic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.i
+.PHONY : server/TCPConnection_logic.cpp.i
 
-server/TCPConnection.s: server/TCPConnection.cpp.s
-.PHONY : server/TCPConnection.s
+server/TCPConnection_logic.s: server/TCPConnection_logic.cpp.s
+.PHONY : server/TCPConnection_logic.s
 
 # target to generate assembly for a file
-server/TCPConnection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPConnection.cpp.s
-.PHONY : server/TCPConnection.cpp.s
+server/TCPConnection_logic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPConnection_logic.cpp.s
+.PHONY : server/TCPConnection_logic.cpp.s
 
-server/TCPServer.o: server/TCPServer.cpp.o
-.PHONY : server/TCPServer.o
+server/TCPServer_logic.o: server/TCPServer_logic.cpp.o
+.PHONY : server/TCPServer_logic.o
 
 # target to build an object file
-server/TCPServer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.o
-.PHONY : server/TCPServer.cpp.o
+server/TCPServer_logic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.o
+.PHONY : server/TCPServer_logic.cpp.o
 
-server/TCPServer.i: server/TCPServer.cpp.i
-.PHONY : server/TCPServer.i
+server/TCPServer_logic.i: server/TCPServer_logic.cpp.i
+.PHONY : server/TCPServer_logic.i
 
 # target to preprocess a source file
-server/TCPServer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.i
-.PHONY : server/TCPServer.cpp.i
+server/TCPServer_logic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.i
+.PHONY : server/TCPServer_logic.cpp.i
 
-server/TCPServer.s: server/TCPServer.cpp.s
-.PHONY : server/TCPServer.s
+server/TCPServer_logic.s: server/TCPServer_logic.cpp.s
+.PHONY : server/TCPServer_logic.s
 
 # target to generate assembly for a file
-server/TCPServer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPServer.cpp.s
-.PHONY : server/TCPServer.cpp.s
+server/TCPServer_logic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrameEx.dir/build.make CMakeFiles/newFrameEx.dir/server/TCPServer_logic.cpp.s
+.PHONY : server/TCPServer_logic.cpp.s
 
 # Help Target
 help:
@@ -546,24 +378,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... newFrameEx"
-	@echo "... comm/TaskWork.o"
-	@echo "... comm/TaskWork.i"
-	@echo "... comm/TaskWork.s"
-	@echo "... comm/WorkRunner.o"
-	@echo "... comm/WorkRunner.i"
-	@echo "... comm/WorkRunner.s"
-	@echo "... comm/commFunc.o"
-	@echo "... comm/commFunc.i"
-	@echo "... comm/commFunc.s"
-	@echo "... comm/commhead.o"
-	@echo "... comm/commhead.i"
-	@echo "... comm/commhead.s"
 	@echo "... comm/resourceManager.o"
 	@echo "... comm/resourceManager.i"
 	@echo "... comm/resourceManager.s"
-	@echo "... comm/singleton.o"
-	@echo "... comm/singleton.i"
-	@echo "... comm/singleton.s"
 	@echo "... logic/user.o"
 	@echo "... logic/user.i"
 	@echo "... logic/user.s"
@@ -582,21 +399,15 @@ help:
 	@echo "... netcomm/cmddispatch/DisPatcher.o"
 	@echo "... netcomm/cmddispatch/DisPatcher.i"
 	@echo "... netcomm/cmddispatch/DisPatcher.s"
-	@echo "... netcomm/net/netMsg.o"
-	@echo "... netcomm/net/netMsg.i"
-	@echo "... netcomm/net/netMsg.s"
-	@echo "... netcomm/net/resolveManager.o"
-	@echo "... netcomm/net/resolveManager.i"
-	@echo "... netcomm/net/resolveManager.s"
 	@echo "... netcomm/netcmdfunc.o"
 	@echo "... netcomm/netcmdfunc.i"
 	@echo "... netcomm/netcmdfunc.s"
-	@echo "... server/TCPConnection.o"
-	@echo "... server/TCPConnection.i"
-	@echo "... server/TCPConnection.s"
-	@echo "... server/TCPServer.o"
-	@echo "... server/TCPServer.i"
-	@echo "... server/TCPServer.s"
+	@echo "... server/TCPConnection_logic.o"
+	@echo "... server/TCPConnection_logic.i"
+	@echo "... server/TCPConnection_logic.s"
+	@echo "... server/TCPServer_logic.o"
+	@echo "... server/TCPServer_logic.i"
+	@echo "... server/TCPServer_logic.s"
 .PHONY : help
 
 

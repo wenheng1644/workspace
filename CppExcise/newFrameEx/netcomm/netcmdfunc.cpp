@@ -22,5 +22,5 @@ void onchatMessageCmd(const cmd::chatMessageCmd *msg, user_ptr user)
         return;
     }
     user->onChatContentMessage(msg);
-    // printf("onchatMessageCmd | name = %s, content = %s, status = %d\n", msg->GetTypeName().c_str(), msg->content().c_str(), msg->status());
+    printf("onchatMessageCmd | name = %s, content = %s, status = %d\n", msg->GetTypeName().c_str(), msg->content().c_str(), msg->status());
 }

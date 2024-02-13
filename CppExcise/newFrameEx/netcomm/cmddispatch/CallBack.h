@@ -8,7 +8,7 @@
 #include "functional"
 #include "../netcommhead.h"
 
-#include "../logic/user.h"
+#include "../../logic/user.h"
 // typedef std::shared_ptr<google::protobuf::Message> Message_Ptr;
 class CallBack {
 public:

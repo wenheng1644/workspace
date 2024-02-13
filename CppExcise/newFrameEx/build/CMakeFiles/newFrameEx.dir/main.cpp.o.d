@@ -1,5 +1,5 @@
 CMakeFiles/newFrameEx.dir/main.cpp.o: \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/main.cpp \
+ /home/wenheng/workspace/CppExcise/newFrameEx/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -150,8 +150,8 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/commhead.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/../cmdcomm/net/netMsg.h \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -171,127 +171,29 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/../netcommhead.h \
- /usr/local/include/google/protobuf/message.h /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /usr/local/include/google/protobuf/stubs/casts.h \
- /usr/local/include/google/protobuf/stubs/common.h \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/set \
- /usr/include/c++/13/bits/stl_set.h \
- /usr/include/c++/13/bits/stl_multiset.h \
- /usr/local/include/google/protobuf/stubs/macros.h \
- /usr/local/include/google/protobuf/stubs/platform_macros.h \
- /usr/local/include/google/protobuf/stubs/port.h /usr/include/assert.h \
- /usr/include/c++/13/cstdint /usr/include/c++/13/stdlib.h \
- /usr/local/include/google/protobuf/port_def.inc /usr/include/byteswap.h \
- /usr/local/include/google/protobuf/port_undef.inc \
- /usr/local/include/google/protobuf/stubs/stringpiece.h \
- /usr/include/c++/13/limits \
- /usr/local/include/google/protobuf/stubs/hash.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h \
- /usr/local/include/google/protobuf/arena.h /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h \
- /usr/local/include/google/protobuf/arena_impl.h \
- /usr/include/c++/13/atomic \
- /usr/local/include/google/protobuf/stubs/logging.h \
- /usr/local/include/google/protobuf/stubs/status.h \
- /usr/local/include/google/protobuf/arenaz_sampler.h \
- /usr/local/include/google/protobuf/port.h \
- /usr/local/include/google/protobuf/descriptor.h \
- /usr/local/include/google/protobuf/stubs/mutex.h \
- /usr/include/c++/13/mutex /usr/include/c++/13/bits/chrono.h \
- /usr/include/c++/13/ratio /usr/include/c++/13/ctime \
- /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h \
- /usr/local/include/google/protobuf/stubs/once.h \
- /usr/local/include/google/protobuf/generated_message_reflection.h \
- /usr/local/include/google/protobuf/generated_enum_reflection.h \
- /usr/local/include/google/protobuf/stubs/strutil.h \
- /usr/local/include/google/protobuf/generated_enum_util.h \
- /usr/local/include/google/protobuf/message_lite.h \
- /usr/include/c++/13/climits \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/local/include/google/protobuf/io/coded_stream.h \
- /usr/local/include/google/protobuf/explicitly_constructed.h \
- /usr/local/include/google/protobuf/metadata_lite.h \
- /usr/local/include/google/protobuf/unknown_field_set.h \
- /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
- /usr/local/include/google/protobuf/stubs/callback.h \
- /usr/local/include/google/protobuf/io/zero_copy_stream.h \
- /usr/local/include/google/protobuf/stubs/stl_util.h \
- /usr/local/include/google/protobuf/parse_context.h \
- /usr/local/include/google/protobuf/arenastring.h \
- /usr/local/include/google/protobuf/endian.h \
- /usr/local/include/google/protobuf/implicit_weak_message.h \
- /usr/local/include/google/protobuf/repeated_field.h \
- /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /usr/local/include/google/protobuf/repeated_ptr_field.h \
- /usr/local/include/google/protobuf/inlined_string_field.h \
- /usr/local/include/google/protobuf/wire_format_lite.h \
- /usr/local/include/google/protobuf/generated_message_util.h \
- /usr/local/include/google/protobuf/any.h \
- /usr/local/include/google/protobuf/has_bits.h \
- /usr/local/include/google/protobuf/map.h /usr/include/c++/13/functional \
- /usr/include/c++/13/bits/std_function.h /usr/include/c++/13/array \
- /usr/include/c++/13/compare \
- /usr/local/include/google/protobuf/map_type_handler.h \
- /usr/local/include/boost/noncopyable.hpp \
- /usr/local/include/boost/core/noncopyable.hpp \
- /usr/local/include/boost/config.hpp \
+ /home/wenheng/workspace/CppExcise/commlib/comm/../cmdcomm/net/resolveManager.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/../cmdcomm/net/netMsg.h \
+ /usr/include/assert.h /usr/local/include/boost/uuid/uuid.hpp \
+ /usr/local/include/boost/cstdint.hpp /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
  /usr/local/include/boost/config/detail/select_compiler_config.hpp \
  /usr/local/include/boost/config/compiler/gcc.hpp \
  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
  /usr/include/c++/13/version \
  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
  /usr/local/include/boost/config/detail/select_platform_config.hpp \
  /usr/local/include/boost/config/platform/linux.hpp \
  /usr/local/include/boost/config/detail/posix_features.hpp \
  /usr/local/include/boost/config/detail/suffix.hpp \
  /usr/local/include/boost/config/helper_macros.hpp \
  /usr/local/include/boost/config/detail/cxx_composite.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/../chatcmd/chatcmd.pb.h \
- /usr/local/include/google/protobuf/extension_set.h \
- /usr/include/c++/13/cassert \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/../net/resolveManager.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/../net/../chatcmd/chatcmd.pb.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/../net/netMsg.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/../net/netMsg.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/net/resolveManager.h \
- /usr/local/include/boost/uuid/uuid.hpp \
- /usr/local/include/boost/cstdint.hpp \
  /usr/local/include/boost/uuid/detail/config.hpp \
  /usr/local/include/boost/type_traits/is_pod.hpp \
  /usr/local/include/boost/type_traits/detail/config.hpp \
@@ -315,12 +217,20 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
+ /usr/include/c++/13/stdlib.h \
  /usr/local/include/boost/uuid/uuid_generators.hpp \
  /usr/local/include/boost/uuid/nil_generator.hpp \
  /usr/local/include/boost/uuid/string_generator.hpp \
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/local/include/boost/throw_exception.hpp \
  /usr/local/include/boost/exception/exception.hpp \
  /usr/local/include/boost/assert/source_location.hpp \
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
  /usr/local/include/boost/uuid/name_generator.hpp \
  /usr/local/include/boost/uuid/name_generator_sha1.hpp \
  /usr/local/include/boost/uuid/basic_name_generator.hpp \
@@ -339,8 +249,17 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/local/include/boost/core/enable_if.hpp \
  /usr/local/include/boost/random/mersenne_twister.hpp \
  /usr/local/include/boost/integer/integer_mask.hpp \
- /usr/local/include/boost/integer_fwd.hpp \
- /usr/local/include/boost/limits.hpp /usr/local/include/boost/integer.hpp \
+ /usr/local/include/boost/integer_fwd.hpp /usr/include/c++/13/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/local/include/boost/limits.hpp /usr/include/c++/13/limits \
+ /usr/local/include/boost/integer.hpp \
  /usr/local/include/boost/integer_traits.hpp \
  /usr/local/include/boost/random/detail/config.hpp \
  /usr/local/include/boost/random/detail/ptr_helper.hpp \
@@ -393,6 +312,9 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/local/include/boost/random/detail/generator_bits.hpp \
  /usr/local/include/boost/random/detail/generator_seed_seq.hpp \
  /usr/local/include/boost/random/detail/polynomial.hpp \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
  /usr/local/include/boost/random/uniform_int.hpp \
  /usr/local/include/boost/random/uniform_int_distribution.hpp \
  /usr/local/include/boost/random/detail/operators.hpp \
@@ -772,6 +694,7 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/local/include/boost/predef/detail/test.h \
  /usr/local/include/boost/predef/library/c/_prefix.h \
  /usr/local/include/boost/predef/detail/_cassert.h \
+ /usr/include/c++/13/cassert \
  /usr/local/include/boost/predef/library/c/gnu.h \
  /usr/local/include/boost/predef/os/bsd/open.h \
  /usr/local/include/boost/predef/os/bsd.h \
@@ -832,18 +755,29 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/local/include/boost/mp11/bind.hpp \
  /usr/local/include/boost/container_hash/detail/hash_integral.hpp \
  /usr/local/include/boost/container_hash/detail/hash_mix.hpp \
+ /usr/include/c++/13/cstdint \
  /usr/local/include/boost/container_hash/detail/hash_tuple_like.hpp \
  /usr/local/include/boost/container_hash/is_tuple_like.hpp \
  /usr/local/include/boost/container_hash/detail/hash_range.hpp \
  /usr/local/include/boost/container_hash/detail/mulx.hpp \
  /usr/include/c++/13/complex /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/typeindex \
- /usr/include/c++/13/optional /usr/include/c++/13/variant \
+ /usr/include/c++/13/optional \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/variant /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/array \
+ /usr/include/c++/13/compare \
  /usr/local/include/boost/uuid/uuid_serialize.hpp \
  /usr/local/include/boost/uuid/uuid_io.hpp \
  /usr/local/include/boost/io/ios_state.hpp \
  /usr/local/include/boost/io_fwd.hpp /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h \
+ /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
@@ -942,17 +876,79 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/local/include/boost/format/parsing.hpp \
  /usr/local/include/boost/format/free_funcs.hpp \
  /usr/local/include/boost/format/detail/unset_macros.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/resourceManager.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/DisPatcher.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/CallBack.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../netcomm/cmddispatch/../netcommhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/user.h \
+ /usr/include/c++/13/mutex /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/resourceManager.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/DisPatcher.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/CallBack.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/../netcommhead.h \
+ /usr/local/include/google/protobuf/message.h \
+ /usr/local/include/google/protobuf/stubs/casts.h \
+ /usr/local/include/google/protobuf/stubs/common.h \
+ /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
+ /usr/local/include/google/protobuf/stubs/macros.h \
+ /usr/local/include/google/protobuf/stubs/platform_macros.h \
+ /usr/local/include/google/protobuf/stubs/port.h \
+ /usr/local/include/google/protobuf/port_def.inc /usr/include/byteswap.h \
+ /usr/local/include/google/protobuf/port_undef.inc \
+ /usr/local/include/google/protobuf/stubs/stringpiece.h \
+ /usr/local/include/google/protobuf/stubs/hash.h \
+ /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h \
+ /usr/local/include/google/protobuf/arena.h \
+ /usr/local/include/google/protobuf/arena_impl.h \
+ /usr/include/c++/13/atomic \
+ /usr/local/include/google/protobuf/stubs/logging.h \
+ /usr/local/include/google/protobuf/stubs/status.h \
+ /usr/local/include/google/protobuf/arenaz_sampler.h \
+ /usr/local/include/google/protobuf/port.h \
+ /usr/local/include/google/protobuf/descriptor.h \
+ /usr/local/include/google/protobuf/stubs/mutex.h \
+ /usr/local/include/google/protobuf/stubs/once.h \
+ /usr/local/include/google/protobuf/generated_message_reflection.h \
+ /usr/local/include/google/protobuf/generated_enum_reflection.h \
+ /usr/local/include/google/protobuf/stubs/strutil.h \
+ /usr/local/include/google/protobuf/generated_enum_util.h \
+ /usr/local/include/google/protobuf/message_lite.h \
+ /usr/local/include/google/protobuf/io/coded_stream.h \
+ /usr/local/include/google/protobuf/explicitly_constructed.h \
+ /usr/local/include/google/protobuf/metadata_lite.h \
+ /usr/local/include/google/protobuf/unknown_field_set.h \
+ /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
+ /usr/local/include/google/protobuf/stubs/callback.h \
+ /usr/local/include/google/protobuf/io/zero_copy_stream.h \
+ /usr/local/include/google/protobuf/stubs/stl_util.h \
+ /usr/local/include/google/protobuf/parse_context.h \
+ /usr/local/include/google/protobuf/arenastring.h \
+ /usr/local/include/google/protobuf/endian.h \
+ /usr/local/include/google/protobuf/implicit_weak_message.h \
+ /usr/local/include/google/protobuf/repeated_field.h \
+ /usr/local/include/google/protobuf/repeated_ptr_field.h \
+ /usr/local/include/google/protobuf/inlined_string_field.h \
+ /usr/local/include/google/protobuf/wire_format_lite.h \
+ /usr/local/include/google/protobuf/generated_message_util.h \
+ /usr/local/include/google/protobuf/any.h \
+ /usr/local/include/google/protobuf/has_bits.h \
+ /usr/local/include/google/protobuf/map.h \
+ /usr/local/include/google/protobuf/map_type_handler.h \
+ /usr/local/include/boost/noncopyable.hpp \
+ /usr/local/include/boost/core/noncopyable.hpp \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/../chatcmd/chatcmdhead.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/../chatcmd/chatcmd.pb.h \
+ /usr/local/include/google/protobuf/extension_set.h \
+ /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.h \
+ /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/../../logic/user.h \
  /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
  /usr/include/c++/13/bits/deque.tcc \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../netcomm/netcommhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/TCPConnection.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/commServer.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/../../logic/../netcomm/netcommhead.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/../../logic/../server/TCPConnection_logic.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../comm/../netcomm/cmddispatch/../../logic/../server/commServer.h \
  /usr/local/include/boost/asio.hpp \
  /usr/local/include/boost/asio/any_completion_executor.hpp \
  /usr/local/include/boost/asio/detail/config.hpp \
@@ -1557,15 +1553,16 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/local/include/boost/asio/writable_pipe.hpp \
  /usr/local/include/boost/asio/write_at.hpp \
  /usr/local/include/boost/asio/impl/write_at.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/../comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../logic/../server/../netcomm/net/resolveManager.h \
  /usr/local/include/boost/enable_shared_from_this.hpp \
  /usr/local/include/boost/smart_ptr/enable_shared_from_this.hpp \
  /usr/local/include/boost/smart_ptr/weak_ptr.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/./comm/../comm/singleton.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/WorkRunner.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/comm/../server/commServer.h \
+ /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPConnection.h \
+ /home/wenheng/workspace/CppExcise/commlib/TCP_comm/commServer.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/./comm/../netcomm/netcommhead.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/singleton.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/WorkRunner.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/commhead.h \
+ /home/wenheng/workspace/CppExcise/commlib/comm/../TCP_comm/commServer.h \
  /usr/local/include/boost/thread.hpp \
  /usr/local/include/boost/thread/thread.hpp \
  /usr/local/include/boost/thread/thread_only.hpp \
@@ -1970,12 +1967,13 @@ CMakeFiles/newFrameEx.dir/main.cpp.o: \
  /usr/local/include/boost/type_traits/is_fundamental.hpp \
  /usr/local/include/boost/thread/detail/atomic_undef_macros.hpp \
  /usr/local/include/boost/thread/detail/atomic_redef_macros.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPServer.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/commServer.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/TCPConnection.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/server/../logic/user.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/userEng.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/../comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/../comm/singleton.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/logic/user.h
+ /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPServer_logic.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/server/commServer.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/server/TCPConnection_logic.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/server/../logic/user.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/server/../../commlib/TCP_comm/TCPServer.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/server/../../commlib/TCP_comm/commServer.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/server/../../commlib/TCP_comm/TCPConnection.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/server/../../commlib/TCP_comm/../comm/commhead.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/logic/userEng.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/logic/user.h

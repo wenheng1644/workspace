@@ -1,7 +1,7 @@
 CMakeFiles/newFrameEx.dir/netcomm/chatcmd/chatcmd.pb.cc.o: \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.cc \
  /usr/include/stdc-predef.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.h \
+ /home/wenheng/workspace/CppExcise/newFrameEx/netcomm/chatcmd/chatcmd.pb.h \
  /usr/include/c++/13/limits \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

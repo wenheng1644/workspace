@@ -5,8 +5,9 @@
 #include "deque"
 
 #include "../netcomm/netcommhead.h"
-#include "../comm/commhead.h"
-#include "../server/TCPConnection.h"
+#include "commhead.h"
+// #include "../netcomm/nethead.h"
+#include "../server/TCPConnection_logic.h"
 
 enum Sex
 {
@@ -27,7 +28,7 @@ class user : public std::enable_shared_from_this<user>
 {
 public:
     user() = default;
-    user(const userComm& comm, TCPConnection_ptr conn);
+    user(const userComm& comm, TCPConnectionLogic_ptr conn);
 
     virtual ~user() = default;
 
@@ -50,7 +51,7 @@ protected:
     std::mutex m_msgListMutex;          //消息队列锁
     std::deque<netMsg_ptr> m_msgLists;  //待处理消息队列
 
-    std::weak_ptr<TCPConnection> m_wTcpConn;    //句柄
+    std::weak_ptr<TCPConnection_logic> m_wTcpConn;    //句柄
 
 private:
 };

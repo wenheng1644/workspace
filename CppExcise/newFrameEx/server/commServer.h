@@ -3,8 +3,8 @@
 #define COMMSERVER
 
 #include "boost/asio.hpp"
-#include "../comm/commhead.h"
-#include "../netcomm/net/resolveManager.h"
+#include "commhead.h"
+#include "resolveManager.h"
 
 typedef boost::asio::io_service         ioserver_tp;
 typedef boost::asio::ip::address        address_tp;

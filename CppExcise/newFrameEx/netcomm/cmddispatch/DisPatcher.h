@@ -9,8 +9,8 @@
 
 #include "CallBack.h"
 
-#include "../netcommhead.h"
-#include "../comm/singleton.h"
+#include "../netcomm/netcommhead.h"
+#include "singleton.h"
 
 class DisPatcher : public boost::noncopyable, public Singleton<DisPatcher> {
 public:
