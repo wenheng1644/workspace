@@ -28,7 +28,7 @@ void TCP_GConnection::send(netMsg_ptr& msg)
 address_tp TCP_GConnection::getaddr()
 {
     auto ed = m_sockect.local_endpoint();
-    return ed;
+    return ed.address();
 }
 
 void TCP_GConnection::on_handleSend(ec_code_tp ec, size_t bytes)

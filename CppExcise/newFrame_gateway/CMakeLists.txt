@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.25)
 project(newFrame_gateway)
 set(CXX_STANDARD 17)
 
-set(TCPCOMLIB_DIR /home/wenheng/workspace/CppExcise/commlib)
+set(TCPCOMLIB_DIR /home/wenheng/Desktop/workspace/CppExcise/commlib)
 
 include_directories(
                     ${TCPCOMLIB_DIR}/cmdcomm
@@ -26,6 +26,6 @@ add_executable(newFrame_gateway ${MAIN_DIR}
                                 ${TCP_GATEWAY}
                                 ${LOGIC_DIR})
 
-target_link_libraries(newFrame_gateway  protobuf commlib)
+target_link_libraries(newFrame_gateway   pthread  protobuf)
 
-target_link_libraries(newFrame_gateway pthread boost_thread)
+target_link_libraries(newFrame_gateway  commlib boost_thread)

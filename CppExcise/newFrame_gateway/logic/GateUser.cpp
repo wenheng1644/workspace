@@ -1,6 +1,6 @@
 #include "GateUser.h"
 
-gateUser::gateUser(const userComm &comm) : m_comm(comm)
+gateUser::gateUser(const userComm &comm) : m_comm(comm), m_onlyid(boost::uuids::random_generator()())
 {
 }
 
@@ -68,6 +68,6 @@ void gateUser::on_handleConnect(netMsg_ptr msg)
     }
 
     auto ed = gateConn->getaddr();
-    logicConn->connect(ed.to_v4().to_string(), 9999);
+    logicConn->connect(ed, 9999);
     
 }

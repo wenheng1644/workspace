@@ -22,7 +22,7 @@ void TCP_LogicConnection::send(netMsg_ptr &msg)
         boost::asio::placeholders::error, boost::asio::placeholders::bytes_transferred));
 }
 
-void TCP_LogicConnection::connect(address_tp &add, u_char port)
+void TCP_LogicConnection::connect(address_tp &add, u_short port)
 {
     endpoint_tp ed(add, port);
     m_sockect.async_connect(ed, std::bind(&TCP_LogicConnection::on_handleConnection, shared_from_this(), boost::asio::placeholders::error));

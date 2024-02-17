@@ -19,7 +19,7 @@ public:
 
     void send(netMsg_ptr& msg) override;
 
-    void connect(address_tp& add, u_char port);
+    void connect(address_tp& add, u_short port);
 
     std::weak_ptr<gateUser> m_target;
 

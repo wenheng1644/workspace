@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wenheng/workspace/CppExcise/newFrame_gateway
+CMAKE_SOURCE_DIR = /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wenheng/workspace/CppExcise/newFrame_gateway/build
+CMAKE_BINARY_DIR = /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles /home/wenheng/workspace/CppExcise/newFrame_gateway/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,6 +152,30 @@ TCP_gateway/TCP_GConnection.s: TCP_gateway/TCP_GConnection.cpp.s
 TCP_gateway/TCP_GConnection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrame_gateway.dir/build.make CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.s
 .PHONY : TCP_gateway/TCP_GConnection.cpp.s
+
+TCP_gateway/TCP_GServer.o: TCP_gateway/TCP_GServer.cpp.o
+.PHONY : TCP_gateway/TCP_GServer.o
+
+# target to build an object file
+TCP_gateway/TCP_GServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrame_gateway.dir/build.make CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o
+.PHONY : TCP_gateway/TCP_GServer.cpp.o
+
+TCP_gateway/TCP_GServer.i: TCP_gateway/TCP_GServer.cpp.i
+.PHONY : TCP_gateway/TCP_GServer.i
+
+# target to preprocess a source file
+TCP_gateway/TCP_GServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrame_gateway.dir/build.make CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.i
+.PHONY : TCP_gateway/TCP_GServer.cpp.i
+
+TCP_gateway/TCP_GServer.s: TCP_gateway/TCP_GServer.cpp.s
+.PHONY : TCP_gateway/TCP_GServer.s
+
+# target to generate assembly for a file
+TCP_gateway/TCP_GServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrame_gateway.dir/build.make CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.s
+.PHONY : TCP_gateway/TCP_GServer.cpp.s
 
 TCP_gateway/TCP_LogicConnection.o: TCP_gateway/TCP_LogicConnection.cpp.o
 .PHONY : TCP_gateway/TCP_LogicConnection.o
@@ -225,6 +249,30 @@ logic/GateUser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrame_gateway.dir/build.make CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.s
 .PHONY : logic/GateUser.cpp.s
 
+logic/GateUserEng.o: logic/GateUserEng.cpp.o
+.PHONY : logic/GateUserEng.o
+
+# target to build an object file
+logic/GateUserEng.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrame_gateway.dir/build.make CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o
+.PHONY : logic/GateUserEng.cpp.o
+
+logic/GateUserEng.i: logic/GateUserEng.cpp.i
+.PHONY : logic/GateUserEng.i
+
+# target to preprocess a source file
+logic/GateUserEng.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrame_gateway.dir/build.make CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.i
+.PHONY : logic/GateUserEng.cpp.i
+
+logic/GateUserEng.s: logic/GateUserEng.cpp.s
+.PHONY : logic/GateUserEng.s
+
+# target to generate assembly for a file
+logic/GateUserEng.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/newFrame_gateway.dir/build.make CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.s
+.PHONY : logic/GateUserEng.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -261,6 +309,9 @@ help:
 	@echo "... TCP_gateway/TCP_GConnection.o"
 	@echo "... TCP_gateway/TCP_GConnection.i"
 	@echo "... TCP_gateway/TCP_GConnection.s"
+	@echo "... TCP_gateway/TCP_GServer.o"
+	@echo "... TCP_gateway/TCP_GServer.i"
+	@echo "... TCP_gateway/TCP_GServer.s"
 	@echo "... TCP_gateway/TCP_LogicConnection.o"
 	@echo "... TCP_gateway/TCP_LogicConnection.i"
 	@echo "... TCP_gateway/TCP_LogicConnection.s"
@@ -270,6 +321,9 @@ help:
 	@echo "... logic/GateUser.o"
 	@echo "... logic/GateUser.i"
 	@echo "... logic/GateUser.s"
+	@echo "... logic/GateUserEng.o"
+	@echo "... logic/GateUserEng.i"
+	@echo "... logic/GateUserEng.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
