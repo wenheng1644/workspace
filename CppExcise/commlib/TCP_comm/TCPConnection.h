@@ -8,8 +8,6 @@
 
 #include "vector"
 
-class user;
-
 class TCPConnection
 {
 
