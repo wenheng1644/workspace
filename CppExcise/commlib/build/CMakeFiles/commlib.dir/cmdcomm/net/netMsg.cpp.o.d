@@ -1,7 +1,7 @@
 CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o: \
- /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp \
+ /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp \
  /usr/include/stdc-predef.h \
- /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.h \
+ /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/netMsg.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

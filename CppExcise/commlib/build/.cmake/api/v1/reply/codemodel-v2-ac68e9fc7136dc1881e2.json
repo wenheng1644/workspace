@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/wenheng/workspace/CppExcise/commlib/build",
-		"source" : "/home/wenheng/workspace/CppExcise/commlib"
+		"build" : "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+		"source" : "/home/wenheng/Desktop/workspace/CppExcise/commlib"
 	},
 	"version" : 
 	{

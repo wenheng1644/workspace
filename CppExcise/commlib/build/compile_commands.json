@@ -1,47 +1,47 @@
 [
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/TaskWork.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/TaskWork.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/comm/TaskWork.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/TaskWork.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/TaskWork.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/comm/TaskWork.cpp"
 },
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/WorkRunner.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/comm/WorkRunner.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/WorkRunner.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/comm/WorkRunner.cpp"
 },
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/commFunc.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/commFunc.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/comm/commFunc.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/commFunc.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commFunc.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commFunc.cpp"
 },
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/commhead.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/commhead.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/comm/commhead.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/commhead.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commhead.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commhead.cpp"
 },
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/singleton.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/singleton.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/comm/singleton.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/comm/singleton.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.cpp"
 },
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp"
 },
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp"
 },
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp"
 },
 {
-  "directory": "/home/wenheng/workspace/CppExcise/commlib/build",
-  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp",
-  "file": "/home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp"
+  "directory": "/home/wenheng/Desktop/workspace/CppExcise/commlib/build",
+  "command": "/usr/bin/g++ -Dcommlib_EXPORTS  -g -fPIC -o CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp",
+  "file": "/home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp"
 }
 ]

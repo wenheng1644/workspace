@@ -1,7 +1,7 @@
 CMakeFiles/commlib.dir/comm/singleton.cpp.o: \
- /home/wenheng/workspace/CppExcise/commlib/comm/singleton.cpp \
+ /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.cpp \
  /usr/include/stdc-predef.h \
- /home/wenheng/workspace/CppExcise/commlib/comm/singleton.h \
+ /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.h \
  /usr/include/c++/13/mutex /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

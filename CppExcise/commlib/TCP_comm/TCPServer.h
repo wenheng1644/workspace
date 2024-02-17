@@ -10,12 +10,12 @@
 #include "map"
 #include "memory"
 
-template <typename T = TCPConnection>
+template <typename T>
 class TCPServer
 {
 public:
     TCPServer(ioserver_tp& io, address_tp& add, u_short port) : m_io(io), m_acceptor(io, endpoint_tp(add, port)) {}
-    ~TCPServer() = default;
+    virtual ~TCPServer() {}
 
     virtual void run() = 0;
 

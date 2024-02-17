@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wenheng/workspace/CppExcise/commlib
+CMAKE_SOURCE_DIR = /home/wenheng/Desktop/workspace/CppExcise/commlib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wenheng/workspace/CppExcise/commlib/build
+CMAKE_BINARY_DIR = /home/wenheng/Desktop/workspace/CppExcise/commlib/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/commlib.dir/depend.make
@@ -70,130 +70,130 @@ include CMakeFiles/commlib.dir/progress.make
 include CMakeFiles/commlib.dir/flags.make
 
 CMakeFiles/commlib.dir/comm/TaskWork.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/comm/TaskWork.cpp.o: /home/wenheng/workspace/CppExcise/commlib/comm/TaskWork.cpp
+CMakeFiles/commlib.dir/comm/TaskWork.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/TaskWork.cpp
 CMakeFiles/commlib.dir/comm/TaskWork.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/commlib.dir/comm/TaskWork.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/TaskWork.cpp.o -MF CMakeFiles/commlib.dir/comm/TaskWork.cpp.o.d -o CMakeFiles/commlib.dir/comm/TaskWork.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/TaskWork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/commlib.dir/comm/TaskWork.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/TaskWork.cpp.o -MF CMakeFiles/commlib.dir/comm/TaskWork.cpp.o.d -o CMakeFiles/commlib.dir/comm/TaskWork.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/TaskWork.cpp
 
 CMakeFiles/commlib.dir/comm/TaskWork.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/comm/TaskWork.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/comm/TaskWork.cpp > CMakeFiles/commlib.dir/comm/TaskWork.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/TaskWork.cpp > CMakeFiles/commlib.dir/comm/TaskWork.cpp.i
 
 CMakeFiles/commlib.dir/comm/TaskWork.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/comm/TaskWork.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/comm/TaskWork.cpp -o CMakeFiles/commlib.dir/comm/TaskWork.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/TaskWork.cpp -o CMakeFiles/commlib.dir/comm/TaskWork.cpp.s
 
 CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o: /home/wenheng/workspace/CppExcise/commlib/comm/WorkRunner.cpp
+CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/WorkRunner.cpp
 CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o -MF CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o.d -o CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/WorkRunner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o -MF CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o.d -o CMakeFiles/commlib.dir/comm/WorkRunner.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/WorkRunner.cpp
 
 CMakeFiles/commlib.dir/comm/WorkRunner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/comm/WorkRunner.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/comm/WorkRunner.cpp > CMakeFiles/commlib.dir/comm/WorkRunner.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/WorkRunner.cpp > CMakeFiles/commlib.dir/comm/WorkRunner.cpp.i
 
 CMakeFiles/commlib.dir/comm/WorkRunner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/comm/WorkRunner.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/comm/WorkRunner.cpp -o CMakeFiles/commlib.dir/comm/WorkRunner.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/WorkRunner.cpp -o CMakeFiles/commlib.dir/comm/WorkRunner.cpp.s
 
 CMakeFiles/commlib.dir/comm/commFunc.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/comm/commFunc.cpp.o: /home/wenheng/workspace/CppExcise/commlib/comm/commFunc.cpp
+CMakeFiles/commlib.dir/comm/commFunc.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commFunc.cpp
 CMakeFiles/commlib.dir/comm/commFunc.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/commlib.dir/comm/commFunc.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/commFunc.cpp.o -MF CMakeFiles/commlib.dir/comm/commFunc.cpp.o.d -o CMakeFiles/commlib.dir/comm/commFunc.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/commFunc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/commlib.dir/comm/commFunc.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/commFunc.cpp.o -MF CMakeFiles/commlib.dir/comm/commFunc.cpp.o.d -o CMakeFiles/commlib.dir/comm/commFunc.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commFunc.cpp
 
 CMakeFiles/commlib.dir/comm/commFunc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/comm/commFunc.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/comm/commFunc.cpp > CMakeFiles/commlib.dir/comm/commFunc.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commFunc.cpp > CMakeFiles/commlib.dir/comm/commFunc.cpp.i
 
 CMakeFiles/commlib.dir/comm/commFunc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/comm/commFunc.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/comm/commFunc.cpp -o CMakeFiles/commlib.dir/comm/commFunc.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commFunc.cpp -o CMakeFiles/commlib.dir/comm/commFunc.cpp.s
 
 CMakeFiles/commlib.dir/comm/commhead.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/comm/commhead.cpp.o: /home/wenheng/workspace/CppExcise/commlib/comm/commhead.cpp
+CMakeFiles/commlib.dir/comm/commhead.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commhead.cpp
 CMakeFiles/commlib.dir/comm/commhead.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/commlib.dir/comm/commhead.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/commhead.cpp.o -MF CMakeFiles/commlib.dir/comm/commhead.cpp.o.d -o CMakeFiles/commlib.dir/comm/commhead.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/commhead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/commlib.dir/comm/commhead.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/commhead.cpp.o -MF CMakeFiles/commlib.dir/comm/commhead.cpp.o.d -o CMakeFiles/commlib.dir/comm/commhead.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commhead.cpp
 
 CMakeFiles/commlib.dir/comm/commhead.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/comm/commhead.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/comm/commhead.cpp > CMakeFiles/commlib.dir/comm/commhead.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commhead.cpp > CMakeFiles/commlib.dir/comm/commhead.cpp.i
 
 CMakeFiles/commlib.dir/comm/commhead.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/comm/commhead.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/comm/commhead.cpp -o CMakeFiles/commlib.dir/comm/commhead.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commhead.cpp -o CMakeFiles/commlib.dir/comm/commhead.cpp.s
 
 CMakeFiles/commlib.dir/comm/singleton.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/comm/singleton.cpp.o: /home/wenheng/workspace/CppExcise/commlib/comm/singleton.cpp
+CMakeFiles/commlib.dir/comm/singleton.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.cpp
 CMakeFiles/commlib.dir/comm/singleton.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/commlib.dir/comm/singleton.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/singleton.cpp.o -MF CMakeFiles/commlib.dir/comm/singleton.cpp.o.d -o CMakeFiles/commlib.dir/comm/singleton.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/comm/singleton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/commlib.dir/comm/singleton.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/comm/singleton.cpp.o -MF CMakeFiles/commlib.dir/comm/singleton.cpp.o.d -o CMakeFiles/commlib.dir/comm/singleton.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.cpp
 
 CMakeFiles/commlib.dir/comm/singleton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/comm/singleton.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/comm/singleton.cpp > CMakeFiles/commlib.dir/comm/singleton.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.cpp > CMakeFiles/commlib.dir/comm/singleton.cpp.i
 
 CMakeFiles/commlib.dir/comm/singleton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/comm/singleton.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/comm/singleton.cpp -o CMakeFiles/commlib.dir/comm/singleton.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.cpp -o CMakeFiles/commlib.dir/comm/singleton.cpp.s
 
 CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o: /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp
+CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp
 CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o -MF CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o.d -o CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o -MF CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o.d -o CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp
 
 CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp > CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp > CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.i
 
 CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp -o CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPConnection.cpp -o CMakeFiles/commlib.dir/TCP_comm/TCPConnection.cpp.s
 
 CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o: /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp
+CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp
 CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o -MF CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o.d -o CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o -MF CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o.d -o CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp
 
 CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp > CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp > CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.i
 
 CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp -o CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPServer.cpp -o CMakeFiles/commlib.dir/TCP_comm/TCPServer.cpp.s
 
 CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o: /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp
+CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp
 CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o -MF CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o.d -o CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o -MF CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o.d -o CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp
 
 CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp > CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp > CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.i
 
 CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp -o CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/netMsg.cpp -o CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.s
 
 CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o: CMakeFiles/commlib.dir/flags.make
-CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o: /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp
+CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp
 CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o: CMakeFiles/commlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o -MF CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o.d -o CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o -c /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o -MF CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o.d -o CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp
 
 CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp > CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp > CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.i
 
 CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp -o CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net/resolveManager.cpp -o CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.s
 
 # Object files for target commlib
 commlib_OBJECTS = \
@@ -221,7 +221,7 @@ libcommlib.so: CMakeFiles/commlib.dir/cmdcomm/net/netMsg.cpp.o
 libcommlib.so: CMakeFiles/commlib.dir/cmdcomm/net/resolveManager.cpp.o
 libcommlib.so: CMakeFiles/commlib.dir/build.make
 libcommlib.so: CMakeFiles/commlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libcommlib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libcommlib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/commlib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,6 +233,6 @@ CMakeFiles/commlib.dir/clean:
 .PHONY : CMakeFiles/commlib.dir/clean
 
 CMakeFiles/commlib.dir/depend:
-	cd /home/wenheng/workspace/CppExcise/commlib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wenheng/workspace/CppExcise/commlib /home/wenheng/workspace/CppExcise/commlib /home/wenheng/workspace/CppExcise/commlib/build /home/wenheng/workspace/CppExcise/commlib/build /home/wenheng/workspace/CppExcise/commlib/build/CMakeFiles/commlib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wenheng/Desktop/workspace/CppExcise/commlib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wenheng/Desktop/workspace/CppExcise/commlib /home/wenheng/Desktop/workspace/CppExcise/commlib /home/wenheng/Desktop/workspace/CppExcise/commlib/build /home/wenheng/Desktop/workspace/CppExcise/commlib/build /home/wenheng/Desktop/workspace/CppExcise/commlib/build/CMakeFiles/commlib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/commlib.dir/depend
 
