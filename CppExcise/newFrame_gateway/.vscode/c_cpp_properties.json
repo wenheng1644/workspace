@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/wenheng/workspace/CppExcise/commlib/**",
+                "/home/wenheng/workspace/CppExcise/commlib/TCP_comm",
+                "/home/wenheng/workspace/CppExcise/commlib/TCP_comm",
+                "/home/wenheng/workspace/CppExcise/commlib/TCP_comm"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

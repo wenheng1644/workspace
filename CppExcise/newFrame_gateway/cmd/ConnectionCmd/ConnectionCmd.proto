@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Connection;
+
+message ConnectionReqCmd
+{
+    string m_account = 1;       //账号
+    string m_passwd =2;         //密码
+}
