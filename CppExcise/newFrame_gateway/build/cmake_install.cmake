@@ -1,4 +1,4 @@
-# Install script for directory: /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway
+# Install script for directory: /home/wenheng/workspace/CppExcise/newFrame_gateway
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wenheng/workspace/CppExcise/newFrame_gateway/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

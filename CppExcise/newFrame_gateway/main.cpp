@@ -11,7 +11,8 @@ int main(int argc, char* argv[])
     GateManager::getObj()->run();
 
     ioserver_tp io;
-    address_tp add = address_tp::from_string("192.168.31.145");
+    ioserver_tp::work w(io);
+    address_tp add = boost::asio::ip::make_address("172.19.121.31");
     TCP_GServer ser(io, add, 8888);
 
     ser.run();

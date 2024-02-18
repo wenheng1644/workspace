@@ -5,8 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/home/wenheng/workspace/CppExcise/commlib/**",
-                "/home/wenheng/workspace/CppExcise/commlib/TCP_comm",
-                "/home/wenheng/workspace/CppExcise/commlib/TCP_comm",
+                "/home/wenheng/workspace/CppExcise/commlib/cmdcomm",
+                "/home/wenheng/workspace/CppExcise/commlib/comm",
                 "/home/wenheng/workspace/CppExcise/commlib/TCP_comm"
             ],
             "defines": [],

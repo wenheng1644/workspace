@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm -I/home/wenheng/Desktop/workspace/CppExcise/commlib/cmdcomm/net -I/home/wenheng/Desktop/workspace/CppExcise/commlib/comm -I/home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm
+CXX_INCLUDES = -I/home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/cmdcomm -I/home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/cmdcomm/net -I/home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm -I/home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm
 
 CXX_FLAGS = -g
 

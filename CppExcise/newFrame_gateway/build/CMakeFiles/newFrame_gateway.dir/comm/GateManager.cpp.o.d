@@ -1,9 +1,9 @@
 CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp \
  /usr/include/stdc-predef.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/GateManager.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/gate_comm.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/singleton.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/GateManager.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/gate_comm.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/singleton.h \
  /usr/include/c++/13/mutex /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -84,9 +84,9 @@ CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: \
  /usr/include/c++/13/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/WorkRunner.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/../cmdcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/WorkRunner.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/commhead.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/netMsg.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
  /usr/include/c++/13/bits/stringfwd.h \
@@ -181,8 +181,8 @@ CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/../cmdcomm/net/resolveManager.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/../cmdcomm/net/netMsg.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/resolveManager.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/netMsg.h \
  /usr/include/assert.h /usr/local/include/boost/uuid/uuid.hpp \
  /usr/local/include/boost/cstdint.hpp /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
@@ -191,13 +191,13 @@ CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: \
  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
  /usr/include/c++/13/version \
  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
  /usr/local/include/boost/config/detail/select_platform_config.hpp \
  /usr/local/include/boost/config/platform/linux.hpp \
  /usr/local/include/boost/config/detail/posix_features.hpp \
@@ -884,7 +884,7 @@ CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: \
  /usr/local/include/boost/format/parsing.hpp \
  /usr/local/include/boost/format/free_funcs.hpp \
  /usr/local/include/boost/format/detail/unset_macros.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/../TCP_comm/commServer.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/../TCP_comm/commServer.h \
  /usr/local/include/boost/asio.hpp \
  /usr/local/include/boost/asio/any_completion_executor.hpp \
  /usr/local/include/boost/asio/detail/config.hpp \
@@ -1490,7 +1490,7 @@ CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: \
  /usr/local/include/boost/asio/writable_pipe.hpp \
  /usr/local/include/boost/asio/write_at.hpp \
  /usr/local/include/boost/asio/impl/write_at.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/../TCP_comm/../comm/commhead.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/../TCP_comm/../comm/commhead.h \
  /usr/local/include/boost/thread.hpp \
  /usr/local/include/boost/thread/thread.hpp \
  /usr/local/include/boost/thread/thread_only.hpp \
@@ -1902,16 +1902,16 @@ CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: \
  /usr/local/include/boost/thread/detail/atomic_redef_macros.hpp \
  /usr/local/include/boost/noncopyable.hpp \
  /usr/local/include/boost/core/noncopyable.hpp \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/GateUserEng.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/GateUser.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/userComm.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/GateUserEng.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/GateUser.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/userComm.h \
  /usr/include/c++/13/queue /usr/include/c++/13/deque \
  /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
  /usr/include/c++/13/bits/stl_queue.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/comm/commhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/../cmd/gatecmdhead.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/../cmd/ConnectionCmd/Connection.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/../cmd/ConnectionCmd/ConnectionCmd.pb.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/commhead.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/../cmd/gatecmdhead.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/../cmd/ConnectionCmd/Connection.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/../cmd/ConnectionCmd/ConnectionCmd.pb.h \
  /usr/local/include/google/protobuf/port_def.inc \
  /usr/local/include/google/protobuf/port_undef.inc \
  /usr/local/include/google/protobuf/io/coded_stream.h \
@@ -1962,9 +1962,9 @@ CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: \
  /usr/local/include/google/protobuf/map.h \
  /usr/local/include/google/protobuf/map_type_handler.h \
  /usr/local/include/google/protobuf/extension_set.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/../TCP_gateway/TCP_GConnection.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/TCPConnection.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/commServer.h \
- /home/wenheng/Desktop/workspace/CppExcise/commlib/TCP_comm/commServer.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/../TCP_gateway/../logic/GateUser.h \
- /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/../logic/../TCP_gateway/TCP_LogicConnection.h
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/../TCP_gateway/TCP_GConnection.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/TCPConnection.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/commServer.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/commServer.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/../TCP_gateway/../logic/GateUser.h \
+ /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/../logic/../TCP_gateway/TCP_LogicConnection.h

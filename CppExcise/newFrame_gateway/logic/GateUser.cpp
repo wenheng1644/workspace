@@ -15,8 +15,9 @@ void gateUser::processGate()
 
     for(auto msg : netMsgLists)
     {
-        if(msg->head.getProtoValue() == CONNECTION_REQ)
-            on_handleConnect(msg);
+        // if(msg->head.getProtoValue() == CONNECTION_REQ)
+        //     on_handleConnect(msg);
+        m_logicConn->send(msg);
     }
 
 
@@ -53,12 +54,12 @@ void gateUser::push_netLogicMsg(netMsg_ptr msg)
 
 void gateUser::on_handleConnect(netMsg_ptr msg)
 {
-    auto logicConn = m_logicConn.lock();
-    if(!logicConn)
-    {
-        printf("gateUser::on_handleConnect | 逻辑服句柄已失效\n");
-        return;
-    }
+    // auto logicConn = m_logicConn.lock();
+    // if(!logicConn)
+    // {
+    //     printf("gateUser::on_handleConnect | 逻辑服句柄已失效\n");
+    //     return;
+    // }
 
     auto gateConn = m_conn.lock();
     if(!gateConn)
@@ -67,7 +68,7 @@ void gateUser::on_handleConnect(netMsg_ptr msg)
         return;
     }
 
-    auto ed = gateConn->getaddr();
-    logicConn->connect(ed, 9999);
+    // auto ed = gateConn->getaddr();
+    // m_logicConn->connect(ed, 9999);
     
 }

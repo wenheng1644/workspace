@@ -39,12 +39,14 @@ void TCP_GServer::onHandleAccept(conn_tp conn, ec_code_tp ec)
     gateUser_ptr user(new gateUser(comm));
 
     user->m_conn = conn;
+    conn->m_target = user;
 
     std::shared_ptr<TCP_LogicConnection> logicConn(new TCP_LogicConnection(GateManager::getObj()->serverIO()));
     user->m_logicConn = logicConn;
-
     GateManager::getObj()->m_userEng.push(user);
+    conn->run();
 
-
+    address_tp add = boost::asio::ip::make_address("172.19.121.31");
+    logicConn->connect(add, 9999);
     run();
 }

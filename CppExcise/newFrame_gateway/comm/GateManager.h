@@ -22,7 +22,7 @@ public:
 private:
     WorkRunner m_clientWork;    //客户端任务循环事件
     WorkRunner m_serverWork;    //逻辑服循环事件
-
+    WorkRunner m_userWork;
     void init_WorkRunner();
 };
 

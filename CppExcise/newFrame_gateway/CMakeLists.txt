@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.25)
 project(newFrame_gateway)
 set(CXX_STANDARD 17)
 
-set(TCPCOMLIB_DIR /home/wenheng/Desktop/workspace/CppExcise/commlib)
+set(TCPCOMLIB_DIR ../commlib)
 
 include_directories(
                     ${TCPCOMLIB_DIR}/cmdcomm

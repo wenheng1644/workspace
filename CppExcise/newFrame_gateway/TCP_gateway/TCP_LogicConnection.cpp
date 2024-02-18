@@ -25,6 +25,7 @@ void TCP_LogicConnection::send(netMsg_ptr &msg)
 void TCP_LogicConnection::connect(address_tp &add, u_short port)
 {
     endpoint_tp ed(add, port);
+    printf("TCP_LogicConnection::connect | 连接逻辑服测试...\n");
     m_sockect.async_connect(ed, std::bind(&TCP_LogicConnection::on_handleConnection, shared_from_this(), boost::asio::placeholders::error));
 }
 
@@ -45,7 +46,7 @@ void TCP_LogicConnection::on_handleReadHead(netMsg_ptr msg, ec_code_tp ec, size_
     {
         std::string formatStr = getFormatStr("error content = %1%, bytes = %2%", ec.message(), bytes);
         printf("TCP_LogicConnection::on_handleReadHead | 逻辑服掉线 %s\n", formatStr.c_str());
-        close();
+        // close();
         return;
     }
 
