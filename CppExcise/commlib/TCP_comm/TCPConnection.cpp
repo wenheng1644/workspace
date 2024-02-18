@@ -46,6 +46,7 @@
 
 bool TCPConnection::close()
 {
+    lockGuard_tp lg(m_socketMutex);
     if(m_sockect.is_open())
     {
         m_sockect.close();

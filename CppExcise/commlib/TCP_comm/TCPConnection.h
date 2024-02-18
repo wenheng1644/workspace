@@ -8,6 +8,8 @@
 
 #include "vector"
 
+#include "mutex"
+
 class TCPConnection
 {
 
@@ -25,6 +27,7 @@ public:
     virtual bool close();
 
 protected:
+    std::mutex m_socketMutex;
     socket_tp m_sockect;
     boost::asio::io_service& m_io;
     boost::uuids::uuid m_onlyid;
