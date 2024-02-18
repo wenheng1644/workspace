@@ -1,4 +1,6 @@
 #include "GateUser.h"
+#include "../comm/GateManager.h"
+
 
 gateUser::gateUser(const userComm &comm) : m_comm(comm), m_onlyid(boost::uuids::random_generator()())
 {
@@ -17,7 +19,9 @@ void gateUser::processGate()
     {
         // if(msg->head.getProtoValue() == CONNECTION_REQ)
         //     on_handleConnect(msg);
-        m_logicConn->send(msg);
+        auto conn = m_logicConn.lock();
+        if(conn)
+            conn->send(msg);
     }
 
 
@@ -50,6 +54,24 @@ void gateUser::push_netLogicMsg(netMsg_ptr msg)
 {
     lockGuard_tp gl(m_netLogicMutex);
     m_netLogicLists.push_back(msg);
+}
+
+void gateUser::close()
+{
+    auto conn = m_conn.lock();
+    if(conn)
+    {
+        conn->close();
+        conn = nullptr;
+    }
+
+    auto logic_conn = m_logicConn.lock();
+    if(logic_conn)
+    {
+        logic_conn->close();
+        logic_conn = nullptr;
+    }
+    GateManager::getObj()->m_userEng.erase(m_onlyid);
 }
 
 void gateUser::on_handleConnect(netMsg_ptr msg)

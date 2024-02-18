@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 
     ioserver_tp io;
     ioserver_tp::work w(io);
-    address_tp add = boost::asio::ip::make_address("172.19.121.31");
+    address_tp add = boost::asio::ip::make_address("192.168.31.145");
     TCP_GServer ser(io, add, 8888);
 
     ser.run();

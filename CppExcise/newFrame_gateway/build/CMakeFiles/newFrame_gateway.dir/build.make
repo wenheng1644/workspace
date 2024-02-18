@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wenheng/workspace/CppExcise/newFrame_gateway
+CMAKE_SOURCE_DIR = /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wenheng/workspace/CppExcise/newFrame_gateway/build
+CMAKE_BINARY_DIR = /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/newFrame_gateway.dir/depend.make
@@ -70,102 +70,102 @@ include CMakeFiles/newFrame_gateway.dir/progress.make
 include CMakeFiles/newFrame_gateway.dir/flags.make
 
 CMakeFiles/newFrame_gateway.dir/main.cpp.o: CMakeFiles/newFrame_gateway.dir/flags.make
-CMakeFiles/newFrame_gateway.dir/main.cpp.o: /home/wenheng/workspace/CppExcise/newFrame_gateway/main.cpp
+CMakeFiles/newFrame_gateway.dir/main.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/main.cpp
 CMakeFiles/newFrame_gateway.dir/main.cpp.o: CMakeFiles/newFrame_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/newFrame_gateway.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/main.cpp.o -MF CMakeFiles/newFrame_gateway.dir/main.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/main.cpp.o -c /home/wenheng/workspace/CppExcise/newFrame_gateway/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/newFrame_gateway.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/main.cpp.o -MF CMakeFiles/newFrame_gateway.dir/main.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/main.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/main.cpp
 
 CMakeFiles/newFrame_gateway.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrame_gateway.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrame_gateway/main.cpp > CMakeFiles/newFrame_gateway.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/main.cpp > CMakeFiles/newFrame_gateway.dir/main.cpp.i
 
 CMakeFiles/newFrame_gateway.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrame_gateway.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrame_gateway/main.cpp -o CMakeFiles/newFrame_gateway.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/main.cpp -o CMakeFiles/newFrame_gateway.dir/main.cpp.s
 
 CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: CMakeFiles/newFrame_gateway.dir/flags.make
-CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp
+CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp
 CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o: CMakeFiles/newFrame_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o -MF CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o -c /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o -MF CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp
 
 CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp > CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp > CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.i
 
 CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp -o CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/comm/GateManager.cpp -o CMakeFiles/newFrame_gateway.dir/comm/GateManager.cpp.s
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o: CMakeFiles/newFrame_gateway.dir/flags.make
-CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o: /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GConnection.cpp
+CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GConnection.cpp
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o: CMakeFiles/newFrame_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o -MF CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o -c /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o -MF CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GConnection.cpp
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GConnection.cpp > CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GConnection.cpp > CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.i
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GConnection.cpp -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GConnection.cpp -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GConnection.cpp.s
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o: CMakeFiles/newFrame_gateway.dir/flags.make
-CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o: /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GServer.cpp
+CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GServer.cpp
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o: CMakeFiles/newFrame_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o -MF CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o -c /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o -MF CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GServer.cpp
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GServer.cpp > CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GServer.cpp > CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.i
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GServer.cpp -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_GServer.cpp -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_GServer.cpp.s
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o: CMakeFiles/newFrame_gateway.dir/flags.make
-CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o: /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_LogicConnection.cpp
+CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_LogicConnection.cpp
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o: CMakeFiles/newFrame_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o -MF CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o -c /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_LogicConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o -MF CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_LogicConnection.cpp
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_LogicConnection.cpp > CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_LogicConnection.cpp > CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.i
 
 CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_LogicConnection.cpp -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/TCP_gateway/TCP_LogicConnection.cpp -o CMakeFiles/newFrame_gateway.dir/TCP_gateway/TCP_LogicConnection.cpp.s
 
 CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: CMakeFiles/newFrame_gateway.dir/flags.make
-CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp
+CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp
 CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: CMakeFiles/newFrame_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o -MF CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o -c /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o -MF CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp
 
 CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp > CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp > CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.i
 
 CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp -o CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp -o CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.s
 
 CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o: CMakeFiles/newFrame_gateway.dir/flags.make
-CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o: /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUserEng.cpp
+CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o: /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUserEng.cpp
 CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o: CMakeFiles/newFrame_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o -MF CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o -c /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUserEng.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o -MF CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o.d -o CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o -c /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUserEng.cpp
 
 CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUserEng.cpp > CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUserEng.cpp > CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.i
 
 CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUserEng.cpp -o CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUserEng.cpp -o CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.s
 
 # Object files for target newFrame_gateway
 newFrame_gateway_OBJECTS = \
@@ -189,7 +189,7 @@ newFrame_gateway: CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o
 newFrame_gateway: CMakeFiles/newFrame_gateway.dir/logic/GateUserEng.cpp.o
 newFrame_gateway: CMakeFiles/newFrame_gateway.dir/build.make
 newFrame_gateway: CMakeFiles/newFrame_gateway.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable newFrame_gateway"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable newFrame_gateway"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/newFrame_gateway.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -201,6 +201,6 @@ CMakeFiles/newFrame_gateway.dir/clean:
 .PHONY : CMakeFiles/newFrame_gateway.dir/clean
 
 CMakeFiles/newFrame_gateway.dir/depend:
-	cd /home/wenheng/workspace/CppExcise/newFrame_gateway/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wenheng/workspace/CppExcise/newFrame_gateway /home/wenheng/workspace/CppExcise/newFrame_gateway /home/wenheng/workspace/CppExcise/newFrame_gateway/build /home/wenheng/workspace/CppExcise/newFrame_gateway/build /home/wenheng/workspace/CppExcise/newFrame_gateway/build/CMakeFiles/newFrame_gateway.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/build/CMakeFiles/newFrame_gateway.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/newFrame_gateway.dir/depend
 

@@ -3,6 +3,8 @@
 #include "../logic/GateUserEng.h"
 #include "thread"
 
+#include "boost/asio.hpp"
+
 TCP_GServer::TCP_GServer(ioserver_tp &io, address_tp add, u_short port) : TCPServer<TCP_GConnection>(io, add, port)
 {
 
@@ -43,10 +45,12 @@ void TCP_GServer::onHandleAccept(conn_tp conn, ec_code_tp ec)
 
     std::shared_ptr<TCP_LogicConnection> logicConn(new TCP_LogicConnection(GateManager::getObj()->serverIO()));
     user->m_logicConn = logicConn;
+    logicConn->m_target = user;
     GateManager::getObj()->m_userEng.push(user);
     conn->run();
 
-    address_tp add = boost::asio::ip::make_address("172.19.121.31");
+    auto ed = m_acceptor.local_endpoint();
+    address_tp add = ed.address();
     logicConn->connect(add, 9999);
     run();
 }

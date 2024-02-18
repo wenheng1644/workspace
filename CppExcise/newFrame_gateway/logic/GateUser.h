@@ -31,7 +31,9 @@ public:
     boost::uuids::uuid onlyid() { return m_onlyid;}
 
     std::weak_ptr<TCP_GConnection> m_conn;
-    std::shared_ptr<TCP_LogicConnection> m_logicConn;
+    std::weak_ptr<TCP_LogicConnection> m_logicConn;
+
+    void close();
 
 private:
     userComm m_comm;

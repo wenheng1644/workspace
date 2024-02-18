@@ -47,6 +47,19 @@ void TCP_LogicConnection::on_handleReadHead(netMsg_ptr msg, ec_code_tp ec, size_
         std::string formatStr = getFormatStr("error content = %1%, bytes = %2%", ec.message(), bytes);
         printf("TCP_LogicConnection::on_handleReadHead | 逻辑服掉线 %s\n", formatStr.c_str());
         // close();
+
+        auto p = m_target.lock();
+        if(p)
+        {
+            p->close();
+
+            printf("TCP_LogicConnection::on_handleReadHead | 用户close()\n");
+        }
+        else
+        {
+            printf("TCP_LogicConnection::on_handleReadHead | 用户指向已失效\n");
+        }
+
         return;
     }
 

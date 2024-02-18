@@ -1,8 +1,8 @@
 CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUser.cpp \
  /usr/include/stdc-predef.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/GateUser.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/userComm.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/GateUser.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/userComm.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -166,8 +166,8 @@ CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/commhead.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/netMsg.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/comm/commhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/netMsg.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
@@ -185,8 +185,8 @@ CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/resolveManager.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/netMsg.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/resolveManager.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/comm/../cmdcomm/net/netMsg.h \
  /usr/include/assert.h /usr/local/include/boost/uuid/uuid.hpp \
  /usr/local/include/boost/cstdint.hpp /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
@@ -195,13 +195,13 @@ CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: \
  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
  /usr/include/c++/13/version \
  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
  /usr/local/include/boost/config/detail/select_platform_config.hpp \
  /usr/local/include/boost/config/platform/linux.hpp \
  /usr/local/include/boost/config/detail/posix_features.hpp \
@@ -884,9 +884,9 @@ CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: \
  /usr/local/include/boost/format/parsing.hpp \
  /usr/local/include/boost/format/free_funcs.hpp \
  /usr/local/include/boost/format/detail/unset_macros.hpp \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/../cmd/gatecmdhead.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/../cmd/ConnectionCmd/Connection.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/../cmd/ConnectionCmd/ConnectionCmd.pb.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../cmd/gatecmdhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../cmd/ConnectionCmd/Connection.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../cmd/ConnectionCmd/ConnectionCmd.pb.h \
  /usr/local/include/google/protobuf/port_def.inc \
  /usr/local/include/google/protobuf/port_undef.inc \
  /usr/local/include/google/protobuf/io/coded_stream.h \
@@ -941,9 +941,9 @@ CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: \
  /usr/local/include/google/protobuf/map.h \
  /usr/local/include/google/protobuf/map_type_handler.h \
  /usr/local/include/google/protobuf/extension_set.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/../TCP_gateway/TCP_GConnection.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/TCPConnection.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/commServer.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../TCP_gateway/TCP_GConnection.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/TCPConnection.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/commServer.h \
  /usr/local/include/boost/asio.hpp \
  /usr/local/include/boost/asio/any_completion_executor.hpp \
  /usr/local/include/boost/asio/detail/config.hpp \
@@ -1548,10 +1548,424 @@ CMakeFiles/newFrame_gateway.dir/logic/GateUser.cpp.o: \
  /usr/local/include/boost/asio/writable_pipe.hpp \
  /usr/local/include/boost/asio/write_at.hpp \
  /usr/local/include/boost/asio/impl/write_at.hpp \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/../comm/commhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/../comm/commhead.h \
  /usr/local/include/boost/enable_shared_from_this.hpp \
  /usr/local/include/boost/smart_ptr/enable_shared_from_this.hpp \
  /usr/local/include/boost/smart_ptr/weak_ptr.hpp \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/commServer.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/../TCP_gateway/../logic/GateUser.h \
- /home/wenheng/workspace/CppExcise/newFrame_gateway/logic/../TCP_gateway/TCP_LogicConnection.h
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/TCP_comm/commServer.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../TCP_gateway/../logic/GateUser.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../TCP_gateway/TCP_LogicConnection.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../comm/GateManager.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../comm/gate_comm.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/comm/singleton.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/comm/WorkRunner.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/comm/commhead.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/../commlib/comm/../TCP_comm/commServer.h \
+ /usr/local/include/boost/thread.hpp \
+ /usr/local/include/boost/thread/thread.hpp \
+ /usr/local/include/boost/thread/thread_only.hpp \
+ /usr/local/include/boost/thread/detail/platform.hpp \
+ /usr/local/include/boost/config/requires_threads.hpp \
+ /usr/local/include/boost/thread/pthread/thread_data.hpp \
+ /usr/local/include/boost/thread/detail/config.hpp \
+ /usr/local/include/boost/thread/detail/thread_safety.hpp \
+ /usr/local/include/boost/config/auto_link.hpp \
+ /usr/local/include/boost/thread/exceptions.hpp \
+ /usr/local/include/boost/config/abi_prefix.hpp \
+ /usr/local/include/boost/config/abi_suffix.hpp \
+ /usr/local/include/boost/thread/lock_guard.hpp \
+ /usr/local/include/boost/thread/detail/delete.hpp \
+ /usr/local/include/boost/thread/detail/move.hpp \
+ /usr/local/include/boost/thread/detail/lockable_wrapper.hpp \
+ /usr/local/include/boost/thread/lock_options.hpp \
+ /usr/local/include/boost/thread/lock_types.hpp \
+ /usr/local/include/boost/thread/lockable_traits.hpp \
+ /usr/local/include/boost/thread/thread_time.hpp \
+ /usr/local/include/boost/chrono/time_point.hpp \
+ /usr/local/include/boost/chrono/duration.hpp \
+ /usr/local/include/boost/chrono/config.hpp \
+ /usr/local/include/boost/chrono/detail/requires_cxx11.hpp \
+ /usr/local/include/boost/predef.h \
+ /usr/local/include/boost/predef/language.h \
+ /usr/local/include/boost/predef/language/stdc.h \
+ /usr/local/include/boost/predef/language/stdcpp.h \
+ /usr/local/include/boost/predef/language/objc.h \
+ /usr/local/include/boost/predef/language/cuda.h \
+ /usr/local/include/boost/predef/architecture.h \
+ /usr/local/include/boost/predef/architecture/alpha.h \
+ /usr/local/include/boost/predef/architecture/arm.h \
+ /usr/local/include/boost/predef/architecture/blackfin.h \
+ /usr/local/include/boost/predef/architecture/convex.h \
+ /usr/local/include/boost/predef/architecture/e2k.h \
+ /usr/local/include/boost/predef/architecture/ia64.h \
+ /usr/local/include/boost/predef/architecture/loongarch.h \
+ /usr/local/include/boost/predef/architecture/m68k.h \
+ /usr/local/include/boost/predef/architecture/mips.h \
+ /usr/local/include/boost/predef/architecture/parisc.h \
+ /usr/local/include/boost/predef/architecture/ppc.h \
+ /usr/local/include/boost/predef/architecture/ptx.h \
+ /usr/local/include/boost/predef/architecture/pyramid.h \
+ /usr/local/include/boost/predef/architecture/riscv.h \
+ /usr/local/include/boost/predef/architecture/rs6k.h \
+ /usr/local/include/boost/predef/architecture/sparc.h \
+ /usr/local/include/boost/predef/architecture/superh.h \
+ /usr/local/include/boost/predef/architecture/sys370.h \
+ /usr/local/include/boost/predef/architecture/sys390.h \
+ /usr/local/include/boost/predef/architecture/x86.h \
+ /usr/local/include/boost/predef/architecture/x86/32.h \
+ /usr/local/include/boost/predef/architecture/x86/64.h \
+ /usr/local/include/boost/predef/architecture/z.h \
+ /usr/local/include/boost/predef/compiler.h \
+ /usr/local/include/boost/predef/compiler/borland.h \
+ /usr/local/include/boost/predef/compiler/clang.h \
+ /usr/local/include/boost/predef/compiler/comeau.h \
+ /usr/local/include/boost/predef/compiler/compaq.h \
+ /usr/local/include/boost/predef/compiler/diab.h \
+ /usr/local/include/boost/predef/compiler/digitalmars.h \
+ /usr/local/include/boost/predef/compiler/dignus.h \
+ /usr/local/include/boost/predef/compiler/edg.h \
+ /usr/local/include/boost/predef/compiler/ekopath.h \
+ /usr/local/include/boost/predef/compiler/gcc_xml.h \
+ /usr/local/include/boost/predef/compiler/gcc.h \
+ /usr/local/include/boost/predef/detail/comp_detected.h \
+ /usr/local/include/boost/predef/compiler/greenhills.h \
+ /usr/local/include/boost/predef/compiler/hp_acc.h \
+ /usr/local/include/boost/predef/compiler/iar.h \
+ /usr/local/include/boost/predef/compiler/ibm.h \
+ /usr/local/include/boost/predef/compiler/intel.h \
+ /usr/local/include/boost/predef/compiler/kai.h \
+ /usr/local/include/boost/predef/compiler/llvm.h \
+ /usr/local/include/boost/predef/compiler/metaware.h \
+ /usr/local/include/boost/predef/compiler/metrowerks.h \
+ /usr/local/include/boost/predef/compiler/microtec.h \
+ /usr/local/include/boost/predef/compiler/mpw.h \
+ /usr/local/include/boost/predef/compiler/nvcc.h \
+ /usr/local/include/boost/predef/compiler/palm.h \
+ /usr/local/include/boost/predef/compiler/pgi.h \
+ /usr/local/include/boost/predef/compiler/sgi_mipspro.h \
+ /usr/local/include/boost/predef/compiler/sunpro.h \
+ /usr/local/include/boost/predef/compiler/tendra.h \
+ /usr/local/include/boost/predef/compiler/visualc.h \
+ /usr/local/include/boost/predef/compiler/watcom.h \
+ /usr/local/include/boost/predef/library.h \
+ /usr/local/include/boost/predef/library/c.h \
+ /usr/local/include/boost/predef/library/c/uc.h \
+ /usr/local/include/boost/predef/library/c/vms.h \
+ /usr/local/include/boost/predef/library/c/zos.h \
+ /usr/local/include/boost/predef/library/std.h \
+ /usr/local/include/boost/predef/library/std/_prefix.h \
+ /usr/local/include/boost/predef/detail/_exception.h \
+ /usr/local/include/boost/predef/library/std/cxx.h \
+ /usr/local/include/boost/predef/library/std/dinkumware.h \
+ /usr/local/include/boost/predef/library/std/libcomo.h \
+ /usr/local/include/boost/predef/library/std/modena.h \
+ /usr/local/include/boost/predef/library/std/msl.h \
+ /usr/local/include/boost/predef/library/std/msvc.h \
+ /usr/local/include/boost/predef/library/std/roguewave.h \
+ /usr/local/include/boost/predef/library/std/sgi.h \
+ /usr/local/include/boost/predef/library/std/stdcpp3.h \
+ /usr/local/include/boost/predef/library/std/stlport.h \
+ /usr/local/include/boost/predef/library/std/vacpp.h \
+ /usr/local/include/boost/predef/os.h \
+ /usr/local/include/boost/predef/os/aix.h \
+ /usr/local/include/boost/predef/os/amigaos.h \
+ /usr/local/include/boost/predef/os/beos.h \
+ /usr/local/include/boost/predef/os/cygwin.h \
+ /usr/local/include/boost/predef/os/haiku.h \
+ /usr/local/include/boost/predef/os/hpux.h \
+ /usr/local/include/boost/predef/os/irix.h \
+ /usr/local/include/boost/predef/os/linux.h \
+ /usr/local/include/boost/predef/detail/os_detected.h \
+ /usr/local/include/boost/predef/os/os400.h \
+ /usr/local/include/boost/predef/os/qnxnto.h \
+ /usr/local/include/boost/predef/os/solaris.h \
+ /usr/local/include/boost/predef/os/unix.h \
+ /usr/local/include/boost/predef/os/vms.h \
+ /usr/local/include/boost/predef/other.h \
+ /usr/local/include/boost/predef/other/endian.h \
+ /usr/local/include/boost/predef/platform/android.h \
+ /usr/local/include/boost/predef/other/wordsize.h \
+ /usr/local/include/boost/predef/other/workaround.h \
+ /usr/local/include/boost/predef/platform.h \
+ /usr/local/include/boost/predef/platform/cloudabi.h \
+ /usr/local/include/boost/predef/platform/mingw.h \
+ /usr/local/include/boost/predef/platform/mingw32.h \
+ /usr/local/include/boost/predef/platform/mingw64.h \
+ /usr/local/include/boost/predef/platform/windows_uwp.h \
+ /usr/local/include/boost/predef/platform/windows_desktop.h \
+ /usr/local/include/boost/predef/platform/windows_phone.h \
+ /usr/local/include/boost/predef/platform/windows_server.h \
+ /usr/local/include/boost/predef/platform/windows_store.h \
+ /usr/local/include/boost/predef/platform/windows_system.h \
+ /usr/local/include/boost/predef/platform/windows_runtime.h \
+ /usr/local/include/boost/predef/platform/ios.h \
+ /usr/local/include/boost/predef/hardware.h \
+ /usr/local/include/boost/predef/hardware/simd.h \
+ /usr/local/include/boost/predef/hardware/simd/x86.h \
+ /usr/local/include/boost/predef/hardware/simd/x86/versions.h \
+ /usr/local/include/boost/predef/hardware/simd/x86_amd.h \
+ /usr/local/include/boost/predef/hardware/simd/x86_amd/versions.h \
+ /usr/local/include/boost/predef/hardware/simd/arm.h \
+ /usr/local/include/boost/predef/hardware/simd/arm/versions.h \
+ /usr/local/include/boost/predef/hardware/simd/ppc.h \
+ /usr/local/include/boost/predef/hardware/simd/ppc/versions.h \
+ /usr/local/include/boost/predef/version.h \
+ /usr/local/include/boost/chrono/detail/static_assert.hpp \
+ /usr/local/include/boost/ratio/ratio.hpp \
+ /usr/local/include/boost/ratio/ratio_fwd.hpp \
+ /usr/local/include/boost/ratio/detail/gcd_lcm.hpp \
+ /usr/local/include/boost/ratio/detail/is_ratio.hpp \
+ /usr/local/include/boost/type_traits/common_type.hpp \
+ /usr/local/include/boost/type_traits/detail/mp_defer.hpp \
+ /usr/local/include/boost/chrono/detail/is_evenly_divisible_by.hpp \
+ /usr/local/include/boost/ratio/detail/is_evenly_divisible_by.hpp \
+ /usr/local/include/boost/thread/mutex.hpp \
+ /usr/local/include/boost/thread/pthread/mutex.hpp \
+ /usr/local/include/boost/thread/xtime.hpp \
+ /usr/local/include/boost/date_time/posix_time/conversion.hpp \
+ /usr/local/include/boost/date_time/filetime_functions.hpp \
+ /usr/local/include/boost/date_time/gregorian/conversion.hpp \
+ /usr/local/include/boost/thread/detail/platform_time.hpp \
+ /usr/local/include/boost/chrono/system_clocks.hpp \
+ /usr/local/include/boost/chrono/detail/system.hpp \
+ /usr/local/include/boost/chrono/clock_string.hpp \
+ /usr/local/include/boost/ratio/config.hpp \
+ /usr/local/include/boost/chrono/ceil.hpp \
+ /usr/local/include/boost/thread/pthread/pthread_mutex_scoped_lock.hpp \
+ /usr/local/include/boost/thread/pthread/pthread_helpers.hpp \
+ /usr/local/include/boost/thread/pthread/condition_variable_fwd.hpp \
+ /usr/local/include/boost/thread/cv_status.hpp \
+ /usr/local/include/boost/core/scoped_enum.hpp \
+ /usr/local/include/boost/thread/detail/thread.hpp \
+ /usr/local/include/boost/thread/interruption.hpp \
+ /usr/local/include/boost/thread/detail/thread_heap_alloc.hpp \
+ /usr/local/include/boost/thread/pthread/thread_heap_alloc.hpp \
+ /usr/local/include/boost/thread/detail/make_tuple_indices.hpp \
+ /usr/local/include/boost/thread/detail/invoke.hpp \
+ /usr/local/include/boost/type_traits/is_member_object_pointer.hpp \
+ /usr/local/include/boost/thread/detail/is_convertible.hpp \
+ /usr/include/c++/13/list /usr/include/c++/13/bits/stl_list.h \
+ /usr/include/c++/13/bits/list.tcc /usr/local/include/boost/core/ref.hpp \
+ /usr/local/include/boost/bind/bind.hpp \
+ /usr/local/include/boost/bind/detail/requires_cxx11.hpp \
+ /usr/local/include/boost/bind/mem_fn.hpp \
+ /usr/local/include/boost/get_pointer.hpp \
+ /usr/local/include/boost/config/no_tr1/memory.hpp \
+ /usr/local/include/boost/bind/mem_fn_template.hpp \
+ /usr/local/include/boost/bind/mem_fn_cc.hpp \
+ /usr/local/include/boost/is_placeholder.hpp \
+ /usr/local/include/boost/bind/arg.hpp \
+ /usr/local/include/boost/bind/detail/result_traits.hpp \
+ /usr/local/include/boost/bind/std_placeholders.hpp \
+ /usr/local/include/boost/visit_each.hpp \
+ /usr/local/include/boost/bind/detail/is_same.hpp \
+ /usr/local/include/boost/bind/storage.hpp \
+ /usr/local/include/boost/bind/bind_cc.hpp \
+ /usr/local/include/boost/bind/bind_mf_cc.hpp \
+ /usr/local/include/boost/bind/bind_mf2_cc.hpp \
+ /usr/local/include/boost/bind/placeholders.hpp \
+ /usr/local/include/boost/functional/hash.hpp \
+ /usr/local/include/boost/thread/detail/thread_interruption.hpp \
+ /usr/local/include/boost/thread/condition_variable.hpp \
+ /usr/local/include/boost/thread/pthread/condition_variable.hpp \
+ /usr/local/include/boost/thread/detail/thread_group.hpp \
+ /usr/local/include/boost/thread/csbl/memory/unique_ptr.hpp \
+ /usr/local/include/boost/thread/csbl/memory/config.hpp \
+ /usr/local/include/boost/smart_ptr/make_unique.hpp \
+ /usr/local/include/boost/type_traits/is_unbounded_array.hpp \
+ /usr/local/include/boost/thread/shared_mutex.hpp \
+ /usr/local/include/boost/thread/pthread/shared_mutex.hpp \
+ /usr/local/include/boost/thread/once.hpp \
+ /usr/local/include/boost/thread/pthread/once_atomic.hpp \
+ /usr/local/include/boost/core/no_exceptions_support.hpp \
+ /usr/local/include/boost/atomic.hpp \
+ /usr/local/include/boost/memory_order.hpp \
+ /usr/local/include/boost/atomic/capabilities.hpp \
+ /usr/local/include/boost/atomic/detail/config.hpp \
+ /usr/local/include/boost/atomic/detail/capabilities.hpp \
+ /usr/local/include/boost/atomic/detail/platform.hpp \
+ /usr/local/include/boost/atomic/detail/futex.hpp \
+ /usr/include/linux/futex.h \
+ /usr/local/include/boost/atomic/detail/intptr.hpp \
+ /usr/local/include/boost/atomic/detail/header.hpp \
+ /usr/local/include/boost/atomic/detail/footer.hpp \
+ /usr/local/include/boost/atomic/detail/int_sizes.hpp \
+ /usr/local/include/boost/atomic/detail/float_sizes.hpp \
+ /usr/local/include/boost/atomic/detail/caps_gcc_atomic.hpp \
+ /usr/local/include/boost/atomic/detail/caps_arch_gcc_x86.hpp \
+ /usr/local/include/boost/atomic/detail/wait_capabilities.hpp \
+ /usr/local/include/boost/atomic/detail/wait_caps_futex.hpp \
+ /usr/local/include/boost/atomic/atomic.hpp \
+ /usr/local/include/boost/atomic/detail/classify.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_enum.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_integral.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_function.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_floating_point.hpp \
+ /usr/local/include/boost/atomic/detail/atomic_impl.hpp \
+ /usr/local/include/boost/atomic/detail/storage_traits.hpp \
+ /usr/local/include/boost/atomic/detail/string_ops.hpp \
+ /usr/local/include/boost/atomic/detail/aligned_variable.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/alignment_of.hpp \
+ /usr/local/include/boost/atomic/detail/bitwise_cast.hpp \
+ /usr/local/include/boost/atomic/detail/addressof.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/remove_cv.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/integral_constant.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/has_unique_object_representations.hpp \
+ /usr/local/include/boost/atomic/detail/integral_conversions.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_signed.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/make_signed.hpp \
+ /usr/local/include/boost/type_traits/make_signed.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/make_unsigned.hpp \
+ /usr/local/include/boost/atomic/detail/core_operations.hpp \
+ /usr/local/include/boost/atomic/detail/core_arch_operations.hpp \
+ /usr/local/include/boost/atomic/detail/core_arch_operations_fwd.hpp \
+ /usr/local/include/boost/atomic/detail/core_operations_emulated.hpp \
+ /usr/local/include/boost/atomic/detail/core_operations_emulated_fwd.hpp \
+ /usr/local/include/boost/atomic/detail/lock_pool.hpp \
+ /usr/local/include/boost/atomic/detail/link.hpp \
+ /usr/local/include/boost/atomic/detail/core_arch_ops_gcc_x86.hpp \
+ /usr/local/include/boost/atomic/detail/core_operations_fwd.hpp \
+ /usr/local/include/boost/atomic/detail/core_ops_gcc_atomic.hpp \
+ /usr/local/include/boost/atomic/detail/gcc_atomic_memory_order_utils.hpp \
+ /usr/local/include/boost/atomic/detail/wait_operations.hpp \
+ /usr/local/include/boost/atomic/detail/wait_ops_generic.hpp \
+ /usr/local/include/boost/atomic/detail/pause.hpp \
+ /usr/local/include/boost/atomic/detail/wait_operations_fwd.hpp \
+ /usr/local/include/boost/atomic/detail/wait_ops_emulated.hpp \
+ /usr/local/include/boost/atomic/detail/wait_ops_futex.hpp \
+ /usr/local/include/boost/atomic/detail/extra_operations.hpp \
+ /usr/local/include/boost/atomic/detail/extra_ops_generic.hpp \
+ /usr/local/include/boost/atomic/detail/extra_operations_fwd.hpp \
+ /usr/local/include/boost/atomic/detail/extra_ops_emulated.hpp \
+ /usr/local/include/boost/atomic/detail/extra_ops_gcc_x86.hpp \
+ /usr/local/include/boost/atomic/detail/memory_order_utils.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_nothrow_default_constructible.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_trivially_default_constructible.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/conditional.hpp \
+ /usr/local/include/boost/atomic/detail/bitwise_fp_cast.hpp \
+ /usr/local/include/boost/atomic/detail/fp_operations.hpp \
+ /usr/local/include/boost/atomic/detail/fp_ops_generic.hpp \
+ /usr/local/include/boost/atomic/detail/fp_operations_fwd.hpp \
+ /usr/local/include/boost/atomic/detail/fp_ops_emulated.hpp \
+ /usr/local/include/boost/atomic/detail/extra_fp_operations.hpp \
+ /usr/local/include/boost/atomic/detail/extra_fp_ops_generic.hpp \
+ /usr/local/include/boost/atomic/detail/extra_fp_operations_fwd.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_iec559.hpp \
+ /usr/local/include/boost/atomic/detail/extra_fp_ops_emulated.hpp \
+ /usr/local/include/boost/atomic/detail/type_traits/is_trivially_copyable.hpp \
+ /usr/local/include/boost/atomic/atomic_ref.hpp \
+ /usr/local/include/boost/atomic/detail/atomic_ref_impl.hpp \
+ /usr/local/include/boost/atomic/atomic_flag.hpp \
+ /usr/local/include/boost/atomic/detail/atomic_flag_impl.hpp \
+ /usr/local/include/boost/atomic/ipc_atomic.hpp \
+ /usr/local/include/boost/atomic/ipc_atomic_ref.hpp \
+ /usr/local/include/boost/atomic/ipc_atomic_flag.hpp \
+ /usr/local/include/boost/atomic/fences.hpp \
+ /usr/local/include/boost/atomic/detail/fence_operations.hpp \
+ /usr/local/include/boost/atomic/detail/fence_ops_gcc_atomic.hpp \
+ /usr/local/include/boost/atomic/detail/fence_arch_operations.hpp \
+ /usr/local/include/boost/atomic/detail/fence_arch_ops_gcc_x86.hpp \
+ /usr/local/include/boost/thread/recursive_mutex.hpp \
+ /usr/local/include/boost/thread/pthread/recursive_mutex.hpp \
+ /usr/local/include/boost/thread/tss.hpp \
+ /usr/local/include/boost/thread/locks.hpp \
+ /usr/local/include/boost/thread/lock_algorithms.hpp \
+ /usr/local/include/boost/thread/shared_lock_guard.hpp \
+ /usr/local/include/boost/thread/barrier.hpp \
+ /usr/local/include/boost/thread/detail/nullary_function.hpp \
+ /usr/local/include/boost/thread/detail/memory.hpp \
+ /usr/local/include/boost/thread/csbl/memory/pointer_traits.hpp \
+ /usr/local/include/boost/thread/csbl/memory/allocator_arg.hpp \
+ /usr/local/include/boost/thread/csbl/memory/allocator_traits.hpp \
+ /usr/local/include/boost/thread/csbl/memory/scoped_allocator.hpp \
+ /usr/local/include/boost/thread/csbl/memory/shared_ptr.hpp \
+ /usr/local/include/boost/thread/future.hpp \
+ /usr/local/include/boost/thread/detail/invoker.hpp \
+ /usr/local/include/boost/thread/csbl/tuple.hpp \
+ /usr/local/include/boost/tuple/tuple.hpp \
+ /usr/local/include/boost/tuple/detail/tuple_basic.hpp \
+ /usr/local/include/boost/type_traits/cv_traits.hpp \
+ /usr/local/include/boost/type_traits/add_cv.hpp \
+ /usr/local/include/boost/type_traits/remove_volatile.hpp \
+ /usr/local/include/boost/type_traits/function_traits.hpp \
+ /usr/local/include/boost/thread/detail/variadic_header.hpp \
+ /usr/local/include/boost/preprocessor/facilities/intercept.hpp \
+ /usr/local/include/boost/preprocessor/facilities/limits/intercept_256.hpp \
+ /usr/local/include/boost/thread/detail/variadic_footer.hpp \
+ /usr/local/include/boost/thread/exceptional_ptr.hpp \
+ /usr/local/include/boost/exception_ptr.hpp \
+ /usr/local/include/boost/exception/detail/exception_ptr.hpp \
+ /usr/local/include/boost/exception/info.hpp \
+ /usr/local/include/boost/exception/to_string_stub.hpp \
+ /usr/local/include/boost/exception/to_string.hpp \
+ /usr/local/include/boost/exception/detail/is_output_streamable.hpp \
+ /usr/local/include/boost/exception/detail/object_hex_dump.hpp \
+ /usr/local/include/boost/exception/detail/type_info.hpp \
+ /usr/local/include/boost/core/typeinfo.hpp \
+ /usr/local/include/boost/core/demangle.hpp /usr/include/c++/13/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/cxxabi_tweaks.h \
+ /usr/local/include/boost/current_function.hpp \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/bits/quoted_string.h \
+ /usr/local/include/boost/exception/detail/error_info_impl.hpp \
+ /usr/local/include/boost/exception/detail/shared_ptr.hpp \
+ /usr/local/include/boost/exception/diagnostic_information.hpp \
+ /usr/local/include/boost/exception/get_error_info.hpp \
+ /usr/local/include/boost/exception/current_exception_cast.hpp \
+ /usr/local/include/boost/exception/detail/clone_current_exception.hpp \
+ /usr/local/include/boost/make_shared.hpp \
+ /usr/local/include/boost/smart_ptr/make_shared.hpp \
+ /usr/local/include/boost/smart_ptr/make_shared_object.hpp \
+ /usr/local/include/boost/smart_ptr/detail/sp_forward.hpp \
+ /usr/local/include/boost/smart_ptr/make_shared_array.hpp \
+ /usr/local/include/boost/core/default_allocator.hpp \
+ /usr/local/include/boost/smart_ptr/allocate_shared_array.hpp \
+ /usr/local/include/boost/core/alloc_construct.hpp \
+ /usr/local/include/boost/core/noinit_adaptor.hpp \
+ /usr/local/include/boost/core/first_scalar.hpp \
+ /usr/local/include/boost/type_traits/extent.hpp \
+ /usr/local/include/boost/type_traits/is_bounded_array.hpp \
+ /usr/local/include/boost/thread/futures/future_error.hpp \
+ /usr/local/include/boost/thread/futures/future_error_code.hpp \
+ /usr/local/include/boost/thread/futures/future_status.hpp \
+ /usr/local/include/boost/thread/futures/is_future_type.hpp \
+ /usr/local/include/boost/thread/futures/launch.hpp \
+ /usr/local/include/boost/thread/futures/wait_for_all.hpp \
+ /usr/local/include/boost/thread/futures/wait_for_any.hpp \
+ /usr/local/include/boost/scoped_array.hpp \
+ /usr/local/include/boost/smart_ptr/scoped_array.hpp \
+ /usr/local/include/boost/thread/executor.hpp \
+ /usr/local/include/boost/thread/executors/executor.hpp \
+ /usr/local/include/boost/thread/executors/executor_adaptor.hpp \
+ /usr/local/include/boost/thread/executors/generic_executor_ref.hpp \
+ /usr/local/include/boost/function.hpp \
+ /usr/local/include/boost/preprocessor/iterate.hpp \
+ /usr/local/include/boost/preprocessor/iteration/iterate.hpp \
+ /usr/local/include/boost/preprocessor/slot/slot.hpp \
+ /usr/local/include/boost/preprocessor/slot/detail/def.hpp \
+ /usr/local/include/boost/function/detail/prologue.hpp \
+ /usr/local/include/boost/function/detail/requires_cxx11.hpp \
+ /usr/local/include/boost/config/no_tr1/functional.hpp \
+ /usr/local/include/boost/function/function_base.hpp \
+ /usr/local/include/boost/function/function_fwd.hpp \
+ /usr/local/include/boost/function_equal.hpp \
+ /usr/local/include/boost/type_traits/composite_traits.hpp \
+ /usr/local/include/boost/mem_fn.hpp \
+ /usr/local/include/boost/preprocessor/enum.hpp \
+ /usr/local/include/boost/preprocessor/repetition/enum.hpp \
+ /usr/local/include/boost/preprocessor/enum_params.hpp \
+ /usr/local/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
+ /usr/local/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
+ /usr/local/include/boost/preprocessor/slot/detail/shared.hpp \
+ /usr/local/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
+ /usr/local/include/boost/preprocessor/iteration/detail/iter/limits/forward1_256.hpp \
+ /usr/local/include/boost/function/detail/function_iterate.hpp \
+ /usr/local/include/boost/function/detail/maybe_include.hpp \
+ /usr/local/include/boost/function/function_template.hpp \
+ /usr/local/include/boost/function/detail/epilogue.hpp \
+ /usr/local/include/boost/type_traits/is_fundamental.hpp \
+ /usr/local/include/boost/thread/detail/atomic_undef_macros.hpp \
+ /usr/local/include/boost/thread/detail/atomic_redef_macros.hpp \
+ /usr/local/include/boost/noncopyable.hpp \
+ /usr/local/include/boost/core/noncopyable.hpp \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../comm/../logic/GateUserEng.h \
+ /home/wenheng/Desktop/workspace/CppExcise/newFrame_gateway/logic/../comm/../logic/GateUser.h

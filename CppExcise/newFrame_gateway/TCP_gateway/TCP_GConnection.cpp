@@ -1,5 +1,4 @@
 #include "TCP_GConnection.h"
-#include "../comm/GateManager.h"
 
 TCP_GConnection::TCP_GConnection(ioserver_tp& io) : TCPConnection(io)
 {
@@ -59,11 +58,16 @@ void TCP_GConnection::on_handleReadHead(netMsg_ptr msg, ec_code_tp ec, size_t by
         if(p)
         {
             printf("TCP_GConnection::on_handleReadHead | 网关服 移除用户...\n");
-            p->m_logicConn->close();
-            GateManager::getObj()->m_userEng.erase(p->onlyid());
+            p->close();
+            // p->m_logicConn->close();
+            // GateManager::getObj()->m_userEng.erase(p->onlyid());
 
         }
-        close();
+        else
+        {
+            printf("TCP_GConnection::on_handleReadHead | 用户指向已失效\n");
+        }
+        // close();
         return;
     }
 
