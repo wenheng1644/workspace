@@ -1,0 +1,13 @@
+[info](2023-10-22 11:57:25) session[c08835de-9473-4604-a2f5-b6c9e3559c74] 已连接成功 | ip = 192.168.1.2, port = 43572
+[info](2023-10-22 11:57:25) handle_AccpetIOThread | session = [c08835de-9473-4604-a2f5-b6c9e3559c74 : 139848257173248]
+[info](2023-10-22 11:57:32) session[fd4e7d7e-af7d-4c6c-b662-355c28ad331c] 已连接成功 | ip = 192.168.250.2, port = 45046
+[info](2023-10-22 11:57:32) handle_AccpetIOThread | session = [fd4e7d7e-af7d-4c6c-b662-355c28ad331c : 139848257173248]
+[warning](2023-10-22 11:58:25) handle_checkHeartBeat | session[c08835de-9473-4604-a2f5-b6c9e3559c74] 心跳包超时 = 12
+[error](2023-10-22 11:58:25)  handle_readhead | session[c08835de-9473-4604-a2f5-b6c9e3559c74] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:129 in function 'do_complete']
+[info](2023-10-22 11:58:25) handle_DisConnectIOThread | session[c08835de-9473-4604-a2f5-b6c9e3559c74 : 139848248780544] remove
+[info](2023-10-22 11:58:32) session[06dd2393-9450-442d-be7b-e919969fa7e0] 已连接成功 | ip = 192.168.1.2, port = 43650
+[info](2023-10-22 11:58:32) handle_AccpetIOThread | session = [06dd2393-9450-442d-be7b-e919969fa7e0 : 139848257173248]
+[info](2023-10-22 11:59:22) session[f54b6fbb-1a2b-456f-b1dd-c174600ac1e0] 已连接成功 | ip = 192.168.250.2, port = 59334
+[info](2023-10-22 11:59:22) handle_AccpetIOThread | session = [f54b6fbb-1a2b-456f-b1dd-c174600ac1e0 : 139848257173248]
+[error](2023-10-22 12:00:21)  handle_readhead | session[06dd2393-9450-442d-be7b-e919969fa7e0] 连接断开, error = Connection reset by peer [system:104 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:129 in function 'do_complete']
+[info](2023-10-22 12:00:21) handle_DisConnectIOThread | session[c08835de-9473-4604-a2f5-b6c9e3559c74 : 139848248780544] remove

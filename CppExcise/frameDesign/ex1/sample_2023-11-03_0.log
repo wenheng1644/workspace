@@ -1,0 +1,6 @@
+[info](2023-11-03 09:24:06) sql statment = select * from user where account='邝慧娴'
+[info](2023-11-03 09:24:06) session[46223322-7745-4fa0-bd8e-01a000b9897f] 已连接成功 | ip = 192.168.31.79, port = 47586
+[info](2023-11-03 09:24:06) handle_AccpetIOThread | session = [46223322-7745-4fa0-bd8e-01a000b9897f : 139808229308160]
+[warning](2023-11-03 09:24:21) handle_checkHeartBeat | 心跳包超时: before = 1698974650, now = 1698974661, diff = 11
+[error](2023-11-03 09:24:21)  handle_readhead | session[46223322-7745-4fa0-bd8e-01a000b9897f] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-11-03 09:24:21) handle_DisConnectIOThread | session[46223322-7745-4fa0-bd8e-01a000b9897f : 139808220915456] remove

@@ -1,0 +1,17 @@
+[info](2023-11-16 21:26:59) 读取数据库聊天消息16条
+[info](2023-11-16 21:27:16) sql statment = select * from user where account='测试1'
+[info](2023-11-16 21:27:16) session[4564b224-3d99-4acb-a69d-e6351afa8177] 已连接成功 | ip = 192.168.31.237, port = 39902
+[info](2023-11-16 21:27:16) handle_AccpetIOThread | session = [4564b224-3d99-4acb-a69d-e6351afa8177 : 140652146689792]
+[error](2023-11-16 21:28:11)  handle_readhead | session[4564b224-3d99-4acb-a69d-e6351afa8177] 连接断开, error = End of file
+[info](2023-11-16 21:28:11) handle_DisConnectIOThread | session[4564b224-3d99-4acb-a69d-e6351afa8177] remove
+[info](2023-11-16 21:28:27) sql statment = select * from user where account='邝慧娴'
+[info](2023-11-16 21:28:27) session[120f0b45-39c1-4241-af1d-1aa5e765be57] 已连接成功 | ip = 192.168.31.237, port = 39926
+[info](2023-11-16 21:28:27) handle_AccpetIOThread | session = [120f0b45-39c1-4241-af1d-1aa5e765be57 : 140652146689792]
+[warning](2023-11-16 21:29:17) handle_checkHeartBeat | 心跳包超时: before = 1700141346, now = 1700141357, diff = 11
+[error](2023-11-16 21:29:17)  handle_readhead | session[120f0b45-39c1-4241-af1d-1aa5e765be57] 连接断开, error = Operation canceled
+[info](2023-11-16 21:29:17) handle_DisConnectIOThread | session[120f0b45-39c1-4241-af1d-1aa5e765be57] remove
+[warning](2023-11-16 21:29:17) Session::close | session 句柄關閉失敗...
+[error](2023-11-16 22:34:07) TCP_Server | 收到信号: [2]
+[info](2023-11-16 22:34:07) 服务器关闭处理聊天数据
+[info](2023-11-16 22:34:07) writeToDb | 聊天数据开始插入数据库
+[error](2023-11-16 22:34:07) handle_accept session[919dac43-f66e-45cf-9365-47b54e20a6dc] 连接失败 | error = Operation canceled

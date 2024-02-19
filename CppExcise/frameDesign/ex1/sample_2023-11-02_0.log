@@ -1,0 +1,10 @@
+[info](2023-11-02 23:53:37) sql statment = select * from user where account='邝慧娴'
+[info](2023-11-02 23:53:37) session[ea13f822-ae2f-40ce-839c-8e27e3a30942] 已连接成功 | ip = 192.168.31.237, port = 46262
+[info](2023-11-02 23:53:37) handle_AccpetIOThread | session = [ea13f822-ae2f-40ce-839c-8e27e3a30942 : 140007736973056]
+[error](2023-11-02 23:54:04)  handle_readhead | session[ea13f822-ae2f-40ce-839c-8e27e3a30942] 连接断开, error = Connection reset by peer [system:104 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-11-02 23:54:04) handle_DisConnectIOThread | session[ea13f822-ae2f-40ce-839c-8e27e3a30942 : 140007728580352] remove
+[info](2023-11-02 23:55:37) sql statment = select * from user where account='邝慧娴'
+[info](2023-11-02 23:55:37) session[7ddafcb0-c910-4b99-aca4-c6659d31cab4] 已连接成功 | ip = 192.168.31.79, port = 44234
+[info](2023-11-02 23:55:37) handle_AccpetIOThread | session = [7ddafcb0-c910-4b99-aca4-c6659d31cab4 : 140007736973056]
+[error](2023-11-02 23:56:11)  handle_readhead | session[7ddafcb0-c910-4b99-aca4-c6659d31cab4] 连接断开, error = Connection reset by peer [system:104 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-11-02 23:56:11) handle_DisConnectIOThread | session[7ddafcb0-c910-4b99-aca4-c6659d31cab4 : 140007728580352] remove

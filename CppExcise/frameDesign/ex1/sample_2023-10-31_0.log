@@ -1,0 +1,84 @@
+[warning](2023-10-31 21:50:50) 数据库连接失败
+[info](2023-10-31 21:51:23) sql statment = select * from user where account='测试1'
+[warning](2023-10-31 21:51:23) 数据库没有对应账号
+[info](2023-10-31 21:51:24) sql statment = select * from user where account='测试1'
+[info](2023-10-31 21:51:24) 注册成功, (测试1, 123)
+[info](2023-10-31 21:51:24) session[babd8830-4eac-435c-94eb-9fbc3593b255] 已连接成功 | ip = 192.168.31.79, port = 45250
+[info](2023-10-31 21:51:24) handle_AccpetIOThread | session = [babd8830-4eac-435c-94eb-9fbc3593b255 : 140480161457920]
+[warning](2023-10-31 21:51:44) handle_checkHeartBeat | 心跳包超时: before = 1698760290, now = 1698760304, diff = 14
+[error](2023-10-31 21:51:44)  handle_readhead | session[babd8830-4eac-435c-94eb-9fbc3593b255] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 21:51:44) handle_DisConnectIOThread | session[babd8830-4eac-435c-94eb-9fbc3593b255 : 140480153065216] remove
+[info](2023-10-31 21:55:05) sql statment = select * from user where account='测试1'
+[info](2023-10-31 21:55:05) session[64a41717-33c1-44eb-9575-f8f41334276d] 已连接成功 | ip = 192.168.31.237, port = 47884
+[info](2023-10-31 21:55:05) handle_AccpetIOThread | session = [64a41717-33c1-44eb-9575-f8f41334276d : 140480161457920]
+[error](2023-10-31 21:59:34)  handle_readhead | session[64a41717-33c1-44eb-9575-f8f41334276d] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 21:59:34) handle_DisConnectIOThread | session[babd8830-4eac-435c-94eb-9fbc3593b255 : 140480153065216] remove
+[info](2023-10-31 22:00:12) sql statment = select * from user where account='邝慧娴'
+[info](2023-10-31 22:00:12) session[dbd5b804-5709-4b5f-bbf1-fb6729d694af] 已连接成功 | ip = 192.168.31.237, port = 47998
+[info](2023-10-31 22:00:12) handle_AccpetIOThread | session = [dbd5b804-5709-4b5f-bbf1-fb6729d694af : 140480161457920]
+[warning](2023-10-31 22:00:22) handle_checkHeartBeat | 心跳包超时: before = 1698760812, now = 1698760822, diff = 10
+[info](2023-10-31 22:00:22) handle_DisConnectIOThread | session[64a41717-33c1-44eb-9575-f8f41334276d : 140480153065216] remove
+[error](2023-10-31 22:00:22)  handle_readhead | session[dbd5b804-5709-4b5f-bbf1-fb6729d694af] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:30:31) sql statment = select * from user where account='邝慧娴'
+[info](2023-10-31 22:30:31) session[292f6e23-200f-49b6-9e82-06fcf379d324] 已连接成功 | ip = 192.168.31.237, port = 48838
+[info](2023-10-31 22:30:31) handle_AccpetIOThread | session = [292f6e23-200f-49b6-9e82-06fcf379d324 : 140480161457920]
+[error](2023-10-31 22:31:57)  Session::send | session[dbd5b804-5709-4b5f-bbf1-fb6729d694af] socket失效
+[info](2023-10-31 22:31:57) handle_DisConnectIOThread | session[dbd5b804-5709-4b5f-bbf1-fb6729d694af : 140480153065216] remove
+[error](2023-10-31 22:32:06)  handle_readhead | session[292f6e23-200f-49b6-9e82-06fcf379d324] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:32:06) handle_DisConnectIOThread | session[292f6e23-200f-49b6-9e82-06fcf379d324 : 140480153065216] remove
+[info](2023-10-31 22:32:22) sql statment = select * from user where account='测试1'
+[info](2023-10-31 22:32:22) session[678e865d-6e7b-4a2c-b01a-e766363b7c23] 已连接成功 | ip = 192.168.31.237, port = 48870
+[info](2023-10-31 22:32:22) handle_AccpetIOThread | session = [678e865d-6e7b-4a2c-b01a-e766363b7c23 : 140480161457920]
+[warning](2023-10-31 22:32:32) handle_checkHeartBeat | 心跳包超时: before = 1698762742, now = 1698762752, diff = 10
+[error](2023-10-31 22:32:32)  handle_readhead | session[678e865d-6e7b-4a2c-b01a-e766363b7c23] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:32:32) handle_DisConnectIOThread | session[678e865d-6e7b-4a2c-b01a-e766363b7c23 : 140480153065216] remove
+[info](2023-10-31 22:39:32) sql statment = select * from user where account='邝慧娴'
+[info](2023-10-31 22:39:32) session[c5f6efc8-161a-4644-9654-c83a038ae31b] 已连接成功 | ip = 192.168.31.237, port = 48982
+[info](2023-10-31 22:39:32) handle_AccpetIOThread | session = [c5f6efc8-161a-4644-9654-c83a038ae31b : 140480161457920]
+[error](2023-10-31 22:40:27)  handle_readhead | session[c5f6efc8-161a-4644-9654-c83a038ae31b] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:40:27) handle_DisConnectIOThread | session[678e865d-6e7b-4a2c-b01a-e766363b7c23 : 140480153065216] remove
+[info](2023-10-31 22:40:45) sql statment = select * from user where account='测试1'
+[info](2023-10-31 22:40:45) session[8919249a-0ea7-45f3-8380-eb1f7bb82532] 已连接成功 | ip = 192.168.31.237, port = 49004
+[info](2023-10-31 22:40:45) handle_AccpetIOThread | session = [8919249a-0ea7-45f3-8380-eb1f7bb82532 : 140480161457920]
+[warning](2023-10-31 22:40:55) handle_checkHeartBeat | 心跳包超时: before = 1698763245, now = 1698763255, diff = 10
+[error](2023-10-31 22:40:55)  handle_readhead | session[8919249a-0ea7-45f3-8380-eb1f7bb82532] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:40:55) handle_DisConnectIOThread | session[c5f6efc8-161a-4644-9654-c83a038ae31b : 140480153065216] remove
+[info](2023-10-31 22:44:10) sql statment = select * from user where account='邝慧娴'
+[info](2023-10-31 22:44:10) session[01d8f9a6-e233-446a-840e-8520917b0ca6] 已连接成功 | ip = 192.168.31.237, port = 49058
+[info](2023-10-31 22:44:10) handle_AccpetIOThread | session = [01d8f9a6-e233-446a-840e-8520917b0ca6 : 140480161457920]
+[error](2023-10-31 22:45:39)  handle_readhead | session[01d8f9a6-e233-446a-840e-8520917b0ca6] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:45:39) handle_DisConnectIOThread | session[8919249a-0ea7-45f3-8380-eb1f7bb82532 : 140480153065216] remove
+[info](2023-10-31 22:46:04) sql statment = select * from user where account='测试1'
+[info](2023-10-31 22:46:04) session[4ff1bd93-f3ae-4010-825f-b273a723d1a5] 已连接成功 | ip = 192.168.31.237, port = 49086
+[info](2023-10-31 22:46:04) handle_AccpetIOThread | session = [4ff1bd93-f3ae-4010-825f-b273a723d1a5 : 140480161457920]
+[warning](2023-10-31 22:46:14) handle_checkHeartBeat | 心跳包超时: before = 1698763564, now = 1698763574, diff = 10
+[info](2023-10-31 22:46:14) handle_DisConnectIOThread | session[01d8f9a6-e233-446a-840e-8520917b0ca6 : 140480153065216] remove
+[error](2023-10-31 22:46:14)  handle_readhead | session[4ff1bd93-f3ae-4010-825f-b273a723d1a5] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:51:39) sql statment = select * from user where account='邝慧娴'
+[info](2023-10-31 22:51:39) session[55d1b07d-03e6-4823-b3d1-7d0ab092c93c] 已连接成功 | ip = 192.168.31.237, port = 49164
+[info](2023-10-31 22:51:39) handle_AccpetIOThread | session = [55d1b07d-03e6-4823-b3d1-7d0ab092c93c : 140480161457920]
+[error](2023-10-31 22:52:02)  handle_readhead | session[55d1b07d-03e6-4823-b3d1-7d0ab092c93c] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:52:02) handle_DisConnectIOThread | session[4ff1bd93-f3ae-4010-825f-b273a723d1a5 : 140480153065216] remove
+[info](2023-10-31 22:52:18) sql statment = select * from user where account='测试1'
+[info](2023-10-31 22:52:18) session[411804e4-ce46-4e54-a08f-dbaddcf5b319] 已连接成功 | ip = 192.168.31.237, port = 49182
+[info](2023-10-31 22:52:18) handle_AccpetIOThread | session = [411804e4-ce46-4e54-a08f-dbaddcf5b319 : 140480161457920]
+[warning](2023-10-31 22:52:28) handle_checkHeartBeat | 心跳包超时: before = 1698763938, now = 1698763948, diff = 10
+[info](2023-10-31 22:52:28) handle_DisConnectIOThread | session[55d1b07d-03e6-4823-b3d1-7d0ab092c93c : 140480153065216] remove
+[error](2023-10-31 22:52:28)  handle_readhead | session[411804e4-ce46-4e54-a08f-dbaddcf5b319] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:54:26) sql statment = select * from user where account='邝慧娴'
+[info](2023-10-31 22:54:26) session[dfbe7ea4-6729-4a5e-ae1c-c4f9fcbcf495] 已连接成功 | ip = 192.168.31.237, port = 49222
+[info](2023-10-31 22:54:26) handle_AccpetIOThread | session = [dfbe7ea4-6729-4a5e-ae1c-c4f9fcbcf495 : 140480161457920]
+[error](2023-10-31 22:54:42)  Session::send | session[411804e4-ce46-4e54-a08f-dbaddcf5b319] socket失效
+[info](2023-10-31 22:54:42) handle_DisConnectIOThread | session[411804e4-ce46-4e54-a08f-dbaddcf5b319 : 140480153065216] remove
+[error](2023-10-31 22:54:52)  handle_readhead | session[dfbe7ea4-6729-4a5e-ae1c-c4f9fcbcf495] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 22:54:52) handle_DisConnectIOThread | session[dfbe7ea4-6729-4a5e-ae1c-c4f9fcbcf495 : 140480153065216] remove
+[info](2023-10-31 22:55:05) sql statment = select * from user where account='测试1'
+[info](2023-10-31 22:55:05) session[6b841798-d0ab-4599-bc0a-b561634372e9] 已连接成功 | ip = 192.168.31.237, port = 49232
+[info](2023-10-31 22:55:05) handle_AccpetIOThread | session = [6b841798-d0ab-4599-bc0a-b561634372e9 : 140480161457920]
+[error](2023-10-31 23:07:19)  handle_readhead | session[6b841798-d0ab-4599-bc0a-b561634372e9] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 23:07:19) handle_DisConnectIOThread | session[6b841798-d0ab-4599-bc0a-b561634372e9 : 140480153065216] remove
+[info](2023-10-31 23:07:52) sql statment = select * from user where account='徐伟镇'
+[info](2023-10-31 23:07:52) session[3c63e711-f59f-4d26-9a1f-524d2993e909] 已连接成功 | ip = 192.168.31.237, port = 49436
+[info](2023-10-31 23:07:52) handle_AccpetIOThread | session = [3c63e711-f59f-4d26-9a1f-524d2993e909 : 140480161457920]
+[error](2023-10-31 23:09:08)  handle_readhead | session[3c63e711-f59f-4d26-9a1f-524d2993e909] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-10-31 23:09:08) handle_DisConnectIOThread | session[3c63e711-f59f-4d26-9a1f-524d2993e909 : 140480153065216] remove

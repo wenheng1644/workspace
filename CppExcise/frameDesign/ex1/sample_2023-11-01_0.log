@@ -1,0 +1,5 @@
+[info](2023-11-01 23:53:57) sql statment = select * from user where account='邝慧娴'
+[info](2023-11-01 23:53:57) session[2c3e8a96-0c57-4373-a9c1-72760e350975] 已连接成功 | ip = 192.168.31.79, port = 44668
+[info](2023-11-01 23:53:57) handle_AccpetIOThread | session = [2c3e8a96-0c57-4373-a9c1-72760e350975 : 139938004031232]
+[error](2023-11-01 23:54:21)  handle_readhead | session[2c3e8a96-0c57-4373-a9c1-72760e350975] 连接断开, error = End of file [asio.misc:2 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']
+[info](2023-11-01 23:54:21) handle_DisConnectIOThread | session[2c3e8a96-0c57-4373-a9c1-72760e350975 : 139937995638528] remove

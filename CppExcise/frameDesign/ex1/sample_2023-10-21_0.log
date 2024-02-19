@@ -1,0 +1,17 @@
+[info](2023-10-21 23:28:57) session[141d68d9-c47d-4749-8e81-70fc6e8a10ae] 已连接成功 | ip = 192.168.1.2, port = 46094
+[info](2023-10-21 23:28:57) handle_AccpetIOThread | session = [141d68d9-c47d-4749-8e81-70fc6e8a10ae : 139656759752448]
+[warning](2023-10-21 23:29:27) handle_checkHeartBeat | session[141d68d9-c47d-4749-8e81-70fc6e8a10ae] 心跳包超时 = 12
+[error](2023-10-21 23:29:27)  handle_readhead | session[141d68d9-c47d-4749-8e81-70fc6e8a10ae] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:129 in function 'do_complete']
+[info](2023-10-21 23:29:27) handle_DisConnectIOThread | session[141d68d9-c47d-4749-8e81-70fc6e8a10ae : 139656751359744] remove
+[info](2023-10-21 23:32:33) session[5e4760d5-cac7-4609-aea2-064d07c98ba4] 已连接成功 | ip = 192.168.1.2, port = 46256
+[info](2023-10-21 23:32:33) handle_AccpetIOThread | session = [5e4760d5-cac7-4609-aea2-064d07c98ba4 : 139656759752448]
+[error](2023-10-21 23:34:22)  handle_readhead | session[5e4760d5-cac7-4609-aea2-064d07c98ba4] 连接断开, error = Connection reset by peer [system:104 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:129 in function 'do_complete']
+[info](2023-10-21 23:34:22) handle_DisConnectIOThread | session[141d68d9-c47d-4749-8e81-70fc6e8a10ae : 139656751359744] remove
+[info](2023-10-21 23:37:11) session[2e781d27-e515-4edc-9dc5-5bd722de86fe] 已连接成功 | ip = 192.168.1.2, port = 46438
+[info](2023-10-21 23:37:11) handle_AccpetIOThread | session = [2e781d27-e515-4edc-9dc5-5bd722de86fe : 139656759752448]
+[error](2023-10-21 23:38:26)  handle_readhead | session[2e781d27-e515-4edc-9dc5-5bd722de86fe] 连接断开, error = Connection reset by peer [system:104 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:129 in function 'do_complete']
+[info](2023-10-21 23:38:26) handle_DisConnectIOThread | session[5e4760d5-cac7-4609-aea2-064d07c98ba4 : 139656751359744] remove
+[info](2023-10-21 23:38:45) session[003545b6-c37b-4a50-9226-6995587780e7] 已连接成功 | ip = 192.168.1.2, port = 46482
+[info](2023-10-21 23:38:45) handle_AccpetIOThread | session = [003545b6-c37b-4a50-9226-6995587780e7 : 139656759752448]
+[info](2023-10-21 23:51:19) session[942010ae-e6a8-4513-be82-59f2ef97619e] 已连接成功 | ip = 192.168.250.2, port = 36114
+[info](2023-10-21 23:51:19) handle_AccpetIOThread | session = [942010ae-e6a8-4513-be82-59f2ef97619e : 139656759752448]

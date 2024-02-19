@@ -1,0 +1,10 @@
+[info](2023-12-10 10:15:48) 读取数据库聊天消息38条
+[info](2023-12-10 10:16:09) sql statment = select * from user where account='aaa'
+[info](2023-12-10 10:16:09) session[a62a4585-ed06-4d95-8584-cb2c9854d245] 已连接成功 | ip = 192.168.1.4, port = 44576
+[info](2023-12-10 10:16:09) handle_AccpetIOThread | session = [a62a4585-ed06-4d95-8584-cb2c9854d245 : 140521521338112]
+[error](2023-12-10 10:16:13) TCP_Server | 收到信号: [2]
+[info](2023-12-10 10:16:13) 服务器关闭处理聊天数据
+[info](2023-12-10 10:16:13) handle_DisConnectIOThread | session[a62a4585-ed06-4d95-8584-cb2c9854d245] remove
+[info](2023-12-10 10:16:13) writeToDb | 聊天数据开始插入数据库
+[error](2023-12-10 10:16:13) handle_accept session[7a39c1db-a30c-4fc1-bf63-8027729ef84b] 连接失败 | error = Operation canceled
+[error](2023-12-10 10:16:13)  handle_readhead | session[a62a4585-ed06-4d95-8584-cb2c9854d245] 连接断开, error = Operation canceled

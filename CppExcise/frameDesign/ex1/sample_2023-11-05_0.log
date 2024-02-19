@@ -1,0 +1,15 @@
+[info](2023-11-05 11:07:33) sql statment = select * from user where account='芙芙'
+[info](2023-11-05 11:07:33) session[1b6e12fa-fa15-4971-980e-6e15632ff89d] 已连接成功 | ip = 192.168.1.3, port = 42638
+[info](2023-11-05 11:07:33) handle_AccpetIOThread | session = [1b6e12fa-fa15-4971-980e-6e15632ff89d : 139783752419072]
+[error](2023-11-05 11:07:37)  handle_readhead | session[1b6e12fa-fa15-4971-980e-6e15632ff89d] 连接断开, error = End of file
+[info](2023-11-05 11:07:37) handle_DisConnectIOThread | session[1b6e12fa-fa15-4971-980e-6e15632ff89d] remove
+[info](2023-11-05 11:07:55) sql statment = select * from user where account='芙芙'
+[info](2023-11-05 11:07:55) session[5761c4fc-3c8b-4008-8fca-2557a7999729] 已连接成功 | ip = 192.168.1.3, port = 42652
+[info](2023-11-05 11:07:55) handle_AccpetIOThread | session = [5761c4fc-3c8b-4008-8fca-2557a7999729 : 139783752419072]
+[error](2023-11-05 11:07:58)  handle_readhead | session[5761c4fc-3c8b-4008-8fca-2557a7999729] 连接断开, error = End of file
+[info](2023-11-05 11:07:58) handle_DisConnectIOThread | session[5761c4fc-3c8b-4008-8fca-2557a7999729] remove
+[info](2023-11-05 11:08:10) sql statment = select * from user where account='芙芙'
+[info](2023-11-05 11:08:10) session[e1f357b5-ffcf-4695-9828-09f0629b1651] 已连接成功 | ip = 192.168.1.3, port = 42656
+[info](2023-11-05 11:08:10) handle_AccpetIOThread | session = [e1f357b5-ffcf-4695-9828-09f0629b1651 : 139783752419072]
+[error](2023-11-05 11:08:17)  handle_readhead | session[e1f357b5-ffcf-4695-9828-09f0629b1651] 连接断开, error = End of file
+[info](2023-11-05 11:08:17) handle_DisConnectIOThread | session[e1f357b5-ffcf-4695-9828-09f0629b1651] remove

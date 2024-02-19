@@ -1,0 +1,16 @@
+# ninja log v5
+2	3833	1696864846832672612	CMakeFiles/log_ex.dir/logManager/logManager.cpp.o	21d8b1bbc3a76ba1
+3	2789	1696864223475502920	CMakeFiles/log_ex.dir/main.cpp.o	f57edd6bca3c6fbf
+0	27	1696942972580329661	build.ninja	8fdb283b1af44c3f
+3833	3942	1696864846944673771	log_ex	def4e6b1f8c2235
+4	4681	1696943595425190422	CMakeFiles/log_ex.dir/logManager/logManager.cpp.o	21d8b1bbc3a76ba1
+4681	4872	1696943595621210570	log_ex	def4e6b1f8c2235
+3	4135	1696943896957471433	CMakeFiles/log_ex.dir/logManager/logManager.cpp.o	21d8b1bbc3a76ba1
+4135	4274	1696943897101464682	log_ex	def4e6b1f8c2235
+3	2984	1696945925499857726	CMakeFiles/log_ex.dir/main.cpp.o	f57edd6bca3c6fbf
+4	4276	1696945926787825625	CMakeFiles/log_ex.dir/logManager/logManager.cpp.o	21d8b1bbc3a76ba1
+4276	4409	1696945926927822134	log_ex	def4e6b1f8c2235
+3	2734	1696945959183003954	CMakeFiles/log_ex.dir/main.cpp.o	f57edd6bca3c6fbf
+2734	2863	1696945959315000550	log_ex	def4e6b1f8c2235
+3	3962	1696946372858676249	CMakeFiles/log_ex.dir/logManager/logManager.cpp.o	21d8b1bbc3a76ba1
+3962	4085	1696946372986672041	log_ex	def4e6b1f8c2235

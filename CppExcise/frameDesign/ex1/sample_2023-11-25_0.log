@@ -1,0 +1,4 @@
+[warning](2023-11-25 10:01:51) 数据库连接失败
+[info](2023-11-25 10:03:18) sql statment = select * from user where account='xwh'
+[info](2023-11-25 10:03:18) session[ad69d129-9021-4ff0-b3e6-85dc8b334da5] 已连接成功 | ip = 192.168.1.4, port = 58988
+[info](2023-11-25 10:03:18) handle_AccpetIOThread | session = [ad69d129-9021-4ff0-b3e6-85dc8b334da5 : 140510776899328]

@@ -1,0 +1,7 @@
+[info](2023-11-06 22:59:50) sql statment = select * from user where account='测试1'
+[info](2023-11-06 22:59:50) session[9bbcf22f-35ea-4b87-ae8b-9ff82a9497bb] 已连接成功 | ip = 192.168.31.237, port = 47368
+[info](2023-11-06 22:59:50) handle_AccpetIOThread | session = [9bbcf22f-35ea-4b87-ae8b-9ff82a9497bb : 140171879573248]
+[error](2023-11-06 22:59:55) TCP_Server | 收到信号: [2]
+[error](2023-11-06 22:59:55) session[d0b7d830-5a02-45c9-a64f-367946dfa13f] 连接失败 | error = Operation canceled
+[info](2023-11-06 22:59:55) handle_DisConnectIOThread | session[9bbcf22f-35ea-4b87-ae8b-9ff82a9497bb] remove
+[error](2023-11-06 22:59:55)  handle_readhead | session[9bbcf22f-35ea-4b87-ae8b-9ff82a9497bb] 连接断开, error = Operation canceled

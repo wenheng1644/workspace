@@ -1,0 +1,9 @@
+[info](2023-12-28 21:39:37) 读取数据库聊天消息38条
+[info](2023-12-28 21:39:52) sql statment = select * from user where account='xwz'
+[warning](2023-12-28 21:39:52) 数据库没有对应账号
+[info](2023-12-28 21:39:54) sql statment = select * from user where account='xwz'
+[info](2023-12-28 21:39:54) 注册成功, (xwz, 1)
+[info](2023-12-28 21:39:54) session[ecf5058b-64b1-40eb-bbde-0db178b12c57] 已连接成功 | ip = 192.168.31.145, port = 56226
+[info](2023-12-28 21:39:54) handle_AccpetIOThread | session = [ecf5058b-64b1-40eb-bbde-0db178b12c57 : 140609060259584]
+[error](2023-12-28 22:08:50)  handle_readhead | session[ecf5058b-64b1-40eb-bbde-0db178b12c57] 连接断开, error = End of file
+[info](2023-12-28 22:08:50) handle_DisConnectIOThread | session[ecf5058b-64b1-40eb-bbde-0db178b12c57] remove

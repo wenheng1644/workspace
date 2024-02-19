@@ -1,0 +1,3 @@
+/home/wenheng/Desktop/workspace/CppExcise/frameDesign/workthread/cmake-build-debug/CMakeFiles/workthread.dir
+/home/wenheng/Desktop/workspace/CppExcise/frameDesign/workthread/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wenheng/Desktop/workspace/CppExcise/frameDesign/workthread/cmake-build-debug/CMakeFiles/rebuild_cache.dir

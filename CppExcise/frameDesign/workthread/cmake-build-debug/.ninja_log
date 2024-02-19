@@ -1,0 +1,5 @@
+# ninja log v5
+0	243	1700310047165634163	CMakeFiles/workthread.dir/WorkThread.cpp.o	aa933b3c9e5c200a
+0	16	1702108852894049391	build.ninja	71d2a627a6bb20ff
+0	236	1700310047157634193	CMakeFiles/workthread.dir/main.cpp.o	83c126f3a1104e01
+243	285	1700310047205634011	workthread	954b392399ffc9ea

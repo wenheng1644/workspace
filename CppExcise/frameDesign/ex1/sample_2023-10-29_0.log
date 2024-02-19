@@ -1,0 +1,9 @@
+[info](2023-10-29 22:46:29) sql statment = select * from user where account='机器人'
+[warning](2023-10-29 22:46:29) 数据库没有对应账号
+[info](2023-10-29 22:46:30) sql statment = select * from user where account='机器人'
+[info](2023-10-29 22:46:30) 注册成功, (机器人, 111)
+[info](2023-10-29 22:46:30) session[6c6a42bb-fed1-48f1-aa02-113d0e07878b] 已连接成功 | ip = 192.168.31.237, port = 41672
+[info](2023-10-29 22:46:30) handle_AccpetIOThread | session = [6c6a42bb-fed1-48f1-aa02-113d0e07878b : 140538690098944]
+[warning](2023-10-29 22:47:00) handle_checkHeartBeat | 心跳包超时: before = 1698590809, now = 1698590820, diff = 11
+[info](2023-10-29 22:47:00) handle_DisConnectIOThread | session[6c6a42bb-fed1-48f1-aa02-113d0e07878b : 140538681706240] remove
+[error](2023-10-29 22:47:00)  handle_readhead | session[6c6a42bb-fed1-48f1-aa02-113d0e07878b] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:134 in function 'do_complete']

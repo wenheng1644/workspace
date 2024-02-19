@@ -1,0 +1,5 @@
+[info](2023-10-14 16:41:39) session[919da1cc-4951-402f-a06f-bf38588fa9f7] 已连接成功 | ip = 192.168.1.6, port = 37202
+[error](2023-10-14 16:41:41)  handle_readhead | session[919da1cc-4951-402f-a06f-bf38588fa9f7] 连接断开, error = Connection reset by peer [system:104 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:129 in function 'do_complete']
+[info](2023-10-14 16:41:57) session[ce8cb26c-5d4c-4872-bc40-a7d28233ba0b] 已连接成功 | ip = 192.168.1.6, port = 48004
+[warning](2023-10-14 16:42:52) handle_checkHeartBeat | session[ce8cb26c-5d4c-4872-bc40-a7d28233ba0b] 心跳包超时 = 13
+[error](2023-10-14 16:42:52)  handle_readhead | session[ce8cb26c-5d4c-4872-bc40-a7d28233ba0b] 连接断开, error = Operation canceled [system:125 at /usr/local/include/boost/asio/detail/reactive_socket_recv_op.hpp:129 in function 'do_complete']
