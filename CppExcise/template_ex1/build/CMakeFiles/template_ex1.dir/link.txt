@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/template_ex1.dir/main.cpp.o -o template_ex1 
