@@ -63,9 +63,9 @@ function M.call(node, srv, ...)
     local mynode = skynet.getenv("node")
 
     if node == mynode then
-        skynet.call(srv, "lua", ...)
+        return skynet.call(srv, "lua", ...)
     else
-        cluster.call(node, srv, ...)
+        return cluster.call(node, srv, ...)
     end
 end
 

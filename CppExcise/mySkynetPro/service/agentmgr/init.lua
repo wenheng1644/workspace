@@ -8,6 +8,7 @@ STATUS = {
 }
 
 local players = {}
+local addrs = {}
 
 function mgrplayer()
     local m = {
@@ -23,7 +24,7 @@ end
 
 s.resp.reqlogin = function(source, playerid, node, gate)
     local mplayer = players[playerid]
-
+    skynet.error("agentmgr : playerid = " .. playerid .. ", node = " .. node .. ", gate = " ..gate)
     if mplayer and mplayer.status == STATUS.LOGOUT then
         skynet.error("reqlogin fail, at status LOGOUT: " .. playerid)
         return false
@@ -39,11 +40,12 @@ s.resp.reqlogin = function(source, playerid, node, gate)
         local pagent = mplayer.agent
         local pgate = mplayer.gate
         mplayer.status = STATUS.LOGOUT
+        skynet.error("the account was login....  we need to kick out game")
+
         s.call(pnode, pagent, "kick")
         s.send(pnode, pagent, "exit")
         s.send(pnode, pgate, "send", playerid, {"kick", "other login"})
         s.call(pnode, pgate, "kick", playerid)
-
     end
 
     local player = mgrplayer()
@@ -56,11 +58,13 @@ s.resp.reqlogin = function(source, playerid, node, gate)
 
 
     players[playerid] = player
-    local agent = s.call(node, "nodemgr", "newservice", "agent", "agent", playerid)
+    skynet.error("agentmgr: start to call nodemgr --> nodemgr svr = " .. addrs["nodemgr"])
+    local agent = s.call(node, addrs["nodemgr"], "newservice", "agent", "agent", playerid)
+    skynet.error("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
     player.agent = agent
     player.status = STATUS.GAME
 
-
+    skynet.error("agentmgr: success to login!!!!")
     return true, agent
 end
 
@@ -68,6 +72,7 @@ s.resp.reqkick = function(source, playerid, reason)
     local mplayer = players[playerid]
     if not mplayer then return false end
 
+    skynet.error("##############################agentmgr: recv request: playerid = " .. playerid .. ", status = " .. mplayer.status)
     if mplayer.status ~= STATUS.GAME then return false end
 
     local pnode = mplayer.node
@@ -82,3 +87,11 @@ s.resp.reqkick = function(source, playerid, reason)
 
     return true
 end
+
+s.resp.regist_addr = function(source, addrname, addr)
+    addrs[addrname] = addr
+
+    skynet.error("agentmgr: success to regist addrname = " .. addrname .. ", addr = " .. addr)
+end
+
+s.start(...)

@@ -49,18 +49,18 @@ local str_pack = function(cmd, msg)
 end
 
 local process_msg = function(fd, msg)
-    skynet.error("[ " .. fd .. " ]: process_msg --> " .. msg)
-
     local cmd, msgtb = str_unpack(msg)
 
-    skynet.error("process_msg -> " .. cmd)
-    for k, v in ipairs(msgtb) do
-        skynet.error("process_msg -> value = " .. v)
-    end
+    skynet.error("[ " .. fd .. " ]: process_msg --> " .. msg .. ", cmd = " .. cmd)
+
+    -- skynet.error("process_msg -> " .. cmd)
+    -- for k, v in ipairs(msgtb) do
+    --     skynet.error("process_msg -> value = " .. v)
+    -- end
     
-    for k, v in pairs(svr_addr or {}) do
-        skynet.error("k = " .. k .. ", v = " .. v)
-    end
+    -- for k, v in pairs(svr_addr or {}) do
+    --     skynet.error("k = " .. k .. ", v = " .. v)
+    -- end
 
     local conn = conns[fd]
     local playerid = conn.playerid
@@ -99,14 +99,19 @@ end
 
 local disconect = function(fd)
     local c = conns[fd]
-    if not c then return end
+    if not c then 
+        return 
+    end
 
     local playerid = c.playerid
-    if not playerid then return end
+    if not playerid then 
+        return 
+    end
 
     players[playerid] = nil
     local reason = "¶ÏÏß"
-    skynet.call("agentmgr", "lua", "reqkick", playerid, reason)
+    skynet.error("gateway start to disconnect: playerid = " .. playerid)
+    skynet.call(svr_addr["agentmgr"], "lua", "reqkick", playerid, reason)
 end
 
 local recv_loop = function(fd)
@@ -163,9 +168,9 @@ end
 s.resp.send_by_fd = function(source, fd, msg)
     if not conns[fd] then return end
 
-    for k, v in pairs(msg) do
-        skynet.error("send_by_fd --> k = " .. k .. ", v = " ..v)
-    end
+    -- for k, v in pairs(msg) do
+    --     skynet.error("send_by_fd --> k = " .. k .. ", v = " ..v)
+    -- end
 
     local buff = str_pack(msg[1], msg)
     skynet.error("send " .. fd .. " --> [ " .. msg[1] .. " ] {" .. table.concat(msg, ",").. "}")
@@ -197,19 +202,27 @@ s.resp.sure_agent = function(source, fd, playerid, agent)
     gplayer.conn = conn
     players[playerid] = gplayer
 
+    skynet.error("gateway: sure_agent call ok, playerid = " .. playerid .. ", agent = " .. agent)
+
     return true
 end
 
 s.resp.kick = function(source, playerid)
     local gplayer = players[playerid]
-    if not gplayer then return end
+    skynet.error("gateway resp kick: playerid = " .. playerid)
+    if not gplayer then 
+        return 
+    end
 
     local c = gplayer.conn
     players[playerid] = nil
-    if not c then return end
 
+    if not c then 
+        return 
+    end
     conns[c.fd] = nil
     disconect(c.fd)
+
     socket.close(c.fd)
 end
 
