@@ -22,7 +22,7 @@ function mgrplayer()
 end
 
 
-s.resp.reqlogin = function(source, playerid, node, gate)
+s.resp.reqlogin = function(source, playerid, node, gate, nodemgr)
     local mplayer = players[playerid]
     skynet.error("agentmgr : playerid = " .. playerid .. ", node = " .. node .. ", gate = " ..gate)
     if mplayer and mplayer.status == STATUS.LOGOUT then
@@ -58,8 +58,11 @@ s.resp.reqlogin = function(source, playerid, node, gate)
 
 
     players[playerid] = player
-    skynet.error("agentmgr: start to call nodemgr --> nodemgr svr = " .. addrs["nodemgr"])
-    local agent = s.call(node, addrs["nodemgr"], "newservice", "agent", "agent", playerid)
+    skynet.error("agentmgr: start to call nodemgr --> nodemgr svr = " .. nodemgr .. ", from node = " .. node)
+    local agent = s.call(node, nodemgr, "newservice", "agent", "agent", playerid)
+    -- skynet.send(agent, "lua", "regist_addr", "agentmgr", skynet.self())
+    s.send(node, agent, "regist_addr", "agentmgr", skynet.self())
+    skynet.error("agentmgr svr: create a new agent = " .. agent)
     skynet.error("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
     player.agent = agent
     player.status = STATUS.GAME

@@ -4,7 +4,7 @@ return {
         node2 = "127.0.0.1:7772",
     },
 
-    agentmgr = {node1 = "node1"},
+    agentmgr = {node = "node1"},
 
     scene = {
         node1 = {1001, 1002},

@@ -28,11 +28,11 @@ local dispatch = function(session, address, cmd, ...)
         return
     end
 
-    skynet.error("print the ret: " .. cmd .. " = " .. cmd)
-    for k, v in ipairs(ret or {}) do
-        local txt = string.format("[cmd = %s]: k = %s, v = %s", cmd, k, v)
-        skynet.error(txt)
-    end
+    -- skynet.error("print the ret: " .. cmd .. " = " .. cmd)
+    -- for k, v in ipairs(ret or {}) do
+    --     local txt = string.format("[cmd = %s]: k = %s, v = %s", cmd, k, v)
+    --     skynet.error(txt)
+    -- end
 
     skynet.retpack(table.unpack(ret, 2))
 end

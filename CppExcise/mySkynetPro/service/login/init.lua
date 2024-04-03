@@ -1,6 +1,7 @@
 local skynet = require("skynet")
 local s = require("service")
 local mysql = require("skynet.db.mysql")
+local runconfig = require("runconfig")
 
 s.client = {}
 
@@ -24,23 +25,14 @@ s.client.login = function(fd, msg, source)
     local id = tonumber(msg[2])
     local pw = msg[3]
 
-    local node = skynet.getenv("node")
+    local agentmgr_node = runconfig.agentmgr.node
+    local mynode = skynet.getenv("node")
     local sql = string.format("select * from player where account = \'%s\'", msg[2])
     local res = s.db:query(sql)
-    -- if msg[2] == "759490883" and pw == "123" then
-    --     skynet.error("the id success~~~")
-
-    --     local status, agent = s.call(node, addrs["agentmgr"], "reqlogin", id, node, source)
-    --     skynet.error("loginsvr : type(status) = " .. type(status) .. ", type(agent) = " .. type(agent))
-        
-    --     skynet.send(source, "lua", "sure_agent", fd, id, agent)
-
-    --     return {"login", 0, "success"}
+    
+    -- for k, v in pairs(res or {}) do
+    --     skynet.error("###############   v.account = " .. v.account .. ", v.password = " .. v.password)
     -- end
-    skynet.error("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-    for k, v in pairs(res or {}) do
-        skynet.error("###############   v.account = " .. v.account .. ", v.password = " .. v.password)
-    end
     -- skynet.error("print the res type = " .. type(res) .. ", account = " ..res.account .. ", pw = " .. res.password)
     if not res[1] then
         skynet.error("loginsvr: not the account....")
@@ -59,8 +51,8 @@ s.client.login = function(fd, msg, source)
 
     skynet.error("the id success~~~")
 
-    local status, agent = s.call(node, addrs["agentmgr"], "reqlogin", id, node, source)
-    skynet.error("loginsvr : type(status) = " .. type(status) .. ", type(agent) = " .. type(agent))
+    local status, agent = s.call(agentmgr_node, addrs["agentmgr"], "reqlogin", id, mynode, source, addrs["nodemgr"])
+    skynet.error("loginsvr : type(status) = " .. type(status) .. ", type(agent) = " .. type(agent) .. ", agent = " .. agent)
     
     skynet.send(source, "lua", "sure_agent", fd, id, agent)
     return {"login", 0, "success"}

@@ -80,7 +80,7 @@ local process_msg = function(fd, msg)
     else
         local gplayer = players[playerid]
         local agent = gplayer.agent
-
+        skynet.error("gateway"..s.id.. ": cmd = " .. cmd .. ", agent = " .. (agent or -1))
         skynet.send(agent, "lua", "client", cmd, msgtb)
     end
 end
@@ -109,7 +109,7 @@ local disconect = function(fd)
     end
 
     players[playerid] = nil
-    local reason = "¶ÏÏß"
+    local reason = "æ–­çº¿"
     skynet.error("gateway start to disconnect: playerid = " .. playerid)
     skynet.call(svr_addr["agentmgr"], "lua", "reqkick", playerid, reason)
 end
@@ -191,7 +191,7 @@ end
 s.resp.sure_agent = function(source, fd, playerid, agent)
     local conn = conns[fd]
     if not conn then 
-        skynet.call("agentmgr", "lua", "reqkick", playerid, "Î´Íê³ÉµÇÂ¼¼´ÏÂÏß")
+        skynet.call("agentmgr", "lua", "reqkick", playerid, "è¸¢äººä¸‹çº¿")
         return false
     end
 
