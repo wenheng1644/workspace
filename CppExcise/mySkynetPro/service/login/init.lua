@@ -50,9 +50,16 @@ s.client.login = function(fd, msg, source)
     end
 
     skynet.error("the id success~~~")
+    -- local status, agent=  skynet.call(addrs["agentmgr"], "lua", "reqlogin", id, mynode, source, addrs["nodemgr"])
+    local status, agent = s.call(agentmgr_node, "agentmgr", "reqlogin", id, mynode, source, addrs["nodemgr"])
+    skynet.error("login svr: agentmgr_node = " .. agentmgr_node .. ", agentmgr addr = " .. addrs["agentmgr"] .. ", nodemgr addr = " .. addrs["nodemgr"])
+    if not status or not agent then
+        skynet.error("login svr: id = " .. s.id .. ", ################################")
+        return {"login", 1, "login error"}
+    end
+    skynet.error("loginsvr : type(status) = " .. type(status) .. ", type(agent) = " .. type(agent))
 
-    local status, agent = s.call(agentmgr_node, addrs["agentmgr"], "reqlogin", id, mynode, source, addrs["nodemgr"])
-    skynet.error("loginsvr : type(status) = " .. type(status) .. ", type(agent) = " .. type(agent) .. ", agent = " .. agent)
+
     
     skynet.send(source, "lua", "sure_agent", fd, id, agent)
     return {"login", 0, "success"}
@@ -60,6 +67,8 @@ end
 
 s.resp.regist_addr = function(source, addrname, addr, node)
     addrs[addrname] = addr
+
+    skynet.error("login svr: id = " .. s.id .. ", regist addrname = " .. addrname .. ", addr = " .. addr)
 end
 
 s.init = function()

@@ -9,6 +9,7 @@ local M = {
     init = nil,
 
     resp = {},
+    client = {},
 }
 
 local dispatch = function(session, address, cmd, ...)

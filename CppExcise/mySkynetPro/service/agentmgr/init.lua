@@ -1,5 +1,6 @@
 local skynet = require("skynet")
 local s = require("service")
+local runconfig = require("runconfig")
 
 STATUS = {
     LOGIN = 2,
@@ -19,6 +20,15 @@ function mgrplayer()
         gate = nil,
     }
     return m
+end
+
+local function getonlinecount()
+    local n = 0
+    for playerid in pairs(players) do
+        n = n + 1
+    end
+
+    return n
 end
 
 
@@ -60,8 +70,15 @@ s.resp.reqlogin = function(source, playerid, node, gate, nodemgr)
     players[playerid] = player
     skynet.error("agentmgr: start to call nodemgr --> nodemgr svr = " .. nodemgr .. ", from node = " .. node)
     local agent = s.call(node, nodemgr, "newservice", "agent", "agent", playerid)
-    -- skynet.send(agent, "lua", "regist_addr", "agentmgr", skynet.self())
     s.send(node, agent, "regist_addr", "agentmgr", skynet.self())
+
+    -- for k, v in pairs(runconfig.scene) do
+    --     for _, id in ipairs(v) do
+    --         local secne_name = "scene" .. id
+    --         s.send(node, agent, "regist_addr", secne_name, addrs[secne_name])
+    --     end
+    -- end
+
     skynet.error("agentmgr svr: create a new agent = " .. agent)
     skynet.error("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
     player.agent = agent
@@ -85,6 +102,7 @@ s.resp.reqkick = function(source, playerid, reason)
 
     s.call(pnode, pagent, "kick")
     s.send(pnode, pagent, "exit")
+    s.send(pnode, pgate, "send", playerid, {"kick", reason})
     s.send(pnode, pgate, "kick", playerid)
     players[playerid] = nil
 
@@ -94,7 +112,42 @@ end
 s.resp.regist_addr = function(source, addrname, addr)
     addrs[addrname] = addr
 
-    skynet.error("agentmgr: success to regist addrname = " .. addrname .. ", addr = " .. addr)
+    skynet.error("&&&&&&&&&&agentmgr: success to regist addrname = " .. addrname .. ", addr = " .. addr)
+end
+
+s.resp.reqAddr = function(source, addrname)
+    if not addrs[addrname] then
+        skynet.error("agentmgr svr: 请求的addrname = " .. addrname .. " 不存在")
+        return
+    end
+
+    return addrs[addrname]
+end
+
+s.resp.shutdown = function (source, kicknum)
+    local count = getonlinecount()
+
+    local n = 0
+    skynet.error("agentmgr svr: shutdown server, to kick online player: " .. kicknum)
+    for playerid , player in pairs(players) do
+        skynet.fork(s.resp.reqkick, nil, playerid, "close server")
+        n = n + 1
+
+        if n >= kicknum then
+            break
+        end
+    end
+
+
+    while true do
+        skynet.sleep(100)
+        local new_count = getonlinecount()
+        skynet.error("agentmgr svr: now online count = " .. new_count)
+        if new_count <= 0 or new_count <= count - kicknum then
+            return new_count
+        end
+    end
+    
 end
 
 s.start(...)

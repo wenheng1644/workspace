@@ -1,17 +1,20 @@
 local skynet = require("skynet")
-local s = require("service")
+local s = require "service"
 local mysql = require("skynet.db.mysql")
 local runconfig = require("runconfig")
+require "scene"
 
-s.client = {}
+-- local str = string.format("################################################### agent s addr  = %s", s)
+-- skynet.error(str)
 
+-- s.client = {}
 local PLAYER_DATAS_TYPE = {
     INSERT = 1,
     UPDATE = 2,
     DEL = 3,
 }
 
-local addrs = {}
+s.addrs = {}
 
 --处理玩家数据
 local function onHandlePlayerDatas(agent, ontype)
@@ -49,6 +52,7 @@ end
 
 s.resp.kick = function(source)
     -- skynet.sleep(200)
+    s.leave_scene()
     onHandlePlayerDatas(s, PLAYER_DATAS_TYPE.UPDATE)
 
 end
@@ -60,11 +64,14 @@ s.resp.exit = function(source)
 end
 
 s.resp.regist_addr = function(source, addrname, addr)
-    addrs[addrname] = addr
+    s.addrs[addrname] = addr
 
-    skynet.error("agent svr: regist ---> addrname = " .. addrname .. ", addr = " .. addr)
+    skynet.error("agent svr: regist ---> addrname = " .. addrname .. ", addr = " .. (addr or "nil"))
 end
 
+s.resp.send = function(source, msg)
+    s.send(skynet.getenv("node") ,s.gate, "send", s.id, msg)
+end
 
 s.init = function()
     skynet.sleep(200)
@@ -108,12 +115,14 @@ end
 s.client.work = function(msg)
     s.data.coin = s.data.coin + 1
 
+    local str = string.format("agent svr: print the agent table addr  = %s", s)
+    skynet.error(str)
     return {"work", s.data.coin}
 end
 
 s.client.quit = function(msg)
-    -- skynet.send(addrs["agentmgr"], "lua", "reqkick", s.id, "玩家退出登录")
-    s.send(runconfig.agentmgr.node, addrs["agentmgr"], "reqkick", s.id, "玩家退出登录")
+    skynet.send(s.addrs["agentmgr"], "lua", "reqkick", s.id, "玩家退出登录")
+    -- s.send(runconfig.agentmgr.node, s.addrs["agentmgr"], "reqkick", s.id, "玩家退出登录")
     return {"quit ok"}
 end
 
@@ -148,4 +157,12 @@ s.client.print = function(msg)
     return ret
 end
 
+
+-- s.client.enter = agent_enter
+
 s.start(...)
+
+-- skynet.error("################################agent服务########################")
+-- for k, v in pairs(s.client or {}) do
+--     skynet.error("$$$$$$$$$$$$$$$$$$$$$$  k = " .. k)
+-- end

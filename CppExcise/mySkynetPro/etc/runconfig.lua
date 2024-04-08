@@ -5,9 +5,11 @@ return {
     },
 
     agentmgr = {node = "node1"},
+    admin = {node = "node1"},
 
     scene = {
         node1 = {1001, 1002},
+        node2 = {1011, 1022},
     },
 
     node1 = {

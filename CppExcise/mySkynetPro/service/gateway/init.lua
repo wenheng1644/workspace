@@ -137,6 +137,12 @@ end
 
 local connect = function(fd, addr)
     print("connect from " .. addr .. " " .. fd)
+
+    if s.close then
+        skynet.error("gateway svr: node = " .. skynet.getenv("node") .. ", id = " .. s.id .. " --> close...")
+        return
+    end
+
     local c = conn()
     conns[fd] = c
     c.fd = fd
@@ -146,7 +152,7 @@ end
 
 function s.init()
     skynet.error("[ " .. s.name .. " " .. s.id)
-
+    s.close = false
     local node = skynet.getenv("node")
     local nodecfg = runconfig[node]
     local port = nodecfg.gateway[s.id].port
@@ -224,6 +230,11 @@ s.resp.kick = function(source, playerid)
     disconect(c.fd)
 
     socket.close(c.fd)
+end
+
+s.resp.shutdown = function ()
+    skynet.error("gateway svr: node = " .. skynet.getenv("node") .. ", id = " .. s.id .. " --> shutdown")
+    s.close = true
 end
 
 
