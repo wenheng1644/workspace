@@ -104,6 +104,8 @@ skynet.start(function()
         if mynode == nodeid then
             for _, sid in ipairs(conf) do
                 local svr = skynet.newservice("scene", "scene", sid)
+                skynet.name("scene" .. sid, svr)
+                cluster.register("scene" .. sid, svr)
                 local info = {
                     addr = svr,
                     name = "scene" .. sid,
@@ -112,6 +114,8 @@ skynet.start(function()
         
                 table.insert(scenes, info)
             end
+        else
+
         end
     end
 

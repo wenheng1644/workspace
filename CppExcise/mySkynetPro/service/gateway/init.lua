@@ -22,6 +22,9 @@ function gateplayer()
         playerid = nil,
         agent = nil,
         conn = nil,
+        key = math.random(1, 999999),
+        lost_conn_time = nil,
+        msgcache = {}
     }
 
     return m
@@ -48,6 +51,45 @@ local str_pack = function(cmd, msg)
     return table.concat(msg, ",") .. "\r\n"
 end
 
+local function process_reconnect(fd, msg)
+    local playerid = tonumber(msg[2])
+    local key = tonumber(msg[3])
+
+    local conn = conns[fd]
+    skynet.error("gateway svr: playerid = " .. playerid .. ", 尝试重登....")
+    if not conn then
+        skynet.error("gateway svr: 该连接非法...  fd = " .. fd)
+        return
+    end
+
+    local gateplayer = players[playerid]
+    if not gateplayer then
+        skynet.error("gateway svr: 玩家未登录...")
+        return
+    end
+
+    if gateplayer.conn then
+        skynet.error("gateway svr: 该玩家仍在登录...")
+        return
+    end
+
+    if gateplayer.key ~= key then
+        skynet.error("gateway svr: 该玩家客户端无效重登...")
+        return
+    end
+
+    gateplayer.conn = conn
+    conn.playerid = playerid
+
+    s.resp.send_by_fd(nil, fd, {"reconnect", 0})
+
+    for i, cmsg in ipairs(gateplayer.msgcache) do
+        s.resp.send_by_fd(nil, fd, cmsg)
+    end
+
+    gateplayer.msgcache = {}
+end
+
 local process_msg = function(fd, msg)
     local cmd, msgtb = str_unpack(msg)
 
@@ -65,6 +107,11 @@ local process_msg = function(fd, msg)
     local conn = conns[fd]
     local playerid = conn.playerid
 
+    --重连特殊处理
+    if cmd == "reconnect" then
+        process_reconnect(fd, msgtb)
+        return
+    end
 
 
     if not playerid then
@@ -106,12 +153,22 @@ local disconect = function(fd)
     local playerid = c.playerid
     if not playerid then 
         return 
+    else
+        local gplayer = players[playerid]
+        gplayer.conn = nil
+        skynet.timeout(300 * 100, function()
+            if gplayer.conn then return end
+
+            skynet.error("gateway svr: 玩家长时间未重登，强制下线!!!")
+            local reason = "断线"
+            s.call(runconfig.agentmgr.node, "agentmgr", "reqkick", playerid, reason)
+        end)
     end
 
-    players[playerid] = nil
-    local reason = "断线"
-    skynet.error("gateway start to disconnect: playerid = " .. playerid)
-    skynet.call(svr_addr["agentmgr"], "lua", "reqkick", playerid, reason)
+    -- players[playerid] = nil
+    -- local reason = "断线"
+    -- skynet.error("gateway start to disconnect: playerid = " .. playerid)
+    -- skynet.call(svr_addr["agentmgr"], "lua", "reqkick", playerid, reason)
 end
 
 local recv_loop = function(fd)
@@ -189,7 +246,13 @@ s.resp.send = function(source, playerid, msg)
 
     local c = gplayer.conn
 
-    if not c then return end
+    if not c then 
+        table.insert(gplayer.msgcache, msg)
+        if #gplayer.msgcache > 100 then
+            s.call(runconfig.agentmgr.node, "agentmgr", "reqkick", playerid, "缓存消息过多")
+        end
+        return 
+    end
 
     s.resp.send_by_fd(nil, c.fd, msg)
 end
@@ -208,7 +271,7 @@ s.resp.sure_agent = function(source, fd, playerid, agent)
     gplayer.conn = conn
     players[playerid] = gplayer
 
-    skynet.error("gateway: sure_agent call ok, playerid = " .. playerid .. ", agent = " .. agent)
+    skynet.error("gateway: sure_agent call ok, playerid = " .. playerid .. ", agent = " .. agent .. ", key = " .. gplayer.key)
 
     return true
 end

@@ -77,6 +77,7 @@ local function broadcast(msg)
 end
 
 s.resp.enter = function(source, playerid, agent, node)
+    skynet.error("scene svr: node = " .. skynet.getenv("node") .. ", id = " .. s.id .. ", playerid = " .. playerid .. " 进行请求进入场景")
     if balls[playerid] then
         skynet.error("scene svr: playerid = " .. playerid .. " was gaming~~")
         return false

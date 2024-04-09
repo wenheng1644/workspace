@@ -4,6 +4,9 @@ local mysql = require("skynet.db.mysql")
 local runconfig = require("runconfig")
 require "scene"
 
+require("comm")
+require("skin")
+
 -- local str = string.format("################################################### agent s addr  = %s", s)
 -- skynet.error(str)
 
@@ -15,7 +18,6 @@ local PLAYER_DATAS_TYPE = {
 }
 
 s.addrs = {}
-
 --处理玩家数据
 local function onHandlePlayerDatas(agent, ontype)
     if not agent or not agent.db then return end
@@ -25,13 +27,16 @@ local function onHandlePlayerDatas(agent, ontype)
     local sql = nil
 
     if ontype == PLAYER_DATAS_TYPE.INSERT then
-        sql = string.format("insert into player_datas (account, coin, hp) values (\'%s\', \'%s\', \'%s\')", agent.id, agent.data.coin or 0, agent.data.hp or 200)
+        sql = string.format("insert into player_datas (account, coin, hp, datas) values (\'%s\', \'%s\', \'%s\', \'%s\')", agent.id, agent.data.coin or 0, agent.data.hp or 200, ToBinSerlizeDatas(agent.data.serize_datas) or "")
     elseif ontype == PLAYER_DATAS_TYPE.UPDATE then
-        sql = string.format("update player_datas set coin = \'%s\', hp = \'%s\' where account = \'%s\'", agent.data.coin or 0, agent.data.hp or 200, agent.id)
+        sql = string.format("update player_datas set coin = \'%s\', hp = \'%s\', datas = \'%s\' where account = \'%s\'", agent.data.coin or 0, agent.data.hp or 200, ToBinSerlizeDatas(agent.data.serize_datas) or "",agent.id)
     end
 
     if not sql then return end
 
+    local status = db:query(sql)
+
+    sql = string.format("update player set last_login = \'%s\' where account = \'%s\'", ToMysqlTime(agent.data.last_login or 0), agent.id)
     db:query(sql)
 
     skynet.error("agent svr: id = " .. agent.id .. " --> sql do success ( " .. sql .. " )")
@@ -89,12 +94,21 @@ s.init = function()
     local sql = string.format("select * from player_datas where account = \'%s\'", s.id)
     local res = s.db:query(sql)
 
+    local metatb = {}
+
     if #res == 0 then
+
+        local datas = {}
+        setmetatable(datas, metatb)
         s.data = {
             coin = 0,
             hp = 200,
+            sex = "male",
+            last_login = os.time(),
+            serize_datas  = datas,
         }
 
+        s.skin.OnSkinLogin()    --首次送皮肤
         onHandlePlayerDatas(s, PLAYER_DATAS_TYPE.INSERT)
         skynet.error("agent svr: s.id = " .. s.id .. ", 新用户使用默认数据")
 
@@ -102,11 +116,17 @@ s.init = function()
     end
 
     local data = res[1]
+    local datas = UnSerlizeDatas(data.datas or "") or {}
+    setmetatable(datas, metatb)
     s.data = {
         coin = data.coin,
-        hp = data.hp
+        hp = data.hp,
+        sex = data.sex,
+        serize_datas =  datas,
+        last_login = os.time()
     }
 
+    s.skin.OnSkinLogin()
     skynet.error("agent svr: s.id = " .. s.id .. ", 读取db数据成功!!")
 
 end
@@ -121,7 +141,7 @@ s.client.work = function(msg)
 end
 
 s.client.quit = function(msg)
-    skynet.send(s.addrs["agentmgr"], "lua", "reqkick", s.id, "玩家退出登录")
+    s.send(runconfig.agentmgr.node, "agentmgr", "reqkick", s.id, "玩家退出登录")
     -- s.send(runconfig.agentmgr.node, s.addrs["agentmgr"], "reqkick", s.id, "玩家退出登录")
     return {"quit ok"}
 end
@@ -149,6 +169,8 @@ s.client.print = function(msg)
         ret[2] = str1 
     elseif msg[2] == "hp" then
         ret[2] = str2
+    elseif msg[2] == "skin" then
+        ret[2] = s.skin.print()
     else
         ret[2] = "not your data: " .. msg[2]
     end

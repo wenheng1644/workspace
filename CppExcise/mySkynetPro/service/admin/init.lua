@@ -63,7 +63,7 @@ local function shutdown_agent()
     local anode = runconfig.agentmgr.node
 
     while true do
-        local online_num = s.call(anode, s.addrs[anode]["agentmgr"], "shutdown", 3)
+        local online_num = s.call(anode, "agentmgr", "shutdown", 3)
 
         if online_num <= 0 then break end
 

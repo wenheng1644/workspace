@@ -1,6 +1,7 @@
 local skynet = require("skynet")
 local s = require "service"
 local runconfig = require("runconfig")
+local cluster = require("skynet.cluster")
 
 local mynode = skynet.getenv("node")
 
@@ -47,15 +48,23 @@ s.client.enter = function(msg)
     -- for k, v in pairs(s.addrs or {}) do
     --     skynet.error("####################### print the addrs: k = " .. k .. ", v = " .. v)
     -- end
-    local addr = s.addrs[sname]
-    if not addr then
-        addr = skynet.call(s.addrs["agentmgr"], "lua", "reqAddr", sname)
-        -- addr = s.call(runconfig.agentmgr.node, s.addrs["agentmgr"], "reqAddr", sname)
-        if not addr then
-            skynet.error("agent svr: id = " .. s.id .. ", 无法获取指定服务地址... " .. sname)
-            return {"enter", 1, "无法获取指定服务地址"}
-        end
-        s.addrs[sname] = addr
+    -- local addr = s.addrs[sname]
+    -- if not addr then
+    --     addr = s.call(runconfig.agentmgr.node ,"agentmgr", "reqAddr", sname)
+    --     -- addr = s.call(runconfig.agentmgr.node, s.addrs["agentmgr"], "reqAddr", sname)
+    --     if not addr then
+    --         skynet.error("agent svr: id = " .. s.id .. ", 无法获取指定服务地址... " .. sname)
+    --         return {"enter", 1, "无法获取指定服务地址"}
+    --     end
+    --     s.addrs[sname] = addr
+    -- end
+
+
+    local addr = sname
+    if snode ~= mynode then
+        skynet.error("agent svr: 查询node = " .. snode .. "的sname地址 -- > " .. sname)
+        addr =  cluster.query(snode, sname)
+        skynet.error("agent svr: 查询成功!!!  addr = " .. addr)
     end
 
     local isok = s.call(snode, addr, "enter", s.id, skynet.self(), mynode)
