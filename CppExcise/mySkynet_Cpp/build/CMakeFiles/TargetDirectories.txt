@@ -1,0 +1,3 @@
+/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles/sunnet.dir
+/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles/edit_cache.dir
+/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles/rebuild_cache.dir

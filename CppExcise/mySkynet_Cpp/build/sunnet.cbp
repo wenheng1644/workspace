@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="sunnet"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sunnet">
+				<Option output="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/sunnet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 sunnet"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sunnet/fast">
+				<Option output="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/sunnet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 sunnet/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/include/Conn.h">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/include/Msg.h">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/include/Service.h">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/include/SocketWorker.h">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/include/Sunnet.h">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/include/Worker.h">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp">
+			<Option target="sunnet"/>
+		</Unit>
+		<Unit filename="/home/wenheng/workspace/CppExcise/mySkynet_Cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
