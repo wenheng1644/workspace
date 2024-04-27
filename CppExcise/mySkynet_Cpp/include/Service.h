@@ -35,6 +35,14 @@ public:
 private:
     std::shared_ptr<BaseMsg> PopMsg();
 
+    void OnServiceMsg(std::shared_ptr<ServiceMsg> msg);
+    void OnAcceptMsg(std::shared_ptr<SocketAcceptMsg> msg);
+    void OnRwMsg(std::shared_ptr<SocketRWMsg> msg);
+
+    void OnSocketData(int fd, const char* buff, int len);
+    void OnSocketWritable(int fd);
+    void OnSocketClose(int fd);
+
 public:
     u_int32_t m_id;
     std::shared_ptr<std::string> m_type;

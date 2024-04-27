@@ -51,6 +51,9 @@ public:
     std::shared_ptr<Conn> GetConn(int fd);
     bool removeConn(int fd);
 
+    int Listen(u_int32_t port, u_int32_t serviceid);
+    void CloseConn(u_int32_t fd);
+
     static std::shared_ptr<BaseMsg> MakeMsg(u_int32_t source, char* buff, int len);
 private:
     int WORKER_NUM = 3;

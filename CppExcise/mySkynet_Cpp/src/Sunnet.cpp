@@ -5,6 +5,13 @@
 #include "Sunnet.h"
 #include "iostream"
 
+#include "unistd.h"
+#include "fcntl.h"
+#include "sys/socket.h"
+#include "netinet/in.h"
+#include "arpa/inet.h"
+
+
 Sunnet* Sunnet::inst;
 
 Sunnet::Sunnet()
@@ -230,4 +237,50 @@ bool Sunnet::removeConn(int fd)
     pthread_rwlock_unlock(&m_connsMtx);
 
     return result == 1;
+}
+
+int Sunnet::Listen(u_int32_t port, u_int32_t serviceid)
+{
+    u_int32_t listenfd = socket(AF_INET, SOCK_STREAM, 0);
+    if(listenfd <= 0)
+    {
+        std::cerr << "listen fd create error" << std::endl;
+        return -1;
+    }
+
+    fcntl(listenfd, F_SETFL, O_NONBLOCK);
+
+    sockaddr_in addr;
+    addr.sin_port = htons(port);
+    addr.sin_family = AF_INET;
+    addr.sin_addr.s_addr = htonl(INADDR_ANY);
+
+    int r = bind(listenfd, (sockaddr*)&addr, sizeof(addr));
+    if(r == -1)
+    {
+        std::cerr << "bind socket error" << std::endl;
+        return -1;
+    }
+
+    r = listen(listenfd, 64);
+    if(r < 0)
+    {
+        std::cerr << "listen error" << std::endl;
+        return -1;
+    }
+
+    AddConn(listenfd, serviceid, Conn::TYPE::LISTEN);
+    m_socketWorker->AddEvent(listenfd);
+    std::cout << "开始添加至监听列表: " << listenfd << std::endl;
+    return listenfd;
+}
+
+void Sunnet::CloseConn(u_int32_t fd)
+{
+    bool succ = removeConn(fd);
+
+    close(fd);
+
+    if(succ)
+        m_socketWorker->RemoveEvent(fd);
 }

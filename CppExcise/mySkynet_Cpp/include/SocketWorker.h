@@ -7,6 +7,9 @@
 
 #pragma once
 
+#include "sys/epoll.h"
+#include "Conn.h"
+#include "memory"
 class SocketWorker
 {
 public:
@@ -14,6 +17,16 @@ public:
     void init();
 
     void operator()();
+
+    void AddEvent(int fd);
+    void RemoveEvent(int fd);
+    void ModifyEvent(int fd, bool epollOut);
+private:
+    int epollfd;
+
+    void OnEvent(epoll_event ev);
+    void OnAccept(std::shared_ptr<Conn> conn);
+    void OnRW(std::shared_ptr<Conn> conn, bool r, bool w);
 };
 
 #endif //SUNNET_SOCKETWORKER_H

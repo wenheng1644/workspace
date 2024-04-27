@@ -6,6 +6,7 @@
 #include "Sunnet.h"
 
 #include "memory"
+#include "unistd.h"
 
 Service::Service()
 {
@@ -45,6 +46,7 @@ std::shared_ptr<BaseMsg> Service::PopMsg() {
 void Service::OnInit()
 {
     std::cout << "初始化回调..." <<  std::endl;
+    Sunnet::inst->Listen(8001, m_id);
 }
 
 void Service::OnMsg(std::shared_ptr<BaseMsg> msg)
@@ -52,11 +54,19 @@ void Service::OnMsg(std::shared_ptr<BaseMsg> msg)
     if(msg->m_type == BaseMsg::SERVICE)
     {
         auto m = std::dynamic_pointer_cast<ServiceMsg>(msg);
-        std::cout << "source id = " << m->m_source << " ---> 打印buff: " << m->m_buff << std::endl;
-
-        auto ret = Sunnet::MakeMsg(m_id, new char[999999]{'p', 'i', 'n', 'g', '\0'}, 999999);
-        Sunnet::inst->Send(m->m_source, ret);
+        OnServiceMsg(m);
     }
+    else if(msg->m_type == BaseMsg::TYPE::SOCKET_ACCEPT)
+    {
+        auto acceptMsg = std::dynamic_pointer_cast<SocketAcceptMsg>(msg);
+        OnAcceptMsg(acceptMsg);
+    }
+    else if(msg->m_type == BaseMsg::TYPE::SOCKET_RW)
+    {
+        auto RW_Msg = std::dynamic_pointer_cast<SocketRWMsg>(msg);
+        OnRwMsg(RW_Msg);
+    }
+
 
 }
 
@@ -92,4 +102,64 @@ void Service::SetInGlobal(bool isIn)
     pthread_spin_lock(&m_ingloabl_lock);
     m_inGloabl = isIn;
     pthread_spin_unlock(&m_ingloabl_lock);
+}
+
+void Service::OnServiceMsg(std::shared_ptr<ServiceMsg> msg)
+{
+    std::cout << "source id = " << msg->m_source << " ---> 打印buff: " << msg->m_buff << std::endl;
+
+    auto ret = Sunnet::MakeMsg(m_id, new char[999999]{'p', 'i', 'n', 'g', '\0'}, 999999);
+    Sunnet::inst->Send(msg->m_source, ret);
+}
+
+void Service::OnAcceptMsg(std::shared_ptr<SocketAcceptMsg> msg)
+{
+    std::cout << "Service: new conn ---> " << msg->clientfd << std::endl;
+}
+
+void Service::OnRwMsg(std::shared_ptr<SocketRWMsg> msg)
+{
+    if(msg->isRead)
+    {
+        const int Size = 1024;
+        char buff[Size] = {0};
+        size_t bytes = 0;
+
+        do{
+            bytes = read(msg->fd, buff, Size);
+            if(bytes > 0)
+                OnSocketData(msg->fd, buff, bytes);
+        } while (bytes == Size);
+
+        if(bytes == 0 && errno != EAGAIN)
+        {
+            if(Sunnet::inst->GetConn(msg->fd))
+            {
+                OnSocketClose(msg->fd);
+                Sunnet::inst->CloseConn(msg->fd);
+            }
+        }
+    }
+
+    if(msg->isWrite)
+    {
+        if(Sunnet::inst->GetConn(msg->fd))
+            OnSocketWritable(msg->fd);
+    }
+}
+
+void Service::OnSocketData(int fd, const char *buff, int len)
+{
+    std::cout << "OnSocketData: " << fd << ", data: " << buff << std::endl;
+    write(fd, buff, len);
+}
+
+void Service::OnSocketWritable(int fd)
+{
+    std::cout << "OnSocketWritable: " << fd << std::endl;
+}
+
+void Service::OnSocketClose(int fd)
+{
+    std::cout << "OnSocketClose: " << fd << std::endl;
 }
