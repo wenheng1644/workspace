@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include -g -o CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/LuaAPI.cpp",
+  "file": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/LuaAPI.cpp"
+},
+{
+  "directory": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include -g -o CMakeFiles/sunnet.dir/src/Service.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp",
+  "file": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp"
+},
+{
+  "directory": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include -g -o CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp",
+  "file": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp"
+},
+{
+  "directory": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include -g -o CMakeFiles/sunnet.dir/src/Sunnet.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp",
+  "file": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp"
+},
+{
+  "directory": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include -g -o CMakeFiles/sunnet.dir/src/Worker.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp",
+  "file": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp"
+},
+{
+  "directory": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build",
+  "command": "/usr/bin/g++  -I/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include -g -o CMakeFiles/sunnet.dir/src/main.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp",
+  "file": "/home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp"
+}
+]

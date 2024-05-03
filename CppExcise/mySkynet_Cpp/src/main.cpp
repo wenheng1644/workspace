@@ -30,7 +30,11 @@ int main()
 
     Sunnet::inst->Start();
 
-    test();
+//    test();
+
+    auto t = std::make_shared<std::string>("main");
+    Sunnet::inst->NewService(t);
+
     Sunnet::inst->Wait();
     return 0;
 }

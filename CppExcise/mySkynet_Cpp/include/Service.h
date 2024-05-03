@@ -7,6 +7,13 @@
 
 #pragma once
 
+extern "C"{
+    #include "lua.h"
+    #include "lauxlib.h"
+    #include "lualib.h"
+};
+
+
 #include <queue>
 #include <memory>
 #include <thread>
@@ -33,6 +40,8 @@ public:
 
     void SetInGlobal(bool isIn);
 private:
+    lua_State* m_luaState;
+
     std::shared_ptr<BaseMsg> PopMsg();
 
     void OnServiceMsg(std::shared_ptr<ServiceMsg> msg);

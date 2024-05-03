@@ -8,6 +8,8 @@
 #include "memory"
 #include "unistd.h"
 
+#include "LuaAPI.h"
+
 Service::Service()
 {
     pthread_spin_init(&m_queueLock, PTHREAD_PROCESS_PRIVATE);
@@ -46,7 +48,31 @@ std::shared_ptr<BaseMsg> Service::PopMsg() {
 void Service::OnInit()
 {
     std::cout << "初始化回调..." <<  std::endl;
-    Sunnet::inst->Listen(8001, m_id);
+//    Sunnet::inst->Listen(8001, m_id);
+
+    m_luaState = luaL_newstate();
+    luaL_openlibs(m_luaState);
+    LuaAPI::Register(m_luaState);
+
+
+    std::string file = "../service/" + *m_type + "/init.lua";
+    int ret = luaL_dofile(m_luaState, file.data());
+
+    if(ret == 1)
+    {
+        std::cerr << "run lua fail...  ---> " << lua_tostring(m_luaState, -1) << std::endl;
+    }
+
+    lua_getglobal(m_luaState, "OnInit");
+    lua_pushinteger(m_luaState, m_id);
+    ret = lua_pcall(m_luaState, 1, 0, 0);
+
+    if(ret != 0)
+    {
+        std::cerr << "run lua error: " << lua_tostring(m_luaState, -1) << std::endl;
+    }
+
+
 }
 
 void Service::OnMsg(std::shared_ptr<BaseMsg> msg)
@@ -73,6 +99,15 @@ void Service::OnMsg(std::shared_ptr<BaseMsg> msg)
 void Service::OnExit()
 {
     std::cout << "服务退出..." << std::endl;
+    lua_getglobal(m_luaState, "OnExit");
+    int ret = lua_pcall(m_luaState, 0, 0, 0);
+
+    if(ret != 0)
+    {
+        std::cerr << "lua pcall OnExit fail: " << lua_tostring(m_luaState, -1) << std::endl;
+    }
+
+    lua_close(m_luaState);
 }
 
 bool Service::ProcessMsg()

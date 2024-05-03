@@ -1,4 +1,0 @@
-C:\Windows\system32\wsl.exe --distribution deepin --exec "/mnt/e/开发软件/JETBRAINS/CLion/CLion 2023.3.4/bin/ttyfix" /usr/bin/bash -c "export CLION_IDE=TRUE && export CMAKE_COLOR_DIAGNOSTICS=ON && export JETBRAINS_IDE=TRUE && cd /home/wenheng/workspace/CppExcise/mySkynet_Cpp/build && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp -B /home/wenheng/workspace/CppExcise/mySkynet_Cpp/build"
--- Configuring done
--- Generating done
--- Build files have been written to: /home/wenheng/workspace/CppExcise/mySkynet_Cpp/build

@@ -69,78 +69,93 @@ include CMakeFiles/sunnet.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sunnet.dir/flags.make
 
+CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o: CMakeFiles/sunnet.dir/flags.make
+CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o: /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/LuaAPI.cpp
+CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o: CMakeFiles/sunnet.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o -MF CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o.d -o CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/LuaAPI.cpp
+
+CMakeFiles/sunnet.dir/src/LuaAPI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sunnet.dir/src/LuaAPI.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/LuaAPI.cpp > CMakeFiles/sunnet.dir/src/LuaAPI.cpp.i
+
+CMakeFiles/sunnet.dir/src/LuaAPI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sunnet.dir/src/LuaAPI.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/LuaAPI.cpp -o CMakeFiles/sunnet.dir/src/LuaAPI.cpp.s
+
 CMakeFiles/sunnet.dir/src/Service.cpp.o: CMakeFiles/sunnet.dir/flags.make
 CMakeFiles/sunnet.dir/src/Service.cpp.o: /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp
 CMakeFiles/sunnet.dir/src/Service.cpp.o: CMakeFiles/sunnet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sunnet.dir/src/Service.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/Service.cpp.o -MF CMakeFiles/sunnet.dir/src/Service.cpp.o.d -o CMakeFiles/sunnet.dir/src/Service.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sunnet.dir/src/Service.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/Service.cpp.o -MF CMakeFiles/sunnet.dir/src/Service.cpp.o.d -o CMakeFiles/sunnet.dir/src/Service.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp
 
 CMakeFiles/sunnet.dir/src/Service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sunnet.dir/src/Service.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp > CMakeFiles/sunnet.dir/src/Service.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp > CMakeFiles/sunnet.dir/src/Service.cpp.i
 
 CMakeFiles/sunnet.dir/src/Service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sunnet.dir/src/Service.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp -o CMakeFiles/sunnet.dir/src/Service.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Service.cpp -o CMakeFiles/sunnet.dir/src/Service.cpp.s
 
 CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o: CMakeFiles/sunnet.dir/flags.make
 CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o: /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp
 CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o: CMakeFiles/sunnet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o -MF CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o.d -o CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o -MF CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o.d -o CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp
 
 CMakeFiles/sunnet.dir/src/SocketWorker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sunnet.dir/src/SocketWorker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp > CMakeFiles/sunnet.dir/src/SocketWorker.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp > CMakeFiles/sunnet.dir/src/SocketWorker.cpp.i
 
 CMakeFiles/sunnet.dir/src/SocketWorker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sunnet.dir/src/SocketWorker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp -o CMakeFiles/sunnet.dir/src/SocketWorker.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/SocketWorker.cpp -o CMakeFiles/sunnet.dir/src/SocketWorker.cpp.s
 
 CMakeFiles/sunnet.dir/src/Sunnet.cpp.o: CMakeFiles/sunnet.dir/flags.make
 CMakeFiles/sunnet.dir/src/Sunnet.cpp.o: /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp
 CMakeFiles/sunnet.dir/src/Sunnet.cpp.o: CMakeFiles/sunnet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sunnet.dir/src/Sunnet.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/Sunnet.cpp.o -MF CMakeFiles/sunnet.dir/src/Sunnet.cpp.o.d -o CMakeFiles/sunnet.dir/src/Sunnet.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sunnet.dir/src/Sunnet.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/Sunnet.cpp.o -MF CMakeFiles/sunnet.dir/src/Sunnet.cpp.o.d -o CMakeFiles/sunnet.dir/src/Sunnet.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp
 
 CMakeFiles/sunnet.dir/src/Sunnet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sunnet.dir/src/Sunnet.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp > CMakeFiles/sunnet.dir/src/Sunnet.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp > CMakeFiles/sunnet.dir/src/Sunnet.cpp.i
 
 CMakeFiles/sunnet.dir/src/Sunnet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sunnet.dir/src/Sunnet.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp -o CMakeFiles/sunnet.dir/src/Sunnet.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Sunnet.cpp -o CMakeFiles/sunnet.dir/src/Sunnet.cpp.s
 
 CMakeFiles/sunnet.dir/src/Worker.cpp.o: CMakeFiles/sunnet.dir/flags.make
 CMakeFiles/sunnet.dir/src/Worker.cpp.o: /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp
 CMakeFiles/sunnet.dir/src/Worker.cpp.o: CMakeFiles/sunnet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sunnet.dir/src/Worker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/Worker.cpp.o -MF CMakeFiles/sunnet.dir/src/Worker.cpp.o.d -o CMakeFiles/sunnet.dir/src/Worker.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sunnet.dir/src/Worker.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/Worker.cpp.o -MF CMakeFiles/sunnet.dir/src/Worker.cpp.o.d -o CMakeFiles/sunnet.dir/src/Worker.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp
 
 CMakeFiles/sunnet.dir/src/Worker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sunnet.dir/src/Worker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp > CMakeFiles/sunnet.dir/src/Worker.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp > CMakeFiles/sunnet.dir/src/Worker.cpp.i
 
 CMakeFiles/sunnet.dir/src/Worker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sunnet.dir/src/Worker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp -o CMakeFiles/sunnet.dir/src/Worker.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/Worker.cpp -o CMakeFiles/sunnet.dir/src/Worker.cpp.s
 
 CMakeFiles/sunnet.dir/src/main.cpp.o: CMakeFiles/sunnet.dir/flags.make
 CMakeFiles/sunnet.dir/src/main.cpp.o: /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp
 CMakeFiles/sunnet.dir/src/main.cpp.o: CMakeFiles/sunnet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sunnet.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/main.cpp.o -MF CMakeFiles/sunnet.dir/src/main.cpp.o.d -o CMakeFiles/sunnet.dir/src/main.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sunnet.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sunnet.dir/src/main.cpp.o -MF CMakeFiles/sunnet.dir/src/main.cpp.o.d -o CMakeFiles/sunnet.dir/src/main.cpp.o -c /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp
 
 CMakeFiles/sunnet.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sunnet.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp > CMakeFiles/sunnet.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp > CMakeFiles/sunnet.dir/src/main.cpp.i
 
 CMakeFiles/sunnet.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sunnet.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp -o CMakeFiles/sunnet.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wenheng/workspace/CppExcise/mySkynet_Cpp/src/main.cpp -o CMakeFiles/sunnet.dir/src/main.cpp.s
 
 # Object files for target sunnet
 sunnet_OBJECTS = \
+"CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o" \
 "CMakeFiles/sunnet.dir/src/Service.cpp.o" \
 "CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o" \
 "CMakeFiles/sunnet.dir/src/Sunnet.cpp.o" \
@@ -150,6 +165,7 @@ sunnet_OBJECTS = \
 # External object files for target sunnet
 sunnet_EXTERNAL_OBJECTS =
 
+sunnet: CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o
 sunnet: CMakeFiles/sunnet.dir/src/Service.cpp.o
 sunnet: CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o
 sunnet: CMakeFiles/sunnet.dir/src/Sunnet.cpp.o
@@ -157,7 +173,7 @@ sunnet: CMakeFiles/sunnet.dir/src/Worker.cpp.o
 sunnet: CMakeFiles/sunnet.dir/src/main.cpp.o
 sunnet: CMakeFiles/sunnet.dir/build.make
 sunnet: CMakeFiles/sunnet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable sunnet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wenheng/workspace/CppExcise/mySkynet_Cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable sunnet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sunnet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

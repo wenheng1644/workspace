@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o"
+  "CMakeFiles/sunnet.dir/src/LuaAPI.cpp.o.d"
   "CMakeFiles/sunnet.dir/src/Service.cpp.o"
   "CMakeFiles/sunnet.dir/src/Service.cpp.o.d"
   "CMakeFiles/sunnet.dir/src/SocketWorker.cpp.o"
