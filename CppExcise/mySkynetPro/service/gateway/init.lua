@@ -197,6 +197,8 @@ local connect = function(fd, addr)
 
     if s.close then
         skynet.error("gateway svr: node = " .. skynet.getenv("node") .. ", id = " .. s.id .. " --> close...")
+        socket.write(fd, "(game svr is closing....)")
+        socket.close(fd)
         return
     end
 

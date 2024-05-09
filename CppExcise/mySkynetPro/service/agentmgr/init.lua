@@ -150,4 +150,10 @@ s.resp.shutdown = function (source, kicknum)
     
 end
 
+s.resp.onlinecnt = function (source)
+    local onlinecnt = getonlinecount()
+
+    return onlinecnt
+end
+
 s.start(...)
