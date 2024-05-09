@@ -18,6 +18,8 @@ Service::Service()
 
 Service::~Service()
 {
+    lua_close(m_luaState);
+    std::cout << "服务器引擎关闭: " << m_id << std::endl;
     pthread_spin_destroy(&m_queueLock);
     pthread_spin_destroy(&m_ingloabl_lock);
 }
@@ -107,7 +109,7 @@ void Service::OnExit()
         std::cerr << "lua pcall OnExit fail: " << lua_tostring(m_luaState, -1) << std::endl;
     }
 
-    lua_close(m_luaState);
+    // this->~Service();
 }
 
 bool Service::ProcessMsg()
@@ -143,13 +145,38 @@ void Service::OnServiceMsg(std::shared_ptr<ServiceMsg> msg)
 {
     std::cout << "source id = " << msg->m_source << " ---> 打印buff: " << msg->m_buff << std::endl;
 
-    auto ret = Sunnet::MakeMsg(m_id, new char[999999]{'p', 'i', 'n', 'g', '\0'}, 999999);
-    Sunnet::inst->Send(msg->m_source, ret);
+    if(m_luaState == nullptr) return;
+    // int status = lua_status(m_luaState);
+
+    lua_getglobal(m_luaState, "OnServiceMsg");
+    lua_pushinteger(m_luaState, msg->m_source);
+    lua_pushlstring(m_luaState, msg->m_buff.get(), msg->m_size);
+
+    if(m_isExist == true) return;
+    int a = 1;
+    int isok = lua_pcall(m_luaState, 2, 0, 0);
+    if(isok != 0)
+    {
+        std::cerr << "[c++] OnServiceMsg error: " << lua_tostring(m_luaState, -1) << std::endl;
+    }
+
+    // auto ret = Sunnet::MakeMsg(m_id, new char[999999]{'p', 'i', 'n', 'g', '\0'}, 999999);
+    // Sunnet::inst->Send(msg->m_source, ret);
 }
 
 void Service::OnAcceptMsg(std::shared_ptr<SocketAcceptMsg> msg)
 {
     std::cout << "Service: new conn ---> " << msg->clientfd << std::endl;
+    lua_getglobal(m_luaState, "OnAcceptMsg");
+    lua_pushinteger(m_luaState, msg->listenfd);
+    lua_pushinteger(m_luaState, msg->clientfd);
+
+    int ret = lua_pcall(m_luaState, 2, 0, 0);
+    if(ret != 0)
+    {
+        std::cerr << "[C++] OnAcceptMsg fail: " << lua_tostring(m_luaState, -1) << std::endl;
+    }
+
 }
 
 void Service::OnRwMsg(std::shared_ptr<SocketRWMsg> msg)
@@ -186,7 +213,17 @@ void Service::OnRwMsg(std::shared_ptr<SocketRWMsg> msg)
 void Service::OnSocketData(int fd, const char *buff, int len)
 {
     std::cout << "OnSocketData: " << fd << ", data: " << buff << std::endl;
-    write(fd, buff, len);
+    // write(fd, buff, len);
+    lua_getglobal(m_luaState, "OnSocketData");
+    lua_pushinteger(m_luaState, fd);
+    lua_pushlstring(m_luaState, buff, len);
+
+    int ret = lua_pcall(m_luaState, 2, 0, 0);
+    if(ret != 0)
+    {
+        std::cerr << "[C++] OnSocketData: " << lua_tostring(m_luaState, -1) << std::endl;
+    } 
+
 }
 
 void Service::OnSocketWritable(int fd)
@@ -197,4 +234,13 @@ void Service::OnSocketWritable(int fd)
 void Service::OnSocketClose(int fd)
 {
     std::cout << "OnSocketClose: " << fd << std::endl;
+
+    lua_getglobal(m_luaState, "OnSocketClose");
+    lua_pushinteger(m_luaState, fd);
+
+    int ret = lua_pcall(m_luaState, 1, 0, 0);
+    if(ret != 0)
+    {
+        std::cerr << "[C++] OnSocketClose: " << lua_tostring(m_luaState, -1) << std::endl;
+    } 
 }

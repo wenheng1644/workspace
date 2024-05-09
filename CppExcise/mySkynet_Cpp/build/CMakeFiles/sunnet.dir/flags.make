@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/wenheng/workspace/CppExcise/mySkynet_Cpp/./include
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -fdiagnostics-color=always
 
