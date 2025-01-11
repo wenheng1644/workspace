@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include/net -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -I/usr/local/include -I/opt/homebrew/Cellar/boost/1.86.0_2/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/mySkynet_asio.dir/src/Conn.cpp.o -c /Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/Conn.cpp",
+  "file": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/Conn.cpp",
+  "output": "CMakeFiles/mySkynet_asio.dir/src/Conn.cpp.o"
+},
+{
+  "directory": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include/net -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -I/usr/local/include -I/opt/homebrew/Cellar/boost/1.86.0_2/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/mySkynet_asio.dir/src/LuaAPI.cpp.o -c /Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/LuaAPI.cpp",
+  "file": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/LuaAPI.cpp",
+  "output": "CMakeFiles/mySkynet_asio.dir/src/LuaAPI.cpp.o"
+},
+{
+  "directory": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include/net -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -I/usr/local/include -I/opt/homebrew/Cellar/boost/1.86.0_2/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/mySkynet_asio.dir/src/Service.cpp.o -c /Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/Service.cpp",
+  "file": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/Service.cpp",
+  "output": "CMakeFiles/mySkynet_asio.dir/src/Service.cpp.o"
+},
+{
+  "directory": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include/net -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -I/usr/local/include -I/opt/homebrew/Cellar/boost/1.86.0_2/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/mySkynet_asio.dir/src/SocketWork.cpp.o -c /Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/SocketWork.cpp",
+  "file": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/SocketWork.cpp",
+  "output": "CMakeFiles/mySkynet_asio.dir/src/SocketWork.cpp.o"
+},
+{
+  "directory": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include/net -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -I/usr/local/include -I/opt/homebrew/Cellar/boost/1.86.0_2/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/mySkynet_asio.dir/src/Sunnet.cpp.o -c /Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/Sunnet.cpp",
+  "file": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/Sunnet.cpp",
+  "output": "CMakeFiles/mySkynet_asio.dir/src/Sunnet.cpp.o"
+},
+{
+  "directory": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include/net -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -I/usr/local/include -I/opt/homebrew/Cellar/boost/1.86.0_2/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/mySkynet_asio.dir/src/Work.cpp.o -c /Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/Work.cpp",
+  "file": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/Work.cpp",
+  "output": "CMakeFiles/mySkynet_asio.dir/src/Work.cpp.o"
+},
+{
+  "directory": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include/net -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -I/usr/local/include -I/opt/homebrew/Cellar/boost/1.86.0_2/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/mySkynet_asio.dir/src/main.cpp.o -c /Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/main.cpp",
+  "file": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/main.cpp",
+  "output": "CMakeFiles/mySkynet_asio.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_JSON_DYN_LINK -DBOOST_JSON_NO_LIB -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include -I/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/./include/net -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -I/usr/local/include -I/opt/homebrew/Cellar/boost/1.86.0_2/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/mySkynet_asio.dir/src/net/NetData.cpp.o -c /Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/net/NetData.cpp",
+  "file": "/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/src/net/NetData.cpp",
+  "output": "CMakeFiles/mySkynet_asio.dir/src/net/NetData.cpp.o"
+}
+]

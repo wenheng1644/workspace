@@ -1,0 +1,3 @@
+/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/cmake-build-debug/CMakeFiles/mySkynet_asio.dir
+/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wenheng/mySpace/workspace/CppExcise/mySkynet_asio/cmake-build-debug/CMakeFiles/rebuild_cache.dir
