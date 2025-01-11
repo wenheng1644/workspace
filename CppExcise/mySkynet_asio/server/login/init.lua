@@ -5,60 +5,13 @@
 ---
 
 local server_comm = require("servers_comm")
+local db = require("mydb")
 
 local luasql = require("luasql.mysql")
 local sql_conn
 
 local g_svrid
 
-
-local function datBaseInit()
-    local env = luasql.mysql()
-    local conn, err = env:connect("skynet", "root", "xwz111598")
-    if not conn then
-        print("databases connect Error: " .. err)
-        os.exit(1)
-    end
-    sql_conn = conn
-    print("连接数据库成功~~~~")
-end
-
-local function login_account(account, password)
-    if not account or not password then
-        print("登录失败， 参数不全....")
-        return
-    end
-    
-    local fmt = string.format("select * from user where account = '%s'", account)
-    local stmt, err = sql_conn:execute(fmt)
-    if not stmt then
-        print("Error executing statement: ", err)
-        sql_conn:close()
-        os.exit(1)
-    end
-    local cnt = 0
-    local sql_password
-    while true do
-        local row, err = stmt:fetch({}, "a")
-        if not row then
-            break
-        end
-        cnt = cnt + 1
-        sql_password = row["password"]
-
-        print("读取数据 ---> ", sql_password or "nil")
-        if cnt > 1 then break end
-    end
-
-    stmt:close()
-
-    if password == sql_password then
-        print(string.format("帐户校验成功!!!!!  account = %s, password = %s", account, password))
-    else
-        print(string.format("帐户校验失败:  account = %s, input_password = %s, sql_password = %s", account, password, sql_password or "nil"))
-    end
-
-end
 
 function OnInit(svrid, ...)
     g_svrid = svrid
@@ -75,9 +28,7 @@ function OnInit(svrid, ...)
      print(string.format("获取gateway 服务id = %s", gateway_id))
     server_comm.send(svrid, gateway_id, 1, "hey", "fuck you", 2233, {name = "xwz", sex = 1})
 
-    datBaseInit()
-
-    login_account("xwz", "123")
+    local ret = db.select("select * from user")
 
 end
 
