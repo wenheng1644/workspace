@@ -8,6 +8,9 @@
 #include <iostream>
 
 #include "boost/assert.hpp"
+#include "boost/thread.hpp"
+
+#include "net/NetData.h"
 
 void LuaAPI::Register(sol::state& lua)
 {
@@ -20,21 +23,12 @@ void LuaAPI::Register(sol::state& lua)
     sunnet.set_function("Send", Send);
     sunnet.set_function("Listen", Listen);
     sunnet.set_function("RegisterSvr", RegisterSvr);
-    sunnet.set_function("GetSvrId", GetSvrId);
+    sunnet.set_function("GetSvrIdByName", GetSvrIdByName);
 
-    sol::table tb = Sunnet::inst->m_lua_["serverMsgMod"];
-    sunnet.create_named("serverMsgMod");
-
-    sunnet["serverMsgMod"] = tb;
-
-    lua.new_usertype<ServerArgs>(
-        "ServerArgs",
-        sol::constructors<ServerArgs()>(),
-        "isListen", sol::property(&ServerArgs::get_isListen, &ServerArgs::set_isListen),
-        "ip", sol::property(&ServerArgs::getIp, &ServerArgs::setIp),
-        "port", sol::property(&ServerArgs::getPort, &ServerArgs::setPort),
-        "config_id", sol::property(&ServerArgs::getConfigId, &ServerArgs::setConfigId)
-        );
+    lua.create_named_table("CommandFuncs");
+    lua.set("ACCEPT", ACCEPT);
+    lua.set("DATA", DATA);
+    lua.set("CLOSE", CLOSE);
 }
 
 int LuaAPI::NewService(const std::string& name, sol::variadic_args args)
@@ -126,7 +120,7 @@ bool LuaAPI::RegisterSvr(const std::string& svr_name, int svrid)
     return true;
 }
 
-int LuaAPI::GetSvrId(const std::string& svr_name)
+int LuaAPI::GetSvrIdByName(const std::string& svr_name)
 {
     auto moudle = Sunnet::inst->m_lua_["moudleSvr"];
     if(!moudle.valid() || moudle.get_type() != sol::type::table)

@@ -20,13 +20,22 @@ void Service::OnInit(sol::variadic_args& args)
 
     std::string file = "../server/" + *m_type + "/init.lua";
 
-    sol::protected_function_result result = m_lua.safe_script_file(file.c_str());
+    sol::load_result result = m_lua.load_file(file.c_str());
 
     if(result.valid())
     {
         std::cout << "Service::OnInit  load success" << std::endl;
 
+        std::vector<sol::object> params;
+        sol::object lua_m_id = make_object(m_lua, m_id);
+        params.push_back(lua_m_id);
+
+        for (auto v : args)
+            params.push_back(v);
+
+        result(sol::as_args(params));
         sol::function init = m_lua["OnInit"];
+
         if(init.valid())
         {
             init(m_id, args);
@@ -137,7 +146,8 @@ void Service::OnSocketAccept(std::shared_ptr<SocketAcceptMsg> msg)
     std::string uuid_str = boost::uuids::to_string(msg->m_socket_uuid);
 
     sol::function func = m_lua["net_dispatcher"];
-    func(1, uuid_str.c_str());
+    sol::type t = func.get_type();
+    func(ACCEPT, uuid_str.c_str());
 }
 
 void Service::OnSocketRW(std::shared_ptr<SocketRWMsg> msg)
@@ -145,22 +155,40 @@ void Service::OnSocketRW(std::shared_ptr<SocketRWMsg> msg)
     std::cout << "Service::OnSocketRW | len(m_datas) = " << strlen(msg->m_datas.c_str()) << ", len2 = " << msg->m_datas.length() << std::endl;
 
     sol::function func = m_lua["net_dispatcher"];
-    func(2, msg->m_socket_uuid_str.c_str(), msg->m_datas.c_str());
+    func(DATA, msg->m_socket_uuid_str.c_str(), msg->m_datas.c_str());
 }
 
 void Service::OnSocketClose(std::shared_ptr<SockectCloseMsg> msg)
 {
     std::cout << "Service::OnSocketClose | close  id = " << m_id << std::endl;
     sol::function func = m_lua["net_dispatcher"];
-    func(3, msg->m_socket_uuid_str.c_str());
+    func(CLOSE, msg->m_socket_uuid_str.c_str());
 }
 
 void Service::OnServerMsg(std::shared_ptr<ServiceMsg> msg)
 {
     std::cout << "[C++]Service: get other server datas ---> " << msg->m_source << std::endl;
-    size_t count = std::distance(msg->args.begin(), msg->args.end());
 
     sol::function func = m_lua["OnServerMsg"];
-    func(msg->m_source, sol::as_args(msg->args));
+    if (func.valid() && func.get_type() == sol::type::function)
+    {
+        std::vector<sol::object> args;
+        for (auto v : msg->args)
+        {
+            if (v.is<std::string>())
+            {
+                std::string s = v.as<std::string>();
+                sol::object obj = sol::make_object(m_lua, s);
+                args.push_back(obj);
+            }
+            else
+            {
+                args.push_back(v);
+            }
+        }
+        func(msg->m_source,  sol::as_args(args));
+    }
+    else
+        std::cout << "[C++]Service: OnServerMsg error" << std::endl;
 }
 

@@ -4,35 +4,24 @@
 --- DateTime: 24-10-26 下午5:02
 ---
 
-local server_comm = require("servers_comm")
+local SvrComm = require("whmod.SvrComm")
 local db = require("mydb")
-
-local luasql = require("luasql.mysql")
-local sql_conn
+local whmod = require("whmod")
 
 local g_svrid
-
-
-function OnInit(svrid, ...)
-    g_svrid = svrid
-    print("登陆服务启动!!!  svrid ---> " .. svrid)
-
-    local args = {...}
-    print(string.format("初始化参数数量 = %s", #args))
-    for k, v in pairs(args) do
-        print(string.format("登录服务 参数: key = %s, value = %s", k, v))
-    end
-
-     local gateway_id = server_comm.getSvrid("gateway1");
-
-     print(string.format("获取gateway 服务id = %s", gateway_id))
-    server_comm.send(svrid, gateway_id, 1, "hey", "fuck you", 2233, {name = "xwz", sex = 1})
-
-    local ret = db.select("select * from user")
-
-end
 
 function OnServerMsg(source, ...)
     local datas = {...}
     print("登陆服务 接收到其他服务的数据： source = ", source, ", data = ", datas[1] or "nil")
 end
+
+whmod.start(function(svrid, ...)
+    g_svrid = svrid
+    print("登陆服务启动!!!  svrid ---> " .. svrid)
+
+    local gateway_id = SvrComm.getSvrid("gateway1");
+
+    SvrComm.send(svrid, gateway_id, "test", "hey", "fuck you", 2233, {name = "xwz", sex = 1})
+
+    local ret = db.select("select * from user")
+end , ...)

@@ -27,11 +27,14 @@ public:
     static void CloseConn(const std::string socket_uuid_str);
     static int Write(lua_State* luaState);
     static bool RegisterSvr(const std::string& svr_name, int svrid);
-    static int GetSvrId(const std::string& svr_name);
+    static int GetSvrIdByName(const std::string& svr_name);
+    static int GetSvrId();
     static int Uuid2String(lua_State* luaState);
     static int String2Uuid(lua_State* luaState);
 
 private:
     static void LoadSystemConfig(sol::state& lua);
 };
+
+
 #endif

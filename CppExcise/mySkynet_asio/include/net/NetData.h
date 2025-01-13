@@ -15,6 +15,14 @@
 
 #include <memory>
 
+//网络数据类型
+enum Net_TYPE
+{
+    ACCEPT = 1, //监听
+    DATA = 2,   //读数据
+    CLOSE = 3,  //关闭
+};
+
 struct NetHeader
 {
     u_char      type_id;        //主协议id

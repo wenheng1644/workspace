@@ -1,5 +1,7 @@
 require("severStartConfig")
 
+local whmod = require("whmod")
+
 local g_sid
 local g_fd_uuid
 local Svr_TYPE = "gateway"
@@ -10,25 +12,6 @@ local connList = {
 
 
 local gateconn = require("gateuser")
-
-
-
-local net_comm = require("net_comm")
-local server_comm = require("servers_comm")
-function OnInit(server_id, gateid)
-    g_sid = server_id
-
-    local conf = ServerConfig[Svr_TYPE]
-
-    if not conf or not conf[gateid] then
-        print(string.format("服务类型 = %s, id = %s, sid = %s 配置不存在....", Svr_TYPE, gateid, server_id))
-        return
-    end
-    local gatewayConf = conf[gateid]
-
-    print(string.format("服务初始化: Svr_TYPE = %s, sid = %s, port = %s", Svr_TYPE, server_id, gatewayConf.port or "nil"))
-    net_comm.listen(server_id, gatewayConf.port, gatewayConf.ip)
-end
 
 local function onAcceptMsg(fd_uuid)
     --g_fd_uuid = fd_uuid
@@ -61,23 +44,51 @@ local function onSocketClose(fd_uuid)
     --to-do 通知相关服务关闭
 end
 
-function OnServerMsg(source, ...)
-    print("接收到其他服务的数据： source = ", source)
-
+local SvrHandleFuncs = {}
+SvrHandleFuncs.test = function(source, ...)
     local args = {...}
+    print(string.format("test_command 来源服务 ---> source = %s, #args = %s", source, #args))
+
     for k, v in ipairs(args) do
-        print(string.format("额外参数[%s]  -----> type(v) = %s,  v = %s", k, type(v), tostring(v)))
-        if type(v) == "table" then
-            for k1, v1 in pairs(v) do
-                print(string.format("table key = %s, 值 = %s", k1, v1))
-            end
-        end
+        print(string.format("test_command ----> k = %s, v = %s", k, v))
     end
-    print(string.format("OnServerMsg | gateway 接收到的数据数量 agrs count = %s", #args))
 end
 
-net_comm.register(NET_TYPE.ACCEPT, onAcceptMsg)
-net_comm.register(NET_TYPE.DATA, onSocketRWMsg)
-net_comm.register(NET_TYPE.CLOSE, onSocketClose)
+local function OnServerMsg(source, command, ...)
+    local f = SvrHandleFuncs[command]
+
+     if not f then
+         print(string.format("whmod.registerSvrHandle | command = %s 事件未注册", command))
+         return
+     end
+    f(source, ...)
+end
+
+
+local function OnInit(server_id, gateid, type_)
+    g_sid = server_id
+
+    local conf = ServerConfig[Svr_TYPE]
+
+    if not conf or not conf[gateid] then
+        print(string.format("服务类型 = %s, id = %s, sid = %s 配置不存在....", Svr_TYPE, gateid, server_id))
+        return
+    end
+    local gatewayConf = conf[gateid]
+
+    whmod.registerNet(ACCEPT, onAcceptMsg)
+    whmod.registerNet(DATA, onSocketClose)
+    whmod.registerNet(CLOSE, onSocketClose)
+
+    whmod.registerSvrHandle(OnServerMsg)
+
+    print(string.format("服务初始化: Svr_TYPE = %s, sid = %s, port = %s", Svr_TYPE, server_id, gatewayConf.port or "nil"))
+    --net_comm.listen(server_id, gatewayConf.port, gatewayConf.ip)
+
+    sunnet.Listen(server_id, gatewayConf.port, gatewayConf.ip)
+
+end
+
+whmod.start(OnInit, ...)
 
 

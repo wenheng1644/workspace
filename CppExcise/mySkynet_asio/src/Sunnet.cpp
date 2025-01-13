@@ -239,12 +239,7 @@ void Sunnet::StartLua()
 {
     m_lua_.open_libraries(sol::lib::base, sol::lib::package, sol::lib::string, sol::lib::table, sol::lib::ffi, sol::lib::math);
 
-    m_lua_.create_named_table("serverMsgMod");
-
-
     LuaAPI::Register(m_lua_);
-
-    // loadServerConfig(m_lua_);
 
     std::string file = "../server/main.lua";
 
